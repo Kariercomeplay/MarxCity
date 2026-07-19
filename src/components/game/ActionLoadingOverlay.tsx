@@ -3,6 +3,8 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
+import { playMachinerySound, playTrafficSound } from '@/lib/audio/soundEngine';
+
 interface ActionLoadingOverlayProps {
   isLoading: boolean;
   message?: string;
@@ -21,9 +23,15 @@ export default function ActionLoadingOverlay({ isLoading, message }: ActionLoadi
 
   useEffect(() => {
     if (!isLoading) return;
+    playMachinerySound();
     const interval = setInterval(() => {
-      setMsgIdx((prev) => (prev + 1) % MESSAGES.length);
-    }, 1800);
+      setMsgIdx((prev) => {
+        const next = (prev + 1) % MESSAGES.length;
+        if (next % 2 === 0) playTrafficSound();
+        else playMachinerySound();
+        return next;
+      });
+    }, 1500);
     return () => clearInterval(interval);
   }, [isLoading]);
 

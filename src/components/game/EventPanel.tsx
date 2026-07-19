@@ -3,6 +3,8 @@
 import { motion } from 'framer-motion';
 import { GameEvent } from '@/types/game';
 
+import { playDecisionGavelSound } from '@/lib/audio/soundEngine';
+
 interface EventPanelProps {
   event: GameEvent;
   onChoice: (choiceId: string) => void;
@@ -10,6 +12,10 @@ interface EventPanelProps {
 }
 
 export default function EventPanel({ event, onChoice, disabled }: EventPanelProps) {
+  const handleSelectChoice = (choiceId: string) => {
+    playDecisionGavelSound();
+    onChoice(choiceId);
+  };
   return (
     <motion.div
       initial={{ opacity: 0, y: 15 }}
@@ -36,7 +42,7 @@ export default function EventPanel({ event, onChoice, disabled }: EventPanelProp
             initial={{ opacity: 0, x: -15 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: idx * 0.08 }}
-            onClick={() => onChoice(choice.id)}
+            onClick={() => handleSelectChoice(choice.id)}
             disabled={disabled}
             className="w-full text-left p-4 rounded-2xl border-2 border-zinc-200/90 dark:border-zinc-700/80 
               bg-white dark:bg-zinc-800/80 hover:border-red-300 dark:hover:border-red-600 

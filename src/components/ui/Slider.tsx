@@ -1,5 +1,7 @@
 'use client';
 
+import { playClickSound } from '@/lib/audio/soundEngine';
+
 interface SliderProps {
   label: string;
   value: number;
@@ -44,7 +46,11 @@ export default function Slider({
           max={max}
           step={step}
           value={value}
-          onChange={(e) => onChange(Number(e.target.value))}
+          onChange={(e) => {
+            const val = Number(e.target.value);
+            playClickSound();
+            onChange(val);
+          }}
           disabled={disabled}
           className="w-full h-2 rounded-full appearance-none cursor-pointer bg-zinc-200 dark:bg-zinc-700 accent-red-600 disabled:opacity-50"
           style={{

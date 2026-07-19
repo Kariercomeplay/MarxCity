@@ -18,7 +18,8 @@ import SurpriseBadge from '@/components/game/SurpriseBadge';
 import ActionLoadingOverlay from '@/components/game/ActionLoadingOverlay';
 import Button from '@/components/ui/Button';
 import Modal from '@/components/ui/Modal';
-import { STAT_LABELS } from '@/lib/engine/constants';
+import { CHAPTERS, STAT_LABELS } from '@/lib/engine/constants';
+import { toggleMute, isMuted, playClickSound, playHarborShipHornSound, playProtestAlarmSound } from '@/lib/audio/soundEngine';
 import eventsData from '@/data/events.json';
 import { GameEvent } from '@/types/game';
 
@@ -44,7 +45,18 @@ export default function GamePage() {
   const [showConsequence, setShowConsequence] = useState(false);
   const [consequenceData, setConsequenceData] = useState<any>(null);
   const [pendingQuiz, setPendingQuiz] = useState<any>(null);
+  const [muted, setMutedState] = useState(false);
   const initRef = useRef(false);
+
+  useEffect(() => {
+    setMutedState(isMuted());
+  }, []);
+
+  const handleToggleAudio = () => {
+    const next = toggleMute();
+    setMutedState(next);
+    if (!next) playClickSound();
+  };
 
   const showNotif = useCallback((msg: string) => {
     setNotification(msg);
@@ -170,6 +182,9 @@ export default function GamePage() {
           stakeholderImpact: r.stakeholderImpact,
           explanation: r.explanation,
         });
+        if (r.crisisId) {
+          playProtestAlarmSound();
+        }
         setShowConsequence(true);
         if (r.quiz) setPendingQuiz(r.quiz);
         if (r.gameOver) {
@@ -180,6 +195,9 @@ export default function GamePage() {
   };
 
   const handleNextYear = () => {
+    if (store.currentYear === 9) {
+      playHarborShipHornSound();
+    }
     setShowConsequence(false); setConsequenceData(null);
     setCurrentEvent(null);
     setShowExplanation(false);
@@ -275,7 +293,18 @@ export default function GamePage() {
               {store.difficulty === 'easy' ? 'Dễ' : store.difficulty === 'hard' ? 'Khó' : 'Thường'}
             </span>
           </div>
-          <div className="flex items-center gap-3" />
+          <div className="flex items-center gap-3">
+            <button
+              onClick={handleToggleAudio}
+              className="p-1.5 px-2.5 rounded-xl bg-zinc-100 dark:bg-zinc-700/80 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-xs font-bold transition-all border border-zinc-200 dark:border-zinc-600 flex items-center gap-1.5 shadow-2xs"
+              title={muted ? "Mở âm thanh" : "Tắt âm thanh"}
+            >
+              <span>{muted ? '🔇' : '🔊'}</span>
+              <span className="hidden sm:inline text-zinc-700 dark:text-zinc-200 font-semibold">
+                {muted ? 'Tắt âm' : 'Bật âm'}
+              </span>
+            </button>
+          </div>
         </div>
       </header>
 
