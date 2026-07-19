@@ -499,7 +499,6 @@ export default function GamePage() {
             <PolicyPanel
               policies={pendingPolicies}
               onChange={(p) => { setPendingPolicies(p); store.setPolicies(p); }}
-              onConfirm={() => {}}
               disabled={isSubmitting}
             />
           </div>

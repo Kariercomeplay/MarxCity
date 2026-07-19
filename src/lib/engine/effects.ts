@@ -20,12 +20,12 @@ export function applyPolicyEffects(
   const fdiDiff = policies.fdiPolicy - prevPolicies.fdiPolicy;
   const envDiff = policies.envProtection - prevPolicies.envProtection;
 
-  const TAX_FACTOR = 0.1 * m;
-  const WAGE_FACTOR = 0.08 * m;
-  const EDU_FACTOR = 0.12 * m;
-  const INFRA_FACTOR = 0.1 * m;
-  const FDI_FACTOR = 0.08 * m;
-  const ENV_FACTOR = 0.1 * m;
+  const TAX_FACTOR = 1.5 * m;
+  const WAGE_FACTOR = 1.2 * m;
+  const EDU_FACTOR = 1.8 * m;
+  const INFRA_FACTOR = 1.5 * m;
+  const FDI_FACTOR = 1.2 * m;
+  const ENV_FACTOR = 1.5 * m;
 
   delta.production = (taxDiff * TAX_FACTOR * -0.3)
     + (wageDiff * WAGE_FACTOR * -0.2)
@@ -83,7 +83,7 @@ export function applyStakeholderEffects(
   const fdiDiff = policies.fdiPolicy - prevPolicies.fdiPolicy;
   const envDiff = policies.envProtection - prevPolicies.envProtection;
 
-  const FACTOR = 0.1 * m;
+  const FACTOR = 1.5 * m;
 
   return {
     workers: (wageDiff * FACTOR * 0.5) + (eduDiff * FACTOR * 0.3) + (fdiDiff * FACTOR * -0.1) + (envDiff * FACTOR * 0.2),
@@ -95,14 +95,15 @@ export function applyStakeholderEffects(
 export function calcBaseYearEffects(stats: GameStats, difficulty: Difficulty = 'normal'): Record<string, number> {
   const m = DIFFICULTY_CONFIG[difficulty].effectMultiplier;
   const effects: Record<string, number> = {
-    production: 0.3 * m,
-    employment: -0.2 * m,
-    marketStability: -0.2 * m,
-    environment: -0.3 * m,
+    production: 1.0 * m,
+    employment: -0.8 * m,
+    marketStability: -0.5 * m,
+    environment: -0.8 * m,
+    budget: -0.5 * m,
   };
-  if (stats.budget < 20) effects.budget = -2 * m;
-  if (stats.environment < 15) effects.production = (effects.production || 0) - 1 * m;
-  if (stats.marketStability < 15) effects.employment = (effects.employment || 0) - 1 * m;
+  if (stats.budget < 20) effects.budget = (effects.budget || 0) - 3 * m;
+  if (stats.environment < 15) effects.production = (effects.production || 0) - 2 * m;
+  if (stats.marketStability < 15) effects.employment = (effects.employment || 0) - 2 * m;
   return effects;
 }
 
