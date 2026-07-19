@@ -271,9 +271,9 @@ export default function GamePage() {
   }
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-900">
+    <div className="min-h-screen bg-slate-100/70 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 relative selection:bg-red-500 selection:text-white">
       {/* Header */}
-      <header className="bg-white/90 dark:bg-zinc-800/90 backdrop-blur-sm border-b border-zinc-200 dark:border-zinc-700 sticky top-0 z-40">
+      <header className="bg-white/85 dark:bg-zinc-900/85 backdrop-blur-md border-b border-zinc-200/80 dark:border-zinc-800/80 sticky top-0 z-40 shadow-xs">
         <div className="max-w-7xl mx-auto px-4 py-2.5 flex items-center justify-between">
           <div className="flex items-center gap-3 min-w-0">
             <span className="text-base font-black text-red-600 flex-shrink-0">MARXCITY</span>
