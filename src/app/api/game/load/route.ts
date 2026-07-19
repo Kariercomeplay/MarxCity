@@ -23,8 +23,8 @@ export async function GET(req: NextRequest) {
     }
     const turns = await GameTurn.find({ gameSaveId: game._id }).sort({ turnNumber: 1 });
 
-    const quizCorrect = turns.filter(t => t.quizCorrect === true).length;
-    const quizTotal = turns.filter(t => t.quizQuestion).length;
+const quizCorrect = turns.filter(t => t.quizCorrect === true).length;
+const quizTotal = turns.filter(t => t.quizSelectedIndex !== undefined).length;
 
     let ending: Ending | null = null;
     if (game.status === 'completed' && game.title) {
@@ -52,7 +52,8 @@ export async function GET(req: NextRequest) {
         history: turns.map(t => ({
           year: t.turnNumber,
           eventId: t.eventId,
-          selectedChoiceId: t.selectedChoiceId,
+          eventTitle: t.eventTitle || t.eventId,
+          selectedChoiceId: t.selectedChoiceLabel || t.selectedChoiceId,
           policiesBefore: t.policiesBefore as any,
           policiesAfter: t.policiesAfter as any,
           statsBefore: t.statsBefore as any,

@@ -127,6 +127,29 @@ export async function POST(req: NextRequest) {
       flavor: event.flavor,
     };
 
+    try {
+      await GameTurn.create({
+        gameSaveId: game._id,
+        turnNumber: currentYear,
+        chapterId: chapter?.id || 1,
+        eventId: event.id,
+        eventTitle: event.title,
+        selectedChoiceId: choice.id,
+        selectedChoiceLabel: choice.label,
+        policiesBefore: game.policies,
+        policiesAfter: policies || game.policies,
+        statsBefore: game.stats,
+        effectsApplied: result.effectsApplied,
+        statsAfter: result.statsAfter,
+        stakeholderImpact: result.stakeholderImpact,
+        explanationIds: [choice.explanationId],
+        quizQuestion: quiz?.question,
+        quizCorrectIndex: quiz?.correctIndex,
+      });
+    } catch (turnSaveErr) {
+      console.error('GameTurn save error:', turnSaveErr);
+    }
+
     return NextResponse.json<ApiResponse<any>>({
       success: true,
       data: {

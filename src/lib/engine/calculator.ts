@@ -77,8 +77,13 @@ export function getEnding(stats: GameStats, balance: StakeholderBalance): Ending
   if (stats.environment >= 70 && stats.production >= 65) return ENDINGS.find(e => e.id === 'sustainable_development') || ENDINGS[0];
   if (stats.nationalCapacity >= 70 && stats.budget >= 65) return ENDINGS.find(e => e.id === 'dragon_asia') || ENDINGS[0];
 
-  // Neutral endings
-  if (stats.marketStability >= 65) return ENDINGS.find(e => e.id === 'stability_first') || ENDINGS[0];
-  if (stats.production >= 55) return ENDINGS.find(e => e.id === 'pragmatic') || ENDINGS[0];
+  // Neutral endings (higher bars to avoid bias)
+  if (stats.marketStability >= 70 && stats.budget >= 55)
+    return ENDINGS.find(e => e.id === 'stability_first') || ENDINGS[0];
+  if (stats.production >= 70)
+    return ENDINGS.find(e => e.id === 'pragmatic') || ENDINGS[0];
+  if (stats.employment >= 65 && stats.socialWelfare >= 60)
+    return ENDINGS.find(e => e.id === 'waiting') || ENDINGS[0];
+  // Fallback — default to waiting with a neutral-positive spin
   return ENDINGS.find(e => e.id === 'waiting') || ENDINGS[0];
 }
