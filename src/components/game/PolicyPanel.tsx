@@ -3,21 +3,13 @@
 import { Policies } from '@/types/game';
 import Slider from '@/components/ui/Slider';
 import { motion } from 'framer-motion';
+import { POLICY_EFFECT_DESCRIPTIONS } from '@/lib/engine/effects';
 
 interface PolicyPanelProps {
   policies: Policies;
   onChange: (policies: Policies) => void;
   disabled?: boolean;
 }
-
-const POLICY_INFO: Record<keyof Policies, { icon: string; label: string; hint: string }> = {
-  taxRate: { icon: '💰', label: 'Thuế thu nhập doanh nghiệp', hint: 'Tăng → Ngân sách ↑, Sản xuất ↓, DN ↓' },
-  minWage: { icon: '💵', label: 'Lương tối thiểu', hint: 'Tăng → Phúc lợi ↑, Việc làm ↓, DN ↓' },
-  eduInvestment: { icon: '🎓', label: 'Đầu tư giáo dục', hint: 'Tăng → Tự chủ ↑, Phúc lợi ↑, Ngân sách ↓' },
-  infraInvestment: { icon: '🏗️', label: 'Đầu tư hạ tầng', hint: 'Tăng → Sản xuất ↑, Việc làm ↑, Ngân sách ↓' },
-  fdiPolicy: { icon: '🌐', label: 'Thu hút FDI', hint: 'Tăng → Sản xuất ↑, Tự chủ ↓, Việc làm ↑' },
-  envProtection: { icon: '🌿', label: 'Bảo vệ môi trường', hint: 'Tăng → Môi trường ↑, Sản xuất ↓, Ngân sách ↓' },
-};
 
 export default function PolicyPanel({ policies, onChange, disabled }: PolicyPanelProps) {
   const handleChange = (key: keyof Policies, value: number) => {
@@ -40,26 +32,31 @@ export default function PolicyPanel({ policies, onChange, disabled }: PolicyPane
       </div>
 
       <div className="space-y-2">
-        {(Object.keys(POLICY_INFO) as (keyof Policies)[]).map(key => (
-          <div key={key} className="relative group">
-            <Slider
-              label={POLICY_INFO[key].label}
-              icon={POLICY_INFO[key].icon}
-              value={policies[key]}
-              onChange={(v) => handleChange(key, v)}
-              disabled={disabled}
-            />
-            <div className="absolute -top-1 right-0 z-10 opacity-0 group-hover:opacity-100 transition-opacity">
-              <div className="bg-zinc-900 text-white text-[10px] rounded-lg px-2.5 py-1.5 shadow-lg whitespace-nowrap">
-                {POLICY_INFO[key].hint}
+        {(Object.keys(POLICY_EFFECT_DESCRIPTIONS) as (keyof Policies)[]).map(key => {
+          const info = POLICY_EFFECT_DESCRIPTIONS[key];
+          return (
+            <div key={key} className="relative group">
+              <Slider
+                label={info.label}
+                icon={info.icon}
+                value={policies[key]}
+                onChange={(v) => handleChange(key, v)}
+                disabled={disabled}
+              />
+              <div className="absolute -top-1 right-0 z-10 opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="bg-zinc-900 text-white text-[10px] rounded-lg px-2.5 py-1.5 shadow-lg max-w-[220px]">
+                  {info.effects}
+                  {policies[key] >= 85 && <div className="text-yellow-300 mt-0.5">⚠️ Mức cao — rủi ro mất cân đối</div>}
+                  {policies[key] <= 15 && <div className="text-red-300 mt-0.5">⚠️ Mức thấp — có thể gây bất ổn</div>}
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       <div className="text-[10px] text-zinc-400 dark:text-zinc-500 italic pt-1 border-t border-zinc-100 dark:border-zinc-700/60">
-        Mỗi chính sách ảnh hưởng nhiều chỉ số — cân bằng là chìa khóa.
+        Chính sách có hiệu lực ngay — mỗi quyết định kéo theo hệ quả. Cân bằng là chìa khóa.
       </div>
     </motion.div>
   );

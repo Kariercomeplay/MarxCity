@@ -39,8 +39,8 @@ export function simulateYear(
   const noise = () => (rng() - 0.5) * 2;
   const config = DIFFICULTY_CONFIG[difficulty];
 
-  const policyEffects = applyPolicyEffects(currentPolicies, previousPolicies, difficulty);
-  const stakeEffects = applyStakeholderEffects(currentPolicies, previousPolicies, difficulty);
+  const policyEffects = applyPolicyEffects(currentPolicies, difficulty);
+  const stakeEffects = applyStakeholderEffects(currentPolicies, difficulty);
   const baseEffects = calcBaseYearEffects(previousStats, difficulty);
 
   const combinedEffects: Record<string, number> = {};
