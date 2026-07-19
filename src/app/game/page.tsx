@@ -15,7 +15,7 @@ import ChapterTransition from '@/components/game/ChapterTransition';
 import SurpriseBadge from '@/components/game/SurpriseBadge';
 import Button from '@/components/ui/Button';
 import Modal from '@/components/ui/Modal';
-import { CHAPTERS } from '@/lib/engine/constants';
+import { CHAPTERS, STAT_LABELS } from '@/lib/engine/constants';
 import eventsData from '@/data/events.json';
 import { GameEvent } from '@/types/game';
 
@@ -324,16 +324,83 @@ export default function GamePage() {
         )}
       </Modal>
 
-      {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 py-4 sm:py-6 space-y-4">
-        <motion.div key={store.currentYear} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-          <StatsGrid stats={store.stats!} previousStats={previousStats || undefined} />
-        </motion.div>
+      {/* Main Content Dashboard */}
+      <main className="max-w-[1536px] mx-auto px-3 py-3 space-y-4">
+        {/* 3-Column Grid: Left Stats (3 cols) | Center Chart & Actions (6 cols) | Right Stats & Policies (3 cols) */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-3.5 items-start">
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
-          <div className="lg:col-span-2 space-y-4">
+          {/* LEFT COLUMN: 4 Economic Indicators (3 cols) */}
+          <div className="lg:col-span-3 space-y-2">
+            <div className="flex items-center justify-between px-1">
+              <h3 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
+                Chỉ số kinh tế (1/2)
+              </h3>
+            </div>
+            <motion.div key={store.currentYear} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+              <StatsGrid
+                stats={store.stats!}
+                previousStats={previousStats || undefined}
+                statKeys={['production', 'employment', 'socialWelfare', 'marketStability']}
+              />
+            </motion.div>
+
+            {currentChapter && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="bg-white dark:bg-zinc-800/80 rounded-2xl p-3.5 shadow-xs border border-zinc-200/80 dark:border-zinc-700/60 mt-3"
+              >
+                <h3 className="text-xs font-bold text-zinc-800 dark:text-zinc-200 mb-1">
+                  Chương {currentChapter.id}: {currentChapter.name}
+                </h3>
+                <div className="flex flex-wrap gap-1.5">
+                  {currentChapter.cloTags.map(clo => (
+                    <span key={clo} className="px-2 py-0.5 text-[11px] rounded-full bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300 font-semibold">
+                      {clo}
+                    </span>
+                  ))}
+                </div>
+              </motion.div>
+            )}
+          </div>
+
+          {/* CENTER COLUMN: Trend Chart & Story Choice Actions (6 cols) */}
+          <div className="lg:col-span-6 space-y-3.5">
+            {/* Trend Chart */}
             <TrendChart history={store.history} currentStats={store.stats!} />
 
+            {/* Re-open Pending Story Event Button */}
+            {currentEvent && (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="bg-gradient-to-r from-red-500/10 via-orange-500/10 to-amber-500/10 dark:from-red-950/40 dark:via-orange-950/30 dark:to-amber-950/30 rounded-2xl p-4 border-2 border-red-500/50 shadow-md backdrop-blur-sm space-y-2.5"
+              >
+                <div className="flex items-center justify-between gap-2">
+                  <div className="flex items-center gap-2.5">
+                    <span className="text-2xl p-2 bg-red-600/15 text-red-600 rounded-xl flex-shrink-0">📖</span>
+                    <div className="min-w-0">
+                      <div className="flex items-center gap-2">
+                        <span className="text-xs font-bold text-red-600 dark:text-red-400 uppercase tracking-wider">
+                          Tình huống cốt truyện đang chờ
+                        </span>
+                      </div>
+                      <h4 className="text-sm font-bold text-zinc-900 dark:text-white truncate">
+                        {currentEvent.title}
+                      </h4>
+                    </div>
+                  </div>
+                  <Button
+                    onClick={() => setShowEventModal(true)}
+                    className="bg-red-600 hover:bg-red-700 text-white font-bold px-5 py-2.5 rounded-xl shadow-lg shadow-red-600/25 flex-shrink-0 text-xs sm:text-sm"
+                  >
+                    📜 Mở Tình Huống & Ra Quyết Định →
+                  </Button>
+                </div>
+              </motion.div>
+            )}
+
+            {/* Turn Result Card */}
             <AnimatePresence mode="wait">
               {(surpriseEvent && showSurpriseModal) ? (
                 <motion.div key="surprise-info" initial={{ opacity: 0 }} animate={{ opacity: 1 }}
@@ -341,28 +408,44 @@ export default function GamePage() {
                   <p className="text-sm text-purple-700 dark:text-purple-300">🎉 Sự kiện bất ngờ xuất hiện!</p>
                 </motion.div>
               ) : turnPhase === 'result' && store.lastResult && (
-                <motion.div key="result" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
-                  className="bg-white dark:bg-zinc-800 rounded-xl p-4 sm:p-5 shadow-sm border border-zinc-100 dark:border-zinc-800 space-y-4">
-                  <div className="flex items-center gap-2">
-                    <span className="text-sm font-bold text-zinc-700 dark:text-zinc-300">Kết quả năm {store.lastResult.event?.id ? `— ${store.lastResult.event.selectedChoice.label}` : ''}</span>
+                <motion.div
+                  key="result"
+                  initial={{ opacity: 0, y: 15 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0 }}
+                  className="bg-white dark:bg-zinc-800/90 rounded-2xl p-4 shadow-sm border border-zinc-200/80 dark:border-zinc-700/60 space-y-3 backdrop-blur-sm"
+                >
+                  <div className="flex items-center justify-between border-b border-zinc-100 dark:border-zinc-700/60 pb-2">
+                    <span className="text-sm font-bold text-zinc-900 dark:text-white">
+                      Kết quả năm {store.lastResult.event?.id ? `— ${store.lastResult.event.selectedChoice.label}` : ''}
+                    </span>
                   </div>
+
+                  {/* Stat Effects with Vietnamese Labels */}
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-                    {Object.entries(store.lastResult.effectsApplied).filter(([, v]) => v !== 0).map(([key, val]) => (
-                      <div key={key} className="bg-zinc-50 dark:bg-zinc-800/80 rounded-lg p-2 text-center">
-                        <div className={`text-sm font-bold ${(val as number) > 0 ? 'text-green-600' : 'text-red-500'}`}>
-                          {(val as number) > 0 ? '+' : ''}{String(val)}</div>
-                        <div className="text-xs text-zinc-400 capitalize">{key.replace(/([A-Z])/g, ' $1').trim()}</div>
-                      </div>
-                    ))}
+                    {Object.entries(store.lastResult.effectsApplied)
+                      .filter(([, v]) => v !== undefined && v !== 0)
+                      .map(([key, val]) => (
+                        <div key={key} className="bg-zinc-50 dark:bg-zinc-800/80 rounded-xl p-2.5 text-center border border-zinc-100 dark:border-zinc-700/50">
+                          <div className={`text-sm font-extrabold ${(val as number) > 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-500'}`}>
+                            {(val as number) > 0 ? '+' : ''}{String(val)}
+                          </div>
+                          <div className="text-xs text-zinc-600 dark:text-zinc-300 font-medium truncate">
+                            {STAT_LABELS[key as keyof typeof STAT_LABELS] || key}
+                          </div>
+                        </div>
+                      ))}
                   </div>
+
                   {store.lastResult.crisisId && (
-                    <div className="bg-red-50 dark:bg-red-900/20 rounded-lg p-3 text-center">
-                      <span className="text-sm font-bold text-red-600">⚠️ Khủng hoảng đang đến gần!</span>
+                    <div className="bg-rose-50 dark:bg-rose-950/40 rounded-xl p-3 text-center border border-rose-200 dark:border-rose-800/50">
+                      <span className="text-sm font-bold text-rose-600 dark:text-rose-400">⚠️ Khủng hoảng đang đến gần!</span>
                     </div>
                   )}
+
                   {!showQuiz && !showChapterTransition && !showEnding && (
-                    <Button onClick={handleNextYear} className="w-full">
-                      {store.status === 'completed' ? 'Xem kết quả' : `Sang năm ${store.currentYear}`}
+                    <Button onClick={handleNextYear} className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 rounded-xl shadow-md shadow-red-600/20">
+                      {store.status === 'completed' ? 'Xem kết quả chung cuộc' : `Sang năm ${store.currentYear} →`}
                     </Button>
                   )}
                 </motion.div>
@@ -370,25 +453,44 @@ export default function GamePage() {
             </AnimatePresence>
           </div>
 
-          <div className="space-y-4">
-            <StakeholderMeter balance={store.stakeholderBalance} />
-            {currentChapter && (
-              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
-                className="bg-white dark:bg-zinc-800/50 rounded-xl p-4 shadow-sm border border-zinc-100 dark:border-zinc-800">
-                <h3 className="text-sm font-bold text-zinc-700 dark:text-zinc-300 mb-1">
-                  Chương {currentChapter.id}: {currentChapter.name}</h3>
-                <div className="flex flex-wrap gap-1.5 mb-2">
-                  {currentChapter.cloTags.map(clo => (
-                    <span key={clo} className="px-2 py-0.5 text-xs rounded-full bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400">{clo}</span>
-                  ))}
-                </div>
+          {/* RIGHT COLUMN: 3 Remaining Stats, Stakeholders & Policies (3 cols) */}
+          <div className="lg:col-span-3 space-y-3.5">
+            <div className="space-y-2">
+              <div className="flex items-center justify-between px-1">
+                <h3 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
+                  Chỉ số kinh tế (2/2)
+                </h3>
+              </div>
+              <motion.div key={store.currentYear} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+                <StatsGrid
+                  stats={store.stats!}
+                  previousStats={previousStats || undefined}
+                  statKeys={['nationalCapacity', 'environment', 'budget']}
+                />
               </motion.div>
-            )}
-            <div className="hidden lg:block">
-              <PolicyPanel policies={pendingPolicies} onChange={(p) => { setPendingPolicies(p); store.setPolicies(p); }}
-                onConfirm={() => {}} disabled={isSubmitting} />
             </div>
+
+            <StakeholderMeter balance={store.stakeholderBalance} />
+
+            <PolicyPanel
+              policies={pendingPolicies}
+              onChange={(p) => { setPendingPolicies(p); store.setPolicies(p); }}
+              onConfirm={() => {}}
+              disabled={isSubmitting}
+            />
           </div>
+        </div>
+
+        {/* FOOTER SECTION: Cố Vấn Lý Luận KTCT */}
+        <div className="pt-4 border-t border-zinc-200/80 dark:border-zinc-800">
+          <ExplanationBox
+            isOpen={showExplanation}
+            content={store.lastResult?.explanation.content || ''}
+            cloReferences={store.lastResult?.explanation.cloReferences || []}
+            conceptTags={store.lastResult?.explanation.conceptTags || []}
+            learningObjectives={store.lastResult?.explanation.learningObjectives || []}
+            onClose={() => setShowExplanation(false)}
+          />
         </div>
       </main>
 
@@ -397,26 +499,25 @@ export default function GamePage() {
         {currentEvent && (
           <div>
             <div className="flex items-center gap-2 mb-3">
-              {currentEvent.type === 'chain' && <span className="px-2 py-0.5 text-xs rounded-full bg-orange-100 text-orange-700">🔗 Mở khóa</span>}
-              {currentEvent.type === 'story' && <span className="px-2 py-0.5 text-xs rounded-full bg-blue-100 text-blue-700">📖 Cốt truyện</span>}
+              {currentEvent.type === 'chain' && <span className="px-2 py-0.5 text-xs rounded-full bg-orange-100 text-orange-700 font-semibold">🔗 Mở khóa</span>}
+              {currentEvent.type === 'story' && <span className="px-2 py-0.5 text-xs rounded-full bg-blue-100 text-blue-700 font-semibold">📖 Cốt truyện</span>}
             </div>
             <EventPanel event={currentEvent} onChoice={handleChoice} disabled={isSubmitting} />
           </div>
         )}
       </Modal>
 
-      {/* Explanation + Quiz */}
-      <ExplanationBox isOpen={showExplanation}
-        content={store.lastResult?.explanation.content || ''}
-        cloReferences={store.lastResult?.explanation.cloReferences || []}
-        conceptTags={store.lastResult?.explanation.conceptTags || []}
-        learningObjectives={store.lastResult?.explanation.learningObjectives || []}
-        onClose={() => setShowExplanation(false)}
-      />
+      {/* Quiz */}
       {currentQuiz && (
-        <QuizPopup isOpen={showQuiz} question={currentQuiz.question} options={currentQuiz.options}
-          correctIndex={currentQuiz.correctIndex} explanation={currentQuiz.explanation}
-          onAnswer={handleQuizAnswer} onClose={() => setShowQuiz(false)} />
+        <QuizPopup
+          isOpen={showQuiz}
+          question={currentQuiz.question}
+          options={currentQuiz.options}
+          correctIndex={currentQuiz.correctIndex}
+          explanation={currentQuiz.explanation}
+          onAnswer={handleQuizAnswer}
+          onClose={() => setShowQuiz(false)}
+        />
       )}
 
       <div className="text-center py-3 px-4">

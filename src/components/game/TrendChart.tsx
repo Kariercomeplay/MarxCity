@@ -31,12 +31,22 @@ export default function TrendChart({ history, currentStats }: TrendChartProps) {
     label: STAT_LABELS[key],
     data: [...history.map(h => h.statsAfter[key]), currentStats[key]],
     borderColor: STAT_COLORS[key],
-    backgroundColor: STAT_COLORS[key] + '20',
-    tension: 0.4,
-    fill: false,
+    backgroundColor: STAT_COLORS[key] + '25',
+    borderWidth: 2,
+    tension: 0.35,
+    fill: true,
     pointRadius: 3,
-    pointHoverRadius: 5,
+    pointHoverRadius: 6,
+    pointBackgroundColor: '#fff',
+    pointBorderColor: STAT_COLORS[key],
+    pointBorderWidth: 2,
   }));
+
+  const allValues = datasets.flatMap(d => d.data);
+  const dataMin = allValues.length > 0 ? Math.min(...allValues) : 40;
+  const dataMax = allValues.length > 0 ? Math.max(...allValues) : 60;
+  const yMin = Math.max(0, Math.floor(dataMin / 5) * 5 - 5);
+  const yMax = Math.min(100, Math.ceil(dataMax / 5) * 5 + 5);
 
   const toggleStat = (key: keyof GameStats) => {
     setSelectedStats(prev =>
@@ -82,14 +92,14 @@ export default function TrendChart({ history, currentStats }: TrendChartProps) {
             },
             scales: {
               y: {
-                min: 0,
-                max: 100,
+                min: yMin,
+                max: yMax,
                 grid: { color: 'rgba(0,0,0,0.05)' },
                 ticks: { font: { size: 10 } },
               },
               x: {
                 grid: { display: false },
-                ticks: { font: { size: 10 } },
+                ticks: { font: { size: 9 } },
               },
             },
           }}

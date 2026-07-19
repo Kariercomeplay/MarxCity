@@ -8,6 +8,7 @@ interface StatsGridProps {
   stats: GameStats;
   previousStats?: GameStats;
   className?: string;
+  statKeys?: Array<keyof GameStats>;
 }
 
 const STAT_ICONS: Record<keyof GameStats, string> = {
@@ -20,15 +21,16 @@ const STAT_ICONS: Record<keyof GameStats, string> = {
   budget: '🏛️',
 };
 
-export default function StatsGrid({ stats, previousStats, className }: StatsGridProps) {
-  const containerClass = className || "grid grid-cols-1 gap-2";
+export default function StatsGrid({ stats, previousStats, className, statKeys }: StatsGridProps) {
+  const containerClass = className || "grid grid-cols-1 gap-2.5";
+  const keysToRender = statKeys || (Object.keys(stats) as Array<keyof GameStats>);
 
   return (
     <div className={containerClass}>
-      {(Object.keys(stats) as Array<keyof GameStats>).map((key) => (
+      {keysToRender.map((key) => (
         <div
           key={key}
-          className="bg-white dark:bg-zinc-800/80 rounded-xl p-2.5 shadow-2xs hover:shadow-xs border border-zinc-200/80 dark:border-zinc-700/60 transition-all duration-150 backdrop-blur-sm"
+          className="bg-white dark:bg-zinc-800/80 rounded-2xl p-3 shadow-xs hover:shadow-sm border border-zinc-200/80 dark:border-zinc-700/60 transition-all duration-150 backdrop-blur-sm"
         >
           <StatBar
             label={STAT_LABELS[key]}

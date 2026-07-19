@@ -28,14 +28,25 @@ export default function ReportView({ stats, history, stakeholderBalance, quizCor
   const labels = history.map(h => `Năm ${h.year}`);
   const allStats = Object.keys(stats) as (keyof GameStats)[];
 
+  const allValues = allStats.flatMap(key => history.map(h => h.statsAfter[key]));
+  const dataMin = Math.min(...allValues);
+  const dataMax = Math.max(...allValues);
+  const yMin = Math.max(0, Math.floor(dataMin / 5) * 5 - 5);
+  const yMax = Math.min(100, Math.ceil(dataMax / 5) * 5 + 5);
+
   const datasets = allStats.map(key => ({
     label: STAT_LABELS[key],
     data: history.map(h => h.statsAfter[key]),
     borderColor: STAT_COLORS[key],
-    backgroundColor: STAT_COLORS[key] + '20',
-    tension: 0.4,
-    fill: false,
-    pointRadius: 2,
+    backgroundColor: STAT_COLORS[key] + '30',
+    borderWidth: 2.5,
+    tension: 0.35,
+    fill: true,
+    pointRadius: 4,
+    pointHoverRadius: 6,
+    pointBackgroundColor: '#fff',
+    pointBorderColor: STAT_COLORS[key],
+    pointBorderWidth: 2,
   }));
 
   return (
@@ -97,8 +108,13 @@ export default function ReportView({ stats, history, stakeholderBalance, quizCor
                   legend: { position: 'bottom', labels: { font: { size: 10 }, boxWidth: 12, padding: 8 } },
                 },
                 scales: {
-                  y: { min: 0, max: 100, grid: { color: 'rgba(0,0,0,0.05)' } },
-                  x: { grid: { display: false } },
+                  y: {
+                    min: yMin,
+                    max: yMax,
+                    grid: { color: 'rgba(0,0,0,0.06)' },
+                    ticks: { font: { size: 10 } },
+                  },
+                  x: { grid: { display: false }, ticks: { font: { size: 9 } } },
                 },
               }}
             />

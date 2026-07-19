@@ -69,7 +69,7 @@ export default function HeroSection({ onStart, hasSession, onContinue }: HeroSec
         >
           {[
             { label: 'Chương', value: '5' },
-            { label: 'Tình huống', value: '18' },
+            { label: 'Tình huống', value: '50' },
             { label: 'CLO', value: '9' },
           ].map((item) => (
             <div key={item.label} className="text-center">

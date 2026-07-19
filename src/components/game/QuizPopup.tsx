@@ -54,7 +54,7 @@ export default function QuizPopup({
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
-            className="bg-white dark:bg-zinc-900 rounded-2xl shadow-2xl max-w-lg w-full p-6 space-y-5"
+            className="bg-white dark:bg-zinc-900 rounded-2xl shadow-2xl max-w-lg w-full p-6 space-y-5 max-h-[90vh] overflow-y-auto font-sans"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center gap-2">
@@ -98,7 +98,7 @@ export default function QuizPopup({
                 <p className={`text-sm font-semibold ${selected === correctIndex ? 'text-green-600' : 'text-red-600'}`}>
                   {selected === correctIndex ? 'Chính xác!' : 'Chưa chính xác.'}
                 </p>
-                <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">{explanation}</p>
+                <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed break-words whitespace-pre-wrap">{explanation}</p>
                 <Button onClick={handleClose} className="w-full">Tiếp tục</Button>
               </motion.div>
             )}

@@ -124,11 +124,11 @@ export default function IntroPage() {
 
           <div className="space-y-2.5">
             {[
-              { id: 1, title: 'Hàng hóa, Thị trường & Lao động', desc: 'Vận dụng Quy luật giá trị, nâng cao năng suất & giá trị thặng dư', turns: 'Năm 1 - 2', icon: '📦', color: 'from-blue-950/40 to-indigo-950/20 border-blue-800/40' },
-              { id: 2, title: 'Cạnh tranh & Độc quyền', desc: 'Kiểm soát độc quyền, thúc đẩy cạnh tranh lành mạnh & đổi mới sáng tạo', turns: 'Năm 3 - 4', icon: '⚔️', color: 'from-purple-950/40 to-pink-950/20 border-purple-800/40' },
-              { id: 3, title: 'Quan hệ Lợi ích Kinh tế', desc: 'Giải quyết xung đột và xây dựng cơ chế chia sẻ lợi ích công bằng', turns: 'Năm 5 - 6', icon: '⚖️', color: 'from-amber-950/40 to-orange-950/20 border-amber-800/40' },
-              { id: 4, title: 'Công nghiệp hóa & Hiện đại hóa', desc: 'Bứt phá công nghệ, tự động hóa & chuyển dịch cơ cấu kinh tế', turns: 'Năm 7 - 8', icon: '🏗️', color: 'from-emerald-950/40 to-teal-950/20 border-emerald-800/40' },
-              { id: 5, title: 'Hội nhập & Phát triển bền vững', desc: 'Mở cửa kinh tế toàn cầu, bảo đảm tự chủ & tăng trưởng xanh', turns: 'Năm 9 - 10', icon: '🌐', color: 'from-red-950/40 to-rose-950/20 border-red-800/40' },
+              { id: 1, title: 'Hàng hóa, Thị trường & Lao động', desc: 'Vận dụng Quy luật giá trị, nâng cao năng suất & giá trị thặng dư', turns: 'Lượt 1 - 2', icon: '📦', color: 'from-blue-950/40 to-indigo-950/20 border-blue-800/40' },
+              { id: 2, title: 'Cạnh tranh & Độc quyền', desc: 'Kiểm soát độc quyền, thúc đẩy cạnh tranh lành mạnh & đổi mới sáng tạo', turns: 'Lượt 3 - 4', icon: '⚔️', color: 'from-purple-950/40 to-pink-950/20 border-purple-800/40' },
+              { id: 3, title: 'Quan hệ Lợi ích Kinh tế', desc: 'Giải quyết xung đột và xây dựng cơ chế chia sẻ lợi ích công bằng', turns: 'Lượt 5 - 6', icon: '⚖️', color: 'from-amber-950/40 to-orange-950/20 border-amber-800/40' },
+              { id: 4, title: 'Công nghiệp hóa & Hiện đại hóa', desc: 'Bứt phá công nghệ, tự động hóa & chuyển dịch cơ cấu kinh tế', turns: 'Lượt 7 - 8', icon: '🏗️', color: 'from-emerald-950/40 to-teal-950/20 border-emerald-800/40' },
+              { id: 5, title: 'Hội nhập & Phát triển bền vững', desc: 'Mở cửa kinh tế toàn cầu, bảo đảm tự chủ & tăng trưởng xanh', turns: 'Lượt 9 - 10', icon: '🌐', color: 'from-red-950/40 to-rose-950/20 border-red-800/40' },
             ].map(ch => (
               <div
                 key={ch.id}
