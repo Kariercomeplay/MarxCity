@@ -49,17 +49,17 @@ export default function ActionLoadingOverlay({ isLoading, message }: ActionLoadi
             {/* Background Road Line for Truck */}
             <div className="absolute bottom-3 left-0 right-0 h-1 bg-slate-700/80 border-t border-dashed border-slate-500/50" />
 
-            {/* Truck Moving Animation */}
+            {/* Truck Moving Animation (Driving forward to the left) */}
             <motion.div
-              animate={{ x: [-120, 160] }}
-              transition={{ repeat: Infinity, duration: 2.8, ease: 'linear' }}
+              animate={{ x: [200, -180] }}
+              transition={{ repeat: Infinity, duration: 3.0, ease: 'linear' }}
               className="absolute bottom-2 text-2xl z-10 flex items-center"
             >
               🚛
               <motion.span
-                animate={{ opacity: [0.3, 0.8, 0.3] }}
+                animate={{ opacity: [0.3, 0.9, 0.3], scale: [0.8, 1.2, 0.8] }}
                 transition={{ repeat: Infinity, duration: 0.4 }}
-                className="text-xs -ml-1"
+                className="text-xs ml-0.5"
               >
                 💨
               </motion.span>

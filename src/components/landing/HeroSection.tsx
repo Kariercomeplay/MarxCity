@@ -36,9 +36,9 @@ export default function HeroSection({ onStart, hasSession, onContinue }: HeroSec
           ⚙️
         </motion.div>
 
-        {/* Animated Driving Truck */}
+        {/* Animated Driving Truck (Driving forward to the left) */}
         <motion.div
-          animate={{ x: [-100, 1200] }}
+          animate={{ x: [1200, -100] }}
           transition={{ repeat: Infinity, duration: 12, ease: 'linear' }}
           className="absolute bottom-10 left-0 text-3xl opacity-35 hidden md:block"
         >

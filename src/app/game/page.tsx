@@ -551,7 +551,7 @@ export default function GamePage() {
         />
       )}
 
-      <ActionLoadingOverlay isLoading={isSubmitting || (turnPhase === 'loading' && !!store.stats)} />
+      <ActionLoadingOverlay isLoading={isSubmitting} />
 
       <div className="text-center py-3 px-4">
         <p className="text-xs text-zinc-400 dark:text-zinc-600">MarxCity — công cụ giáo dục, không phải dự báo kinh tế thực tế.</p>
