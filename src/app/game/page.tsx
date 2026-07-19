@@ -37,6 +37,7 @@ export default function GamePage() {
   const [statFlash, setStatFlash] = useState<Record<string, 'up' | 'down' | null>>({});
   const [notification, setNotification] = useState<string | null>(null);
   const previousTurnRef = useRef(0);
+  const isInitializedRef = useRef(false);
 
   const showNotif = useCallback((msg: string) => {
     setNotification(msg);
@@ -44,6 +45,9 @@ export default function GamePage() {
   }, []);
 
   const initGame = useCallback(async () => {
+    if (isInitializedRef.current) return;
+    isInitializedRef.current = true;
+
     const gameId = localStorage.getItem('marxcity_gameId');
     if (!gameId) {
       router.push('/');
@@ -89,7 +93,7 @@ export default function GamePage() {
     } catch {
       router.push('/');
     }
-  }, [router, store]);
+  }, [router]);
 
   useEffect(() => { initGame(); }, [initGame]);
 
@@ -442,7 +446,7 @@ export default function GamePage() {
       </main>
 
       {/* Event Modal */}
-      <Modal isOpen={showEventModal} onClose={() => setShowEventModal(false)} title="Tình huống kinh tế" size="lg">
+      <Modal isOpen={showEventModal && !!event} onClose={() => setShowEventModal(false)} title="Tình huống kinh tế" size="lg">
         {event && (
           <EventPanel
             event={event}
