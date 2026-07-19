@@ -390,7 +390,8 @@ marxcity/
 ## 🚀 Bắt đầu
 
 ```bash
-git clone https://github.com/Kariercomeplay/MarxCity.git
+# Clone repository (thay URL bằng repo của bạn)
+git clone <repository-url>
 cd MarxCity
 npm install
 ```
