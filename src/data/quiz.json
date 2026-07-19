@@ -110,5 +110,229 @@
     "explanationId": "ex_dieu_tiet_tang",
     "relatedChapter": 2,
     "difficulty": "hard"
+  },
+  {
+    "id": "quiz_9",
+    "question": "Theo C. Mác, giá trị hàng hóa được cấu thành bởi những bộ phận nào?",
+    "options": [
+      "Tư bản bất biến, tư bản khả biến và giá trị thặng dư",
+      "Chi phí nguyên liệu, nhân công và lợi nhuận",
+      "Giá trị cũ, giá trị mới và tổng giá trị",
+      "Chi phí cố định, chi phí biến đổi và lợi nhuận"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_quiz_9",
+    "relatedChapter": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": "quiz_10",
+    "question": "Theo Mác, thước đo lượng giá trị hàng hóa là gì?",
+    "options": [
+      "Thời gian lao động xã hội cần thiết",
+      "Thời gian lao động cá biệt của người sản xuất",
+      "Chi phí sản xuất trung bình của doanh nghiệp",
+      "Chi phí nguyên vật liệu đầu vào"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_quiz_10",
+    "relatedChapter": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "quiz_11",
+    "question": "Đặc điểm kinh tế cơ bản của chủ nghĩa tư bản độc quyền theo V.I. Lênin là gì?",
+    "options": [
+      "Tập trung sản xuất và tư bản dẫn đến độc quyền",
+      "Tự do cạnh tranh hoàn hảo giữa các doanh nghiệp",
+      "Nhà nước sở hữu toàn bộ tư liệu sản xuất",
+      "Phân phối bình quân thu nhập quốc dân"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_quiz_11",
+    "relatedChapter": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "quiz_12",
+    "question": "Hình thức tổ chức độc quyền nào liên kết các doanh nghiệp trong cùng một ngành thông qua thỏa thuận về giá cả và sản lượng?",
+    "options": [
+      "Cartel",
+      "Trust",
+      "Concern",
+      "Consortium"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_quiz_12",
+    "relatedChapter": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": "quiz_13",
+    "question": "Theo V.I. Lênin, xuất khẩu tư bản khác với xuất khẩu hàng hóa ở điểm cốt lõi nào?",
+    "options": [
+      "Xuất khẩu tư bản nhằm chiếm đoạt giá trị thặng dư ở nước ngoài, không chỉ giá trị hàng hóa",
+      "Xuất khẩu tư bản là trao đổi hàng hóa thông thường giữa các quốc gia",
+      "Xuất khẩu tư bản chỉ xảy ra giữa các nước tư bản phát triển",
+      "Xuất khẩu tư bản không mang lại lợi nhuận cho nước xuất khẩu"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_quiz_13",
+    "relatedChapter": 2,
+    "difficulty": "hard"
+  },
+  {
+    "id": "quiz_14",
+    "question": "Trong nền kinh tế thị trường, quan hệ lợi ích kinh tế được hiểu như thế nào?",
+    "options": [
+      "Quan hệ giữa người với người trong việc sản xuất, phân phối, trao đổi và tiêu dùng",
+      "Quan hệ giữa doanh nghiệp và người tiêu dùng trên thị trường",
+      "Quan hệ giữa nhà nước và doanh nghiệp về thuế",
+      "Quan hệ giữa người mua và người bán về giá cả"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_quiz_14",
+    "relatedChapter": 3,
+    "difficulty": "easy"
+  },
+  {
+    "id": "quiz_15",
+    "question": "Nguyên tắc phân phối chủ yếu trong thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam là gì?",
+    "options": [
+      "Phân phối theo lao động là chủ yếu",
+      "Phân phối bình quân cho mọi người",
+      "Phân phối theo nhu cầu của mỗi cá nhân",
+      "Phân phối theo vốn góp là chủ yếu"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_quiz_15",
+    "relatedChapter": 3,
+    "difficulty": "medium"
+  },
+  {
+    "id": "quiz_16",
+    "question": "Theo Mác, nguồn gốc sâu xa của khủng hoảng kinh tế trong chủ nghĩa tư bản là gì?",
+    "options": [
+      "Mâu thuẫn giữa tính chất xã hội hóa của sản xuất và hình thức chiếm hữu tư nhân",
+      "Sự khan hiếm nguồn tài nguyên thiên nhiên",
+      "Sự can thiệp quá mức của nhà nước vào thị trường",
+      "Thiếu hụt tiền tệ trong lưu thông"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_quiz_16",
+    "relatedChapter": 3,
+    "difficulty": "hard"
+  },
+  {
+    "id": "quiz_17",
+    "question": "Vai trò của an sinh xã hội trong nền kinh tế thị trường định hướng XHCN là gì?",
+    "options": [
+      "Bảo đảm tái sản xuất sức lao động và ổn định xã hội",
+      "Thay thế hoàn toàn thu nhập từ thị trường lao động",
+      "Tạo lợi nhuận cho doanh nghiệp bảo hiểm",
+      "Xóa bỏ mọi hình thức kinh doanh tư nhân"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_quiz_17",
+    "relatedChapter": 3,
+    "difficulty": "medium"
+  },
+  {
+    "id": "quiz_18",
+    "question": "Theo quan điểm Mác-Lênin, công nghiệp hóa là gì?",
+    "options": [
+      "Quá trình chuyển nền sản xuất từ lao động thủ công lên cơ khí, hiện đại",
+      "Quá trình xây dựng nhiều nhà máy và khu công nghiệp",
+      "Quá trình tăng tỷ trọng ngành công nghiệp trong GDP",
+      "Quá trình nhập khẩu máy móc và thiết bị nước ngoài"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_quiz_18",
+    "relatedChapter": 4,
+    "difficulty": "easy"
+  },
+  {
+    "id": "quiz_19",
+    "question": "Mối quan hệ giữa công nghiệp hóa và hiện đại hóa được hiểu như thế nào?",
+    "options": [
+      "Hiện đại hóa là bước phát triển tất yếu của công nghiệp hóa gắn với khoa học - công nghệ",
+      "Công nghiệp hóa và hiện đại hóa là hai quá trình độc lập, không liên quan",
+      "Hiện đại hóa đi trước công nghiệp hóa trong mọi trường hợp",
+      "Công nghiệp hóa chỉ diễn ra sau khi hiện đại hóa hoàn tất"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_quiz_19",
+    "relatedChapter": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "quiz_20",
+    "question": "Theo học thuyết Mác-Lênin, chuyển dịch cơ cấu kinh tế trong công nghiệp hóa phải tuân theo xu hướng nào?",
+    "options": [
+      "Tăng tỷ trọng công nghiệp chế biến và dịch vụ, giảm tỷ trọng nông nghiệp",
+      "Tăng tỷ trọng nông nghiệp để bảo đảm an ninh lương thực",
+      "Duy trì cơ cấu kinh tế hiện tại để ổn định",
+      "Tập trung hoàn toàn vào ngành khai khoáng"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_quiz_20",
+    "relatedChapter": 4,
+    "difficulty": "hard"
+  },
+  {
+    "id": "quiz_21",
+    "question": "Vai trò của khoa học - công nghệ trong công nghiệp hóa, hiện đại hóa là gì theo Mác-Lênin?",
+    "options": [
+      "Khoa học - công nghệ là lực lượng sản xuất trực tiếp, then chốt nâng cao năng suất",
+      "Khoa học - công nghệ không ảnh hưởng đến quá trình sản xuất",
+      "Khoa học - công nghệ chỉ quan trọng với ngành dịch vụ",
+      "Khoa học - công nghệ làm giảm giá trị hàng hóa xuống bằng không"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_quiz_21",
+    "relatedChapter": 4,
+    "difficulty": "hard"
+  },
+  {
+    "id": "quiz_22",
+    "question": "Toàn cầu hóa kinh tế dưới góc nhìn của kinh tế chính trị Mác-Lênin là gì?",
+    "options": [
+      "Quá trình quốc tế hóa lực lượng sản xuất và phân công lao động quốc tế",
+      "Sự biến mất hoàn toàn của ranh giới quốc gia trong kinh tế",
+      "Chiến lược do một số tập đoàn tư bản áp đặt lên thế giới",
+      "Sự đồng nhất hóa mọi nền văn hóa trên thế giới"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_quiz_22",
+    "relatedChapter": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "quiz_23",
+    "question": "Theo lý luận Mác-Lênin, tác động tích cực của FDI đối với nước đang phát triển là gì?",
+    "options": [
+      "Bổ sung vốn, công nghệ và tiếp cận thị trường quốc tế",
+      "Thay thế hoàn toàn doanh nghiệp trong nước",
+      "Giúp nước chủ nhà thoát khỏi sự phụ thuộc kinh tế",
+      "Bảo đảm cân bằng cán cân thanh toán quốc tế"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_quiz_23",
+    "relatedChapter": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "quiz_24",
+    "question": "Theo V.I. Lênin, bản chất của chủ nghĩa đế quốc về mặt kinh tế là gì?",
+    "options": [
+      "Chủ nghĩa tư bản độc quyền",
+      "Chủ nghĩa tư bản tự do cạnh tranh",
+      "Chủ nghĩa xã hội ở trình độ cao",
+      "Nền kinh tế phi tư bản chủ nghĩa"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_quiz_24",
+    "relatedChapter": 5,
+    "difficulty": "hard"
   }
 ]

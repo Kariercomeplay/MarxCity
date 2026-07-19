@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { GameState, TurnResult, GameStats } from '@/types/game';
-import { calcScore, getTitle, getTitleDescription } from '@/lib/engine/calculator';
+import { calcScore, getEnding } from '@/lib/engine/calculator';
 import { STAT_LABELS, STAT_COLORS, CLO_LABELS } from '@/lib/engine/constants';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler } from 'chart.js';
 import { Line } from 'react-chartjs-2';
@@ -21,10 +21,11 @@ interface ReportViewProps {
 
 export default function ReportView({ stats, history, stakeholderBalance, quizCorrect, quizTotal, onPlayAgain }: ReportViewProps) {
   const score = calcScore(stats, stakeholderBalance, quizCorrect, quizTotal);
-  const title = getTitle(stats);
-  const titleDesc = getTitleDescription(title);
+  const ending = getEnding(stats, stakeholderBalance);
+  const title = ending.title;
+  const titleDesc = ending.description;
 
-  const labels = history.map(h => `Lượt ${h.turnNumber}`);
+  const labels = history.map(h => `Năm ${h.year}`);
   const allStats = Object.keys(stats) as (keyof GameStats)[];
 
   const datasets = allStats.map(key => ({
@@ -179,7 +180,7 @@ export default function ReportView({ stats, history, stakeholderBalance, quizCor
           <div className="space-y-1 max-h-48 overflow-y-auto">
             {history.map((turn, i) => (
               <div key={i} className="flex items-center gap-3 p-2 rounded-lg text-xs hover:bg-zinc-50 dark:hover:bg-zinc-800/80">
-                <span className="font-bold text-zinc-400 w-12">Lượt {turn.turnNumber}</span>
+                <span className="font-bold text-zinc-400 w-12">Năm {turn.year}</span>
                 <span className="text-zinc-600 dark:text-zinc-400 flex-1 truncate">{turn.eventId}</span>
                 <span className={`px-1.5 py-0.5 rounded font-medium ${
                   (turn.effectsApplied as any)?.production > 0 ||

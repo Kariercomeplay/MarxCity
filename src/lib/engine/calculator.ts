@@ -1,11 +1,12 @@
-import { GameStats, StakeholderBalance } from '@/types/game';
-import { MAX_STAT } from './constants';
+import { GameStats, StakeholderBalance, Ending, Difficulty } from '@/types/game';
+import { ENDINGS } from './constants';
 
 export function calcScore(
   stats: GameStats,
   stakeholderBalance: StakeholderBalance,
   quizCorrect: number,
-  quizTotal: number
+  quizTotal: number,
+  difficulty: Difficulty = 'normal'
 ): number {
   const economicWeight = 0.40;
   const socialWeight = 0.25;
@@ -29,47 +30,55 @@ export function calcScore(
     + envScore * envWeight
     + quizScore * quizWeight;
 
-  const penalties = calcPenalties(stats, stakeholderBalance);
-  total += penalties;
+  total += calcPenalties(stats, stakeholderBalance);
 
-  return Math.max(0, Math.round(total));
+  const diffMultiplier = difficulty === 'hard' ? 1.15 : difficulty === 'easy' ? 0.85 : 1.0;
+  return Math.max(0, Math.round(total * diffMultiplier));
 }
 
 function calcPenalties(stats: GameStats, balance: StakeholderBalance): number {
   let penalty = 0;
   if (stats.budget < 10) penalty -= 5;
+  if (stats.budget < 5) penalty -= 10;
   if (stats.environment < 20) penalty -= 10;
+  if (stats.environment < 10) penalty -= 15;
   if (Math.abs(balance.workers - balance.businesses) > 40) penalty -= 5;
-  if (Math.abs(balance.workers - balance.state) > 40) penalty -= 3;
+  if (Math.abs(balance.workers - balance.businesses) > 60) penalty -= 10;
   if (stats.marketStability < 20) penalty -= 5;
+  if (stats.employment < 10) penalty -= 5;
   return penalty;
 }
 
-export function getTitle(stats: GameStats): string {
-  const highStats = Object.entries(stats)
-    .filter(([, v]) => v >= 70)
-    .map(([k]) => k);
+export function getEnding(stats: GameStats, balance: StakeholderBalance): Ending {
+  const highStats = Object.values(stats).filter(v => v >= 70).length;
+  const score = calcScore(stats, balance, 0, 0);
 
-  if (highStats.length >= 6) return 'Nhà hoạch định hài hòa';
-  if (stats.production >= 80 && stats.nationalCapacity >= 70) return 'Nhà hiện đại hóa';
-  if (stats.employment >= 75 && stats.socialWelfare >= 75) return 'Nhà nước phúc lợi';
-  if (stats.environment >= 70 && stats.production >= 65) return 'Kiến trúc sư phát triển bền vững';
-  if (stats.nationalCapacity >= 65 && stats.production >= 60) return 'Nhà công nghiệp hóa';
-  if (stats.marketStability >= 70 && stats.budget >= 60) return 'Nhà điều hành thận trọng';
-  if (stats.socialWelfare >= 75 && stats.environment >= 60) return 'Nhà bảo vệ công bằng xã hội';
-  return 'Nhà hoạch định kinh tế';
-}
+  // Failure endings (checked first)
+  if (stats.budget < 5 || (stats.marketStability < 10 && stats.budget < 15))
+    return ENDINGS.find(e => e.id === 'debt_trap') || ENDINGS[0];
+  if (stats.environment < 10)
+    return ENDINGS.find(e => e.id === 'environmental_collapse') || ENDINGS[0];
+  if (stats.employment < 10 && stats.socialWelfare < 15)
+    return ENDINGS.find(e => e.id === 'social_unrest') || ENDINGS[0];
+  if (stats.nationalCapacity < 15 && stats.production < 30)
+    return ENDINGS.find(e => e.id === 'foreign_dependency') || ENDINGS[0];
+  if (stats.marketStability < 15 && stats.budget < 15)
+    return ENDINGS.find(e => e.id === 'economic_crisis') || ENDINGS[0];
 
-export function getTitleDescription(title: string): string {
-  const descriptions: Record<string, string> = {
-    'Nhà hoạch định hài hòa': 'Bạn đã đạt được sự cân bằng xuất sắc giữa tăng trưởng, phúc lợi và môi trường.',
-    'Nhà hiện đại hóa': 'Bạn đã thúc đẩy công nghiệp hóa và nâng cao năng lực công nghệ quốc gia.',
-    'Nhà nước phúc lợi': 'Bạn ưu tiên việc làm và phúc lợi xã hội, xây dựng nền tảng an sinh vững chắc.',
-    'Kiến trúc sư phát triển bền vững': 'Bạn đã cân bằng giữa tăng trưởng kinh tế và bảo vệ môi trường.',
-    'Nhà công nghiệp hóa': 'Bạn đã thúc đẩy mạnh mẽ quá trình công nghiệp hóa và nâng cao năng lực sản xuất.',
-    'Nhà điều hành thận trọng': 'Bạn quản lý ổn định thị trường và ngân sách một cách thận trọng, bền vững.',
-    'Nhà bảo vệ công bằng xã hội': 'Bạn ưu tiên phúc lợi xã hội và bảo vệ môi trường trong phát triển.',
-    'Nhà hoạch định kinh tế': 'Bạn đã hoàn thành hành trình điều hành nền kinh tế.',
-  };
-  return descriptions[title] || '';
+  const imbalance = Math.abs(balance.workers - balance.businesses)
+    + Math.abs(balance.businesses - balance.state)
+    + Math.abs(balance.state - balance.workers);
+  if (imbalance > 150) return ENDINGS.find(e => e.id === 'social_unrest') || ENDINGS[0];
+
+  // Success endings
+  if (highStats >= 5 && score >= 80) return ENDINGS.find(e => e.id === 'great_achievement') || ENDINGS[0];
+  if (stats.production >= 80 && stats.nationalCapacity >= 70) return ENDINGS.find(e => e.id === 'industrial_power') || ENDINGS[0];
+  if (stats.employment >= 75 && stats.socialWelfare >= 75) return ENDINGS.find(e => e.id === 'prosperous_society') || ENDINGS[0];
+  if (stats.environment >= 70 && stats.production >= 65) return ENDINGS.find(e => e.id === 'sustainable_development') || ENDINGS[0];
+  if (stats.nationalCapacity >= 70 && stats.budget >= 65) return ENDINGS.find(e => e.id === 'dragon_asia') || ENDINGS[0];
+
+  // Neutral endings
+  if (stats.marketStability >= 65) return ENDINGS.find(e => e.id === 'stability_first') || ENDINGS[0];
+  if (stats.production >= 55) return ENDINGS.find(e => e.id === 'pragmatic') || ENDINGS[0];
+  return ENDINGS.find(e => e.id === 'waiting') || ENDINGS[0];
 }

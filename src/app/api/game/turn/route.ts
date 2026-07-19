@@ -2,33 +2,28 @@ import { NextRequest, NextResponse } from 'next/server';
 import { connectDB } from '@/lib/mongodb';
 import { GameSave } from '@/lib/models/GameSave';
 import { GameTurn } from '@/lib/models/GameTurn';
-import { simulateTurn, pickEvent } from '@/lib/engine/simulate';
-import { ApiResponse, TurnResponse, TurnRequest } from '@/types/api';
+import { simulateYear, pickEventsForYear, getChapterForYear, shouldEndGame } from '@/lib/engine/simulate';
+import { getEnding } from '@/lib/engine/calculator';
+import { ApiResponse } from '@/types/api';
 import eventsData from '@/data/events.json';
 import explanationsData from '@/data/explanations.json';
 import quizData from '@/data/quiz.json';
-import { CHAPTERS } from '@/lib/engine/constants';
-import { calcScore, getTitle } from '@/lib/engine/calculator';
-import { GameEvent, Explanation } from '@/types/game';
+import { GameEvent, Explanation, Difficulty } from '@/types/game';
 
 export async function POST(req: NextRequest) {
   try {
-    const body: TurnRequest = await req.json();
+    const body = await req.json();
     const { gameId, sessionId, eventId, selectedChoiceId, policies } = body;
-
-    if (!gameId || !sessionId || !eventId || !selectedChoiceId || !policies) {
+    if (!gameId || !sessionId || !eventId || !selectedChoiceId) {
       return NextResponse.json<ApiResponse<null>>(
-        { success: false, error: 'Thiếu thông tin lượt chơi' },
-        { status: 400 }
+        { success: false, error: 'Thiếu thông tin' }, { status: 400 }
       );
     }
-
     await connectDB();
     const game = await GameSave.findById(gameId);
     if (!game) {
       return NextResponse.json<ApiResponse<null>>(
-        { success: false, error: 'Không tìm thấy game' },
-        { status: 404 }
+        { success: false, error: 'Game not found' }, { status: 404 }
       );
     }
 
@@ -36,52 +31,35 @@ export async function POST(req: NextRequest) {
     const event = events.find(e => e.id === eventId);
     if (!event) {
       return NextResponse.json<ApiResponse<null>>(
-        { success: false, error: 'Không tìm thấy sự kiện' },
-        { status: 404 }
+        { success: false, error: 'Event not found' }, { status: 404 }
       );
     }
-
     const choice = event.choices.find(c => c.id === selectedChoiceId);
     if (!choice) {
       return NextResponse.json<ApiResponse<null>>(
-        { success: false, error: 'Lựa chọn không hợp lệ' },
-        { status: 400 }
+        { success: false, error: 'Invalid choice' }, { status: 400 }
       );
     }
 
-    const turnSeed = game.seed + game.currentTurn * 1000;
-    const result = simulateTurn(
+    const difficulty: Difficulty = game.difficulty || 'normal';
+    const currentYear = game.currentTurn;
+    const statsHistory = [...(game.statsHistory || [])];
+
+    const result = simulateYear(
       game.stats,
       game.policies,
-      policies,
+      policies || game.policies,
       choice,
-      turnSeed
+      difficulty,
+      game.seed,
+      currentYear,
+      statsHistory
     );
 
-    const chapter = CHAPTERS.find(c => c.turns.includes(game.currentTurn));
+    statsHistory.push({ ...game.stats });
 
     const explanations = explanationsData as Explanation[];
-    const explanationIds = [...event.cloReferences];
     const explanation = explanations.find(e => e.id === choice.explanationId);
-
-    const statsBefore = { ...game.stats };
-
-    await GameTurn.create({
-      gameSaveId: game._id,
-      turnNumber: game.currentTurn,
-      chapterId: chapter?.id || 1,
-      eventId: event.id,
-      eventTitle: event.title,
-      selectedChoiceId: choice.id,
-      selectedChoiceLabel: choice.label,
-      policiesBefore: game.policies,
-      policiesAfter: policies,
-      statsBefore,
-      effectsApplied: result.effectsApplied,
-      statsAfter: result.statsAfter,
-      stakeholderImpact: result.stakeholderImpact,
-      explanationIds,
-    });
 
     const oldBalance = { ...game.stakeholderBalance };
     const newBalance = {
@@ -91,71 +69,86 @@ export async function POST(req: NextRequest) {
     };
 
     game.stats = result.statsAfter;
-    game.policies = policies;
+    game.policies = policies || game.policies;
     game.stakeholderBalance = newBalance;
-    game.currentTurn += 1;
-
-    const isLastTurn = game.currentTurn > game.maxTurns;
-    if (isLastTurn) {
-      game.status = 'completed';
-      const quizTurns = await GameTurn.find({ gameSaveId: game._id, quizCorrect: { $ne: null } });
-      const qCorrect = quizTurns.filter(t => t.quizCorrect === true).length;
-      const qTotal = quizTurns.length;
-      game.score = calcScore(game.stats, game.stakeholderBalance, qCorrect, qTotal);
-      game.title = getTitle(game.stats);
-    } else {
-      game.score = game.currentTurn;
-    }
+    game.currentTurn = currentYear + 1;
+    game.statsHistory = statsHistory;
     await game.save();
 
-    let quiz: TurnResponse['quiz'] = undefined;
-    if (game.currentTurn % 2 === 0 && !isLastTurn) {
-      const chapterQuiz = (quizData as any[]).filter(q => q.relatedChapter === chapter?.id);
-      if (chapterQuiz.length > 0) {
-        const q = chapterQuiz[Math.floor(Math.random() * chapterQuiz.length)];
-        const qExplanation = explanations.find(e => e.id === q.explanationId);
+    // Check ending
+    const crisisEnding = result.crisisId ? getEnding(result.statsAfter, newBalance) : null;
+    const isEndingEvent = event.isEnding === true || !!crisisEnding;
+    const { ended } = shouldEndGame(
+      currentYear, game.minYears || 6, game.maxYears || 10,
+      isEndingEvent, result.crisisId
+    );
+
+    let finalEnding = crisisEnding || null;
+    if (ended && !finalEnding) {
+      finalEnding = getEnding(result.statsAfter, newBalance);
+    }
+
+    if (finalEnding) {
+      game.status = 'completed';
+      game.score = finalEnding.type === 'success' ? 100 : finalEnding.type === 'neutral' ? 60 : 30;
+      game.title = finalEnding.title;
+      await game.save();
+    }
+
+    // Quiz
+    const chapter = getChapterForYear(currentYear);
+    let quiz: any = undefined;
+    if ((currentYear % 2 === 0 || ended) && !ended) {
+      const pool = (quizData as any[]).filter(q => q.relatedChapter === chapter?.id);
+      if (pool.length > 0) {
+        const q = pool[Math.floor(Math.random() * pool.length)];
+        const qExp = explanations.find(e => e.id === q.explanationId);
         quiz = {
-          question: q.question,
-          options: q.options,
+          question: q.question, options: q.options,
           correctIndex: q.correctIndex,
-          explanation: qExplanation?.content || '',
+          explanation: qExp?.content || '',
         };
       }
     }
 
+    // Check for event unlocks
+    const unlockedKeys: string[] = [];
+    if (choice.unlocks) {
+      choice.unlocks.forEach((unlockId: string) => {
+        unlockedKeys.push(unlockId);
+      });
+    }
+
     const responseEvent = {
-      id: event.id,
-      title: event.title,
-      scenario: event.scenario,
+      id: event.id, title: event.title, scenario: event.scenario,
       selectedChoice: { label: choice.label },
       choices: event.choices.map(c => ({ id: c.id, label: c.label })),
+      type: event.type,
+      flavor: event.flavor,
     };
 
-    return NextResponse.json<ApiResponse<TurnResponse>>({
+    return NextResponse.json<ApiResponse<any>>({
       success: true,
       data: {
-        turnNumber: game.currentTurn - 1,
-        statsBefore,
+        year: currentYear,
+        statsBefore: game.stats,
         statsAfter: result.statsAfter,
         effectsApplied: result.effectsApplied,
         event: responseEvent,
         stakeholderImpact: result.stakeholderImpact,
-        explanation: explanation || {
-          id: '',
-          content: 'Không có giải thích cho lựa chọn này.',
-          cloReferences: [],
-          conceptTags: [],
-          learningObjectives: [],
-        },
-        gameOver: isLastTurn,
+        explanation: explanation || { id: '', content: 'Không có giải thích.', cloReferences: [], conceptTags: [], learningObjectives: [] },
+        gameOver: ended,
+        ending: finalEnding || null,
+        crisisId: result.crisisId || null,
         quiz,
+        unlockedEvents: unlockedKeys,
+        completedEventId: event.id,
       },
     });
   } catch (error) {
     console.error('Turn error:', error);
     return NextResponse.json<ApiResponse<null>>(
-      { success: false, error: 'Lỗi xử lý lượt chơi' },
-      { status: 500 }
+      { success: false, error: 'Lỗi xử lý' }, { status: 500 }
     );
   }
 }

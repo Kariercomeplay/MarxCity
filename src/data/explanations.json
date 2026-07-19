@@ -2,421 +2,2639 @@
   {
     "id": "ex_gia_tt",
     "content": "Theo quy luật giá trị của C. Mác, giá cả hàng hóa là biểu hiện bằng tiền của giá trị, chịu sự tác động của cung - cầu. Khi chi phí sản xuất tăng (giá xăng dầu, nguyên liệu), để bảo toàn lợi nhuận, doanh nghiệp buộc phải tăng giá bán. Trong ngắn hạn, thị trường tự điều chỉnh qua cơ chế giá, khuyến khích sản xuất và tiết kiệm chi phí. Tuy nhiên, người tiêu dùng – đặc biệt là người lao động có thu nhập thấp – phải gánh chịu chi phí cao hơn, làm giảm sức mua thực tế.",
-    "cloReferences": ["CLO2"],
-    "conceptTags": ["hang-hoa", "gia-ca", "quy-luat-gia-tri"],
-    "learningObjectives": ["Phân tích mối quan hệ giữa giá trị và giá cả hàng hóa dưới tác động của quy luật giá trị"]
+    "cloReferences": [
+      "CLO2"
+    ],
+    "conceptTags": [
+      "hang-hoa",
+      "gia-ca",
+      "quy-luat-gia-tri"
+    ],
+    "learningObjectives": [
+      "Phân tích mối quan hệ giữa giá trị và giá cả hàng hóa dưới tác động của quy luật giá trị"
+    ]
   },
   {
     "id": "ex_gia_tro_gia",
     "content": "Theo quan điểm của kinh tế chính trị Mác-Lênin, Nhà nước có vai trò điều tiết thị trường để bảo vệ lợi ích của nhân dân, đặc biệt là trong việc bình ổn giá cả hàng hóa thiết yếu. Trợ giá là công cụ tài chính giúp giảm áp lực lên người tiêu dùng, duy trì ổn định thị trường và đảm bảo an sinh xã hội. Tuy nhiên, biện pháp này tạo áp lực lên ngân sách nhà nước và có thể làm méo mó tín hiệu thị trường nếu kéo dài.",
-    "cloReferences": ["CLO2", "CLO4"],
-    "conceptTags": ["gia-ca", "vai-tro-nha-nuoc", "an-sinh-xa-hoi"],
-    "learningObjectives": ["Phân tích vai trò của Nhà nước trong bình ổn giá cả thị trường"]
+    "cloReferences": [
+      "CLO2",
+      "CLO4"
+    ],
+    "conceptTags": [
+      "gia-ca",
+      "vai-tro-nha-nuoc",
+      "an-sinh-xa-hoi"
+    ],
+    "learningObjectives": [
+      "Phân tích vai trò của Nhà nước trong bình ổn giá cả thị trường"
+    ]
   },
   {
     "id": "ex_gia_kiem_soat",
     "content": "Kiểm soát giá và tăng cường dự trữ quốc gia là biện pháp can thiệp sâu của Nhà nước vào thị trường, phù hợp với quan điểm điều tiết nền kinh tế thị trường định hướng XHCN. Biện pháp này giúp ổn định thị trường, tăng năng lực tự chủ và bảo vệ người tiêu dùng. Tuy nhiên, nếu kiểm soát giá quá chặt có thể hạn chế động lực sản xuất của doanh nghiệp và làm chậm phản ứng cung - cầu.",
-    "cloReferences": ["CLO2", "CLO4"],
-    "conceptTags": ["gia-ca", "quy-luat-gia-tri", "vai-tro-nha-nuoc"],
-    "learningObjectives": ["Phân tích ưu và nhược điểm của kiểm soát giá trong nền kinh tế thị trường"]
+    "cloReferences": [
+      "CLO2",
+      "CLO4"
+    ],
+    "conceptTags": [
+      "gia-ca",
+      "quy-luat-gia-tri",
+      "vai-tro-nha-nuoc"
+    ],
+    "learningObjectives": [
+      "Phân tích ưu và nhược điểm của kiểm soát giá trong nền kinh tế thị trường"
+    ]
   },
   {
     "id": "ex_gio_lam_chap_thuan",
     "content": "Theo học thuyết giá trị thặng dư, việc kéo dài thời gian lao động là một phương pháp sản xuất giá trị thặng dư tuyệt đối. Trong ngắn hạn, người lao động nhận thêm thu nhập, doanh nghiệp tăng sản lượng. Tuy nhiên, về dài hạn, sức khỏe người lao động suy giảm, năng suất có thể giảm, mâu thuẫn giữa tư bản và lao động gia tăng.",
-    "cloReferences": ["CLO2"],
-    "conceptTags": ["lao-dong", "gia-tri-thang-du", "thoi-gian-lao-dong"],
-    "learningObjectives": ["Phân tích phương pháp sản xuất giá trị thặng dư tuyệt đối"]
+    "cloReferences": [
+      "CLO2"
+    ],
+    "conceptTags": [
+      "lao-dong",
+      "gia-tri-thang-du",
+      "thoi-gian-lao-dong"
+    ],
+    "learningObjectives": [
+      "Phân tích phương pháp sản xuất giá trị thặng dư tuyệt đối"
+    ]
   },
   {
     "id": "ex_gio_lam_giu_nguyen",
     "content": "Giữ nguyên thời gian lao động theo quy định bảo vệ sức khỏe và quyền lợi của người lao động, phù hợp với các quy định của Bộ luật Lao động. Theo kinh tế chính trị Mác-Lênin, việc hạn chế thời gian lao động là thành quả của đấu tranh giai cấp và là cơ sở để phát triển toàn diện con người. Tuy nhiên, trong ngắn hạn, sản lượng và lợi nhuận doanh nghiệp có thể bị ảnh hưởng.",
-    "cloReferences": ["CLO2"],
-    "conceptTags": ["lao-dong", "gia-tri-thang-du"],
-    "learningObjectives": ["Phân tích ý nghĩa của việc rút ngắn thời gian lao động đối với sự phát triển của con người"]
+    "cloReferences": [
+      "CLO2"
+    ],
+    "conceptTags": [
+      "lao-dong",
+      "gia-tri-thang-du"
+    ],
+    "learningObjectives": [
+      "Phân tích ý nghĩa của việc rút ngắn thời gian lao động đối với sự phát triển của con người"
+    ]
   },
   {
     "id": "ex_gio_lam_du_dieu_kien",
     "content": "Cho phép tăng giờ làm kèm điều kiện cải thiện điều kiện lao động là giải pháp dung hòa giữa lợi ích của doanh nghiệp và người lao động. Nhà nước đóng vai trò điều tiết, vừa tạo điều kiện cho sản xuất phát triển, vừa bảo vệ quyền lợi chính đáng của người lao động. Đây là biểu hiện của kinh tế thị trường định hướng XHCN.",
-    "cloReferences": ["CLO2", "CLO4"],
-    "conceptTags": ["lao-dong", "gia-tri-thang-du", "vai-tro-nha-nuoc"],
-    "learningObjectives": ["Phân tích vai trò của Nhà nước trong dung hòa lợi ích giữa lao động và tư bản"]
+    "cloReferences": [
+      "CLO2",
+      "CLO4"
+    ],
+    "conceptTags": [
+      "lao-dong",
+      "gia-tri-thang-du",
+      "vai-tro-nha-nuoc"
+    ],
+    "learningObjectives": [
+      "Phân tích vai trò của Nhà nước trong dung hòa lợi ích giữa lao động và tư bản"
+    ]
   },
   {
     "id": "ex_nang_suat_dao_tao",
     "content": "Theo C. Mác, nâng cao năng suất lao động là yếu tố then chốt để tạo ra giá trị thặng dư tương đối. Đầu tư vào đào tạo nghề nâng cao tay nghề cho người lao động là biện pháp lâu dài để tăng năng suất. Người lao động có kỹ năng tốt hơn tạo ra nhiều giá trị hơn, cải thiện thu nhập và phúc lợi. Tuy nhiên, kết quả chỉ đạt được trong trung và dài hạn.",
-    "cloReferences": ["CLO2"],
-    "conceptTags": ["nang-suat-lao-dong", "gia-tri-thang-du", "lao-dong"],
-    "learningObjectives": ["Phân tích mối quan hệ giữa năng suất lao động và giá trị thặng dư tương đối"]
+    "cloReferences": [
+      "CLO2"
+    ],
+    "conceptTags": [
+      "nang-suat-lao-dong",
+      "gia-tri-thang-du",
+      "lao-dong"
+    ],
+    "learningObjectives": [
+      "Phân tích mối quan hệ giữa năng suất lao động và giá trị thặng dư tương đối"
+    ]
   },
   {
     "id": "ex_nang_suat_cong_nghe",
     "content": "Đầu tư công nghệ là con đường hiện đại hóa sản xuất, tăng năng suất lao động một cách nhanh chóng. Tuy nhiên, theo lý luận của Mác, việc thay thế lao động sống bằng lao động vật hóa (máy móc) làm tăng cấu tạo hữu cơ của tư bản, dẫn đến thất nghiệp công nghệ. Người lao động phổ thông bị đào thải nếu không được đào tạo lại.",
-    "cloReferences": ["CLO2", "CLO5"],
-    "conceptTags": ["hien-dai-hoa", "nang-suat-lao-dong", "tu-ban"],
-    "learningObjectives": ["Phân tích tác động của tiến bộ công nghệ đến cấu tạo hữu cơ của tư bản và việc làm"]
+    "cloReferences": [
+      "CLO2",
+      "CLO5"
+    ],
+    "conceptTags": [
+      "hien-dai-hoa",
+      "nang-suat-lao-dong",
+      "tu-ban"
+    ],
+    "learningObjectives": [
+      "Phân tích tác động của tiến bộ công nghệ đến cấu tạo hữu cơ của tư bản và việc làm"
+    ]
   },
   {
     "id": "ex_nang_suat_moi_truong",
     "content": "Cải thiện môi trường đầu tư thu hút doanh nghiệp nước ngoài có thể mang lại vốn, công nghệ và việc làm. Theo quan điểm của kinh tế chính trị, đây là con đường tận dụng ngoại lực để phát triển. Tuy nhiên, nếu chỉ dựa vào doanh nghiệp nước ngoài mà không xây dựng năng lực nội sinh, nền kinh tế dễ bị phụ thuộc và gặp rủi ro khi dòng vốn rút đi.",
-    "cloReferences": ["CLO2", "CLO5"],
-    "conceptTags": ["fdi", "nang-luc-tu-chu", "cong-nghiep-hoa"],
-    "learningObjectives": ["Phân tích mối quan hệ giữa thu hút đầu tư nước ngoài và xây dựng năng lực nội sinh"]
+    "cloReferences": [
+      "CLO2",
+      "CLO5"
+    ],
+    "conceptTags": [
+      "fdi",
+      "nang-luc-tu-chu",
+      "cong-nghiep-hoa"
+    ],
+    "learningObjectives": [
+      "Phân tích mối quan hệ giữa thu hút đầu tư nước ngoài và xây dựng năng lực nội sinh"
+    ]
   },
   {
     "id": "ex_nguyen_lieu_ho_tro",
     "content": "Hỗ trợ thuế và tín dụng cho doanh nghiệp là biện pháp can thiệp của Nhà nước nhằm duy trì sản xuất trong điều kiện khó khăn. Theo Mác, khủng hoảng là hiện tượng tất yếu trong nền kinh tế thị trường do mâu thuẫn giữa sản xuất xã hội hóa và chiếm hữu tư nhân. Vai trò của Nhà nước trong điều tiết khủng hoảng là cần thiết để giảm thiểu tác động xã hội.",
-    "cloReferences": ["CLO2", "CLO3"],
-    "conceptTags": ["khung-hoang", "vai-tro-nha-nuoc", "san-xuat"],
-    "learningObjectives": ["Phân tích nguyên nhân của khủng hoảng trong nền kinh tế thị trường và vai trò điều tiết của Nhà nước"]
+    "cloReferences": [
+      "CLO2",
+      "CLO3"
+    ],
+    "conceptTags": [
+      "khung-hoang",
+      "vai-tro-nha-nuoc",
+      "san-xuat"
+    ],
+    "learningObjectives": [
+      "Phân tích nguyên nhân của khủng hoảng trong nền kinh tế thị trường và vai trò điều tiết của Nhà nước"
+    ]
   },
   {
     "id": "ex_nguyen_lieu_tang_gia",
     "content": "Cho phép tăng giá thành phẩm là giải pháp thị trường, giúp doanh nghiệp bảo toàn lợi nhuận và duy trì sản xuất. Theo quy luật giá trị, khi chi phí sản xuất tăng, giá cả hàng hóa sẽ tăng tương ứng. Tuy nhiên, lạm phát chi phí đẩy xảy ra khi giá tăng lan tỏa ra toàn nền kinh tế, làm giảm sức mua của người lao động và ảnh hưởng đến ổn định thị trường.",
-    "cloReferences": ["CLO2"],
-    "conceptTags": ["gia-ca", "quy-luat-gia-tri", "lam-phat"],
-    "learningObjectives": ["Phân tích cơ chế lạm phát chi phí đẩy trong nền kinh tế thị trường"]
+    "cloReferences": [
+      "CLO2"
+    ],
+    "conceptTags": [
+      "gia-ca",
+      "quy-luat-gia-tri",
+      "lam-phat"
+    ],
+    "learningObjectives": [
+      "Phân tích cơ chế lạm phát chi phí đẩy trong nền kinh tế thị trường"
+    ]
   },
   {
     "id": "ex_nguyen_lieu_noi_dia",
     "content": "Tìm kiếm nguồn cung nội địa thay thế là chiến lược xây dựng năng lực tự chủ của nền kinh tế. Theo quan điểm của kinh tế chính trị Mác-Lênin, phát triển công nghiệp quốc gia và giảm phụ thuộc vào bên ngoài là yếu tố quan trọng để bảo đảm độc lập, tự chủ. Chiến lược này phù hợp với định hướng công nghiệp hóa, hiện đại hóa nhưng cần thời gian và nguồn lực đầu tư ban đầu.",
-    "cloReferences": ["CLO2", "CLO5"],
-    "conceptTags": ["noi-dia-hoa", "nang-luc-tu-chu", "chuoi-cung-ung"],
-    "learningObjectives": ["Phân tích chiến lược phát triển nguồn cung nội địa trong bối cảnh hội nhập"]
+    "cloReferences": [
+      "CLO2",
+      "CLO5"
+    ],
+    "conceptTags": [
+      "noi-dia-hoa",
+      "nang-luc-tu-chu",
+      "chuoi-cung-ung"
+    ],
+    "learningObjectives": [
+      "Phân tích chiến lược phát triển nguồn cung nội địa trong bối cảnh hội nhập"
+    ]
   },
   {
     "id": "ex_mua_lai_tu_do",
     "content": "Tự do hóa mua bán, sáp nhập là biểu hiện của tích tụ và tập trung tư bản. Theo V.I. Lênin, tích tụ và tập trung tư bản dẫn đến độc quyền – một giai đoạn phát triển cao của chủ nghĩa tư bản. Trong ngắn hạn, hoạt động này tăng hiệu quả sản xuất và thu ngân sách. Tuy nhiên, về lâu dài, doanh nghiệp nhỏ bị thôn tính, thị trường bị chi phối bởi một số tập đoàn lớn.",
-    "cloReferences": ["CLO3"],
-    "conceptTags": ["canh-tranh", "doc-quyen", "tap-trung-tu-ban"],
-    "learningObjectives": ["Phân tích quá trình tích tụ và tập trung tư bản dẫn đến độc quyền"]
+    "cloReferences": [
+      "CLO3"
+    ],
+    "conceptTags": [
+      "canh-tranh",
+      "doc-quyen",
+      "tap-trung-tu-ban"
+    ],
+    "learningObjectives": [
+      "Phân tích quá trình tích tụ và tập trung tư bản dẫn đến độc quyền"
+    ]
   },
   {
     "id": "ex_mua_lai_han_che",
     "content": "Hạn chế sáp nhập bảo vệ doanh nghiệp nhỏ và duy trì môi trường cạnh tranh lành mạnh. Theo Mác, cạnh tranh là động lực của nền kinh tế thị trường. Nhà nước có vai trò duy trì cạnh tranh để ngăn chặn độc quyền làm phương hại đến lợi ích người tiêu dùng và xã hội. Đây là một trong những chức năng quan trọng của độc quyền nhà nước trong chủ nghĩa tư bản hiện đại.",
-    "cloReferences": ["CLO3"],
-    "conceptTags": ["canh-tranh", "doc-quyen", "vai-tro-nha-nuoc"],
-    "learningObjectives": ["Phân tích vai trò của Nhà nước trong duy trì cạnh tranh và chống độc quyền"]
+    "cloReferences": [
+      "CLO3"
+    ],
+    "conceptTags": [
+      "canh-tranh",
+      "doc-quyen",
+      "vai-tro-nha-nuoc"
+    ],
+    "learningObjectives": [
+      "Phân tích vai trò của Nhà nước trong duy trì cạnh tranh và chống độc quyền"
+    ]
   },
   {
     "id": "ex_mua_lai_co_dieu_kien",
     "content": "Cho phép sáp nhập kèm điều kiện là giải pháp dung hòa giữa thu hút đầu tư và bảo vệ lợi ích quốc gia. Nhà nước đóng vai trò điều tiết, yêu cầu chuyển giao công nghệ và duy trì việc làm. Đây là biểu hiện của độc quyền nhà nước trong bối cảnh toàn cầu hóa, khi Nhà nước can thiệp để đảm bảo lợi ích quốc gia trong quá trình hội nhập.",
-    "cloReferences": ["CLO3", "CLO5"],
-    "conceptTags": ["doc-quyen-nha-nuoc", "chuyen-giao-cong-nghe", "fdi"],
-    "learningObjectives": ["Phân tích vai trò của Nhà nước trong quản lý hoạt động mua bán, sáp nhập doanh nghiệp"]
+    "cloReferences": [
+      "CLO3",
+      "CLO5"
+    ],
+    "conceptTags": [
+      "doc-quyen-nha-nuoc",
+      "chuyen-giao-cong-nghe",
+      "fdi"
+    ],
+    "learningObjectives": [
+      "Phân tích vai trò của Nhà nước trong quản lý hoạt động mua bán, sáp nhập doanh nghiệp"
+    ]
   },
   {
     "id": "ex_ep_gia_quy_dinh",
     "content": "Theo quan điểm kinh tế chính trị Mác-Lênin, Nhà nước có vai trò điều tiết thị trường và bảo vệ doanh nghiệp nhỏ trước sức ép của tư bản lớn. Ban hành quy định về cạnh tranh là công cụ pháp lý để bảo đảm cạnh tranh lành mạnh, duy trì trật tự thị trường và bảo vệ lợi ích của các chủ thể yếu thế.",
-    "cloReferences": ["CLO3"],
-    "conceptTags": ["canh-tranh", "vai-tro-nha-nuoc"],
-    "learningObjectives": ["Phân tích sự cần thiết của pháp luật cạnh tranh trong nền kinh tế thị trường"]
+    "cloReferences": [
+      "CLO3"
+    ],
+    "conceptTags": [
+      "canh-tranh",
+      "vai-tro-nha-nuoc"
+    ],
+    "learningObjectives": [
+      "Phân tích sự cần thiết của pháp luật cạnh tranh trong nền kinh tế thị trường"
+    ]
   },
   {
     "id": "ex_ep_gia_tu_do",
     "content": "Không can thiệp để thị trường tự điều tiết theo quan điểm tự do kinh tế. Theo Mác, trong điều kiện cạnh tranh tự do, tư bản lớn có ưu thế tuyệt đối và sẽ đào thải tư bản nhỏ, dẫn đến tập trung tư bản. Về lâu dài, thị trường sẽ bị chi phối bởi một số doanh nghiệp lớn, làm giảm tính cạnh tranh và ảnh hưởng đến lợi ích của người sản xuất nhỏ.",
-    "cloReferences": ["CLO3"],
-    "conceptTags": ["canh-tranh", "tap-trung-tu-ban", "tu-ban"],
-    "learningObjectives": ["Phân tích hệ quả của cạnh tranh tự do dưới góc độ kinh tế chính trị Mác-Lênin"]
+    "cloReferences": [
+      "CLO3"
+    ],
+    "conceptTags": [
+      "canh-tranh",
+      "tap-trung-tu-ban",
+      "tu-ban"
+    ],
+    "learningObjectives": [
+      "Phân tích hệ quả của cạnh tranh tự do dưới góc độ kinh tế chính trị Mác-Lênin"
+    ]
   },
   {
     "id": "ex_ep_gia_hop_tac",
     "content": "Hỗ trợ doanh nghiệp nhỏ thành lập hợp tác xã là giải pháp nâng cao sức mặc cả của các chủ thể yếu thế trong quan hệ thị trường. Mô hình hợp tác xã phản ánh nguyên tắc tương trợ, đoàn kết của những người sản xuất nhỏ, phù hợp với định hướng XHCN. Nhà nước đóng vai trò kiến tạo, hỗ trợ thể chế để các chủ thể yếu thế có thể đứng vững trong cạnh tranh.",
-    "cloReferences": ["CLO3", "CLO4"],
-    "conceptTags": ["hop-tac", "quan-he-loi-ich", "kinh-te-thi-truong-dinh-huong-XHCN"],
-    "learningObjectives": ["Phân tích vai trò của kinh tế tập thể trong nền kinh tế thị trường định hướng XHCN"]
+    "cloReferences": [
+      "CLO3",
+      "CLO4"
+    ],
+    "conceptTags": [
+      "hop-tac",
+      "quan-he-loi-ich",
+      "kinh-te-thi-truong-dinh-huong-XHCN"
+    ],
+    "learningObjectives": [
+      "Phân tích vai trò của kinh tế tập thể trong nền kinh tế thị trường định hướng XHCN"
+    ]
   },
   {
     "id": "ex_nen_tang_so_thue",
     "content": "Đánh thuế và áp dụng rào cản đối với nền tảng nước ngoài là biện pháp bảo hộ thị trường nội địa. Theo lý luận của Mác về cạnh tranh và độc quyền, việc các tập đoàn xuyên quốc gia chi phối thị trường là biểu hiện của độc quyền trong giai đoạn toàn cầu hóa. Nhà nước có thể sử dụng công cụ thuế và pháp lý để bảo vệ doanh nghiệp trong nước.",
-    "cloReferences": ["CLO3"],
-    "conceptTags": ["doc-quyen", "kinh-te-so", "bao-ho"],
-    "learningObjectives": ["Phân tích biểu hiện của độc quyền trong nền kinh tế số"]
+    "cloReferences": [
+      "CLO3"
+    ],
+    "conceptTags": [
+      "doc-quyen",
+      "kinh-te-so",
+      "bao-ho"
+    ],
+    "learningObjectives": [
+      "Phân tích biểu hiện của độc quyền trong nền kinh tế số"
+    ]
   },
   {
     "id": "ex_nen_tang_so_tu_do",
     "content": "Để thị trường tự do cạnh tranh khuyến khích đổi mới và hiệu quả kinh tế. Người tiêu dùng được hưởng lợi từ giá thấp và nhiều lựa chọn. Nhưng theo Mác, cạnh tranh tự do cuối cùng dẫn đến tập trung tư bản – các nền tảng lớn chiếm lĩnh thị trường, loại bỏ đối thủ nhỏ và sau đó có thể tăng giá, giảm chất lượng. Đây là quy luật vận động tất yếu của chủ nghĩa tư bản.",
-    "cloReferences": ["CLO3"],
-    "conceptTags": ["canh-tranh", "doc-quyen", "tap-trung-tu-ban"],
-    "learningObjectives": ["Phân tích quy luật tập trung tư bản trong nền kinh tế số"]
+    "cloReferences": [
+      "CLO3"
+    ],
+    "conceptTags": [
+      "canh-tranh",
+      "doc-quyen",
+      "tap-trung-tu-ban"
+    ],
+    "learningObjectives": [
+      "Phân tích quy luật tập trung tư bản trong nền kinh tế số"
+    ]
   },
   {
     "id": "ex_nen_tang_so_ho_tro",
     "content": "Hỗ trợ doanh nghiệp nội địa chuyển đổi số là chiến lược nâng cao năng lực cạnh tranh quốc gia. Theo quan điểm kinh tế chính trị Mác-Lênin, xây dựng nền kinh tế độc lập tự chủ không có nghĩa là đóng cửa, mà là nâng cao nội lực để có thể chủ động hội nhập. Đầu tư vào năng lực số là con đường hiện đại hóa nền kinh tế.",
-    "cloReferences": ["CLO3", "CLO5"],
-    "conceptTags": ["hien-dai-hoa", "chuyen-doi-so", "nang-luc-canh-tranh"],
-    "learningObjectives": ["Phân tích chiến lược nâng cao năng lực cạnh tranh của doanh nghiệp trong nước trong bối cảnh cách mạng công nghiệp 4.0"]
+    "cloReferences": [
+      "CLO3",
+      "CLO5"
+    ],
+    "conceptTags": [
+      "hien-dai-hoa",
+      "chuyen-doi-so",
+      "nang-luc-canh-tranh"
+    ],
+    "learningObjectives": [
+      "Phân tích chiến lược nâng cao năng lực cạnh tranh của doanh nghiệp trong nước trong bối cảnh cách mạng công nghiệp 4.0"
+    ]
   },
   {
     "id": "ex_dieu_tiet_tang",
     "content": "Tăng cường vai trò điều tiết của Nhà nước là quan điểm phù hợp với kinh tế thị trường định hướng XHCN. Theo Mác, Nhà nước có chức năng điều tiết nền kinh tế để khắc phục khuyết tật của thị trường, phân phối lại thu nhập và bảo đảm an sinh xã hội. Tuy nhiên, nếu Nhà nước can thiệp quá sâu có thể triệt tiêu động lực thị trường và sáng tạo của doanh nghiệp.",
-    "cloReferences": ["CLO3", "CLO4"],
-    "conceptTags": ["vai-tro-nha-nuoc", "dieu-tiet", "kinh-te-thi-truong-dinh-huong-XHCN"],
-    "learningObjectives": ["Phân tích vai trò của Nhà nước trong nền kinh tế thị trường định hướng XHCN"]
+    "cloReferences": [
+      "CLO3",
+      "CLO4"
+    ],
+    "conceptTags": [
+      "vai-tro-nha-nuoc",
+      "dieu-tiet",
+      "kinh-te-thi-truong-dinh-huong-XHCN"
+    ],
+    "learningObjectives": [
+      "Phân tích vai trò của Nhà nước trong nền kinh tế thị trường định hướng XHCN"
+    ]
   },
   {
     "id": "ex_dieu_tiet_duy_tri",
     "content": "Duy trì thị trường tự do khuyến khích sự năng động và sáng tạo. Nhưng theo Mác, chủ nghĩa tư bản tự do cạnh tranh có những khuyết tật cố hữu như khủng hoảng thừa, phân hóa giàu nghèo và bóc lột lao động. Thiếu sự điều tiết của Nhà nước, nền kinh tế dễ rơi vào khủng hoảng chu kỳ, ảnh hưởng đến ổn định xã hội.",
-    "cloReferences": ["CLO3"],
-    "conceptTags": ["khung-hoang", "tu-ban", "canh-tranh"],
-    "learningObjectives": ["Phân tích những khuyết tật của nền kinh tế thị trường tự do"]
+    "cloReferences": [
+      "CLO3"
+    ],
+    "conceptTags": [
+      "khung-hoang",
+      "tu-ban",
+      "canh-tranh"
+    ],
+    "learningObjectives": [
+      "Phân tích những khuyết tật của nền kinh tế thị trường tự do"
+    ]
   },
   {
     "id": "ex_dieu_tiet_chon_loc",
     "content": "Điều tiết có chọn lọc ở những ngành trọng yếu là chiến lược phù hợp của Nhà nước trong nền kinh tế thị trường định hướng XHCN. Nhà nước chỉ can thiệp vào những lĩnh vực then chốt như năng lượng, viễn thông, ngân hàng, tài nguyên – nơi cần bảo đảm lợi ích quốc gia. Các ngành còn lại để thị trường tự điều tiết. Đây là tư duy quản lý hiện đại kết hợp giữa bàn tay hữu hình và vô hình.",
-    "cloReferences": ["CLO3", "CLO4"],
-    "conceptTags": ["vai-tro-nha-nuoc", "dieu-tiet", "nganh-trong-yeu"],
-    "learningObjectives": ["Phân tích nguyên tắc điều tiết có chọn lọc của Nhà nước trong nền kinh tế thị trường"]
+    "cloReferences": [
+      "CLO3",
+      "CLO4"
+    ],
+    "conceptTags": [
+      "vai-tro-nha-nuoc",
+      "dieu-tiet",
+      "nganh-trong-yeu"
+    ],
+    "learningObjectives": [
+      "Phân tích nguyên tắc điều tiết có chọn lọc của Nhà nước trong nền kinh tế thị trường"
+    ]
   },
   {
     "id": "ex_giam_luong",
     "content": "Theo lý luận giá trị thặng dư, tiền lương là giá cả sức lao động – một bộ phận của giá trị do người lao động tạo ra. Giảm lương sẽ làm tăng tỷ suất giá trị thặng dư, cải thiện lợi nhuận doanh nghiệp nhưng làm giảm thu nhập và sức mua của người lao động. Điều này ảnh hưởng đến quan hệ lợi ích kinh tế, có thể dẫn đến mâu thuẫn lao động nếu không được giải quyết thỏa đáng.",
-    "cloReferences": ["CLO2", "CLO4", "CLO7"],
-    "conceptTags": ["quan-he-loi-ich", "gia-tri-thang-du", "tien-luong"],
-    "learningObjectives": ["Phân tích quan hệ lợi ích giữa người lao động và doanh nghiệp trong phân phối thu nhập"]
+    "cloReferences": [
+      "CLO2",
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "quan-he-loi-ich",
+      "gia-tri-thang-du",
+      "tien-luong"
+    ],
+    "learningObjectives": [
+      "Phân tích quan hệ lợi ích giữa người lao động và doanh nghiệp trong phân phối thu nhập"
+    ]
   },
   {
     "id": "ex_giam_luong_bac",
     "content": "Bác bỏ giảm lương bảo vệ thu nhập của người lao động, duy trì ổn định xã hội. Tuy nhiên, doanh nghiệp có thể gặp khó khăn tài chính, dẫn đến cắt giảm sản xuất và sa thải lao động – gây tác động ngược lại đến chính người lao động. Trong nền kinh tế thị trường định hướng XHCN, Nhà nước cần cân bằng lợi ích giữa các bên.",
-    "cloReferences": ["CLO4", "CLO7"],
-    "conceptTags": ["quan-he-loi-ich", "tien-luong"],
-    "learningObjectives": ["Phân tích sự đánh đổi giữa bảo vệ thu nhập người lao động và duy trì việc làm"]
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "quan-he-loi-ich",
+      "tien-luong"
+    ],
+    "learningObjectives": [
+      "Phân tích sự đánh đổi giữa bảo vệ thu nhập người lao động và duy trì việc làm"
+    ]
   },
   {
     "id": "ex_giam_luong_ho_tro",
     "content": "Hỗ trợ doanh nghiệp bằng giảm thuế kèm điều kiện giữ lương là giải pháp dung hòa lợi ích giữa ba bên: doanh nghiệp được giảm chi phí, người lao động giữ được việc làm và thu nhập, Nhà nước đóng vai trò điều tiết. Theo Mác, Nhà nước là công cụ hài hòa các quan hệ lợi ích, đặc biệt trong nền kinh tế thị trường định hướng XHCN.",
-    "cloReferences": ["CLO4", "CLO7"],
-    "conceptTags": ["quan-he-loi-ich", "vai-tro-nha-nuoc"],
-    "learningObjectives": ["Phân tích vai trò của Nhà nước trong hài hòa các quan hệ lợi ích kinh tế"]
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "quan-he-loi-ich",
+      "vai-tro-nha-nuoc"
+    ],
+    "learningObjectives": [
+      "Phân tích vai trò của Nhà nước trong hài hòa các quan hệ lợi ích kinh tế"
+    ]
   },
   {
     "id": "ex_phuc_loi_yeu_cau",
     "content": "Yêu cầu doanh nghiệp tăng phúc lợi cải thiện trực tiếp đời sống người lao động, giảm bất bình đẳng. Theo Mác, chi phí tái sản xuất sức lao động bao gồm không chỉ nhu cầu vật chất mà còn nhu cầu văn hóa, xã hội. Tuy nhiên, nếu doanh nghiệp chịu toàn bộ chi phí, lợi nhuận giảm có thể dẫn đến thu hẹp đầu tư và việc làm.",
-    "cloReferences": ["CLO4", "CLO7"],
-    "conceptTags": ["phuc-loi-xa-hoi", "quan-he-loi-ich", "tai-phan-phoi"],
-    "learningObjectives": ["Phân tích nội dung của tái sản xuất sức lao động trong nền kinh tế hiện đại"]
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "phuc-loi-xa-hoi",
+      "quan-he-loi-ich",
+      "tai-phan-phoi"
+    ],
+    "learningObjectives": [
+      "Phân tích nội dung của tái sản xuất sức lao động trong nền kinh tế hiện đại"
+    ]
   },
   {
     "id": "ex_phuc_loi_chia_se",
     "content": "Cơ chế chia sẻ chi phí phúc lợi giữa Nhà nước và doanh nghiệp là mô hình điển hình của nền kinh tế thị trường định hướng XHCN. Nhà nước đảm bảo an sinh xã hội qua ngân sách, doanh nghiệp đóng góp qua bảo hiểm xã hội và phúc lợi cho người lao động. Cơ chế này phân bổ trách nhiệm hợp lý, tạo nền tảng cho phát triển bền vững.",
-    "cloReferences": ["CLO4", "CLO7"],
-    "conceptTags": ["phuc-loi-xa-hoi", "quan-he-loi-ich", "an-sinh-xa-hoi"],
-    "learningObjectives": ["Phân tích cơ chế chia sẻ trách nhiệm an sinh xã hội giữa Nhà nước và doanh nghiệp"]
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "phuc-loi-xa-hoi",
+      "quan-he-loi-ich",
+      "an-sinh-xa-hoi"
+    ],
+    "learningObjectives": [
+      "Phân tích cơ chế chia sẻ trách nhiệm an sinh xã hội giữa Nhà nước và doanh nghiệp"
+    ]
   },
   {
     "id": "ex_phuc_loi_cho",
     "content": "Trì hoãn tăng phúc lợi có thể giữ ổn định tài chính ngắn hạn cho doanh nghiệp và ngân sách. Nhưng theo quan điểm của Mác, sự bất bình đẳng kéo dài và sự bóc lột quá mức sẽ làm trầm trọng thêm mâu thuẫn xã hội, dẫn đến bất ổn. Phát triển phải đi đôi với tiến bộ xã hội.",
-    "cloReferences": ["CLO4", "CLO7"],
-    "conceptTags": ["phuc-loi-xa-hoi", "bat-binh-dang", "mau-thuan-xa-hoi"],
-    "learningObjectives": ["Phân tích hệ quả xã hội của sự trì hoãn đầu tư vào phúc lợi"]
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "phuc-loi-xa-hoi",
+      "bat-binh-dang",
+      "mau-thuan-xa-hoi"
+    ],
+    "learningObjectives": [
+      "Phân tích hệ quả xã hội của sự trì hoãn đầu tư vào phúc lợi"
+    ]
   },
   {
     "id": "ex_thue_tang",
     "content": "Tăng thuế thu nhập doanh nghiệp là biện pháp tăng thu ngân sách, tạo nguồn lực cho đầu tư công và an sinh xã hội. Theo Mác, thuế là công cụ phân phối lại thu nhập quốc dân. Tuy nhiên, nếu thuế doanh nghiệp quá cao sẽ giảm động lực đầu tư, có thể dẫn đến chuyển giá hoặc chuyển dịch đầu tư ra nước ngoài.",
-    "cloReferences": ["CLO4"],
-    "conceptTags": ["ngan-sach", "thue", "tai-phan-phoi"],
-    "learningObjectives": ["Phân tích vai trò của thuế trong phân phối lại thu nhập và điều tiết kinh tế"]
+    "cloReferences": [
+      "CLO4"
+    ],
+    "conceptTags": [
+      "ngan-sach",
+      "thue",
+      "tai-phan-phoi"
+    ],
+    "learningObjectives": [
+      "Phân tích vai trò của thuế trong phân phối lại thu nhập và điều tiết kinh tế"
+    ]
   },
   {
     "id": "ex_thue_cat_giam",
     "content": "Cắt giảm chi tiêu công giúp cân bằng ngân sách nhưng có thể ảnh hưởng đến các dịch vụ công và phúc lợi xã hội. Theo Mác, Nhà nước có trách nhiệm đầu tư vào các lĩnh vực xã hội để bảo đảm tái sản xuất sức lao động xã hội. Cắt giảm chi tiêu xã hội quá mức có thể ảnh hưởng đến chất lượng nguồn nhân lực trong dài hạn.",
-    "cloReferences": ["CLO4"],
-    "conceptTags": ["ngan-sach", "chi-tieu-cong", "dich-vu-cong"],
-    "learningObjectives": ["Phân tích quan hệ giữa chi tiêu công và phát triển nguồn nhân lực"]
+    "cloReferences": [
+      "CLO4"
+    ],
+    "conceptTags": [
+      "ngan-sach",
+      "chi-tieu-cong",
+      "dich-vu-cong"
+    ],
+    "learningObjectives": [
+      "Phân tích quan hệ giữa chi tiêu công và phát triển nguồn nhân lực"
+    ]
   },
   {
     "id": "ex_thue_vay_no",
     "content": "Vay nợ và tái cơ cấu thuế là giải pháp linh hoạt: tận dụng nguồn vốn vay để kích thích đầu tư, đồng thời cải cách thuế để mở rộng cơ sở thuế. Tuy nhiên, vay nợ phải đi kèm với kỷ luật tài chính để tránh tích lũy nợ công quá mức. Đây là chính sách vĩ mô phổ biến trong các nền kinh tế thị trường hiện đại.",
-    "cloReferences": ["CLO4"],
-    "conceptTags": ["ngan-sach", "no-cong", "tai-cau-truc"],
-    "learningObjectives": ["Phân tích tác động của vay nợ công đến nền kinh tế"]
+    "cloReferences": [
+      "CLO4"
+    ],
+    "conceptTags": [
+      "ngan-sach",
+      "no-cong",
+      "tai-cau-truc"
+    ],
+    "learningObjectives": [
+      "Phân tích tác động của vay nợ công đến nền kinh tế"
+    ]
   },
   {
     "id": "ex_gia_dien_tang",
     "content": "Tăng giá điện tạo nguồn vốn đầu tư hạ tầng năng lượng, phù hợp với mục tiêu hiện đại hóa và phát triển bền vững. Theo lý luận về hàng hóa công, giá điện là chi phí tái sản xuất của cả nền kinh tế. Tuy nhiên, tăng giá ảnh hưởng trực tiếp đến chi phí sản xuất của doanh nghiệp và sinh hoạt của người dân, gây áp lực lạm phát.",
-    "cloReferences": ["CLO4", "CLO7"],
-    "conceptTags": ["hang-hoa-cong", "dien-nang", "chi-phi-xa-hoi"],
-    "learningObjectives": ["Phân tích đặc điểm của hàng hóa công và cơ chế giá trong nền kinh tế thị trường"]
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "hang-hoa-cong",
+      "dien-nang",
+      "chi-phi-xa-hoi"
+    ],
+    "learningObjectives": [
+      "Phân tích đặc điểm của hàng hóa công và cơ chế giá trong nền kinh tế thị trường"
+    ]
   },
   {
     "id": "ex_gia_dien_giu",
     "content": "Giữ giá điện và dùng ngân sách đầu tư hạ tầng là giải pháp ổn định thị trường và hỗ trợ sản xuất. Nhà nước dùng nguồn lực công để phát triển hạ tầng thiết yếu, phù hợp với định hướng XHCN về vai trò của Nhà nước trong cung cấp hàng hóa công. Tuy nhiên, gánh nặng ngân sách có thể ảnh hưởng đến các khoản chi khác.",
-    "cloReferences": ["CLO4"],
-    "conceptTags": ["hang-hoa-cong", "vai-tro-nha-nuoc", "dau-tu-cong"],
-    "learningObjectives": ["Phân tích vai trò của Nhà nước trong đầu tư hạ tầng thiết yếu"]
+    "cloReferences": [
+      "CLO4"
+    ],
+    "conceptTags": [
+      "hang-hoa-cong",
+      "vai-tro-nha-nuoc",
+      "dau-tu-cong"
+    ],
+    "learningObjectives": [
+      "Phân tích vai trò của Nhà nước trong đầu tư hạ tầng thiết yếu"
+    ]
   },
   {
     "id": "ex_gia_dien_lo_trinh",
     "content": "Tăng giá có lộ trình kèm hỗ trợ là giải pháp cân bằng – vừa tạo nguồn lực đầu tư hạ tầng, vừa bảo vệ các đối tượng yếu thế. Theo nguyên tắc công bằng xã hội, Nhà nước cần bảo đảm rằng gánh nặng chi phí được phân bổ hợp lý, người nghèo và doanh nghiệp nhỏ được hỗ trợ. Đây là biểu hiện của Nhà nước phúc lợi trong nền kinh tế thị trường.",
-    "cloReferences": ["CLO4", "CLO7"],
-    "conceptTags": ["hang-hoa-cong", "quan-he-loi-ich", "cong-bang-xa-hoi"],
-    "learningObjectives": ["Phân tích nguyên tắc công bằng trong chính sách giá hàng hóa công"]
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "hang-hoa-cong",
+      "quan-he-loi-ich",
+      "cong-bang-xa-hoi"
+    ],
+    "learningObjectives": [
+      "Phân tích nguyên tắc công bằng trong chính sách giá hàng hóa công"
+    ]
   },
   {
     "id": "ex_robot_phe_duyet",
     "content": "Tự động hóa sản xuất là biểu hiện của hiện đại hóa, nâng cao năng suất lao động. Theo Mác, máy móc là yếu tố quan trọng làm tăng năng suất lao động và tạo ra giá trị thặng dư tương đối. Tuy nhiên, Mác cũng chỉ ra rằng máy móc thải loại lao động, tạo ra tình trạng thất nghiệp công nghệ. Cần kết hợp với đào tạo lại để người lao động thích ứng.",
-    "cloReferences": ["CLO5"],
-    "conceptTags": ["cong-nghiep-hoa", "hien-dai-hoa", "may-moc", "lao-dong"],
-    "learningObjectives": ["Phân tích tác động của tự động hóa đối với việc làm dưới góc độ kinh tế chính trị"]
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "cong-nghiep-hoa",
+      "hien-dai-hoa",
+      "may-moc",
+      "lao-dong"
+    ],
+    "learningObjectives": [
+      "Phân tích tác động của tự động hóa đối với việc làm dưới góc độ kinh tế chính trị"
+    ]
   },
   {
     "id": "ex_robot_han_che",
     "content": "Hạn chế tự động hóa bảo vệ việc làm trong ngắn hạn, nhưng có thể làm nền kinh tế tụt hậu về năng suất và khả năng cạnh tranh. Theo Mác, cạnh tranh buộc mỗi nhà tư bản phải cải tiến công nghệ để tồn tại. Nếu không hiện đại hóa, nền kinh tế sẽ mất dần lợi thế cạnh tranh, thậm chí còn gây mất việc làm nhiều hơn trong dài hạn.",
-    "cloReferences": ["CLO5"],
-    "conceptTags": ["cong-nghiep-hoa", "hien-dai-hoa", "canh-tranh"],
-    "learningObjectives": ["Phân tích quan hệ giữa hiện đại hóa sản xuất và năng lực cạnh tranh quốc gia"]
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "cong-nghiep-hoa",
+      "hien-dai-hoa",
+      "canh-tranh"
+    ],
+    "learningObjectives": [
+      "Phân tích quan hệ giữa hiện đại hóa sản xuất và năng lực cạnh tranh quốc gia"
+    ]
   },
   {
     "id": "ex_robot_tung_buoc",
     "content": "Chiến lược tự động hóa từng bước kết hợp đào tạo là hướng đi cân bằng của công nghiệp hóa, hiện đại hóa. Nhà nước vừa thúc đẩy tiến bộ công nghệ, vừa chủ động đào tạo nguồn nhân lực thích ứng. Đây là mô hình phát triển phù hợp với định hướng XHCN: tăng trưởng đi đôi với tiến bộ xã hội, không để ai bị bỏ lại phía sau.",
-    "cloReferences": ["CLO5", "CLO7"],
-    "conceptTags": ["cong-nghiep-hoa", "hien-dai-hoa", "nguon-nhan-luc"],
-    "learningObjectives": ["Phân tích chiến lược công nghiệp hóa, hiện đại hóa gắn với phát triển nguồn nhân lực"]
+    "cloReferences": [
+      "CLO5",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "cong-nghiep-hoa",
+      "hien-dai-hoa",
+      "nguon-nhan-luc"
+    ],
+    "learningObjectives": [
+      "Phân tích chiến lược công nghiệp hóa, hiện đại hóa gắn với phát triển nguồn nhân lực"
+    ]
   },
   {
     "id": "ex_dao_tao_dau_tu",
     "content": "Đầu tư lớn vào giáo dục nghề nghiệp là chiến lược phát triển nguồn nhân lực chất lượng cao – yếu tố then chốt của công nghiệp hóa, hiện đại hóa. Theo Mác, lao động phức tạp tạo ra nhiều giá trị hơn lao động giản đơn. Đầu tư vào đào tạo nâng cao chất lượng sức lao động là đầu tư cho sự phát triển bền vững.",
-    "cloReferences": ["CLO5"],
-    "conceptTags": ["nguon-nhan-luc", "lao-dong", "cong-nghiep-hoa"],
-    "learningObjectives": ["Phân tích vai trò của lao động phức tạp trong tạo ra giá trị thặng dư"]
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "nguon-nhan-luc",
+      "lao-dong",
+      "cong-nghiep-hoa"
+    ],
+    "learningObjectives": [
+      "Phân tích vai trò của lao động phức tạp trong tạo ra giá trị thặng dư"
+    ]
   },
   {
     "id": "ex_dao_tao_khuyen_khich",
     "content": "Khuyến khích doanh nghiệp tự đào tạo giảm gánh nặng ngân sách và bảo đảm đào tạo đúng nhu cầu thị trường. Tuy nhiên, theo Mác, doanh nghiệp thường chỉ đầu tư vào đào tạo những kỹ năng mang lại lợi nhuận trực tiếp, có thể bỏ qua các kỹ năng nền tảng và xã hội rộng hơn. Nhà nước cần đóng vai trò định hướng và hỗ trợ để đào tạo phát triển toàn diện.",
-    "cloReferences": ["CLO5"],
-    "conceptTags": ["dao-tao", "nguon-nhan-luc", "vai-tro-nha-nuoc"],
-    "learningObjectives": ["Phân tích giới hạn của thị trường trong đào tạo nguồn nhân lực"]
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "dao-tao",
+      "nguon-nhan-luc",
+      "vai-tro-nha-nuoc"
+    ],
+    "learningObjectives": [
+      "Phân tích giới hạn của thị trường trong đào tạo nguồn nhân lực"
+    ]
   },
   {
     "id": "ex_dao_tao_ket_hop",
     "content": "Mô hình hợp tác công - tư trong đào tạo nghề là giải pháp tối ưu: Nhà nước đặt khung chiến lược và hỗ trợ kinh phí, doanh nghiệp tham gia đào tạo thực hành, người lao động được học tập theo chuẩn đầu ra phù hợp thị trường. Đây là mô hình phổ biến ở các nước công nghiệp phát triển, phù hợp với định hướng XHCN.",
-    "cloReferences": ["CLO5"],
-    "conceptTags": ["dao-tao", "hop-tac-cong-tu", "nguon-nhan-luc"],
-    "learningObjectives": ["Phân tích mô hình hợp tác Nhà nước - doanh nghiệp trong phát triển nguồn nhân lực"]
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "dao-tao",
+      "hop-tac-cong-tu",
+      "nguon-nhan-luc"
+    ],
+    "learningObjectives": [
+      "Phân tích mô hình hợp tác Nhà nước - doanh nghiệp trong phát triển nguồn nhân lực"
+    ]
   },
   {
     "id": "ex_chuyen_doi_so_phe_duyet",
     "content": "Chuyển đổi số toàn diện là bước đi táo bạo của hiện đại hóa. Theo Mác, sự phát triển của lực lượng sản xuất làm thay đổi quan hệ sản xuất. Công nghệ số là lực lượng sản xuất mới, thay đổi căn bản cách thức sản xuất và tổ chức kinh tế. Đầu tư mạnh vào số hóa tạo đột phá năng suất nhưng cũng đòi hỏi thích ứng về thể chế và lao động.",
-    "cloReferences": ["CLO5"],
-    "conceptTags": ["hien-dai-hoa", "chuyen-doi-so", "luc-luong-san-xuat"],
-    "learningObjectives": ["Phân tích tác động của chuyển đổi số đến lực lượng sản xuất và quan hệ sản xuất"]
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "hien-dai-hoa",
+      "chuyen-doi-so",
+      "luc-luong-san-xuat"
+    ],
+    "learningObjectives": [
+      "Phân tích tác động của chuyển đổi số đến lực lượng sản xuất và quan hệ sản xuất"
+    ]
   },
   {
     "id": "ex_chuyen_doi_so_thi_diem",
     "content": "Triển khai thí điểm là cách tiếp cận thận trọng, giảm thiểu rủi ro. Phù hợp với thực tiễn Việt Nam – một nước đang phát triển với nguồn lực có hạn. Theo Mác, chuyển hóa từ nền sản xuất nhỏ lên sản xuất lớn hiện đại là quá trình lâu dài, cần có bước đi phù hợp. Thí điểm rồi nhân rộng là phương pháp được kiểm nghiệm.",
-    "cloReferences": ["CLO5"],
-    "conceptTags": ["hien-dai-hoa", "chuyen-doi-so", "phuong-phap"],
-    "learningObjectives": ["Phân tích phương pháp chuyển đổi phù hợp từ sản xuất nhỏ lên sản xuất lớn hiện đại"]
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "hien-dai-hoa",
+      "chuyen-doi-so",
+      "phuong-phap"
+    ],
+    "learningObjectives": [
+      "Phân tích phương pháp chuyển đổi phù hợp từ sản xuất nhỏ lên sản xuất lớn hiện đại"
+    ]
   },
   {
     "id": "ex_chuyen_doi_so_hoan",
     "content": "Hoãn chuyển đổi số để tập trung vào hạ tầng truyền thống là lựa chọn ưu tiên những nhu cầu trước mắt, nhưng có nguy cơ bỏ lỡ cơ hội phát triển. Theo Mác, các nước đi sau có lợi thế của người đi sau – có thể tận dụng công nghệ tiên tiến để rút ngắn quá trình công nghiệp hóa. Trì hoãn chuyển đổi số có thể làm gia tăng khoảng cách phát triển.",
-    "cloReferences": ["CLO5"],
-    "conceptTags": ["cong-nghiep-hoa", "hien-dai-hoa", "loi-the-di-sau"],
-    "learningObjectives": ["Phân tích lợi thế của nước đi sau trong quá trình công nghiệp hóa, hiện đại hóa"]
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "cong-nghiep-hoa",
+      "hien-dai-hoa",
+      "loi-the-di-sau"
+    ],
+    "learningObjectives": [
+      "Phân tích lợi thế của nước đi sau trong quá trình công nghiệp hóa, hiện đại hóa"
+    ]
   },
   {
     "id": "ex_cong_nghiep_ho_tro_uu_dai",
     "content": "Phát triển công nghiệp hỗ trợ là một trong những nội dung cốt lõi của công nghiệp hóa, hiện đại hóa. Theo Mác, phân công lao động xã hội càng sâu thì nền sản xuất càng phát triển. Công nghiệp hỗ trợ mạnh giúp nâng cao giá trị gia tăng trong nước, giảm phụ thuộc vào nhập khẩu và tạo nhiều việc làm chất lượng cao.",
-    "cloReferences": ["CLO5"],
-    "conceptTags": ["cong-nghiep-hoa", "phan-cong-lao-dong", "gia-tri-gia-tang"],
-    "learningObjectives": ["Phân tích vai trò của phân công lao động xã hội trong phát triển công nghiệp"]
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "cong-nghiep-hoa",
+      "phan-cong-lao-dong",
+      "gia-tri-gia-tang"
+    ],
+    "learningObjectives": [
+      "Phân tích vai trò của phân công lao động xã hội trong phát triển công nghiệp"
+    ]
   },
   {
     "id": "ex_cong_nghiep_ho_tro_yeu_cau",
     "content": "Yêu cầu doanh nghiệp FDI cam kết nội địa hóa là biện pháp chủ động của Nhà nước để tận dụng dòng vốn nước ngoài phục vụ mục tiêu công nghiệp hóa. Nhiều nước Đông Á thành công với chính sách này. Tuy nhiên, yêu cầu quá cao có thể làm nhà đầu tư nước ngoài chuyển hướng sang nước khác, cần có lộ trình thích hợp.",
-    "cloReferences": ["CLO5"],
-    "conceptTags": ["fdi", "noi-dia-hoa", "chuyen-giao-cong-nghe"],
-    "learningObjectives": ["Phân tích chính sách nội địa hóa gắn với thu hút FDI trong công nghiệp hóa"]
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "fdi",
+      "noi-dia-hoa",
+      "chuyen-giao-cong-nghe"
+    ],
+    "learningObjectives": [
+      "Phân tích chính sách nội địa hóa gắn với thu hút FDI trong công nghiệp hóa"
+    ]
   },
   {
     "id": "ex_cong_nghiep_ho_tro_nhap_khau",
     "content": "Tiếp tục nhập khẩu linh kiện, tập trung vào lắp ráp là chiến lược dễ thực hiện trong ngắn hạn, giúp tham gia nhanh vào chuỗi giá trị toàn cầu. Tuy nhiên, đây là vị trí có giá trị gia tăng thấp nhất trong chuỗi. Theo Mác, nước đi sau nếu chỉ dừng ở gia công, lắp ráp sẽ rơi vào 'bẫy thu nhập trung bình', không thoát khỏi trình độ công nghệ thấp.",
-    "cloReferences": ["CLO5"],
-    "conceptTags": ["gia-tri-gia-tang", "chuoi-gia-tri", "cong-nghiep-hoa"],
-    "learningObjectives": ["Phân tích khái niệm 'bẫy thu nhập trung bình' dưới góc độ phân công lao động quốc tế"]
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "gia-tri-gia-tang",
+      "chuoi-gia-tri",
+      "cong-nghiep-hoa"
+    ],
+    "learningObjectives": [
+      "Phân tích khái niệm 'bẫy thu nhập trung bình' dưới góc độ phân công lao động quốc tế"
+    ]
   },
   {
     "id": "ex_fdi_chap_thuan",
     "content": "Thu hút FDI là chủ trương quan trọng trong chiến lược hội nhập kinh tế quốc tế của Việt Nam. Theo Mác, tư bản có xu hướng vươn ra toàn cầu để tìm kiếm nơi đầu tư có tỷ suất lợi nhuận cao hơn. FDI mang lại việc làm, công nghệ và thị trường xuất khẩu. Tuy nhiên, nếu không có yêu cầu chuyển giao công nghệ, nền kinh tế dễ bị phụ thuộc vào công nghệ nước ngoài.",
-    "cloReferences": ["CLO5", "CLO8"],
-    "conceptTags": ["fdi", "hoi-nhap-quoc-te", "chuyen-giao-cong-nghe"],
-    "learningObjectives": ["Phân tích bản chất của xuất khẩu tư bản trong giai đoạn toàn cầu hóa"]
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "fdi",
+      "hoi-nhap-quoc-te",
+      "chuyen-giao-cong-nghe"
+    ],
+    "learningObjectives": [
+      "Phân tích bản chất của xuất khẩu tư bản trong giai đoạn toàn cầu hóa"
+    ]
   },
   {
     "id": "ex_fdi_chuyen_giao",
     "content": "Yêu cầu chuyển giao công nghệ và nội địa hóa là chiến thuật 'thu hút FDI có chọn lọc' mà nhiều nước thành công áp dụng. Theo Mác, nước đi sau có thể rút ngắn quá trình phát triển bằng cách tiếp thu và làm chủ công nghệ tiên tiến. Chính sách này vừa thu hút vốn nước ngoài, vừa xây dựng năng lực tự chủ, phù hợp với mục tiêu công nghiệp hóa, hiện đại hóa.",
-    "cloReferences": ["CLO5", "CLO8"],
-    "conceptTags": ["fdi", "chuyen-giao-cong-nghe", "nang-luc-tu-chu"],
-    "learningObjectives": ["Đánh giá chiến lược thu hút FDI có chọn lọc gắn với chuyển giao công nghệ"]
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "fdi",
+      "chuyen-giao-cong-nghe",
+      "nang-luc-tu-chu"
+    ],
+    "learningObjectives": [
+      "Đánh giá chiến lược thu hút FDI có chọn lọc gắn với chuyển giao công nghệ"
+    ]
   },
   {
     "id": "ex_fdi_tu_choi",
     "content": "Từ chối FDI lớn để tập trung phát triển doanh nghiệp nội địa là lựa chọn ưu tiên tự chủ kinh tế. Theo quan điểm của Mác, xây dựng nền kinh tế độc lập là yếu tố then chốt để bảo đảm độc lập chính trị. Tuy nhiên, trong bối cảnh toàn cầu hóa, từ chối hội nhập có thể làm mất cơ hội tiếp cận công nghệ và thị trường quốc tế, làm chậm quá trình phát triển.",
-    "cloReferences": ["CLO5", "CLO8"],
-    "conceptTags": ["nang-luc-tu-chu", "hoi-nhap-quoc-te", "bao-ho"],
-    "learningObjectives": ["Phân tích mối quan hệ giữa bảo đảm độc lập tự chủ và hội nhập kinh tế quốc tế"]
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "nang-luc-tu-chu",
+      "hoi-nhap-quoc-te",
+      "bao-ho"
+    ],
+    "learningObjectives": [
+      "Phân tích mối quan hệ giữa bảo đảm độc lập tự chủ và hội nhập kinh tế quốc tế"
+    ]
   },
   {
     "id": "ex_moi_truong_cam_ket",
     "content": "Cam kết mạnh về môi trường thể hiện trách nhiệm quốc tế và tận dụng cơ hội từ kinh tế xanh. Theo Mác, mâu thuẫn giữa tăng trưởng kinh tế và môi trường là biểu hiện của mâu thuẫn giữa lợi ích ngắn hạn và phát triển bền vững. Chi phí chuyển đổi xanh rất lớn nhưng mở ra thị trường mới, phù hợp với định hướng phát triển bền vững.",
-    "cloReferences": ["CLO5", "CLO7", "CLO8"],
-    "conceptTags": ["phat-trien-ben-vung", "moi-truong", "kinh-te-xanh"],
-    "learningObjectives": ["Phân tích mâu thuẫn giữa tăng trưởng kinh tế và bảo vệ môi trường trong chủ nghĩa tư bản"]
+    "cloReferences": [
+      "CLO5",
+      "CLO7",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "phat-trien-ben-vung",
+      "moi-truong",
+      "kinh-te-xanh"
+    ],
+    "learningObjectives": [
+      "Phân tích mâu thuẫn giữa tăng trưởng kinh tế và bảo vệ môi trường trong chủ nghĩa tư bản"
+    ]
   },
   {
     "id": "ex_moi_truong_lo_trinh",
     "content": "Cam kết có lộ trình dài hơn là cách tiếp cận thực dụng, dung hòa giữa tăng trưởng và bảo vệ môi trường. Các nước đang phát triển cần thời gian chuyển đổi để không gây sốc cho nền kinh tế. Theo Mác, quá trình chuyển hóa phương thức sản xuất diễn ra từ từ, tích lũy dần về lượng rồi mới chuyển thành chất.",
-    "cloReferences": ["CLO5", "CLO7"],
-    "conceptTags": ["phat-trien-ben-vung", "chuyen-doi-xanh", "phuong-thuc-san-xuat"],
-    "learningObjectives": ["Phân tích quy luật chuyển hóa từ những thay đổi về lượng thành những thay đổi về chất trong phát triển kinh tế"]
+    "cloReferences": [
+      "CLO5",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "phat-trien-ben-vung",
+      "chuyen-doi-xanh",
+      "phuong-thuc-san-xuat"
+    ],
+    "learningObjectives": [
+      "Phân tích quy luật chuyển hóa từ những thay đổi về lượng thành những thay đổi về chất trong phát triển kinh tế"
+    ]
   },
   {
     "id": "ex_moi_truong_tu_choi",
     "content": "Từ chối cam kết môi trường bảo vệ sản xuất hiện tại và việc làm trong ngắn hạn. Tuy nhiên, xu hướng toàn cầu đang chuyển dịch mạnh sang kinh tế xanh, và các rào cản thương mại liên quan đến carbon đang được thiết lập. Từ chối cam kết có thể dẫn đến mất thị trường xuất khẩu và tụt hậu công nghệ trong trung hạn.",
-    "cloReferences": ["CLO5", "CLO8"],
-    "conceptTags": ["phat-trien-ben-vung", "thuong-mai", "rao-can-xanh"],
-    "learningObjectives": ["Phân tích rủi ro của việc không thích ứng với xu hướng phát triển bền vững toàn cầu"]
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "phat-trien-ben-vung",
+      "thuong-mai",
+      "rao-can-xanh"
+    ],
+    "learningObjectives": [
+      "Phân tích rủi ro của việc không thích ứng với xu hướng phát triển bền vững toàn cầu"
+    ]
   },
   {
     "id": "ex_chuoi_cung_ung_ho_tro",
     "content": "Hỗ trợ doanh nghiệp nội địa tham gia chuỗi cung ứng toàn cầu là chiến lược nâng cao năng lực cạnh tranh quốc gia. Theo Mác, phân công lao động quốc tế là một tất yếu khách quan. Việt Nam cần tham gia vào chuỗi giá trị toàn cầu không chỉ ở khâu lắp ráp giản đơn mà ở những khâu có giá trị gia tăng cao hơn.",
-    "cloReferences": ["CLO5", "CLO8"],
-    "conceptTags": ["hoi-nhap-quoc-te", "chuoi-cung-ung", "phan-cong-lao-dong"],
-    "learningObjectives": ["Phân tích lợi ích của việc tham gia chuỗi giá trị toàn cầu đối với nước đang phát triển"]
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "hoi-nhap-quoc-te",
+      "chuoi-cung-ung",
+      "phan-cong-lao-dong"
+    ],
+    "learningObjectives": [
+      "Phân tích lợi ích của việc tham gia chuỗi giá trị toàn cầu đối với nước đang phát triển"
+    ]
   },
   {
     "id": "ex_chuoi_cung_ung_kcn",
     "content": "Xây dựng khu công nghiệp chuyên sâu với doanh nghiệp nội địa làm vệ tinh là mô hình liên kết sản xuất hiệu quả. Đây là mô hình 'trung tâm - vệ tinh' phổ biến ở các nước công nghiệp mới. Về mặt lý luận, mô hình này tạo sự lan tỏa công nghệ từ doanh nghiệp đầu tàu sang doanh nghiệp vệ tinh, phù hợp chiến lược công nghiệp hóa thông qua liên kết sản xuất.",
-    "cloReferences": ["CLO5"],
-    "conceptTags": ["khu-cong-nghiep", "lien-ket-san-xuat", "cong-nghiep-hoa"],
-    "learningObjectives": ["Phân tích mô hình 'trung tâm - vệ tinh' trong chiến lược công nghiệp hóa"]
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "khu-cong-nghiep",
+      "lien-ket-san-xuat",
+      "cong-nghiep-hoa"
+    ],
+    "learningObjectives": [
+      "Phân tích mô hình 'trung tâm - vệ tinh' trong chiến lược công nghiệp hóa"
+    ]
   },
   {
     "id": "ex_chuoi_cung_ung_noi_dia",
     "content": "Tập trung vào thị trường nội địa là chiến lược bảo vệ sản xuất trong nước. Theo Mác, thị trường nội địa là cơ sở của sự phát triển. Tuy nhiên, trong bối cảnh toàn cầu hóa, quy mô thị trường nội địa của Việt Nam còn nhỏ, và nhiều ngành cần thị trường toàn cầu để đạt quy mô tối ưu. Quá tập trung nội địa có thể hạn chế tăng trưởng dài hạn.",
-    "cloReferences": ["CLO5", "CLO8"],
-    "conceptTags": ["thi-truong-noi-dia", "hoi-nhap", "phat-trien"],
-    "learningObjectives": ["Phân tích vai trò của thị trường nội địa trong phát triển kinh tế"]
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "thi-truong-noi-dia",
+      "hoi-nhap",
+      "phat-trien"
+    ],
+    "learningObjectives": [
+      "Phân tích vai trò của thị trường nội địa trong phát triển kinh tế"
+    ]
   },
   {
     "id": "ex_ai_stem",
     "content": "Đầu tư vào giáo dục STEM và đào tạo lại là chiến lược đón đầu làn sóng AI. Theo Mác, lao động phức tạp được đào tạo bài bản tạo ra nhiều giá trị hơn và có khả năng thích ứng với thay đổi công nghệ. Trong bối cảnh AI thay thế lao động giản đơn, đầu tư vào giáo dục và đào tạo lại là cách duy nhất để duy trì việc làm có chất lượng.",
-    "cloReferences": ["CLO5", "CLO7", "CLO8"],
-    "conceptTags": ["ai", "giao-duc", "nguon-nhan-luc", "thich-ung-cong-nghe"],
-    "learningObjectives": ["Phân tích chiến lược phát triển nguồn nhân lực trong bối cảnh cách mạng AI"]
+    "cloReferences": [
+      "CLO5",
+      "CLO7",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "ai",
+      "giao-duc",
+      "nguon-nhan-luc",
+      "thich-ung-cong-nghe"
+    ],
+    "learningObjectives": [
+      "Phân tích chiến lược phát triển nguồn nhân lực trong bối cảnh cách mạng AI"
+    ]
   },
   {
     "id": "ex_ai_dieu_tiet",
     "content": "Điều tiết ứng dụng AI để bảo vệ việc làm là phản ứng thận trọng, ưu tiên an sinh xã hội. Mác từng phân tích nỗi lo của công nhân về máy móc thay thế lao động. Tuy nhiên, trong lịch sử, những nước điều tiết quá mức công nghệ mới thường tụt hậu so với nước tiên phong. Cần có chiến lược điều tiết thông minh, vừa bảo vệ vừa khuyến khích đổi mới.",
-    "cloReferences": ["CLO5", "CLO7"],
-    "conceptTags": ["ai", "dieu-tiet", "lao-dong"],
-    "learningObjectives": ["Phân tích mâu thuẫn giữa bảo vệ việc làm và thúc đẩy đổi mới công nghệ"]
+    "cloReferences": [
+      "CLO5",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "ai",
+      "dieu-tiet",
+      "lao-dong"
+    ],
+    "learningObjectives": [
+      "Phân tích mâu thuẫn giữa bảo vệ việc làm và thúc đẩy đổi mới công nghệ"
+    ]
   },
   {
     "id": "ex_ai_ket_hop",
     "content": "Kết hợp phát triển AI với an sinh xã hội là chiến lược cân bằng giữa tăng trưởng và phúc lợi. Theo Mác, Nhà nước có trách nhiệm bảo đảm tái sản xuất sức lao động xã hội. Trong thời đại AI, điều này có nghĩa là xây dựng hệ thống an sinh xã hội cho những người bị ảnh hưởng bởi chuyển đổi công nghệ, đồng thời đầu tư vào đào tạo kỹ năng mới.",
-    "cloReferences": ["CLO5", "CLO7", "CLO8"],
-    "conceptTags": ["ai", "an-sinh-xa-hoi", "phat-trien-ben-vung"],
-    "learningObjectives": ["Phân tích vai trò của Nhà nước trong bảo vệ người lao động trước thay đổi công nghệ"]
+    "cloReferences": [
+      "CLO5",
+      "CLO7",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "ai",
+      "an-sinh-xa-hoi",
+      "phat-trien-ben-vung"
+    ],
+    "learningObjectives": [
+      "Phân tích vai trò của Nhà nước trong bảo vệ người lao động trước thay đổi công nghệ"
+    ]
+  },
+  {
+    "id": "ex_dau_co_xu_phat",
+    "content": "Theo MÃ¡c, Ä‘áº§u cÆ¡ tÃ­ch trá»¯ lÃ  má»™t hiá»‡n tÆ°á»£ng kinh táº¿ xuáº¥t hiá»‡n khi ká»³ vá»ng vá» giÃ¡ cáº£ tÄƒng cao, lÃ m mÃ©o mÃ³ quan há»‡ cung - cáº§u thá»±c táº¿ vÃ  Ä‘áº©y giÃ¡ lÃªn. TÄƒng cÆ°á»ng thanh tra vÃ  xá»­ pháº¡t lÃ  cÃ´ng cá»¥ cá»§a NhÃ  nÆ°á»›c nháº±m báº£o vá»‡ tráº­t tá»± thá»‹ trÆ°á»ng. Khi NhÃ  nÆ°á»›c kiá»ƒm soÃ¡t Ä‘Æ°á»£c Ä‘áº§u cÆ¡, giÃ¡ cáº£ pháº£n Ã¡nh Ä‘Ãºng giÃ¡ trá»‹, báº£o vá»‡ ngÆ°á»i tiÃªu dÃ¹ng.",
+    "cloReferences": [
+      "CLO2",
+      "CLO3"
+    ],
+    "conceptTags": [
+      "dau-co",
+      "tich-tru",
+      "gia-ca",
+      "quy-luat-gia-tri"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch báº£n cháº¥t cá»§a Ä‘áº§u cÆ¡ dÆ°á»›i gÃ³c Ä‘á»™ quy luáº­t giÃ¡ trá»‹ vÃ  cung - cáº§u"
+    ]
+  },
+  {
+    "id": "ex_dau_co_de_tu_nhien",
+    "content": "Äá»ƒ thá»‹ trÆ°á»ng tá»± Ä‘iá»u chá»‰nh cÃ³ thá»ƒ kÃ­ch thÃ­ch sáº£n xuáº¥t trong dÃ i háº¡n. NhÆ°ng theo MÃ¡c, Ä‘áº§u cÆ¡ lÃ m sai lá»‡ch tÃ­n hiá»‡u thá»‹ trÆ°á»ng, gÃ¢y sá»‘t giÃ¡ giáº£ táº¡o vÃ  khá»§ng hoáº£ng. Khi cÆ¡n sá»‘t Ä‘i qua, giÃ¡ giáº£m máº¡nh gÃ¢y thiá»‡t háº¡i cho ngÆ°á»i sáº£n xuáº¥t nhá» vÃ  ngÆ°á»i tiÃªu dÃ¹ng cuá»‘i cÃ¹ng. Äáº§u cÆ¡ tÃ­ch trá»¯ lÃ  biá»ƒu hiá»‡n cá»§a mÃ¢u thuáº«n giá»¯a sáº£n xuáº¥t vÃ  lÆ°u thÃ´ng trong chá»§ nghÄ©a tÆ° báº£n.",
+    "cloReferences": [
+      "CLO2",
+      "CLO3"
+    ],
+    "conceptTags": [
+      "dau-co",
+      "thi-truong",
+      "khung-hoang"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch háº­u quáº£ kinh táº¿ - xÃ£ há»™i cá»§a Ä‘áº§u cÆ¡ tÃ­ch trá»¯"
+    ]
+  },
+  {
+    "id": "ex_dau_co_xa_hang",
+    "content": "Xáº£ hÃ ng dá»± trá»¯ quá»‘c gia lÃ  biá»‡n phÃ¡p can thiá»‡p trá»±c tiáº¿p cá»§a NhÃ  nÆ°á»›c nháº±m bÃ¬nh á»•n thá»‹ trÆ°á»ng. Theo MÃ¡c, NhÃ  nÆ°á»›c cÃ³ vai trÃ² Ä‘iá»u tiáº¿t Ä‘á»ƒ báº£o vá»‡ lá»£i Ã­ch cÃ´ng, Ä‘áº·c biá»‡t khi thá»‹ trÆ°á»ng tháº¥t báº¡i trong viá»‡c phÃ¢n bá»• nguá»“n lá»±c hiá»‡u quáº£. Dá»± trá»¯ quá»‘c gia lÃ  cÃ´ng cá»¥ chiáº¿n lÆ°á»£c Ä‘á»ƒ Ä‘á»‘i phÃ³ vá»›i biáº¿n Ä‘á»™ng thá»‹ trÆ°á»ng vÃ  báº£o Ä‘áº£m an ninh kinh táº¿.",
+    "cloReferences": [
+      "CLO2",
+      "CLO3",
+      "CLO4"
+    ],
+    "conceptTags": [
+      "du-tru-quoc-gia",
+      "gia-ca",
+      "vai-tro-nha-nuoc"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a dá»± trá»¯ quá»‘c gia trong á»•n Ä‘á»‹nh thá»‹ trÆ°á»ng"
+    ]
+  },
+  {
+    "id": "ex_ban_pha_gia_thue",
+    "content": "BÃ¡n phÃ¡ giÃ¡ lÃ  hÃ nh vi xuáº¥t kháº©u hÃ ng hÃ³a vá»›i giÃ¡ tháº¥p hÆ¡n giÃ¡ thÃ nh sáº£n xuáº¥t, nháº±m chiáº¿m thá»‹ trÆ°á»ng vÃ  loáº¡i bá» Ä‘á»‘i thá»§ cáº¡nh tranh. Theo lÃ½ luáº­n cá»§a MÃ¡c vá» cáº¡nh tranh quá»‘c táº¿, cÃ¡c táº­p Ä‘oÃ n lá»›n sá»­ dá»¥ng chiáº¿n thuáº­t nÃ y Ä‘á»ƒ má»Ÿ rá»™ng thá»‹ trÆ°á»ng. WTO cho phÃ©p Ã¡p thuáº¿ chá»‘ng bÃ¡n phÃ¡ giÃ¡ Ä‘á»ƒ báº£o vá»‡ ngÃ nh sáº£n xuáº¥t trong nÆ°á»›c khá»i cáº¡nh tranh khÃ´ng lÃ nh máº¡nh.",
+    "cloReferences": [
+      "CLO3",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "ban-pha-gia",
+      "canh-tranh-quoc-te",
+      "bao-ho-mau-dich"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch hiá»‡n tÆ°á»£ng bÃ¡n phÃ¡ giÃ¡ trong thÆ°Æ¡ng máº¡i quá»‘c táº¿ dÆ°á»›i gÃ³c Ä‘á»™ cáº¡nh tranh"
+    ]
+  },
+  {
+    "id": "ex_ban_pha_gia_tu_do",
+    "content": "KhÃ´ng Ã¡p thuáº¿ chá»‘ng bÃ¡n phÃ¡ giÃ¡ giÃºp ngÆ°á»i tiÃªu dÃ¹ng hÆ°á»Ÿng giÃ¡ ráº» trÆ°á»›c máº¯t. Tuy nhiÃªn, theo MÃ¡c, vá» lÃ¢u dÃ i hÃ nh vi bÃ¡n phÃ¡ giÃ¡ sáº½ Ä‘Ã o tháº£i cÃ¡c doanh nghiá»‡p ná»™i Ä‘á»‹a, táº¡o tháº¿ Ä‘á»™c quyá»n cho nhÃ  xuáº¥t kháº©u nÆ°á»›c ngoÃ i. Sau khi loáº¡i bá» Ä‘á»‘i thá»§, há» cÃ³ thá»ƒ tÄƒng giÃ¡, khiáº¿n ngÆ°á»i tiÃªu dÃ¹ng ná»™i Ä‘á»‹a pháº£i tráº£ giÃ¡ Ä‘áº¯t hÆ¡n.",
+    "cloReferences": [
+      "CLO3",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "ban-pha-gia",
+      "doc-quyen",
+      "thuong-mai"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch há»‡ quáº£ dÃ i háº¡n cá»§a bÃ¡n phÃ¡ giÃ¡ Ä‘á»‘i vá»›i ná»n kinh táº¿ nÆ°á»›c nháº­p kháº©u"
+    ]
+  },
+  {
+    "id": "ex_ban_pha_gia_dam_phan",
+    "content": "ÄÃ m phÃ¡n song phÆ°Æ¡ng Ä‘á»ƒ háº¡n cháº¿ xuáº¥t kháº©u tá»± nguyá»‡n lÃ  giáº£i phÃ¡p ngoáº¡i giao kinh táº¿, giáº£m cÄƒng tháº³ng thÆ°Æ¡ng máº¡i mÃ  khÃ´ng vi pháº¡m cÃ¡c quy Ä‘á»‹nh cá»§a WTO. Theo MÃ¡c, trong quan há»‡ kinh táº¿ quá»‘c táº¿, cÃ¡c nÆ°á»›c lá»›n thÆ°á»ng Ã¡p Ä‘áº·t Ä‘iá»u kiá»‡n lÃªn nÆ°á»›c nhá», nhÆ°ng cÃ¡c nÆ°á»›c Ä‘ang phÃ¡t triá»ƒn cÃ³ thá»ƒ thÃ´ng qua Ä‘Ã m phÃ¡n Ä‘á»ƒ báº£o vá»‡ lá»£i Ã­ch há»£p phÃ¡p cá»§a mÃ¬nh.",
+    "cloReferences": [
+      "CLO3",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "dam-phan",
+      "thuong-mai-quoc-te",
+      "ngoai-giao-kinh-te"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a Ä‘Ã m phÃ¡n thÆ°Æ¡ng máº¡i trong giáº£i quyáº¿t tranh cháº¥p"
+    ]
+  },
+  {
+    "id": "ex_phan_phoi_luy_tien",
+    "content": "Theo MÃ¡c, phÃ¢n phá»‘i thu nháº­p pháº£n Ã¡nh quan há»‡ sáº£n xuáº¥t vÃ  quyá»n sá»Ÿ há»¯u tÆ° liá»‡u sáº£n xuáº¥t. Thuáº¿ lÅ©y tiáº¿n lÃ  cÃ´ng cá»¥ phÃ¢n phá»‘i láº¡i thu nháº­p, Ä‘Ã¡nh vÃ o ngÆ°á»i giÃ u nhiá»u hÆ¡n Ä‘á»ƒ tÃ i trá»£ cho phÃºc lá»£i xÃ£ há»™i. ÄÃ¢y lÃ  biá»‡n phÃ¡p giáº£m báº¥t bÃ¬nh Ä‘áº³ng vÃ  thá»±c hiá»‡n cÃ´ng báº±ng xÃ£ há»™i, phÃ¹ há»£p vá»›i Ä‘á»‹nh hÆ°á»›ng XHCN.",
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "phan-phoi-thu-nhap",
+      "bat-binh-dang",
+      "thue-luy-tien"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a thuáº¿ lÅ©y tiáº¿n trong phÃ¢n phá»‘i láº¡i thu nháº­p"
+    ]
+  },
+  {
+    "id": "ex_phan_phoi_duy_tri",
+    "content": "ChÃ­nh sÃ¡ch Æ°u tiÃªn tÄƒng trÆ°á»Ÿng trÆ°á»›c, phÃ¢n phá»‘i sau dá»±a trÃªn giáº£ thuyáº¿t \"trickle-down\" â€“ tÄƒng trÆ°á»Ÿng sáº½ lan tá»a xuá»‘ng má»i táº§ng lá»›p. Tuy nhiÃªn, MÃ¡c chá»‰ ra ráº±ng tÃ­ch lÅ©y tÆ° báº£n dáº«n Ä‘áº¿n sá»± phÃ¢n cá»±c giÃ u nghÃ¨o, khÃ´ng tá»± Ä‘á»™ng mang láº¡i lá»£i Ã­ch cho ngÆ°á»i nghÃ¨o. Cáº§n cÃ³ chÃ­nh sÃ¡ch phÃ¢n phá»‘i chá»§ Ä‘á»™ng Ä‘á»ƒ báº£o Ä‘áº£m tiáº¿n bá»™ xÃ£ há»™i.",
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "phan-phoi-thu-nhap",
+      "tang-truong",
+      "tich-luy-tu-ban"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch giá»›i háº¡n cá»§a há»c thuyáº¿t trickle-down dÆ°á»›i gÃ³c Ä‘á»™ kinh táº¿ chÃ­nh trá»‹ MÃ¡c-LÃªnin"
+    ]
+  },
+  {
+    "id": "ex_phan_phoi_cai_cach",
+    "content": "Cáº£i cÃ¡ch tiá»n lÆ°Æ¡ng tá»‘i thiá»ƒu vÃ  Ä‘áº§u tÆ° giÃ¡o dá»¥c vÃ¹ng nghÃ¨o lÃ  chiáº¿n lÆ°á»£c dÃ i háº¡n nháº±m nÃ¢ng cao cháº¥t lÆ°á»£ng nguá»“n nhÃ¢n lá»±c vÃ  giáº£m báº¥t bÃ¬nh Ä‘áº³ng cÆ¡ cáº¥u. Theo MÃ¡c, tÃ¡i sáº£n xuáº¥t má»Ÿ rá»™ng sá»©c lao Ä‘á»™ng thÃ´ng qua giÃ¡o dá»¥c vÃ  Ä‘Ã o táº¡o lÃ  yáº¿u tá»‘ quyáº¿t Ä‘á»‹nh cho phÃ¡t triá»ƒn. Äáº§u tÆ° vÃ o con ngÆ°á»i vá»«a tÄƒng nÄƒng suáº¥t vá»«a nÃ¢ng cao cÃ´ng báº±ng xÃ£ há»™i.",
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "phan-phoi-thu-nhap",
+      "giao-duc",
+      "tai-san-xuat-suc-lao-dong"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch má»‘i quan há»‡ giá»¯a Ä‘áº§u tÆ° giÃ¡o dá»¥c vÃ  giáº£m báº¥t bÃ¬nh Ä‘áº³ng thu nháº­p"
+    ]
+  },
+  {
+    "id": "ex_lien_ket_vung_thanh_lap",
+    "content": "Theo MÃ¡c, phÃ¢n cÃ´ng lao Ä‘á»™ng xÃ£ há»™i vÃ  há»£p tÃ¡c lÃ  yáº¿u tá»‘ thÃºc Ä‘áº©y lá»±c lÆ°á»£ng sáº£n xuáº¥t phÃ¡t triá»ƒn. LiÃªn káº¿t vÃ¹ng vá»›i cÆ¡ cháº¿ Ä‘iá»u phá»‘i táº­p trung kháº¯c phá»¥c tÃ¬nh tráº¡ng cÃ¡t cá»© kinh táº¿ Ä‘á»‹a phÆ°Æ¡ng. NhÃ  nÆ°á»›c Ä‘Ã³ng vai trÃ² kiáº¿n táº¡o, phÃ¢n bá»• nguá»“n lá»±c há»£p lÃ½ Ä‘á»ƒ khai thÃ¡c lá»£i tháº¿ so sÃ¡nh cá»§a tá»«ng vÃ¹ng, nÃ¢ng cao hiá»‡u quáº£ tá»•ng thá»ƒ ná»n kinh táº¿.",
+    "cloReferences": [
+      "CLO4",
+      "CLO5"
+    ],
+    "conceptTags": [
+      "lien-ket-vung",
+      "phan-cong-lao-dong",
+      "phan-bo-nguon-luc"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a NhÃ  nÆ°á»›c trong Ä‘iá»u phá»‘i liÃªn káº¿t vÃ¹ng kinh táº¿"
+    ]
+  },
+  {
+    "id": "ex_lien_ket_vung_tu_do",
+    "content": "Äá»ƒ cÃ¡c Ä‘á»‹a phÆ°Æ¡ng tá»± do cáº¡nh tranh cÃ³ thá»ƒ kÃ­ch thÃ­ch sá»± nÄƒng Ä‘á»™ng, nhÆ°ng dáº«n Ä‘áº¿n trÃ¹ng láº·p quy hoáº¡ch vÃ  cháº¡y Ä‘ua Æ°u Ä‘Ã£i Ä‘áº§u tÆ°. Theo MÃ¡c, cáº¡nh tranh khÃ´ng cÃ³ Ä‘iá»u phá»‘i trong ná»™i bá»™ quá»‘c gia dáº«n Ä‘áº¿n lÃ£ng phÃ­ nguá»“n lá»±c xÃ£ há»™i. Thiáº¿u sá»± phá»‘i há»£p vÃ¹ng, cÃ¡c Ä‘á»‹a phÆ°Æ¡ng cÃ³ thá»ƒ triá»‡t tiÃªu lá»£i tháº¿ cá»§a nhau, lÃ m giáº£m hiá»‡u quáº£ tá»•ng thá»ƒ.",
+    "cloReferences": [
+      "CLO4",
+      "CLO5"
+    ],
+    "conceptTags": [
+      "canh-tranh",
+      "dia-phuong",
+      "quy-hoach"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch háº¡n cháº¿ cá»§a cáº¡nh tranh giá»¯a cÃ¡c Ä‘á»‹a phÆ°Æ¡ng trong phÃ¡t triá»ƒn vÃ¹ng"
+    ]
+  },
+  {
+    "id": "ex_lien_ket_vung_quy_hoach",
+    "content": "XÃ¢y dá»±ng quy hoáº¡ch vÃ¹ng thá»‘ng nháº¥t vá»›i cháº¿ tÃ i xá»­ lÃ½ vi pháº¡m lÃ  sá»± can thiá»‡p cá»§a NhÃ  nÆ°á»›c nháº±m kháº¯c phá»¥c tháº¥t báº¡i cá»§a thá»‹ trÆ°á»ng vÃ  sá»± phá»‘i há»£p. Trong lÃ½ luáº­n MÃ¡c-LÃªnin, NhÃ  nÆ°á»›c cÃ³ chá»©c nÄƒng hoáº¡ch Ä‘á»‹nh chiáº¿n lÆ°á»£c phÃ¡t triá»ƒn kinh táº¿ - xÃ£ há»™i. Quy hoáº¡ch vÃ¹ng giÃºp sá»­ dá»¥ng hiá»‡u quáº£ tÃ i nguyÃªn, báº£o vá»‡ mÃ´i trÆ°á»ng vÃ  phÃ¡t triá»ƒn bá»n vá»¯ng.",
+    "cloReferences": [
+      "CLO4",
+      "CLO5"
+    ],
+    "conceptTags": [
+      "quy-hoach",
+      "lien-ket-vung",
+      "phat-trien-ben-vung"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a quy hoáº¡ch trong phÃ¡t triá»ƒn kinh táº¿ vÃ¹ng"
+    ]
+  },
+  {
+    "id": "ex_so_huu_tri_tue_manh",
+    "content": "Báº£o há»™ sá»Ÿ há»¯u trÃ­ tuá»‡ máº¡nh táº¡o Ä‘á»™ng lá»±c cho Ä‘á»•i má»›i sÃ¡ng táº¡o vÃ  thu hÃºt Ä‘áº§u tÆ° R&D nÆ°á»›c ngoÃ i. Tuy nhiÃªn, theo MÃ¡c, quyá»n sá»Ÿ há»¯u trÃ­ tuá»‡ trong chá»§ nghÄ©a tÆ° báº£n cÃ³ thá»ƒ trá»Ÿ thÃ nh cÃ´ng cá»¥ Ä‘á»™c quyá»n, háº¡n cháº¿ tiáº¿p cáº­n tri thá»©c vÃ  cÃ´ng nghá»‡ cá»§a nÆ°á»›c Ä‘ang phÃ¡t triá»ƒn. Chi phÃ­ dÆ°á»£c pháº©m vÃ  pháº§n má»m tÄƒng cao áº£nh hÆ°á»Ÿng Ä‘áº¿n phÃºc lá»£i ngÆ°á»i dÃ¢n.",
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "so-huu-tri-tue",
+      "doc-quyen",
+      "chuyen-giao-cong-nghe"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch tÃ¡c Ä‘á»™ng cá»§a báº£o há»™ sá»Ÿ há»¯u trÃ­ tuá»‡ Ä‘áº¿n tiáº¿p cáº­n cÃ´ng nghá»‡ á»Ÿ nÆ°á»›c Ä‘ang phÃ¡t triá»ƒn"
+    ]
+  },
+  {
+    "id": "ex_so_huu_tri_tue_duy_tri",
+    "content": "Duy trÃ¬ luáº­t hiá»‡n hÃ nh vÃ  Ä‘Ã m phÃ¡n lá»™ trÃ¬nh chuyá»ƒn Ä‘á»•i lÃ  cÃ¡ch tiáº¿p cáº­n tháº­n trá»ng, cÃ¢n báº±ng giá»¯a nghÄ©a vá»¥ quá»‘c táº¿ vÃ  báº£o vá»‡ lá»£i Ã­ch quá»‘c gia. CÃ¡c nÆ°á»›c Ä‘ang phÃ¡t triá»ƒn thÆ°á»ng cáº§n thá»i gian chuyá»ƒn Ä‘á»•i Ä‘á»ƒ thÃ­ch á»©ng vá»›i tiÃªu chuáº©n báº£o há»™ cao hÆ¡n. ÄÃ m phÃ¡n lá»™ trÃ¬nh cho phÃ©p doanh nghiá»‡p trong nÆ°á»›c chuáº©n bá»‹ vÃ  Ä‘iá»u chá»‰nh.",
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "so-huu-tri-tue",
+      "dam-phan",
+      "lo-trinh-chuyen-doi"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch chiáº¿n lÆ°á»£c Ä‘Ã m phÃ¡n trong báº£o há»™ sá»Ÿ há»¯u trÃ­ tuá»‡"
+    ]
+  },
+  {
+    "id": "ex_so_huu_tri_tue_noi_long",
+    "content": "Ná»›i lá»ng báº£o há»™ sá»Ÿ há»¯u trÃ­ tuá»‡ giÃºp ngÆ°á»i dÃ¢n tiáº¿p cáº­n thuá»‘c vÃ  cÃ´ng nghá»‡ giÃ¡ ráº», nÃ¢ng cao phÃºc lá»£i xÃ£ há»™i. Theo MÃ¡c, tri thá»©c lÃ  sáº£n pháº©m cá»§a lao Ä‘á»™ng xÃ£ há»™i, viá»‡c Ä‘á»™c quyá»n hÃ³a tri thá»©c cáº£n trá»Ÿ sá»± phÃ¡t triá»ƒn cá»§a lá»±c lÆ°á»£ng sáº£n xuáº¥t. Tuy nhiÃªn, chÃ­nh sÃ¡ch nÃ y cÃ³ thá»ƒ lÃ m giáº£m Ä‘áº§u tÆ° R&D nÆ°á»›c ngoÃ i vÃ  áº£nh hÆ°á»Ÿng Ä‘áº¿n quan há»‡ thÆ°Æ¡ng máº¡i.",
+    "cloReferences": [
+      "CLO5",
+      "CLO7",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "so-huu-tri-tue",
+      "phuc-loi-xa-hoi",
+      "tiep-can-tri-thuc"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch sá»± Ä‘Ã¡nh Ä‘á»•i giá»¯a báº£o há»™ sÃ¡ng cháº¿ vÃ  tiáº¿p cáº­n cÃ´ng nghá»‡ y táº¿ cÆ¡ báº£n"
+    ]
+  },
+  {
+    "id": "ex_thien_tai_cuu_tro",
+    "content": "Theo quan Ä‘iá»ƒm MÃ¡c-LÃªnin, NhÃ  nÆ°á»›c cÃ³ trÃ¡ch nhiá»‡m báº£o vá»‡ nhÃ¢n dÃ¢n trÆ°á»›c thiÃªn tai â€“ biá»ƒu hiá»‡n cá»§a mÃ¢u thuáº«n giá»¯a con ngÆ°á»i vÃ  tá»± nhiÃªn. Chi ngÃ¢n sÃ¡ch há»— trá»£ kháº¯c phá»¥c háº­u quáº£ lÃ  pháº£n á»©ng tÃ¬nh tháº¿ cáº§n thiáº¿t, báº£o Ä‘áº£m an sinh xÃ£ há»™i ngay láº­p tá»©c. Tuy nhiÃªn, Ä‘Ã¢y lÃ  giáº£i phÃ¡p ngáº¯n háº¡n, khÃ´ng giáº£i quyáº¿t táº­n gá»‘c váº¥n Ä‘á» biáº¿n Ä‘á»•i khÃ­ háº­u.",
+    "cloReferences": [
+      "CLO7"
+    ],
+    "conceptTags": [
+      "thien-tai",
+      "an-sinh-xa-hoi",
+      "vai-tro-nha-nuoc"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a NhÃ  nÆ°á»›c trong á»©ng phÃ³ vá»›i thiÃªn tai"
+    ]
+  },
+  {
+    "id": "ex_thien_tai_dau_tu",
+    "content": "Äáº§u tÆ° há»‡ thá»‘ng thá»§y lá»£i vÃ  Ä‘Ãª Ä‘iá»u lÃ  giáº£i phÃ¡p cÄƒn cÆ¡, dÃ i háº¡n Ä‘á»ƒ thÃ­ch á»©ng vá»›i biáº¿n Ä‘á»•i khÃ­ háº­u. Theo MÃ¡c, Ä‘áº§u tÆ° vÃ o háº¡ táº§ng lÃ  tÆ° báº£n cá»‘ Ä‘á»‹nh cá»§a xÃ£ há»™i, táº¡o ná»n táº£ng cho tÃ¡i sáº£n xuáº¥t má»Ÿ rá»™ng vÃ  phÃ¡t triá»ƒn bá»n vá»¯ng. Máº·c dÃ¹ tá»‘n kÃ©m, Ä‘Ã¢y lÃ  Ä‘áº§u tÆ° mang láº¡i hiá»‡u quáº£ lÃ¢u dÃ i cho ná»n kinh táº¿.",
+    "cloReferences": [
+      "CLO7"
+    ],
+    "conceptTags": [
+      "thien-tai",
+      "dau-tu-cong",
+      "ha-tang"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch hiá»‡u quáº£ Ä‘áº§u tÆ° cÃ´ng vÃ o háº¡ táº§ng phÃ²ng chá»‘ng thiÃªn tai"
+    ]
+  },
+  {
+    "id": "ex_thien_tai_quoc_te",
+    "content": "KÃªu gá»i cá»™ng Ä‘á»“ng quá»‘c táº¿ há»— trá»£ lÃ  giáº£i phÃ¡p táº­n dá»¥ng nguá»“n lá»±c bÃªn ngoÃ i, thá»ƒ hiá»‡n tinh tháº§n há»£p tÃ¡c quá»‘c táº¿. Trong bá»‘i cáº£nh toÃ n cáº§u hÃ³a, biáº¿n Ä‘á»•i khÃ­ háº­u lÃ  váº¥n Ä‘á» toÃ n cáº§u cáº§n giáº£i phÃ¡p toÃ n cáº§u. Há»— trá»£ quá»‘c táº¿ giÃºp giáº£m gÃ¡nh náº·ng ngÃ¢n sÃ¡ch, nhÆ°ng cÃ³ thá»ƒ táº¡o sá»± phá»¥ thuá»™c náº¿u khÃ´ng káº¿t há»£p xÃ¢y dá»±ng nÄƒng lá»±c tá»± á»©ng phÃ³.",
+    "cloReferences": [
+      "CLO7",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "thien-tai",
+      "hop-tac-quoc-te",
+      "vien-tro"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a há»£p tÃ¡c quá»‘c táº¿ trong á»©ng phÃ³ tháº£m há»a thiÃªn nhiÃªn"
+    ]
+  },
+  {
+    "id": "ex_khung_hoang_tc_that_chat",
+    "content": "Theo MÃ¡c, khá»§ng hoáº£ng tÃ i chÃ­nh lÃ  biá»ƒu hiá»‡n cá»§a mÃ¢u thuáº«n ná»™i táº¡i trong ná»n kinh táº¿ tÆ° báº£n. TÄƒng lÃ£i suáº¥t vÃ  tháº¯t cháº·t tiá»n tá»‡ lÃ  biá»‡n phÃ¡p cá»• Ä‘iá»ƒn Ä‘á»ƒ á»•n Ä‘á»‹nh tá»· giÃ¡ vÃ  kiá»m cháº¿ Ä‘áº§u cÆ¡. Tuy nhiÃªn, chÃ­nh sÃ¡ch nÃ y lÃ m giáº£m Ä‘áº§u tÆ° vÃ  tiÃªu dÃ¹ng, cÃ³ thá»ƒ Ä‘áº©y ná»n kinh táº¿ vÃ o suy thoÃ¡i sÃ¢u hÆ¡n. Cáº§n cÃ³ sá»± cÃ¢n báº±ng giá»¯a á»•n Ä‘á»‹nh vÄ© mÃ´ vÃ  duy trÃ¬ tÄƒng trÆ°á»Ÿng.",
+    "cloReferences": [
+      "CLO3",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "khung-hoang-tai-chinh",
+      "tien-te",
+      "lai-suat"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch tÃ¡c Ä‘á»™ng cá»§a chÃ­nh sÃ¡ch tháº¯t cháº·t tiá»n tá»‡ trong khá»§ng hoáº£ng tÃ i chÃ­nh"
+    ]
+  },
+  {
+    "id": "ex_khung_hoang_tc_bom_tien",
+    "content": "BÆ¡m thanh khoáº£n vÃ  can thiá»‡p tá»· giÃ¡ cÃ³ má»¥c tiÃªu lÃ  biá»‡n phÃ¡p \"bÆ¡m tiá»n\" nháº±m giáº£i tá»a Ã¡p lá»±c há»‡ thá»‘ng ngÃ¢n hÃ ng vÃ  doanh nghiá»‡p. Keynes á»§ng há»™ can thiá»‡p nÃ y, trong khi MÃ¡c cáº£nh bÃ¡o ráº±ng bÆ¡m tiá»n chá»‰ giáº£i quyáº¿t triá»‡u chá»©ng, khÃ´ng kháº¯c phá»¥c cÄƒn nguyÃªn cá»§a khá»§ng hoáº£ng. Náº¿u láº¡m dá»¥ng, chÃ­nh sÃ¡ch nÃ y gÃ¢y láº¡m phÃ¡t vÃ  máº¥t giÃ¡ tiá»n tá»‡ kÃ©o dÃ i.",
+    "cloReferences": [
+      "CLO3",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "khung-hoang-tai-chinh",
+      "thanh-khoan",
+      "ty-gia"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch hiá»‡u quáº£ cá»§a bÆ¡m thanh khoáº£n trong á»©ng phÃ³ khá»§ng hoáº£ng tÃ i chÃ­nh"
+    ]
+  },
+  {
+    "id": "ex_khung_hoang_tc_kiem_soat",
+    "content": "Kiá»ƒm soÃ¡t vá»‘n vÃ  tÄƒng dá»± trá»¯ ngoáº¡i há»‘i lÃ  biá»‡n phÃ¡p báº£o vá»‡ ná»n kinh táº¿ khá»i cÃ¡c cÃº sá»‘c tá»« bÃªn ngoÃ i. Theo MÃ¡c, tá»± do hÃ³a tÃ i chÃ­nh trong Ä‘iá»u kiá»‡n báº¥t bÃ¬nh Ä‘áº³ng quá»‘c táº¿ khiáº¿n cÃ¡c nÆ°á»›c Ä‘ang phÃ¡t triá»ƒn dá»… bá»‹ tá»•n thÆ°Æ¡ng. Kiá»ƒm soÃ¡t vá»‘n giÃºp ngÄƒn dÃ²ng vá»‘n nÃ³ng rÃºt ra á»“ áº¡t, duy trÃ¬ á»•n Ä‘á»‹nh nhÆ°ng cÃ³ thá»ƒ lÃ m giáº£m niá»m tin cá»§a nhÃ  Ä‘áº§u tÆ° nÆ°á»›c ngoÃ i.",
+    "cloReferences": [
+      "CLO3",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "kiem-soat-von",
+      "du-tru-ngoai-hoi",
+      "on-dinh-tai-chinh"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a kiá»ƒm soÃ¡t vá»‘n trong á»•n Ä‘á»‹nh tÃ i chÃ­nh vÄ© mÃ´"
+    ]
+  },
+  {
+    "id": "ex_gia_dau_giam_thue",
+    "content": "Giáº£m thuáº¿ nháº­p kháº©u xÄƒng dáº§u lÃ  cÃ´ng cá»¥ tÃ i khÃ³a ngáº¯n háº¡n giÃºp giáº£m Ã¡p lá»±c lÃªn giÃ¡ tiÃªu dÃ¹ng vÃ  chi phÃ­ sáº£n xuáº¥t. Theo quy luáº­t giÃ¡ trá»‹, khi thuáº¿ giáº£m, giÃ¡ cáº£ hÃ ng hÃ³a giáº£m tÆ°Æ¡ng á»©ng, há»— trá»£ ngÆ°á»i tiÃªu dÃ¹ng vÃ  doanh nghiá»‡p. Tuy nhiÃªn, giáº£m thuáº¿ lÃ m giáº£m thu ngÃ¢n sÃ¡ch vÃ  cÃ³ thá»ƒ khuyáº¿n khÃ­ch tiÃªu dÃ¹ng nhiÃªn liá»‡u hÃ³a tháº¡ch, gÃ¢y háº¡i mÃ´i trÆ°á»ng.",
+    "cloReferences": [
+      "CLO2",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "gia-dau",
+      "thue",
+      "nang-luong"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch tÃ¡c Ä‘á»™ng cá»§a chÃ­nh sÃ¡ch thuáº¿ Ä‘á»‘i vá»›i giÃ¡ nÄƒng lÆ°á»£ng"
+    ]
+  },
+  {
+    "id": "ex_gia_dau_de_tang",
+    "content": "Äá»ƒ giÃ¡ xÄƒng dáº§u tÄƒng theo thá»‹ trÆ°á»ng tháº¿ giá»›i pháº£n Ã¡nh Ä‘Ãºng chi phÃ­ cÆ¡ há»™i cá»§a ná»n kinh táº¿. Theo MÃ¡c, khi giÃ¡ cáº£ Ä‘Æ°á»£c xÃ¡c Ä‘á»‹nh bá»Ÿi thá»‹ trÆ°á»ng, cÃ¡c tÃ­n hiá»‡u kinh táº¿ Ä‘Æ°á»£c truyá»n dáº«n chÃ­nh xÃ¡c. GiÃ¡ cao khuyáº¿n khÃ­ch tiáº¿t kiá»‡m nÄƒng lÆ°á»£ng vÃ  chuyá»ƒn dá»‹ch sang nÄƒng lÆ°á»£ng tÃ¡i táº¡o. Tuy nhiÃªn, tÃ¡c Ä‘á»™ng xÃ£ há»™i ráº¥t lá»›n: láº¡m phÃ¡t tÄƒng, ngÆ°á»i nghÃ¨o chá»‹u thiá»‡t nhiá»u nháº¥t.",
+    "cloReferences": [
+      "CLO2",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "gia-dau",
+      "thi-truong",
+      "lam-phat"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch sá»± Ä‘Ã¡nh Ä‘á»•i giá»¯a hiá»‡u quáº£ thá»‹ trÆ°á»ng vÃ  an sinh xÃ£ há»™i trong chÃ­nh sÃ¡ch giÃ¡ nÄƒng lÆ°á»£ng"
+    ]
+  },
+  {
+    "id": "ex_gia_dau_du_tru",
+    "content": "TÄƒng cÆ°á»ng dá»± trá»¯ quá»‘c gia vÃ  Ä‘áº©y máº¡nh nÄƒng lÆ°á»£ng tÃ¡i táº¡o lÃ  chiáº¿n lÆ°á»£c dÃ i háº¡n nháº±m giáº£m phá»¥ thuá»™c vÃ o nÄƒng lÆ°á»£ng nháº­p kháº©u. Theo MÃ¡c, phÃ¡t triá»ƒn lá»±c lÆ°á»£ng sáº£n xuáº¥t bao gá»“m cáº£ nguá»“n nÄƒng lÆ°á»£ng â€“ yáº¿u tá»‘ Ä‘áº§u vÃ o cÆ¡ báº£n. Äáº§u tÆ° vÃ o nÄƒng lÆ°á»£ng tÃ¡i táº¡o vá»«a báº£o Ä‘áº£m an ninh nÄƒng lÆ°á»£ng vá»«a báº£o vá»‡ mÃ´i trÆ°á»ng, phÃ¹ há»£p phÃ¡t triá»ƒn bá»n vá»¯ng.",
+    "cloReferences": [
+      "CLO5",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "du-tru-quoc-gia",
+      "nang-luong-tai-tao",
+      "an-ninh-nang-luong"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch chiáº¿n lÆ°á»£c an ninh nÄƒng lÆ°á»£ng quá»‘c gia dÆ°á»›i gÃ³c Ä‘á»™ kinh táº¿ chÃ­nh trá»‹"
+    ]
+  },
+  {
+    "id": "ex_dich_benh_phong_toa",
+    "content": "Phong tá»a nghiÃªm ngáº·t Æ°u tiÃªn sá»©c khá»e cá»™ng Ä‘á»“ng, thá»ƒ hiá»‡n quan Ä‘iá»ƒm cá»§a kinh táº¿ chÃ­nh trá»‹ MÃ¡c-LÃªnin vá» Æ°u tiÃªn con ngÆ°á»i vÃ  báº£o vá»‡ tÃ­nh máº¡ng. Tuy nhiÃªn, phong tá»a lÃ m Ä‘Ã¬nh trá»‡ sáº£n xuáº¥t vÃ  lÆ°u thÃ´ng, gÃ¢y suy giáº£m kinh táº¿ nghiÃªm trá»ng. MÃ¡c tá»«ng phÃ¢n tÃ­ch mÃ¢u thuáº«n giá»¯a yÃªu cáº§u sáº£n xuáº¥t liÃªn tá»¥c vÃ  nhu cáº§u báº£o vá»‡ sá»©c khá»e ngÆ°á»i lao Ä‘á»™ng â€“ mÃ¢u thuáº«n nÃ y cÃ ng rÃµ trong Ä‘áº¡i dá»‹ch.",
+    "cloReferences": [
+      "CLO7"
+    ],
+    "conceptTags": [
+      "dich-benh",
+      "phong-toa",
+      "suc-khoe-cong-dong"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch sá»± Ä‘Ã¡nh Ä‘á»•i giá»¯a kiá»ƒm soÃ¡t dá»‹ch bá»‡nh vÃ  tÄƒng trÆ°á»Ÿng kinh táº¿"
+    ]
+  },
+  {
+    "id": "ex_dich_benh_noi_long",
+    "content": "Duy trÃ¬ hoáº¡t Ä‘á»™ng kinh táº¿ trong dá»‹ch bá»‡nh báº£o vá»‡ viá»‡c lÃ m vÃ  thu nháº­p nhÆ°ng cÃ³ thá»ƒ dáº«n Ä‘áº¿n lÃ¢y lan dá»‹ch bá»‡nh, gÃ¢y tá»•n tháº¥t lá»›n hÆ¡n vá» nhÃ¢n máº¡ng vÃ  kinh táº¿ vá» sau. Theo MÃ¡c, sá»©c lao Ä‘á»™ng lÃ  hÃ ng hÃ³a Ä‘áº·c biá»‡t â€“ náº¿u ngÆ°á»i lao Ä‘á»™ng bá»‹ bá»‡nh, \"hÃ ng hÃ³a\" sá»©c lao Ä‘á»™ng máº¥t giÃ¡ trá»‹. Chi phÃ­ y táº¿ gia tÄƒng cÃ³ thá»ƒ vÆ°á»£t xa lá»£i Ã­ch kinh táº¿ ngáº¯n háº¡n.",
+    "cloReferences": [
+      "CLO7"
+    ],
+    "conceptTags": [
+      "dich-benh",
+      "kinh-te",
+      "suc-khoe"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch má»‘i quan há»‡ giá»¯a sá»©c khá»e ngÆ°á»i lao Ä‘á»™ng vÃ  nÄƒng suáº¥t lao Ä‘á»™ng"
+    ]
+  },
+  {
+    "id": "ex_dich_benh_linh_hoat",
+    "content": "Phong tá»a cÃ³ má»¥c tiÃªu káº¿t há»£p há»— trá»£ kinh táº¿ lÃ  giáº£i phÃ¡p dung hÃ²a â€“ báº£o vá»‡ sá»©c khá»e á»Ÿ nhá»¯ng khu vá»±c nguy cÆ¡ cao, duy trÃ¬ sáº£n xuáº¥t á»Ÿ khu vá»±c an toÃ n. NhÃ  nÆ°á»›c Ä‘Ã³ng vai trÃ² Ä‘iá»u tiáº¿t linh hoáº¡t, vá»«a báº£o vá»‡ tÃ­nh máº¡ng vá»«a duy trÃ¬ sinh káº¿. ÄÃ¢y lÃ  mÃ´ hÃ¬nh quáº£n lÃ½ khá»§ng hoáº£ng phÃ¹ há»£p vá»›i nguyÃªn táº¯c káº¿t há»£p giá»¯a má»¥c tiÃªu xÃ£ há»™i vÃ  kinh táº¿.",
+    "cloReferences": [
+      "CLO7"
+    ],
+    "conceptTags": [
+      "dich-benh",
+      "quan-ly-khung-hoang",
+      "vai-tro-nha-nuoc"
+    ],
+    "learningObjectives": [
+      "ÄÃ¡nh giÃ¡ giáº£i phÃ¡p dung hÃ²a giá»¯a kiá»ƒm soÃ¡t dá»‹ch vÃ  duy trÃ¬ kinh táº¿"
+    ]
+  },
+  {
+    "id": "ex_cup_dien_uu_tien_cn",
+    "content": "Æ¯u tiÃªn cáº¥p Ä‘iá»‡n cho khu cÃ´ng nghiá»‡p báº£o vá»‡ sáº£n xuáº¥t vÃ  viá»‡c lÃ m trong ngáº¯n háº¡n. Tuy nhiÃªn, hy sinh nhu cáº§u dÃ¢n sinh gÃ¢y bá»©c xÃºc xÃ£ há»™i vÃ  pháº£n Ã¡nh sá»± báº¥t bÃ¬nh Ä‘áº³ng trong phÃ¢n bá»• nguá»“n lá»±c khan hiáº¿m. Theo MÃ¡c, trong xÃ£ há»™i tÆ° báº£n, lá»£i Ã­ch cá»§a tÆ° báº£n thÆ°á»ng Ä‘Æ°á»£c Æ°u tiÃªn hÆ¡n nhu cáº§u cá»§a ngÆ°á»i lao Ä‘á»™ng.",
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "dien-nang",
+      "san-xuat",
+      "cong-bang"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch mÃ¢u thuáº«n lá»£i Ã­ch trong phÃ¢n bá»• nguá»“n lá»±c khan hiáº¿m"
+    ]
+  },
+  {
+    "id": "ex_cup_dien_luan_phien",
+    "content": "Cáº¯t Ä‘iá»‡n luÃ¢n phiÃªn cÃ´ng báº±ng giá»¯a sáº£n xuáº¥t vÃ  dÃ¢n sinh lÃ  giáº£i phÃ¡p chia sáº» gÃ¡nh náº·ng Ä‘á»“ng Ä‘á»u, phÃ¹ há»£p vá»›i nguyÃªn táº¯c cÃ´ng báº±ng xÃ£ há»™i. Tuy nhiÃªn, hiá»‡u quáº£ kinh táº¿ tá»•ng thá»ƒ bá»‹ áº£nh hÆ°á»Ÿng vÃ¬ cáº£ sáº£n xuáº¥t vÃ  tiÃªu dÃ¹ng Ä‘á»u bá»‹ giÃ¡n Ä‘oáº¡n. Giáº£i phÃ¡p tÃ¬nh tháº¿ nÃ y khÃ´ng giáº£i quyáº¿t Ä‘Æ°á»£c cÄƒn nguyÃªn: thiáº¿u há»¥t nÄƒng lÆ°á»£ng cÆ¡ cáº¥u.",
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "dien-nang",
+      "cong-bang-xa-hoi",
+      "san-xuat"
+    ],
+    "learningObjectives": [
+      "ÄÃ¡nh giÃ¡ nguyÃªn táº¯c cÃ´ng báº±ng trong phÃ¢n phá»‘i hÃ ng hÃ³a cÃ´ng khan hiáº¿m"
+    ]
+  },
+  {
+    "id": "ex_cup_dien_dau_tu",
+    "content": "Äáº§u tÆ° kháº©n cáº¥p nguá»“n Ä‘iá»‡n má»›i vÃ  tiáº¿t kiá»‡m nÄƒng lÆ°á»£ng lÃ  giáº£i phÃ¡p cÄƒn cÆ¡, giáº£i quyáº¿t táº­n gá»‘c váº¥n Ä‘á» thiáº¿u há»¥t cÃ´ng suáº¥t. Theo MÃ¡c, Ä‘áº§u tÆ° phÃ¡t triá»ƒn lá»±c lÆ°á»£ng sáº£n xuáº¥t (nÄƒng lÆ°á»£ng, háº¡ táº§ng) lÃ  yáº¿u tá»‘ ná»n táº£ng cho tÄƒng trÆ°á»Ÿng dÃ i háº¡n. Äáº§u tÆ° Ä‘iá»‡n má»›i vá»«a Ä‘Ã¡p á»©ng nhu cáº§u trÆ°á»›c máº¯t vá»«a táº¡o nÄƒng lá»±c sáº£n xuáº¥t cho tÆ°Æ¡ng lai.",
+    "cloReferences": [
+      "CLO4",
+      "CLO5"
+    ],
+    "conceptTags": [
+      "dau-tu-cong",
+      "nang-luong",
+      "ha-tang"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a Ä‘áº§u tÆ° nÄƒng lÆ°á»£ng trong phÃ¡t triá»ƒn lá»±c lÆ°á»£ng sáº£n xuáº¥t"
+    ]
+  },
+  {
+    "id": "ex_chuoi_cung_ung_thay_the",
+    "content": "Äa dáº¡ng hÃ³a nguá»“n cung lÃ  chiáº¿n lÆ°á»£c giáº£m thiá»ƒu rá»§i ro táº­p trung hÃ³a chuá»—i cung á»©ng. Theo MÃ¡c, sá»± phá»¥ thuá»™c láº«n nhau trong phÃ¢n cÃ´ng lao Ä‘á»™ng quá»‘c táº¿ táº¡o ra rá»§i ro há»‡ thá»‘ng. TÃ¬m kiáº¿m nguá»“n cung thay tháº¿ giÃºp tÄƒng kháº£ nÄƒng chá»‘ng chá»‹u cá»§a ná»n kinh táº¿. Chiáº¿n lÆ°á»£c nÃ y phÃ¹ há»£p vá»›i xu hÆ°á»›ng \"Trung Quá»‘c + 1\" Ä‘ang diá»…n ra trÃªn toÃ n cáº§u.",
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "chuoi-cung-ung",
+      "da-dang-hoa",
+      "rui-ro"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch chiáº¿n lÆ°á»£c Ä‘a dáº¡ng hÃ³a chuá»—i cung á»©ng trong bá»‘i cáº£nh toÃ n cáº§u hÃ³a"
+    ]
+  },
+  {
+    "id": "ex_chuoi_cung_ung_noi_dia_hoa",
+    "content": "Chuyá»ƒn sang sáº£n xuáº¥t ná»™i Ä‘á»‹a hÃ³a lÃ  chiáº¿n lÆ°á»£c xÃ¢y dá»±ng nÄƒng lá»±c tá»± chá»§ dÃ i háº¡n. Theo MÃ¡c, phÃ¡t triá»ƒn ná»n sáº£n xuáº¥t trong nÆ°á»›c lÃ  Ä‘iá»u kiá»‡n Ä‘á»ƒ báº£o Ä‘áº£m Ä‘á»™c láº­p kinh táº¿ vÃ  chÃ­nh trá»‹. Ná»™i Ä‘á»‹a hÃ³a giÃºp kiá»ƒm soÃ¡t chuá»—i cung á»©ng, táº¡o viá»‡c lÃ m cháº¥t lÆ°á»£ng cao vÃ  nÃ¢ng cao giÃ¡ trá»‹ gia tÄƒng. Tuy nhiÃªn, chi phÃ­ ban Ä‘áº§u ráº¥t lá»›n vÃ  cáº§n thá»i gian Ä‘á»ƒ Ä‘áº¡t hiá»‡u quáº£.",
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "noi-dia-hoa",
+      "chuoi-cung-ung",
+      "nang-luc-tu-chu"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch chiáº¿n lÆ°á»£c ná»™i Ä‘á»‹a hÃ³a trong bá»‘i cáº£nh báº¥t á»•n thÆ°Æ¡ng máº¡i quá»‘c táº¿"
+    ]
+  },
+  {
+    "id": "ex_chuoi_cung_ung_cho",
+    "content": "Chá» chuá»—i cung á»©ng toÃ n cáº§u phá»¥c há»“i tá»± nhiÃªn lÃ  thÃ¡i Ä‘á»™ thá»¥ Ä‘á»™ng, phÃ³ máº·c cho thá»‹ trÆ°á»ng. Trong khi Ä‘Ã³, sáº£n xuáº¥t Ä‘Ã¬nh trá»‡, doanh nghiá»‡p phÃ¡ sáº£n vÃ  tháº¥t nghiá»‡p gia tÄƒng. MÃ¡c tá»«ng nháº¥n máº¡nh tÃ­nh chu ká»³ cá»§a khá»§ng hoáº£ng tÆ° báº£n, nhÆ°ng cÅ©ng cáº£nh bÃ¡o ráº±ng Ä‘á»ƒ thá»‹ trÆ°á»ng tá»± phá»¥c há»“i sáº½ gÃ¢y tá»•n tháº¥t xÃ£ há»™i to lá»›n. Sá»± can thiá»‡p cá»§a NhÃ  nÆ°á»›c lÃ  cáº§n thiáº¿t Ä‘á»ƒ giáº£m thiá»ƒu thiá»‡t háº¡i.",
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "chuoi-cung-ung",
+      "khung-hoang",
+      "vai-tro-nha-nuoc"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch háº­u quáº£ cá»§a thÃ¡i Ä‘á»™ thá»¥ Ä‘á»™ng trong khá»§ng hoáº£ng chuá»—i cung á»©ng"
+    ]
+  },
+  {
+    "id": "ex_ngan_hang_bom_thanh_khoan",
+    "content": "BÆ¡m thanh khoáº£n kháº©n cáº¥p qua ngÃ¢n hÃ ng trung Æ°Æ¡ng lÃ  biá»‡n phÃ¡p cá»©u há»‡ thá»‘ng ngÃ¢n hÃ ng khá»i sá»¥p Ä‘á»• dÃ¢y chuyá»n. Theo MÃ¡c, ngÃ¢n hÃ ng lÃ  huyáº¿t máº¡ch cá»§a ná»n kinh táº¿ tÆ° báº£n, vÃ  khá»§ng hoáº£ng ngÃ¢n hÃ ng lÃ  biá»ƒu hiá»‡n táº­p trung cá»§a khá»§ng hoáº£ng tÃ­n dá»¥ng. Vai trÃ² cá»§a ngÃ¢n hÃ ng trung Æ°Æ¡ng lÃ  cáº§n thiáº¿t Ä‘á»ƒ báº£o vá»‡ há»‡ thá»‘ng thanh toÃ¡n quá»‘c gia vÃ  ngÄƒn cháº·n khá»§ng hoáº£ng lan rá»™ng.",
+    "cloReferences": [
+      "CLO3",
+      "CLO4"
+    ],
+    "conceptTags": [
+      "ngan-hang",
+      "thanh-khoan",
+      "khung-hoang-tin-dung"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a ngÃ¢n hÃ ng trung Æ°Æ¡ng trong á»•n Ä‘á»‹nh há»‡ thá»‘ng tÃ i chÃ­nh"
+    ]
+  },
+  {
+    "id": "ex_ngan_hang_pha_san",
+    "content": "Cho phÃ©p ngÃ¢n hÃ ng phÃ¡ sáº£n theo quy luáº­t thá»‹ trÆ°á»ng thá»ƒ hiá»‡n tÃ´n trá»ng cÆ¡ cháº¿ Ä‘Ã o tháº£i tá»± nhiÃªn. Tuy nhiÃªn, MÃ¡c cáº£nh bÃ¡o ráº±ng trong há»‡ thá»‘ng tÃ i chÃ­nh liÃªn káº¿t cháº·t cháº½, sá»± sá»¥p Ä‘á»• cá»§a má»™t ngÃ¢n hÃ ng cÃ³ thá»ƒ gÃ¢y hiá»‡u á»©ng domino, kÃ©o theo hÃ ng loáº¡t ngÃ¢n hÃ ng vÃ  doanh nghiá»‡p khÃ¡c. Chi phÃ­ xÃ£ há»™i cá»§a phÃ¡ sáº£n ngÃ¢n hÃ ng thÆ°á»ng vÆ°á»£t xa chi phÃ­ cá»©u trá»£.",
+    "cloReferences": [
+      "CLO3",
+      "CLO4"
+    ],
+    "conceptTags": [
+      "ngan-hang",
+      "pha-san",
+      "hieu-ung-domino"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch rá»§i ro há»‡ thá»‘ng tá»« sá»± sá»¥p Ä‘á»• cá»§a má»™t ngÃ¢n hÃ ng thÆ°Æ¡ng máº¡i"
+    ]
+  },
+  {
+    "id": "ex_ngan_hang_sap_nhap",
+    "content": "Buá»™c sÃ¡p nháº­p vá»›i ngÃ¢n hÃ ng lá»›n hÆ¡n vÃ  NhÃ  nÆ°á»›c báº£o lÃ£nh má»™t pháº§n lÃ  giáº£i phÃ¡p dung hÃ²a â€“ vá»«a giáº£i quyáº¿t khá»§ng hoáº£ng thanh khoáº£n vá»«a giáº£m gÃ¡nh náº·ng ngÃ¢n sÃ¡ch. ÄÃ¢y lÃ  hÃ¬nh thá»©c táº­p trung tÆ° báº£n ngÃ¢n hÃ ng dÆ°á»›i sá»± giÃ¡m sÃ¡t cá»§a NhÃ  nÆ°á»›c. SÃ¡p nháº­p ngÃ¢n hÃ ng lÃ  xu hÆ°á»›ng phá»• biáº¿n trong chá»§ nghÄ©a tÆ° báº£n hiá»‡n Ä‘áº¡i, táº¡o ra cÃ¡c ngÃ¢n hÃ ng quy mÃ´ lá»›n hÆ¡n.",
+    "cloReferences": [
+      "CLO3",
+      "CLO4"
+    ],
+    "conceptTags": [
+      "sap-nhap-ngan-hang",
+      "bao-lanh",
+      "tap-trung-tu-ban"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch xu hÆ°á»›ng táº­p trung tÆ° báº£n trong lÄ©nh vá»±c ngÃ¢n hÃ ng"
+    ]
+  },
+  {
+    "id": "ex_lam_phat_that_chat",
+    "content": "Tháº¯t cháº·t tiá»n tá»‡, tÄƒng lÃ£i suáº¥t lÃ  biá»‡n phÃ¡p chá»‘ng láº¡m phÃ¡t cá»• Ä‘iá»ƒn. Theo MÃ¡c, láº¡m phÃ¡t lÃ  hiá»‡n tÆ°á»£ng tiá»n tá»‡ â€“ khi lÆ°á»£ng tiá»n trong lÆ°u thÃ´ng vÆ°á»£t quÃ¡ nhu cáº§u hÃ ng hÃ³a. TÄƒng lÃ£i suáº¥t lÃ m giáº£m cung tiá»n vÃ  háº¡ nhiá»‡t nhu cáº§u. Tuy nhiÃªn, chÃ­nh sÃ¡ch nÃ y lÃ m tÄƒng chi phÃ­ vá»‘n, giáº£m Ä‘áº§u tÆ° vÃ  gÃ¢y tháº¥t nghiá»‡p. Láº¡m phÃ¡t nháº­p kháº©u khÃ´ng thá»ƒ giáº£i quyáº¿t hoÃ n toÃ n báº±ng chÃ­nh sÃ¡ch tiá»n tá»‡ ná»™i Ä‘á»‹a.",
+    "cloReferences": [
+      "CLO2",
+      "CLO4"
+    ],
+    "conceptTags": [
+      "lam-phat",
+      "tien-te",
+      "lai-suat"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch cÆ¡ cháº¿ tÃ¡c Ä‘á»™ng cá»§a chÃ­nh sÃ¡ch tiá»n tá»‡ Ä‘áº¿n láº¡m phÃ¡t"
+    ]
+  },
+  {
+    "id": "ex_lam_phat_tro_gia",
+    "content": "Trá»£ giÃ¡ hÃ ng hÃ³a thiáº¿t yáº¿u lÃ  biá»‡n phÃ¡p báº£o vá»‡ ngÆ°á»i nghÃ¨o trÆ°á»›c tÃ¡c Ä‘á»™ng cá»§a láº¡m phÃ¡t. NhÃ  nÆ°á»›c Ä‘Ã³ng vai trÃ² phÃ¢n phá»‘i láº¡i thu nháº­p, giáº£m gÃ¡nh náº·ng cho nhÃ³m yáº¿u tháº¿. Theo MÃ¡c, trong Ä‘iá»u kiá»‡n láº¡m phÃ¡t, ngÆ°á»i lao Ä‘á»™ng bá»‹ giáº£m sá»©c mua thá»±c táº¿ â€“ Ä‘Ã¢y lÃ  hÃ¬nh thá»©c bÃ³c lá»™t giÃ¡n tiáº¿p. Trá»£ giÃ¡ giÃºp duy trÃ¬ má»©c sá»‘ng tá»‘i thiá»ƒu nhÆ°ng gÃ¢y Ã¡p lá»±c ngÃ¢n sÃ¡ch.",
+    "cloReferences": [
+      "CLO2",
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "tro-gia",
+      "lam-phat",
+      "an-sinh-xa-hoi"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a trá»£ giÃ¡ trong báº£o vá»‡ ngÆ°á»i nghÃ¨o trÆ°á»›c láº¡m phÃ¡t"
+    ]
+  },
+  {
+    "id": "ex_lam_phat_ket_hop",
+    "content": "Káº¿t há»£p Ä‘iá»u tiáº¿t giÃ¡ vÃ  kiá»ƒm soÃ¡t láº¡m phÃ¡t ká»³ vá»ng lÃ  giáº£i phÃ¡p Ä‘á»“ng bá»™, vá»«a tÃ¡c Ä‘á»™ng vÃ o cung (giÃ¡ hÃ ng hÃ³a) vá»«a vÃ o cáº§u (ká»³ vá»ng láº¡m phÃ¡t). Theo MÃ¡c, láº¡m phÃ¡t nháº­p kháº©u lÃ  há»‡ quáº£ cá»§a há»™i nháº­p â€“ cÃ¡c nÆ°á»›c Ä‘ang phÃ¡t triá»ƒn dá»… bá»‹ tá»•n thÆ°Æ¡ng. Cáº§n cÃ³ phá»‘i há»£p chÃ­nh sÃ¡ch tÃ i khÃ³a, tiá»n tá»‡ vÃ  thÆ°Æ¡ng máº¡i Ä‘á»ƒ kiá»ƒm soÃ¡t láº¡m phÃ¡t hiá»‡u quáº£.",
+    "cloReferences": [
+      "CLO2",
+      "CLO4"
+    ],
+    "conceptTags": [
+      "lam-phat",
+      "dieu-tiet",
+      "chinh-sach-kinh-te"
+    ],
+    "learningObjectives": [
+      "ÄÃ¡nh giÃ¡ cÃ¡c giáº£i phÃ¡p tá»•ng thá»ƒ kiá»ƒm soÃ¡t láº¡m phÃ¡t trong ná»n kinh táº¿ má»Ÿ"
+    ]
+  },
+  {
+    "id": "ex_cong_nghe_dot_pha_mua",
+    "content": "Mua báº£n quyá»n cÃ´ng nghá»‡ káº¿t há»£p Ä‘áº§u tÆ° R&D trong nÆ°á»›c lÃ  chiáº¿n lÆ°á»£c \"mua - há»c - cáº£i tiáº¿n\" thÃ nh cÃ´ng cá»§a cÃ¡c nÆ°á»›c cÃ´ng nghiá»‡p má»›i nhÆ° HÃ n Quá»‘c, Nháº­t Báº£n. Theo MÃ¡c, nÆ°á»›c Ä‘i sau cÃ³ thá»ƒ rÃºt ngáº¯n quÃ¡ trÃ¬nh phÃ¡t triá»ƒn báº±ng cÃ¡ch tiáº¿p nháº­n cÃ´ng nghá»‡ tiÃªn tiáº¿n, káº¿t há»£p vá»›i ná»— lá»±c ná»™i sinh. Chiáº¿n lÆ°á»£c nÃ y tá»‘n kÃ©m nhÆ°ng táº¡o ná»n táº£ng cho phÃ¡t triá»ƒn cÃ´ng nghá»‡ dÃ i háº¡n.",
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "cong-nghe",
+      "chuyen-giao-cong-nghe",
+      "rd"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch chiáº¿n lÆ°á»£c tiáº¿p nháº­n cÃ´ng nghá»‡ nÆ°á»›c ngoÃ i cá»§a cÃ¡c nÆ°á»›c cÃ´ng nghiá»‡p má»›i"
+    ]
+  },
+  {
+    "id": "ex_cong_nghe_dot_pha_cho",
+    "content": "Chá» cÃ´ng nghá»‡ phá»• biáº¿n vÃ  ráº» hÆ¡n lÃ  thÃ¡i Ä‘á»™ thá»¥ Ä‘á»™ng, tiáº¿t kiá»‡m chi phÃ­ trÆ°á»›c máº¯t nhÆ°ng bá» lá»¡ lá»£i tháº¿ cá»§a ngÆ°á»i Ä‘i Ä‘áº§u. Theo MÃ¡c, trong cáº¡nh tranh toÃ n cáº§u, nÆ°á»›c nÃ o náº¯m báº¯t cÃ´ng nghá»‡ má»›i cháº­m sáº½ bá»‹ Ä‘Ã o tháº£i. CÃ´ng nghá»‡ chá» Ä‘áº¿n khi phá»• biáº¿n thÆ°á»ng Ä‘Ã£ láº¡c háº­u, vÃ  khoáº£ng cÃ¡ch cÃ´ng nghá»‡ vá»›i cÃ¡c nÆ°á»›c tiÃªn phong ngÃ y cÃ ng lá»›n.",
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "cong-nghe",
+      "loi-the-di-sau",
+      "canh-tranh"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch rá»§i ro cá»§a chiáº¿n lÆ°á»£c chá» Ä‘á»£i trong tiáº¿p cáº­n cÃ´ng nghá»‡ má»›i"
+    ]
+  },
+  {
+    "id": "ex_cong_nghe_dot_pha_hop_tac",
+    "content": "Há»£p tÃ¡c nghiÃªn cá»©u vá»›i Ä‘á»‘i tÃ¡c nÆ°á»›c ngoÃ i lÃ  chiáº¿n lÆ°á»£c \"win-win\" â€“ chia sáº» rá»§i ro, chi phÃ­ vÃ  cÃ¹ng hÆ°á»Ÿng lá»£i. Há»£p tÃ¡c quá»‘c táº¿ trong R&D lÃ  xu tháº¿ cá»§a toÃ n cáº§u hÃ³a khoa há»c cÃ´ng nghá»‡. Theo MÃ¡c, lao Ä‘á»™ng há»£p tÃ¡c táº¡o ra nÄƒng suáº¥t cao hÆ¡n lao Ä‘á»™ng cÃ¡ thá»ƒ. Há»£p tÃ¡c nghiÃªn cá»©u quá»‘c táº¿ giÃºp xÃ¢y dá»±ng nÄƒng lá»±c R&D trong nÆ°á»›c má»™t cÃ¡ch bá»n vá»¯ng.",
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "hop-tac-rd",
+      "cong-nghe",
+      "quoc-te"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch mÃ´ hÃ¬nh há»£p tÃ¡c R&D quá»‘c táº¿ trong chiáº¿n lÆ°á»£c cÃ´ng nghá»‡ quá»‘c gia"
+    ]
+  },
+  {
+    "id": "ex_lang_song_dau_tu_chao_don",
+    "content": "ChÃ o Ä‘Ã³n táº¥t cáº£ dá»± Ã¡n táº¡o Ä‘iá»u kiá»‡n thu hÃºt vá»‘n vÃ  viá»‡c lÃ m nhanh chÃ³ng. Tuy nhiÃªn, theo MÃ¡c, dÃ²ng tÆ° báº£n nÆ°á»›c ngoÃ i cháº£y vÃ o tÃ¬m kiáº¿m lá»£i nhuáº­n cao, khÃ´ng tá»± Ä‘á»™ng mang láº¡i lá»£i Ã­ch lÃ¢u dÃ i. Náº¿u khÃ´ng chá»n lá»c, ná»n kinh táº¿ cÃ³ thá»ƒ bá»‹ phá»¥ thuá»™c vÃ o cÃ´ng nghá»‡ nÆ°á»›c ngoÃ i, chá»‹u thiá»‡t háº¡i vá» mÃ´i trÆ°á»ng vÃ  cháº¥p nháº­n cÃ¡c dá»± Ã¡n cháº¥t lÆ°á»£ng tháº¥p.",
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "dau-tu-nuoc-ngoai",
+      "fdi",
+      "chao-don"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch rá»§i ro cá»§a chÃ­nh sÃ¡ch thu hÃºt FDI khÃ´ng chá»n lá»c"
+    ]
+  },
+  {
+    "id": "ex_lang_song_dau_tu_chon_loc",
+    "content": "Chá»n lá»c dá»± Ã¡n theo tiÃªu chÃ­ cÃ´ng nghá»‡ vÃ  mÃ´i trÆ°á»ng lÃ  \"thu hÃºt FDI thÃ´ng minh\" â€“ Æ°u tiÃªn cháº¥t lÆ°á»£ng hÆ¡n sá»‘ lÆ°á»£ng. CÃ¡c nÆ°á»›c thÃ nh cÃ´ng nhÆ° Singapore, HÃ n Quá»‘c Ä‘á»u Ã¡p dá»¥ng chÃ­nh sÃ¡ch nÃ y. NhÃ  nÆ°á»›c chá»§ Ä‘á»™ng Ä‘á»‹nh hÆ°á»›ng cÆ¡ cáº¥u Ä‘áº§u tÆ°, Æ°u tiÃªn cÃ¡c dá»± Ã¡n cÃ´ng nghá»‡ cao, thÃ¢n thiá»‡n mÃ´i trÆ°á»ng. Chiáº¿n lÆ°á»£c nÃ y phÃ¹ há»£p vá»›i má»¥c tiÃªu phÃ¡t triá»ƒn bá»n vá»¯ng.",
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "chon-loc-dau-tu",
+      "fdi",
+      "phat-trien-ben-vung"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch tiÃªu chÃ­ chá»n lá»c FDI gáº¯n vá»›i má»¥c tiÃªu phÃ¡t triá»ƒn bá»n vá»¯ng"
+    ]
+  },
+  {
+    "id": "ex_lang_song_dau_tu_lien_doanh",
+    "content": "YÃªu cáº§u liÃªn doanh vá»›i doanh nghiá»‡p ná»™i Ä‘á»‹a lÃ  biá»‡n phÃ¡p Ä‘áº£m báº£o lá»£i Ã­ch lÃ¢u dÃ i cho nÆ°á»›c chá»§ nhÃ . LiÃªn doanh táº¡o Ä‘iá»u kiá»‡n chuyá»ƒn giao cÃ´ng nghá»‡, xÃ¢y dá»±ng nÄƒng lá»±c quáº£n lÃ½ vÃ  thÆ°Æ¡ng hiá»‡u Viá»‡t. Theo MÃ¡c, cÃ¡c nÆ°á»›c Ä‘i sau cáº§n cÃ³ Ä‘iá»u kiá»‡n rÃ ng buá»™c Ä‘á»ƒ FDI phá»¥c vá»¥ chiáº¿n lÆ°á»£c cÃ´ng nghiá»‡p hÃ³a quá»‘c gia, thay vÃ¬ chá»‰ lÃ  gia cÃ´ng cho tÆ° báº£n nÆ°á»›c ngoÃ i.",
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "lien-doanh",
+      "fdi",
+      "chuyen-giao-cong-nghe"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a liÃªn doanh trong chuyá»ƒn giao cÃ´ng nghá»‡ vÃ  xÃ¢y dá»±ng nÄƒng lá»±c ná»™i sinh"
+    ]
+  },
+  {
+    "id": "ex_xuat_khau_nong_san_truy_xuat",
+    "content": "Truy xuáº¥t nguá»“n gá»‘c, xá»­ pháº¡t vÃ  há»— trá»£ chuyá»ƒn Ä‘á»•i lÃ  giáº£i phÃ¡p toÃ n diá»‡n, vá»«a xá»­ lÃ½ háº­u quáº£ vá»«a ngÄƒn ngá»«a tÃ¡i diá»…n. NÃ¢ng cao cháº¥t lÆ°á»£ng nÃ´ng sáº£n lÃ  yÃªu cáº§u táº¥t yáº¿u cá»§a há»™i nháº­p. Theo MÃ¡c, phÃ¢n cÃ´ng lao Ä‘á»™ng quá»‘c táº¿ buá»™c má»—i nÆ°á»›c pháº£i nÃ¢ng cao nÄƒng suáº¥t vÃ  cháº¥t lÆ°á»£ng Ä‘á»ƒ cáº¡nh tranh. Äáº§u tÆ° vÃ o tiÃªu chuáº©n cháº¥t lÆ°á»£ng lÃ  Ä‘áº§u tÆ° cho vá»‹ tháº¿ quá»‘c táº¿ cá»§a nÃ´ng sáº£n Viá»‡t.",
+    "cloReferences": [
+      "CLO5",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "nong-san",
+      "truy-xuat-nguon-goc",
+      "chat-luong"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch táº§m quan trá»ng cá»§a truy xuáº¥t nguá»“n gá»‘c trong thÆ°Æ¡ng máº¡i nÃ´ng sáº£n"
+    ]
+  },
+  {
+    "id": "ex_xuat_khau_nong_san_dam_phan",
+    "content": "ÄÃ m phÃ¡n giáº£m tiÃªu chuáº©n lÃ  giáº£i phÃ¡p tÃ¬nh tháº¿, cÃ³ thá»ƒ táº¡m thá»i giáº£i quyáº¿t lÃ´ hÃ ng bá»‹ tá»« chá»‘i nhÆ°ng khÃ´ng bá»n vá»¯ng. Trong quan há»‡ thÆ°Æ¡ng máº¡i quá»‘c táº¿, nÆ°á»›c nháº­p kháº©u cÃ³ quyá»n Ã¡p dá»¥ng tiÃªu chuáº©n vÃ  yÃªu cáº§u cá»§a há». ÄÃ m phÃ¡n giáº£m tiÃªu chuáº©n cÃ³ thá»ƒ lÃ m xáº¥u hÃ¬nh áº£nh nÃ´ng sáº£n Viá»‡t. Vá» lÃ¢u dÃ i, cáº§n nÃ¢ng cao cháº¥t lÆ°á»£ng thay vÃ¬ háº¡ tháº¥p tiÃªu chuáº©n.",
+    "cloReferences": [
+      "CLO5",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "dam-phan",
+      "tieu-chuan",
+      "thuong-mai-quoc-te"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch giá»›i háº¡n cá»§a giáº£i phÃ¡p Ä‘Ã m phÃ¡n trong tranh cháº¥p thÆ°Æ¡ng máº¡i nÃ´ng sáº£n"
+    ]
+  },
+  {
+    "id": "ex_xuat_khau_nong_san_xay_dung",
+    "content": "XÃ¢y dá»±ng vÃ¹ng nguyÃªn liá»‡u Ä‘áº¡t chuáº©n quá»‘c táº¿ vÃ  há»‡ thá»‘ng kiá»ƒm Ä‘á»‹nh lÃ  chiáº¿n lÆ°á»£c dÃ i háº¡n, nÃ¢ng cao nÄƒng lá»±c cáº¡nh tranh cá»§a nÃ´ng sáº£n Viá»‡t. Äáº§u tÆ° vÃ o tiÃªu chuáº©n, cÃ´ng nghá»‡ sau thu hoáº¡ch vÃ  kiá»ƒm Ä‘á»‹nh cháº¥t lÆ°á»£ng giÃºp nÃ´ng sáº£n Viá»‡t Ä‘Ã¡p á»©ng yÃªu cáº§u kháº¯t khe cá»§a thá»‹ trÆ°á»ng quá»‘c táº¿. Theo MÃ¡c, Ä‘áº§u tÆ° vÃ o cháº¥t lÆ°á»£ng sáº£n pháº©m lÃ  Ä‘áº§u tÆ° vÃ o giÃ¡ trá»‹ sá»­ dá»¥ng â€“ cÆ¡ sá»Ÿ cá»§a giÃ¡ trá»‹ trao Ä‘á»•i.",
+    "cloReferences": [
+      "CLO5",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "vung-nguyen-lieu",
+      "tieu-chuan-quoc-te",
+      "chat-luong-nong-san"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch chiáº¿n lÆ°á»£c nÃ¢ng cao cháº¥t lÆ°á»£ng nÃ´ng sáº£n trong há»™i nháº­p quá»‘c táº¿"
+    ]
+  },
+  {
+    "id": "ex_khcn_dat_giai_dau_tu",
+    "content": "Äáº§u tÆ° lá»›n cho thÆ°Æ¡ng máº¡i hÃ³a cÃ´ng nghá»‡ lÃ  bÆ°á»›c Ä‘i tÃ¡o báº¡o, biáº¿n thÃ nh tá»±u nghiÃªn cá»©u thÃ nh lá»±c lÆ°á»£ng sáº£n xuáº¥t trá»±c tiáº¿p. Theo MÃ¡c, khoa há»c trá»Ÿ thÃ nh lá»±c lÆ°á»£ng sáº£n xuáº¥t trá»±c tiáº¿p khi Ä‘Æ°á»£c á»©ng dá»¥ng vÃ o sáº£n xuáº¥t. ThÆ°Æ¡ng máº¡i hÃ³a káº¿t quáº£ nghiÃªn cá»©u giÃºp táº¡o ra Ä‘á»™ng lá»±c Ä‘á»•i má»›i sÃ¡ng táº¡o vÃ  nÃ¢ng cao nÄƒng lá»±c cáº¡nh tranh quá»‘c gia.",
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "khcn",
+      "rd",
+      "thuong-mai-hoa"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a thÆ°Æ¡ng máº¡i hÃ³a káº¿t quáº£ nghiÃªn cá»©u trong phÃ¡t triá»ƒn kinh táº¿"
+    ]
+  },
+  {
+    "id": "ex_khcn_dat_giai_cho",
+    "content": "Chá» Ä‘Ã¡nh giÃ¡ thÃªm trÆ°á»›c khi Ä‘áº§u tÆ° lÃ  thÃ¡i Ä‘á»™ tháº­n trá»ng, giáº£m rá»§i ro tÃ i chÃ­nh. Tuy nhiÃªn, trong lÄ©nh vá»±c cÃ´ng nghá»‡, tá»‘c Ä‘á»™ lÃ  yáº¿u tá»‘ sá»‘ng cÃ²n. Chá» Ä‘á»£i quÃ¡ lÃ¢u cÃ³ thá»ƒ Ä‘á»ƒ máº¥t cÆ¡ há»™i tiÃªn phong vÃ  bá»‹ Ä‘á»‘i thá»§ cáº¡nh tranh vÆ°á»£t lÃªn. MÃ¡c nháº¥n máº¡nh ráº±ng cáº¡nh tranh buá»™c cÃ¡c chá»§ thá»ƒ kinh táº¿ pháº£i hÃ nh Ä‘á»™ng nhanh chÃ³ng Ä‘á»ƒ náº¯m báº¯t thá»i cÆ¡.",
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "khcn",
+      "rd",
+      "canh-tranh"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch sá»± Ä‘Ã¡nh Ä‘á»•i giá»¯a tháº­n trá»ng vÃ  tá»‘c Ä‘á»™ trong Ä‘áº§u tÆ° cÃ´ng nghá»‡"
+    ]
+  },
+  {
+    "id": "ex_khcn_dat_giai_quy_dau_tu",
+    "content": "XÃ¢y dá»±ng quá»¹ Ä‘áº§u tÆ° máº¡o hiá»ƒm quá»‘c gia cho R&D lÃ  giáº£i phÃ¡p thá»ƒ cháº¿ dÃ i háº¡n, táº¡o cÆ¡ cháº¿ tÃ i trá»£ bá»n vá»¯ng cho Ä‘á»•i má»›i sÃ¡ng táº¡o. Theo MÃ¡c, NhÃ  nÆ°á»›c trong ná»n kinh táº¿ thá»‹ trÆ°á»ng Ä‘á»‹nh hÆ°á»›ng XHCN cÃ³ vai trÃ² kiáº¿n táº¡o há»‡ sinh thÃ¡i Ä‘á»•i má»›i. Quá»¹ Ä‘áº§u tÆ° máº¡o hiá»ƒm quá»‘c gia lÃ  cÃ´ng cá»¥ Ä‘á»ƒ NhÃ  nÆ°á»›c há»— trá»£ cÃ¡c dá»± Ã¡n R&D cÃ³ rá»§i ro cao nhÆ°ng tiá»m nÄƒng lá»›n.",
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "khcn",
+      "quy-dau-tu",
+      "rd"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a NhÃ  nÆ°á»›c trong tÃ i trá»£ nghiÃªn cá»©u vÃ  phÃ¡t triá»ƒn"
+    ]
+  },
+  {
+    "id": "ex_chain_tranh_chap_hoa_giai",
+    "content": "HÃ²a giáº£i theo hÆ°á»›ng giáº£m giá» lÃ m vÃ  tÄƒng phá»¥ cáº¥p lÃ  giáº£i phÃ¡p thá»a hiá»‡p, cÃ´ng nháº­n má»™t pháº§n yÃªu cáº§u cá»§a ngÆ°á»i lao Ä‘á»™ng. Theo MÃ¡c, quan há»‡ lao Ä‘á»™ng vá»‘n chá»©a Ä‘á»±ng mÃ¢u thuáº«n giá»¯a tÆ° báº£n vÃ  lao Ä‘á»™ng. NhÃ  nÆ°á»›c Ä‘Ã³ng vai trÃ² trung gian hÃ²a giáº£i, Ä‘iá»u chá»‰nh quan há»‡ lá»£i Ã­ch Ä‘á»ƒ duy trÃ¬ á»•n Ä‘á»‹nh xÃ£ há»™i. Thá»a hiá»‡p cÃ³ thá»ƒ lÃ m dá»‹u nhÆ°ng khÃ´ng giáº£i quyáº¿t triá»‡t Ä‘á»ƒ mÃ¢u thuáº«n cÆ¡ báº£n.",
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "dinh-cong",
+      "quan-he-lao-dong",
+      "hoa-giai"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a NhÃ  nÆ°á»›c trong hÃ²a giáº£i tranh cháº¥p lao Ä‘á»™ng"
+    ]
+  },
+  {
+    "id": "ex_chain_tranh_chap_ung_ho_dn",
+    "content": "á»¦ng há»™ doanh nghiá»‡p giá»¯ nguyÃªn thá»a thuáº­n cÅ© báº£o vá»‡ lá»£i nhuáº­n vÃ  á»•n Ä‘á»‹nh sáº£n xuáº¥t. NhÆ°ng theo MÃ¡c, viá»‡c phá»§ nháº­n yÃªu cáº§u chÃ­nh Ä‘Ã¡ng cá»§a ngÆ°á»i lao Ä‘á»™ng lÃ m gia tÄƒng mÃ¢u thuáº«n giai cáº¥p. Trong lá»‹ch sá»­, cÃ¡c cuá»™c Ä‘áº¥u tranh cá»§a cÃ´ng nhÃ¢n buá»™c giá»›i chá»§ pháº£i nhÆ°á»£ng bá»™. Thiáº¿u sá»± Ä‘iá»u chá»‰nh, mÃ¢u thuáº«n cÃ³ thá»ƒ bÃ¹ng phÃ¡t thÃ nh xung Ä‘á»™t xÃ£ há»™i lá»›n.",
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "dinh-cong",
+      "tu-ban",
+      "mau-thuan-xa-hoi"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch háº­u quáº£ cá»§a viá»‡c phá»§ nháº­n quyá»n lá»£i ngÆ°á»i lao Ä‘á»™ng"
+    ]
+  },
+  {
+    "id": "ex_chain_tranh_chap_can_thiep",
+    "content": "Can thiá»‡p máº¡nh vá»›i xá»­ pháº¡t Ä‘Ã¬nh cÃ´ng vÃ  yÃªu cáº§u thÆ°Æ¡ng lÆ°á»£ng má»›i lÃ  cÃ¡ch tiáº¿p cáº­n cá»©ng ráº¯n, kháº³ng Ä‘á»‹nh vai tráº¿ cá»§a NhÃ  nÆ°á»›c trong duy trÃ¬ tráº­t tá»± xÃ£ há»™i. ÄÃ¬nh cÃ´ng lÃ  quyá»n cá»§a ngÆ°á»i lao Ä‘á»™ng nhÆ°ng náº¿u trÃ¡i phÃ©p sáº½ bá»‹ xá»­ lÃ½. NhÃ  nÆ°á»›c vá»«a báº£o vá»‡ ká»· cÆ°Æ¡ng vá»«a táº¡o Ã¡p lá»±c Ä‘á»ƒ cÃ¡c bÃªn Ä‘Ã m phÃ¡n, hÆ°á»›ng tá»›i giáº£i phÃ¡p lÃ¢u dÃ i.",
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "dinh-cong",
+      "vai-tro-nha-nuoc",
+      "ky-cuong-xa-hoi"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a NhÃ  nÆ°á»›c trong xá»­ lÃ½ Ä‘Ã¬nh cÃ´ng"
+    ]
+  },
+  {
+    "id": "ex_chain_thau_tom_han_ngach",
+    "content": "Ãp Ä‘áº·t háº¡n ngáº¡ch thá»‹ pháº§n cho ná»n táº£ng nÆ°á»›c ngoÃ i lÃ  biá»‡n phÃ¡p báº£o vá»‡ thá»‹ trÆ°á»ng ná»™i Ä‘á»‹a khá»i sá»± thÃ´n tÃ­nh cá»§a tÆ° báº£n Ä‘á»™c quyá»n nÆ°á»›c ngoÃ i. Theo MÃ¡c, cáº¡nh tranh tá»± do dáº«n Ä‘áº¿n táº­p trung tÆ° báº£n vÃ  Ä‘á»™c quyá»n. Háº¡n ngáº¡ch giÃºp duy trÃ¬ khÃ´ng gian phÃ¡t triá»ƒn cho doanh nghiá»‡p trong nÆ°á»›c, nhÆ°ng cÃ³ thá»ƒ bá»‹ Ä‘á»‘i tÃ¡c thÆ°Æ¡ng máº¡i pháº£n á»©ng.",
+    "cloReferences": [
+      "CLO3",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "thau-tom",
+      "han-ngach",
+      "bao-ho"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch biá»‡n phÃ¡p háº¡n ngáº¡ch thá»‹ pháº§n trong báº£o vá»‡ thá»‹ trÆ°á»ng ná»™i Ä‘á»‹a"
+    ]
+  },
+  {
+    "id": "ex_chain_thau_tom_tu_do",
+    "content": "Giá»¯ nguyÃªn chÃ­nh sÃ¡ch tá»± do Ä‘á»ƒ thá»‹ trÆ°á»ng Ä‘Ã o tháº£i tá»± nhiÃªn thá»ƒ hiá»‡n tÃ´n trá»ng cÆ¡ cháº¿ thá»‹ trÆ°á»ng. NhÆ°ng MÃ¡c chá»‰ ra ráº±ng trong Ä‘iá»u kiá»‡n báº¥t bÃ¬nh Ä‘áº³ng, cáº¡nh tranh tá»± do giá»¯a táº­p Ä‘oÃ n quá»‘c táº¿ vÃ  doanh nghiá»‡p ná»™i Ä‘á»‹a nhá» bÃ© sáº½ dáº«n Ä‘áº¿n káº¿t quáº£ Ä‘Ã£ Ä‘Æ°á»£c Ä‘á»‹nh trÆ°á»›c: doanh nghiá»‡p ná»™i Ä‘á»‹a bá»‹ thÃ´n tÃ­nh. Háº­u quáº£ lÃ  máº¥t thÆ°Æ¡ng hiá»‡u vÃ  nÄƒng lá»±c tá»± chá»§.",
+    "cloReferences": [
+      "CLO3",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "thau-tom",
+      "tu-do-hoa",
+      "toan-cau-hoa"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch há»‡ quáº£ cá»§a cáº¡nh tranh tá»± do khÃ´ng cÃ¢n sá»©c giá»¯a tÆ° báº£n nÆ°á»›c ngoÃ i vÃ  doanh nghiá»‡p ná»™i Ä‘á»‹a"
+    ]
+  },
+  {
+    "id": "ex_chain_thau_tom_lien_minh",
+    "content": "Há»— trá»£ doanh nghiá»‡p ná»™i Ä‘á»‹a hÃ¬nh thÃ nh liÃªn minh sá»©c mua lÃ  giáº£i phÃ¡p dá»±a trÃªn sá»©c máº¡nh táº­p thá»ƒ. Theo MÃ¡c, liÃªn káº¿t nhá»¯ng ngÆ°á»i sáº£n xuáº¥t nhá» táº¡o ra sá»©c máº¡nh Ä‘á»‘i trá»ng vá»›i tÆ° báº£n lá»›n. MÃ´ hÃ¬nh há»£p tÃ¡c xÃ£ vÃ  liÃªn minh doanh nghiá»‡p giÃºp tÄƒng sá»©c máº·c cáº£, chia sáº» chi phÃ­ vÃ  cÃ´ng nghá»‡, phÃ¹ há»£p vá»›i Ä‘á»‹nh hÆ°á»›ng XHCN.",
+    "cloReferences": [
+      "CLO3",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "lien-minh",
+      "hop-tac-xa",
+      "suc-mac-ca"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a liÃªn káº¿t doanh nghiá»‡p trong cáº¡nh tranh vá»›i tÆ° báº£n nÆ°á»›c ngoÃ i"
+    ]
+  },
+  {
+    "id": "ex_chain_phong_trao_dap_ung",
+    "content": "ÄÃ¡p á»©ng yÃªu cáº§u cá»§a cÃ´ng nhÃ¢n, khÃ´i phá»¥c má»©c lÆ°Æ¡ng cÅ© lÃ  giáº£i phÃ¡p xoa dá»‹u ngay láº­p tá»©c. NhÆ°ng theo MÃ¡c, nhÆ°á»£ng bá»™ trÆ°á»›c Ã¡p lá»±c cÃ³ thá»ƒ khuyáº¿n khÃ­ch cÃ¡c cuá»™c Ä‘áº¥u tranh tiáº¿p theo. Trong quan há»‡ tÆ° báº£n - lao Ä‘á»™ng, viá»‡c tÄƒng lÆ°Æ¡ng lÃ m giáº£m tá»· suáº¥t lá»£i nhuáº­n, cÃ³ thá»ƒ dáº«n Ä‘áº¿n pháº£n á»©ng tá»« giá»›i chá»§ nhÆ° sa tháº£i hoáº·c tÄƒng giÃ¡ bÃ¡n.",
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "phong-trao-cong-nhan",
+      "luong",
+      "thuong-luong"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch tÃ¡c Ä‘á»™ng cá»§a nhÆ°á»£ng bá»™ trÆ°á»›c Ã¡p lá»±c cÃ´ng nhÃ¢n Ä‘áº¿n quan há»‡ lao Ä‘á»™ng"
+    ]
+  },
+  {
+    "id": "ex_chain_phong_trao_tran_ap",
+    "content": "Tráº¥n Ã¡p biá»ƒu tÃ¬nh, duy trÃ¬ giáº£m lÆ°Æ¡ng lÃ  giáº£i phÃ¡p báº£o vá»‡ lá»£i Ã­ch cá»§a tÆ° báº£n trong ngáº¯n háº¡n. NhÆ°ng vá» lÃ¢u dÃ i, báº¡o lá»±c lÃ m gia tÄƒng mÃ¢u thuáº«n, cÃ³ thá»ƒ dáº«n Ä‘áº¿n báº¥t á»•n chÃ­nh trá»‹ - xÃ£ há»™i. MÃ¡c cáº£nh bÃ¡o ráº±ng sá»± Ã¡p bá»©c quÃ¡ má»©c sáº½ thÃºc Ä‘áº©y Ã½ thá»©c giai cáº¥p cá»§a cÃ´ng nhÃ¢n vÃ  cÃ¡c cuá»™c Ä‘áº¥u tranh quyáº¿t liá»‡t hÆ¡n.",
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "phong-trao-cong-nhan",
+      "tran-ap",
+      "mau-thuan-xa-hoi"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch háº­u quáº£ cá»§a viá»‡c tráº¥n Ã¡p phong trÃ o cÃ´ng nhÃ¢n"
+    ]
+  },
+  {
+    "id": "ex_chain_phong_trao_thuong_luong",
+    "content": "ThÆ°Æ¡ng lÆ°á»£ng vá»›i Ä‘áº¡i diá»‡n cÃ´ng nhÃ¢n, tÃ¬m giáº£i phÃ¡p dung hÃ²a lÃ  cÃ¡ch tiáº¿p cáº­n dÃ¢n chá»§, dá»±a trÃªn Ä‘á»‘i thoáº¡i xÃ£ há»™i. NhÃ  nÆ°á»›c Ä‘Ã³ng vai trÃ² trung gian, táº¡o kÃªnh Ä‘á»‘i thoáº¡i chÃ­nh thá»©c giá»¯a lao Ä‘á»™ng vÃ  tÆ° báº£n. ÄÃ¢y lÃ  mÃ´ hÃ¬nh quan há»‡ lao Ä‘á»™ng hiá»‡n Ä‘áº¡i, phá»• biáº¿n á»Ÿ cÃ¡c nÆ°á»›c cÃ´ng nghiá»‡p phÃ¡t triá»ƒn, phÃ¹ há»£p vá»›i Ä‘á»‹nh hÆ°á»›ng xÃ£ há»™i chá»§ nghÄ©a.",
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "phong-trao-cong-nhan",
+      "thuong-luong",
+      "doi-thoai-xa-hoi"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch mÃ´ hÃ¬nh Ä‘á»‘i thoáº¡i xÃ£ há»™i trong giáº£i quyáº¿t tranh cháº¥p lao Ä‘á»™ng"
+    ]
+  },
+  {
+    "id": "ex_chain_dau_tu_cong_nghe_khu_cnc",
+    "content": "ThÃ nh láº­p khu cÃ´ng nghá»‡ cao vá»›i Æ°u Ä‘Ã£i Ä‘áº·c biá»‡t lÃ  chiáº¿n lÆ°á»£c thu hÃºt Ä‘áº§u tÆ° cháº¥t lÆ°á»£ng cao, táº¡o cá»±c tÄƒng trÆ°á»Ÿng má»›i. MÃ´ hÃ¬nh khu cÃ´ng nghá»‡ cao Ä‘Ã£ thÃ nh cÃ´ng á»Ÿ nhiá»u nÆ°á»›c ÄÃ´ng Ã. Theo MÃ¡c, táº­p trung nguá»“n lá»±c vÃ o nhá»¯ng Ä‘iá»ƒm tÄƒng trÆ°á»Ÿng then chá»‘t giÃºp Ä‘áº©y nhanh quÃ¡ trÃ¬nh hiá»‡n Ä‘áº¡i hÃ³a vÃ  nÃ¢ng cao nÄƒng lá»±c cáº¡nh tranh quá»‘c gia.",
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "khu-cong-nghe-cao",
+      "dau-tu",
+      "hien-dai-hoa"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch mÃ´ hÃ¬nh khu cÃ´ng nghá»‡ cao trong chiáº¿n lÆ°á»£c cÃ´ng nghiá»‡p hÃ³a"
+    ]
+  },
+  {
+    "id": "ex_chain_dau_tu_cong_nghe_tu_do",
+    "content": "Äá»ƒ thá»‹ trÆ°á»ng tá»± quyáº¿t Ä‘á»‹nh, khÃ´ng can thiá»‡p lÃ  láº­p trÆ°á»ng tá»± do kinh táº¿. Tuy nhiÃªn, cÃ¡c nÆ°á»›c Ä‘i sau thÆ°á»ng khÃ³ thu hÃºt Ä‘áº§u tÆ° cÃ´ng nghá»‡ cao náº¿u khÃ´ng cÃ³ sá»± há»— trá»£ cá»§a NhÃ  nÆ°á»›c. MÃ¡c nháº¥n máº¡nh ráº±ng trong cáº¡nh tranh quá»‘c táº¿, NhÃ  nÆ°á»›c Ä‘Ã³ng vai trÃ² quan trá»ng trong viá»‡c táº¡o lá»£i tháº¿ cho tÆ° báº£n dÃ¢n tá»™c. Thiáº¿u sá»± há»— trá»£, cÆ¡ há»™i cÃ³ thá»ƒ bá»‹ bá» lá»¡.",
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "tu-do-thi-truong",
+      "dau-tu",
+      "canh-tranh-quoc-te"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a NhÃ  nÆ°á»›c trong thu hÃºt Ä‘áº§u tÆ° cÃ´ng nghá»‡ cao"
+    ]
+  },
+  {
+    "id": "ex_chain_dau_tu_cong_nghe_chuyen_giao",
+    "content": "YÃªu cáº§u chuyá»ƒn giao cÃ´ng nghá»‡ vÃ  Ä‘Ã o táº¡o lao Ä‘á»™ng Ä‘á»‹a phÆ°Æ¡ng lÃ  chiáº¿n lÆ°á»£c Ä‘áº£m báº£o FDI phá»¥c vá»¥ má»¥c tiÃªu phÃ¡t triá»ƒn dÃ i háº¡n. Kinh nghiá»‡m cá»§a HÃ n Quá»‘c vÃ  ÄÃ i Loan cho tháº¥y viá»‡c Ä‘áº·t Ä‘iá»u kiá»‡n chuyá»ƒn giao cÃ´ng nghá»‡ giÃºp nÆ°á»›c chá»§ nhÃ  háº¥p thá»¥ vÃ  lÃ m chá»§ cÃ´ng nghá»‡. Theo MÃ¡c, Ä‘Ã¢y lÃ  cÃ¡ch rÃºt ngáº¯n quÃ¡ trÃ¬nh cÃ´ng nghiá»‡p hÃ³a thÃ´ng qua tiáº¿p thu tri thá»©c tá»« bÃªn ngoÃ i.",
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "chuyen-giao-cong-nghe",
+      "dao-tao",
+      "fdi"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch chÃ­nh sÃ¡ch chuyá»ƒn giao cÃ´ng nghá»‡ gáº¯n vá»›i FDI trong cÃ´ng nghiá»‡p hÃ³a"
+    ]
+  },
+  {
+    "id": "ex_chain_hoi_nhap_day_manh",
+    "content": "Äáº©y máº¡nh há»™i nháº­p, cam káº¿t cÃ¡c tiÃªu chuáº©n cao nháº¥t giÃºp Viá»‡t Nam kháº³ng Ä‘á»‹nh vá»‹ tháº¿ trong chuá»—i giÃ¡ trá»‹ toÃ n cáº§u. Há»™i nháº­p sÃ¢u táº¡o Ã¡p lá»±c cáº¡nh tranh buá»™c doanh nghiá»‡p trong nÆ°á»›c nÃ¢ng cao nÄƒng suáº¥t vÃ  cháº¥t lÆ°á»£ng. Theo MÃ¡c, toÃ n cáº§u hÃ³a lÃ  xu tháº¿ khÃ¡ch quan cá»§a phÃ¡t triá»ƒn lá»±c lÆ°á»£ng sáº£n xuáº¥t. Chá»§ Ä‘á»™ng há»™i nháº­p giÃºp nÆ°á»›c Ä‘i sau táº­n dá»¥ng lá»£i tháº¿ Ä‘á»ƒ phÃ¡t triá»ƒn.",
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "hoi-nhap-toan-dien",
+      "toan-cau-hoa",
+      "chuoi-gia-tri"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch chiáº¿n lÆ°á»£c há»™i nháº­p toÃ n diá»‡n vÃ o chuá»—i giÃ¡ trá»‹ toÃ n cáº§u"
+    ]
+  },
+  {
+    "id": "ex_chain_hoi_nhap_duy_tri",
+    "content": "Duy trÃ¬ vá»‹ tháº¿ hiá»‡n táº¡i, tham gia cÃ³ chá»n lá»c lÃ  cÃ¡ch tiáº¿p cáº­n tháº­n trá»ng, báº£o vá»‡ khÃ´ng gian chÃ­nh sÃ¡ch quá»‘c gia. Viá»‡t Nam cÃ³ thá»ƒ chá»n lá»c lÄ©nh vá»±c há»™i nháº­p sÃ¢u vÃ  lÄ©nh vá»±c báº£o há»™. Theo MÃ¡c, Ä‘á»™c láº­p tá»± chá»§ vá» kinh táº¿ lÃ  cÆ¡ sá»Ÿ cá»§a Ä‘á»™c láº­p chÃ­nh trá»‹. Tham gia cÃ³ chá»n lá»c giÃºp báº£o vá»‡ cÃ¡c ngÃ nh non tráº» vÃ  duy trÃ¬ á»•n Ä‘á»‹nh kinh táº¿ vÄ© mÃ´.",
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "hoi-nhap-chon-loc",
+      "tu-chu",
+      "bao-ho"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch chiáº¿n lÆ°á»£c há»™i nháº­p cÃ³ chá»n lá»c trong bá»‘i cáº£nh toÃ n cáº§u hÃ³a"
+    ]
+  },
+  {
+    "id": "ex_chain_hoi_nhap_rut_lui",
+    "content": "RÃºt lui khá»i cÃ¡c cam káº¿t quá»‘c táº¿ sÃ¢u rá»™ng, táº­p trung ná»™i Ä‘á»‹a lÃ  lá»±a chá»n báº£o há»™ triá»‡t Ä‘á»ƒ. Tuy nhiÃªn, trong tháº¿ giá»›i toÃ n cáº§u hÃ³a, tá»± cÃ´ láº­p cÃ³ thá»ƒ lÃ m máº¥t cÆ¡ há»™i tiáº¿p cáº­n cÃ´ng nghá»‡, vá»‘n vÃ  thá»‹ trÆ°á»ng. MÃ¡c tá»«ng nháº­n xÃ©t ráº±ng cÃ¡c nÆ°á»›c Ä‘i sau khÃ´ng thá»ƒ phÃ¡t triá»ƒn trong biá»‡t láº­p. RÃºt lui cÃ³ thá»ƒ báº£o vá»‡ sáº£n xuáº¥t trong nÆ°á»›c ngáº¯n háº¡n nhÆ°ng gÃ¢y tá»¥t háº­u dÃ i háº¡n.",
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "rut-lui",
+      "bao-ho",
+      "co-lap"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch háº­u quáº£ cá»§a chÃ­nh sÃ¡ch rÃºt lui khá»i há»™i nháº­p quá»‘c táº¿"
+    ]
+  },
+  {
+    "id": "ex_surprise_mo_dau_tu_khai_thac",
+    "content": "Tá»± khai thÃ¡c má» dáº§u báº±ng doanh nghiá»‡p nhÃ  nÆ°á»›c giá»¯ toÃ n bá»™ lá»£i nhuáº­n cho quá»‘c gia, phÃ¹ há»£p vá»›i chá»§ quyá»n tÃ i nguyÃªn. Theo MÃ¡c, tÃ i nguyÃªn thiÃªn nhiÃªn thuá»™c sá»Ÿ há»¯u toÃ n dÃ¢n, NhÃ  nÆ°á»›c Ä‘áº¡i diá»‡n quáº£n lÃ½. Tá»± khai thÃ¡c giÃºp tá»‘i Ä‘a hÃ³a lá»£i Ã­ch quá»‘c gia, xÃ¢y dá»±ng nÄƒng lá»±c cÃ´ng nghá»‡ trong nÆ°á»›c. Tuy nhiÃªn, cáº§n nÄƒng lá»±c quáº£n lÃ½ vÃ  vá»‘n Ä‘áº§u tÆ° lá»›n.",
+    "cloReferences": [
+      "CLO2",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "mo-dau",
+      "tu-khai-thac",
+      "tai-nguyen"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch chá»§ quyá»n tÃ i nguyÃªn dÆ°á»›i gÃ³c Ä‘á»™ kinh táº¿ chÃ­nh trá»‹"
+    ]
+  },
+  {
+    "id": "ex_surprise_mo_dau_hop_tac",
+    "content": "Há»£p tÃ¡c vá»›i Ä‘á»‘i tÃ¡c nÆ°á»›c ngoÃ i Ä‘á»ƒ khai thÃ¡c nhanh mang láº¡i nguá»“n thu ngÃ¢n sÃ¡ch vÃ  viá»‡c lÃ m ngay. ÄÃ¢y lÃ  hÃ¬nh thá»©c thu hÃºt FDI trong lÄ©nh vá»±c tÃ i nguyÃªn. Theo MÃ¡c, tÆ° báº£n nÆ°á»›c ngoÃ i tÃ¬m kiáº¿m lá»£i nhuáº­n siÃªu ngáº¡ch tá»« tÃ i nguyÃªn nÆ°á»›c chá»§ nhÃ . Cáº§n cÃ³ há»£p Ä‘á»“ng cÃ´ng báº±ng, Ä‘áº£m báº£o pháº§n lá»£i Ã­ch thá»a Ä‘Ã¡ng cho quá»‘c gia vÃ  báº£o vá»‡ mÃ´i trÆ°á»ng.",
+    "cloReferences": [
+      "CLO2",
+      "CLO7",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "mo-dau",
+      "hop-tac",
+      "fdi"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch há»£p Ä‘á»“ng khai thÃ¡c tÃ i nguyÃªn vá»›i Ä‘á»‘i tÃ¡c nÆ°á»›c ngoÃ i"
+    ]
+  },
+  {
+    "id": "ex_surprise_mo_dau_bao_ton",
+    "content": "Báº£o tá»“n má» dáº§u cho tÆ°Æ¡ng lai, táº­p trung vÃ o nÄƒng lÆ°á»£ng tÃ¡i táº¡o thá»ƒ hiá»‡n táº§m nhÃ¬n phÃ¡t triá»ƒn bá»n vá»¯ng. Theo MÃ¡c, tÃ i nguyÃªn khÃ´ng tÃ¡i táº¡o cáº§n Ä‘Æ°á»£c sá»­ dá»¥ng tiáº¿t kiá»‡m cho cÃ¡c tháº¿ há»‡ sau. Trong bá»‘i cáº£nh tháº¿ giá»›i chuyá»ƒn dá»‹ch nÄƒng lÆ°á»£ng xanh, báº£o tá»“n tÃ i nguyÃªn hÃ³a tháº¡ch vÃ  Ä‘áº§u tÆ° vÃ o nÄƒng lÆ°á»£ng tÃ¡i táº¡o lÃ  chiáº¿n lÆ°á»£c phÃ¹ há»£p xu tháº¿ toÃ n cáº§u.",
+    "cloReferences": [
+      "CLO2",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "mo-dau",
+      "bao-ton",
+      "nang-luong-tai-tao"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch nguyÃªn táº¯c phÃ¡t triá»ƒn bá»n vá»¯ng trong khai thÃ¡c tÃ i nguyÃªn"
+    ]
+  },
+  {
+    "id": "ex_surprise_sot_dat_thue",
+    "content": "TÄƒng thuáº¿ Ä‘áº¥t ná»n vÃ  thuáº¿ chuyá»ƒn nhÆ°á»£ng báº¥t Ä‘á»™ng sáº£n lÃ  biá»‡n phÃ¡p tÃ i khÃ³a nháº±m háº¡ nhiá»‡t cÆ¡n sá»‘t Ä‘áº¥t. Theo MÃ¡c, Ä‘á»‹a tÃ´ lÃ  má»™t hÃ¬nh thá»©c thu nháº­p Ä‘áº·c biá»‡t dá»±a trÃªn sá»Ÿ há»¯u Ä‘áº¥t Ä‘ai. Äáº§u cÆ¡ Ä‘áº¥t Ä‘ai lÃ m tÄƒng Ä‘á»‹a tÃ´ giáº£ táº¡o, gÃ¢y bong bÃ³ng báº¥t Ä‘á»™ng sáº£n. Thuáº¿ lÃ  cÃ´ng cá»¥ Ä‘iá»u tiáº¿t thá»‹ trÆ°á»ng, háº¡n cháº¿ Ä‘áº§u cÆ¡ vÃ  tÄƒng thu ngÃ¢n sÃ¡ch.",
+    "cloReferences": [
+      "CLO3",
+      "CLO4"
+    ],
+    "conceptTags": [
+      "sot-dat",
+      "thue-bat-dong-san",
+      "dau-co"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch hiá»‡n tÆ°á»£ng Ä‘áº§u cÆ¡ Ä‘áº¥t Ä‘ai dÆ°á»›i gÃ³c Ä‘á»™ Ä‘á»‹a tÃ´"
+    ]
+  },
+  {
+    "id": "ex_surprise_sot_dat_xiet_chat",
+    "content": "Xá»­ lÃ½ cÃ¡c dá»± Ã¡n ma vÃ  siáº¿t cháº·t tÃ­n dá»¥ng báº¥t Ä‘á»™ng sáº£n lÃ  biá»‡n phÃ¡p hÃ nh chÃ­nh vÃ  tiá»n tá»‡ nháº±m loáº¡i bá» cung giáº£ vÃ  giáº£m Ä‘Ã²n báº©y tÃ i chÃ­nh. Äáº§u cÆ¡ báº¥t Ä‘á»™ng sáº£n lÃ  biá»ƒu hiá»‡n cá»§a sá»± mÃ©o mÃ³ trong phÃ¢n bá»• nguá»“n lá»±c. MÃ¡c cáº£nh bÃ¡o ráº±ng bong bÃ³ng tÃ i sáº£n lÃ  tiá»n Ä‘á» cá»§a khá»§ng hoáº£ng. Siáº¿t cháº·t tÃ­n dá»¥ng giÃºp ngÄƒn cháº·n rá»§i ro há»‡ thá»‘ng.",
+    "cloReferences": [
+      "CLO3",
+      "CLO4"
+    ],
+    "conceptTags": [
+      "sot-dat",
+      "tÃ­n-dung",
+      "rui-ro-he-thong"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch má»‘i quan há»‡ giá»¯a tÃ­n dá»¥ng báº¥t Ä‘á»™ng sáº£n vÃ  khá»§ng hoáº£ng tÃ i chÃ­nh"
+    ]
+  },
+  {
+    "id": "ex_surprise_sot_dat_tan_dung",
+    "content": "Táº­n dá»¥ng cÆ¡n sá»‘t Ä‘áº¥t Ä‘á»ƒ Ä‘áº¥u giÃ¡ thu lá»£i lÃ  cÃ¡ch nhÃ¬n ngáº¯n háº¡n, thu lá»£i trÆ°á»›c máº¯t nhÆ°ng gÃ¢y háº­u quáº£ dÃ i háº¡n. Äáº¥t Ä‘ai tÄƒng giÃ¡ quÃ¡ nhanh lÃ m tÄƒng chi phÃ­ nhÃ  á»Ÿ, Ä‘áº©y ngÆ°á»i nghÃ¨o ra khá»i Ä‘Ã´ thá»‹. MÃ¡c chá»‰ ra ráº±ng Ä‘áº§u cÆ¡ Ä‘áº¥t Ä‘ai lÃ  má»™t trong nhá»¯ng nguyÃªn nhÃ¢n lÃ m tráº§m trá»ng thÃªm báº¥t bÃ¬nh Ä‘áº³ng xÃ£ há»™i vÃ  báº¥t á»•n kinh táº¿.",
+    "cloReferences": [
+      "CLO3",
+      "CLO4"
+    ],
+    "conceptTags": [
+      "sot-dat",
+      "dau-gia",
+      "bat-binh-dang"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch háº­u quáº£ xÃ£ há»™i cá»§a sá»‘t Ä‘áº¥t dÆ°á»›i gÃ³c Ä‘á»™ kinh táº¿ chÃ­nh trá»‹"
+    ]
+  },
+  {
+    "id": "ex_surprise_bong_da_hang_viet",
+    "content": "Táº­n dá»¥ng tinh tháº§n dÃ¢n tá»™c tá»« chiáº¿n tháº¯ng thá»ƒ thao Ä‘á»ƒ phÃ¡t Ä‘á»™ng chiáº¿n dá»‹ch \"NgÆ°á»i Viá»‡t Æ°u tiÃªn dÃ¹ng hÃ ng Viá»‡t\" lÃ  chiáº¿n lÆ°á»£c marketing quá»‘c gia thÃ´ng minh. Theo MÃ¡c, Ã½ thá»©c xÃ£ há»™i cÃ³ tÃ¡c Ä‘á»™ng trá»Ÿ láº¡i Ä‘áº¿n tá»“n táº¡i xÃ£ há»™i. Tinh tháº§n dÃ¢n tá»™c cao Ä‘á»™ cÃ³ thá»ƒ chuyá»ƒn hÃ³a thÃ nh hÃ nh vi kinh táº¿ tÃ­ch cá»±c, thÃºc Ä‘áº©y tiÃªu dÃ¹ng ná»™i Ä‘á»‹a.",
+    "cloReferences": [
+      "CLO7"
+    ],
+    "conceptTags": [
+      "bong-da",
+      "hang-viet",
+      "tieu-dung"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch tÃ¡c Ä‘á»™ng cá»§a tinh tháº§n dÃ¢n tá»™c Ä‘áº¿n hÃ nh vi tiÃªu dÃ¹ng"
+    ]
+  },
+  {
+    "id": "ex_surprise_bong_da_giam_thue",
+    "content": "Giáº£m thuáº¿ tiÃªu dÃ¹ng má»™t thÃ¡ng Ä‘á»ƒ kÃ­ch cáº§u táº­n dá»¥ng tÃ¢m lÃ½ pháº¥n khá»Ÿi cá»§a ngÆ°á»i dÃ¢n sau chiáº¿n tháº¯ng. Theo MÃ¡c, tiÃªu dÃ¹ng lÃ  khÃ¢u cuá»‘i cÃ¹ng cá»§a tÃ¡i sáº£n xuáº¥t xÃ£ há»™i, kÃ­ch thÃ­ch tiÃªu dÃ¹ng thÃºc Ä‘áº©y sáº£n xuáº¥t. Tuy nhiÃªn, giáº£m thuáº¿ ngáº¯n háº¡n mang tÃ­nh thá»i vá»¥, cáº§n káº¿t há»£p vá»›i cÃ¡c chÃ­nh sÃ¡ch dÃ i háº¡n Ä‘á»ƒ duy trÃ¬ Ä‘Ã  tÄƒng trÆ°á»Ÿng.",
+    "cloReferences": [
+      "CLO7"
+    ],
+    "conceptTags": [
+      "bong-da",
+      "kÃ­ch-cau",
+      "thue"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch tÃ¡c Ä‘á»™ng cá»§a kÃ­ch cáº§u tiÃªu dÃ¹ng Ä‘áº¿n tÄƒng trÆ°á»Ÿng kinh táº¿"
+    ]
+  },
+  {
+    "id": "ex_surprise_bong_da_du_lich",
+    "content": "Tá»• chá»©c sá»± kiá»‡n quá»‘c táº¿ Ä‘á»ƒ quáº£ng bÃ¡ du lá»‹ch vÃ  vÄƒn hÃ³a táº­n dá»¥ng sá»± chÃº Ã½ toÃ n cáº§u sau chiáº¿n tháº¯ng thá»ƒ thao. Theo MÃ¡c, du lá»‹ch lÃ  ngÃ nh dá»‹ch vá»¥ tá»•ng há»£p, thÃºc Ä‘áº©y nhiá»u ngÃ nh khÃ¡c phÃ¡t triá»ƒn. Quáº£ng bÃ¡ hÃ¬nh áº£nh quá»‘c gia qua sá»± kiá»‡n thá»ƒ thao táº¡o hiá»‡u á»©ng lan tá»a, thu hÃºt Ä‘áº§u tÆ° vÃ  du khÃ¡ch quá»‘c táº¿.",
+    "cloReferences": [
+      "CLO7"
+    ],
+    "conceptTags": [
+      "bong-da",
+      "du-lich",
+      "quang-ba"
+    ],
+    "learningObjectives": [
+      "ÄÃ¡nh giÃ¡ chiáº¿n lÆ°á»£c quáº£ng bÃ¡ quá»‘c gia qua sá»± kiá»‡n thá»ƒ thao"
+    ]
+  },
+  {
+    "id": "ex_surprise_meme_len_an",
+    "content": "LÃªn Ã¡n vÃ  yÃªu cáº§u gá»¡ bá» meme, khá»Ÿi tá»‘ ngÆ°á»i lan truyá»n lÃ  pháº£n á»©ng cá»©ng ráº¯n báº£o vá»‡ uy tÃ­n chÃ­nh phá»§. NhÆ°ng theo MÃ¡c, máº¡ng xÃ£ há»™i lÃ  lá»±c lÆ°á»£ng sáº£n xuáº¥t má»›i trong lÄ©nh vá»±c thÃ´ng tin. Kiá»ƒm soÃ¡t quÃ¡ má»©c cÃ³ thá»ƒ gÃ¢y pháº£n á»©ng ngÆ°á»£c vÃ  háº¡n cháº¿ tá»± do ngÃ´n luáº­n. Cáº§n cÃ³ cÃ¡ch tiáº¿p cáº­n tinh táº¿ hÆ¡n trong thá»i Ä‘áº¡i sá»‘.",
+    "cloReferences": [
+      "CLO7"
+    ],
+    "conceptTags": [
+      "meme",
+      "truyen-thong",
+      "mang-xa-hoi"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch quáº£n lÃ½ thÃ´ng tin trÃªn máº¡ng xÃ£ há»™i dÆ°á»›i gÃ³c Ä‘á»™ kinh táº¿ chÃ­nh trá»‹"
+    ]
+  },
+  {
+    "id": "ex_surprise_meme_huong_ung",
+    "content": "HÆ°á»Ÿng á»©ng meme, dÃ¹ng nÃ³ Ä‘á»ƒ truyá»n thÃ´ng chÃ­nh sÃ¡ch lÃ  cÃ¡ch tiáº¿p cáº­n hiá»‡n Ä‘áº¡i, \"náº¿u khÃ´ng chá»‘ng láº¡i Ä‘Æ°á»£c thÃ¬ hÃ£y tham gia\". Theo MÃ¡c, phÆ°Æ¡ng thá»©c sáº£n xuáº¥t tinh tháº§n thay Ä‘á»•i theo phÆ°Æ¡ng thá»©c sáº£n xuáº¥t váº­t cháº¥t. Trong thá»i Ä‘áº¡i sá»‘, chÃ­nh phá»§ cáº§n thÃ­ch á»©ng vá»›i ngÃ´n ngá»¯ vÃ  vÄƒn hÃ³a máº¡ng Ä‘á»ƒ truyá»n thÃ´ng chÃ­nh sÃ¡ch hiá»‡u quáº£.",
+    "cloReferences": [
+      "CLO7"
+    ],
+    "conceptTags": [
+      "meme",
+      "truyen-thong-chinh-sach",
+      "van-hoa-mang"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a truyá»n thÃ´ng sá»‘ trong quáº£n lÃ½ nhÃ  nÆ°á»›c"
+    ]
+  },
+  {
+    "id": "ex_surprise_meme_phot_lo",
+    "content": "Phá»›t lá», khÃ´ng cÃ³ pháº£n á»©ng chÃ­nh thá»©c lÃ  thÃ¡i Ä‘á»™ \"im láº·ng lÃ  vÃ ng\". Tuy nhiÃªn, trong thá»i Ä‘áº¡i thÃ´ng tin lan truyá»n nhanh, im láº·ng cÃ³ thá»ƒ bá»‹ coi lÃ  báº¥t lá»±c hoáº·c thá» Æ¡. Theo MÃ¡c, Ã½ thá»©c xÃ£ há»™i cÃ³ tÃ­nh Ä‘á»™c láº­p tÆ°Æ¡ng Ä‘á»‘i. Náº¿u khÃ´ng Ä‘á»‹nh hÆ°á»›ng dÆ° luáº­n, cÃ¢u chuyá»‡n cÃ³ thá»ƒ bá»‹ thá»•i phá»“ng vÃ  gÃ¢y háº­u quáº£ khÃ³ lÆ°á»ng.",
+    "cloReferences": [
+      "CLO7"
+    ],
+    "conceptTags": [
+      "meme",
+      "phot-lo",
+      "du-luan"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch háº­u quáº£ cá»§a thÃ¡i Ä‘á»™ im láº·ng trong quáº£n lÃ½ khá»§ng hoáº£ng truyá»n thÃ´ng"
+    ]
+  },
+  {
+    "id": "ex_surprise_ca_cap_sua_chua",
+    "content": "Huy Ä‘á»™ng lá»±c lÆ°á»£ng sá»­a chá»¯a kháº©n cáº¥p vÃ  thuÃª vá»‡ tinh dá»± phÃ²ng lÃ  pháº£n á»©ng nhanh, giáº£m thiá»ƒu giÃ¡n Ä‘oáº¡n. Háº¡ táº§ng viá»…n thÃ´ng lÃ  huyáº¿t máº¡ch cá»§a ná»n kinh táº¿ sá»‘. Theo MÃ¡c, sá»± phÃ¡t triá»ƒn cá»§a lá»±c lÆ°á»£ng sáº£n xuáº¥t phá»¥ thuá»™c vÃ o háº¡ táº§ng ká»¹ thuáº­t. Äáº§u tÆ° dá»± phÃ²ng lÃ  cáº§n thiáº¿t Ä‘á»ƒ báº£o Ä‘áº£m an toÃ n há»‡ thá»‘ng thÃ´ng tin quá»‘c gia.",
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "ca-cap-quang",
+      "ha-tang-vien-thong",
+      "kinh-te-so"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a háº¡ táº§ng viá»…n thÃ´ng trong ná»n kinh táº¿ sá»‘"
+    ]
+  },
+  {
+    "id": "ex_surprise_ca_cap_cho",
+    "content": "Chá» sá»­a chá»¯a tá»± nhiÃªn, khuyáº¿n khÃ­ch doanh nghiá»‡p dÃ¹ng giáº£i phÃ¡p offline lÃ  thÃ¡i Ä‘á»™ thá»¥ Ä‘á»™ng. Trong ná»n kinh táº¿ sá»‘, ngá»«ng káº¿t ná»‘i internet gÃ¢y thiá»‡t háº¡i lá»›n cho thÆ°Æ¡ng máº¡i Ä‘iá»‡n tá»­, tÃ i chÃ­nh vÃ  sáº£n xuáº¥t. MÃ¡c nháº¥n máº¡nh ráº±ng sá»± phÃ¡t triá»ƒn cá»§a phÆ°Æ¡ng tiá»‡n giao thÃ´ng vÃ  liÃªn láº¡c thÃºc Ä‘áº©y lÆ°u thÃ´ng hÃ ng hÃ³a. GiÃ¡n Ä‘oáº¡n thÃ´ng tin cÅ©ng gÃ¢y cáº£n trá»Ÿ lÆ°u thÃ´ng.",
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "ca-cap-quang",
+      "internet",
+      "giai-phap-offline"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch tÃ¡c Ä‘á»™ng cá»§a giÃ¡n Ä‘oáº¡n internet Ä‘áº¿n ná»n kinh táº¿ sá»‘"
+    ]
+  },
+  {
+    "id": "ex_surprise_ca_cap_dau_tu",
+    "content": "Äáº§u tÆ° xÃ¢y dá»±ng tuyáº¿n cÃ¡p quang dá»± phÃ²ng trong nÆ°á»›c lÃ  chiáº¿n lÆ°á»£c báº£o Ä‘áº£m an toÃ n háº¡ táº§ng thÃ´ng tin quá»‘c gia. ÄÃ¢y lÃ  bÃ i há»c tá»« phá»¥ thuá»™c vÃ o cÃ¡c tuyáº¿n cÃ¡p quang biá»ƒn quá»‘c táº¿. Theo MÃ¡c, xÃ¢y dá»±ng cÆ¡ sá»Ÿ háº¡ táº§ng Ä‘á»™c láº­p lÃ  yáº¿u tá»‘ báº£o Ä‘áº£m chá»§ quyá»n vÃ  an ninh quá»‘c gia trong thá»i Ä‘áº¡i toÃ n cáº§u hÃ³a.",
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "ca-cap-quang",
+      "dau-tu-ha-tang",
+      "an-toan-thong-tin"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch chiáº¿n lÆ°á»£c báº£o Ä‘áº£m an toÃ n háº¡ táº§ng thÃ´ng tin quá»‘c gia"
+    ]
+  },
+  {
+    "id": "ex_surprise_ai_ung_dung",
+    "content": "á»¨ng dá»¥ng AI vÃ o cÃ´ng viá»‡c hÃ nh chÃ­nh, cáº¯t giáº£m biÃªn cháº¿ lÃ  táº­n dá»¥ng cÃ´ng nghá»‡ Ä‘á»ƒ nÃ¢ng cao hiá»‡u quáº£ quáº£n lÃ½ nhÃ  nÆ°á»›c. AI lÃ  lá»±c lÆ°á»£ng sáº£n xuáº¥t má»›i, tÄƒng nÄƒng suáº¥t lao Ä‘á»™ng quáº£n lÃ½. Tuy nhiÃªn, MÃ¡c cáº£nh bÃ¡o mÃ¡y mÃ³c thay tháº¿ lao Ä‘á»™ng gÃ¢y tháº¥t nghiá»‡p. Cáº§n cÃ³ chÃ­nh sÃ¡ch Ä‘Ã o táº¡o láº¡i vÃ  an sinh cho ngÆ°á»i bá»‹ áº£nh hÆ°á»Ÿng.",
+    "cloReferences": [
+      "CLO5",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "ai",
+      "tu-dong-hoa",
+      "hieu-qua-quan-ly"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch tÃ¡c Ä‘á»™ng cá»§a AI Ä‘áº¿n quáº£n lÃ½ nhÃ  nÆ°á»›c vÃ  viá»‡c lÃ m cÃ´ng vá»¥"
+    ]
+  },
+  {
+    "id": "ex_surprise_ai_cam",
+    "content": "Cáº¥m AI trong lÄ©nh vá»±c cÃ´ng, báº£o vá»‡ viá»‡c lÃ m cá»§a chuyÃªn gia lÃ  pháº£n á»©ng báº£o thá»§. Lá»‹ch sá»­ cho tháº¥y cáº¥m Ä‘oÃ¡n cÃ´ng nghá»‡ má»›i khÃ´ng ngÄƒn Ä‘Æ°á»£c tiáº¿n bá»™ mÃ  chá»‰ lÃ m nÆ°á»›c Ä‘i sau tá»¥t háº­u. MÃ¡c nháº¥n máº¡nh ráº±ng lá»±c lÆ°á»£ng sáº£n xuáº¥t luÃ´n váº­n Ä‘á»™ng phÃ¡t triá»ƒn, quan há»‡ sáº£n xuáº¥t pháº£i thÃ­ch á»©ng. Cáº¥m AI lÃ  kÃ¬m hÃ£m lá»±c lÆ°á»£ng sáº£n xuáº¥t.",
+    "cloReferences": [
+      "CLO5",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "ai",
+      "cam-doan",
+      "bao-thu"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch háº­u quáº£ cá»§a cáº¥m Ä‘oÃ¡n cÃ´ng nghá»‡ má»›i dÆ°á»›i gÃ³c Ä‘á»™ phÃ¡t triá»ƒn lá»±c lÆ°á»£ng sáº£n xuáº¥t"
+    ]
+  },
+  {
+    "id": "ex_surprise_ai_ket_hop",
+    "content": "Káº¿t há»£p AI há»— trá»£ phÃ¢n tÃ­ch, con ngÆ°á»i giá»¯ quyá»n quyáº¿t Ä‘á»‹nh cuá»‘i cÃ¹ng lÃ  cÃ¡ch tiáº¿p cáº­n cÃ¢n báº±ng, táº­n dá»¥ng Æ°u tháº¿ cá»§a cáº£ AI vÃ  con ngÆ°á»i. Theo MÃ¡c, cÃ´ng cá»¥ lao Ä‘á»™ng (mÃ¡y mÃ³c) há»— trá»£ nhÆ°ng khÃ´ng thay tháº¿ hoÃ n toÃ n ngÆ°á»i lao Ä‘á»™ng. AI lÃ  cÃ´ng cá»¥ nÃ¢ng cao nÄƒng lá»±c phÃ¢n tÃ­ch, con ngÆ°á»i giá»¯ vai trÃ² quyáº¿t Ä‘á»‹nh dá»±a trÃªn giÃ¡ trá»‹ vÃ  Ä‘áº¡o Ä‘á»©c.",
+    "cloReferences": [
+      "CLO5",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "ai",
+      "ket-hop",
+      "quyet-dinh"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch mÃ´ hÃ¬nh káº¿t há»£p AI vÃ  con ngÆ°á»i trong quáº£n lÃ½ nhÃ  nÆ°á»›c"
+    ]
+  },
+  {
+    "id": "ex_ending_tong_ket_tu_hao",
+    "content": "Tá»± hÃ o vá» thÃ nh tá»±u tÄƒng trÆ°á»Ÿng vÃ  há»™i nháº­p lÃ  thÃ´ng Ä‘iá»‡p chÃ­nh trá»‹ tÃ­ch cá»±c, kháº³ng Ä‘á»‹nh Ä‘Æ°á»ng lá»‘i Ä‘Ãºng Ä‘áº¯n. TÄƒng trÆ°á»Ÿng kinh táº¿ lÃ  cÆ¡ sá»Ÿ váº­t cháº¥t Ä‘á»ƒ giáº£i quyáº¿t cÃ¡c váº¥n Ä‘á» xÃ£ há»™i. Theo MÃ¡c, phÃ¡t triá»ƒn lá»±c lÆ°á»£ng sáº£n xuáº¥t lÃ  tiá»n Ä‘á» cho chuyá»ƒn hÃ³a lÃªn phÆ°Æ¡ng thá»©c sáº£n xuáº¥t cao hÆ¡n. Tuy nhiÃªn, cáº§n nhÃ¬n nháº­n cáº£ nhá»¯ng thÃ¡ch thá»©c vá» phÃ¢n phá»‘i vÃ  mÃ´i trÆ°á»ng.",
+    "cloReferences": [
+      "CLO1",
+      "CLO2",
+      "CLO3",
+      "CLO4",
+      "CLO5",
+      "CLO7",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "tong-ket",
+      "tang-truong",
+      "thanh-tuu"
+    ],
+    "learningObjectives": [
+      "ÄÃ¡nh giÃ¡ toÃ n diá»‡n káº¿t quáº£ phÃ¡t triá»ƒn kinh táº¿ dÆ°á»›i gÃ³c Ä‘á»™ kinh táº¿ chÃ­nh trá»‹"
+    ]
+  },
+  {
+    "id": "ex_ending_tong_ket_cong_bang",
+    "content": "Nháº¥n máº¡nh cÃ´ng báº±ng vÃ  an sinh xÃ£ há»™i lÃ  thÃ nh tá»±u chÃ­nh pháº£n Ã¡nh Ä‘á»‹nh hÆ°á»›ng XHCN cá»§a ná»n kinh táº¿. Theo MÃ¡c, má»¥c tiÃªu cuá»‘i cÃ¹ng cá»§a phÃ¡t triá»ƒn khÃ´ng chá»‰ lÃ  tÄƒng trÆ°á»Ÿng mÃ  lÃ  sá»± phÃ¡t triá»ƒn toÃ n diá»‡n cá»§a con ngÆ°á»i. CÃ´ng báº±ng trong phÃ¢n phá»‘i lÃ  thÆ°á»›c Ä‘o cháº¥t lÆ°á»£ng tÄƒng trÆ°á»Ÿng. An sinh xÃ£ há»™i lÃ  biá»ƒu hiá»‡n cá»§a tÃ­nh Æ°u viá»‡t cá»§a cháº¿ Ä‘á»™.",
+    "cloReferences": [
+      "CLO1",
+      "CLO2",
+      "CLO3",
+      "CLO4",
+      "CLO5",
+      "CLO7",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "tong-ket",
+      "cong-bang",
+      "an-sinh"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch má»‘i quan há»‡ giá»¯a tÄƒng trÆ°á»Ÿng vÃ  cÃ´ng báº±ng xÃ£ há»™i"
+    ]
+  },
+  {
+    "id": "ex_ending_tong_ket_khiem_ton",
+    "content": "ÄÃ¡nh giÃ¡ khiÃªm tá»‘n, chá»‰ ra nhá»¯ng tá»“n táº¡i cáº§n kháº¯c phá»¥c thá»ƒ hiá»‡n tinh tháº§n cáº§u thá»‹, tá»± phÃª bÃ¬nh. Theo MÃ¡c, nháº­n thá»©c Ä‘Ãºng háº¡n cháº¿ lÃ  cÆ¡ sá»Ÿ Ä‘á»ƒ cáº£i táº¡o thá»±c tiá»…n. Má»i mÃ´ hÃ¬nh phÃ¡t triá»ƒn Ä‘á»u cÃ³ máº·t tÃ­ch cá»±c vÃ  háº¡n cháº¿, cáº§n khÃ´ng ngá»«ng hoÃ n thiá»‡n. KhiÃªm tá»‘n trÆ°á»›c thÃ nh tá»±u vÃ  tháº³ng tháº¯n trÆ°á»›c yáº¿u kÃ©m lÃ  thÃ¡i Ä‘á»™ khoa há»c.",
+    "cloReferences": [
+      "CLO1",
+      "CLO2",
+      "CLO3",
+      "CLO4",
+      "CLO5",
+      "CLO7",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "tong-ket",
+      "khiem-ton",
+      "hoan-thien"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a tá»± phÃª bÃ¬nh trong phÃ¡t triá»ƒn kinh táº¿"
+    ]
+  },
+  {
+    "id": "ex_ending_giai_cuu_kich_cau",
+    "content": "GÃ³i kÃ­ch cáº§u lá»›n vá»›i tiÃªu chuáº©n mÃ´i trÆ°á»ng nghiÃªm ngáº·t vá»«a cá»©u ná»n kinh táº¿ vá»«a thÃºc Ä‘áº©y tÄƒng trÆ°á»Ÿng xanh. Theo Keynes, can thiá»‡p tÃ i khÃ³a lÃ  cáº§n thiáº¿t trong khá»§ng hoáº£ng. MÃ¡c nhÃ¬n nháº­n khá»§ng hoáº£ng lÃ  cÆ¡ há»™i thanh lá»c vÃ  tÃ¡i cÆ¡ cáº¥u ná»n kinh táº¿. KÃ­ch cáº§u cÃ³ Ä‘iá»u kiá»‡n mÃ´i trÆ°á»ng giÃºp Ä‘á»‹nh hÆ°á»›ng phÃ¡t triá»ƒn bá»n vá»¯ng sau khá»§ng hoáº£ng.",
+    "cloReferences": [
+      "CLO1",
+      "CLO2",
+      "CLO3",
+      "CLO4",
+      "CLO5",
+      "CLO7",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "giai-cuu",
+      "kÃ­ch-cau",
+      "tai-co-cau"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch gÃ³i kÃ­ch cáº§u trong bá»‘i cáº£nh khá»§ng hoáº£ng dÆ°á»›i gÃ³c Ä‘á»™ kinh táº¿ chÃ­nh trá»‹"
+    ]
+  },
+  {
+    "id": "ex_ending_giai_cuu_quoc_huu",
+    "content": "Quá»‘c há»¯u hÃ³a cÃ¡c ngÃ nh then chá»‘t vÃ  tÃ¡i cÆ¡ cáº¥u triá»‡t Ä‘á»ƒ lÃ  giáº£i phÃ¡p cÄƒn cÆ¡, chuyá»ƒn cÃ¡c ngÃ nh trá»ng yáº¿u vá» tay NhÃ  nÆ°á»›c Ä‘á»ƒ hoáº¡ch Ä‘á»‹nh chiáº¿n lÆ°á»£c. Theo MÃ¡c, khá»§ng hoáº£ng lÃ  biá»ƒu hiá»‡n cá»§a mÃ¢u thuáº«n giá»¯a sáº£n xuáº¥t xÃ£ há»™i hÃ³a vÃ  chiáº¿m há»¯u tÆ° nhÃ¢n. Quá»‘c há»¯u hÃ³a lÃ  biá»‡n phÃ¡p kháº¯c phá»¥c mÃ¢u thuáº«n nÃ y, tÄƒng cÆ°á»ng vai trÃ² cá»§a NhÃ  nÆ°á»›c.",
+    "cloReferences": [
+      "CLO1",
+      "CLO2",
+      "CLO3",
+      "CLO4",
+      "CLO5",
+      "CLO7",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "giai-cuu",
+      "quoc-huu",
+      "nganh-trong-yeu"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch quá»‘c há»¯u hÃ³a trong giáº£i phÃ¡p khá»§ng hoáº£ng kinh táº¿"
+    ]
+  },
+  {
+    "id": "ex_ending_giai_cuu_quoc_te",
+    "content": "KÃªu gá»i cá»©u trá»£ quá»‘c táº¿ vÃ  má»Ÿ cá»­a hoÃ n toÃ n ná»n kinh táº¿ lÃ  giáº£i phÃ¡p táº­n dá»¥ng nguá»“n lá»±c bÃªn ngoÃ i. IMF vÃ  WB thÆ°á»ng Ã¡p dá»¥ng Ä‘iá»u kiá»‡n cáº£i cÃ¡ch cho cÃ¡c gÃ³i cá»©u trá»£. MÃ¡c cáº£nh bÃ¡o ráº±ng phá»¥ thuá»™c vÃ o vá»‘n nÆ°á»›c ngoÃ i cÃ³ thá»ƒ lÃ m máº¥t chá»§ quyá»n kinh táº¿. Cáº§n cÃ¢n nháº¯c ká»¹ cÃ¡c Ä‘iá»u kiá»‡n Ä‘i kÃ¨m Ä‘á»ƒ báº£o vá»‡ lá»£i Ã­ch quá»‘c gia.",
+    "cloReferences": [
+      "CLO1",
+      "CLO2",
+      "CLO3",
+      "CLO4",
+      "CLO5",
+      "CLO7",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "giai-cuu",
+      "quoc-te",
+      "dieu-kien"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch tÃ¡c Ä‘á»™ng cá»§a cá»©u trá»£ quá»‘c táº¿ Ä‘áº¿n chá»§ quyá»n kinh táº¿ quá»‘c gia"
+    ]
+  },
+  {
+    "id": "ex_quiz_9",
+    "content": "Theo C. MÃ¡c, giÃ¡ trá»‹ hÃ ng hÃ³a Ä‘Æ°á»£c cáº¥u thÃ nh tá»« ba bá»™ pháº­n: tÆ° báº£n báº¥t biáº¿n (c) â€“ giÃ¡ trá»‹ tÆ° liá»‡u sáº£n xuáº¥t Ä‘Ã£ hao phÃ­, tÆ° báº£n kháº£ biáº¿n (v) â€“ giÃ¡ trá»‹ sá»©c lao Ä‘á»™ng, vÃ  giÃ¡ trá»‹ tháº·ng dÆ° (m) do ngÆ°á»i lao Ä‘á»™ng táº¡o ra. CÃ´ng thá»©c c + v + m lÃ  ná»n táº£ng Ä‘á»ƒ phÃ¢n tÃ­ch nguá»“n gá»‘c cá»§a lá»£i nhuáº­n trong chá»§ nghÄ©a tÆ° báº£n.",
+    "cloReferences": [
+      "CLO2"
+    ],
+    "conceptTags": [
+      "gia-tri-hang-hoa",
+      "tu-ban",
+      "gia-tri-thang-du"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch cáº¥u thÃ nh giÃ¡ trá»‹ hÃ ng hÃ³a theo C. MÃ¡c"
+    ]
+  },
+  {
+    "id": "ex_quiz_10",
+    "content": "LÆ°á»£ng giÃ¡ trá»‹ hÃ ng hÃ³a Ä‘Æ°á»£c Ä‘o báº±ng thá»i gian lao Ä‘á»™ng xÃ£ há»™i cáº§n thiáº¿t â€“ thá»i gian lao Ä‘á»™ng trung bÃ¬nh mÃ  xÃ£ há»™i Ä‘Ã²i há»i Ä‘á»ƒ sáº£n xuáº¥t ra hÃ ng hÃ³a Ä‘Ã³. ÄÃ¢y lÃ  khÃ¡i niá»‡m ná»n táº£ng trong há»c thuyáº¿t giÃ¡ trá»‹ cá»§a MÃ¡c, giáº£i thÃ­ch táº¡i sao hÃ ng hÃ³a cÃ³ giÃ¡ trá»‹ trao Ä‘á»•i khÃ¡c nhau vÃ  lÃ m tháº¿ nÃ o giÃ¡ cáº£ Ä‘Æ°á»£c hÃ¬nh thÃ nh dá»±a trÃªn chi phÃ­ lao Ä‘á»™ng xÃ£ há»™i.",
+    "cloReferences": [
+      "CLO2"
+    ],
+    "conceptTags": [
+      "gia-tri",
+      "thoi-gian-lao-dong",
+      "quy-luat-gia-tri"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch thÆ°á»›c Ä‘o lÆ°á»£ng giÃ¡ trá»‹ hÃ ng hÃ³a"
+    ]
+  },
+  {
+    "id": "ex_quiz_11",
+    "content": "Theo V.I. LÃªnin, táº­p trung sáº£n xuáº¥t vÃ  tÆ° báº£n dáº«n Ä‘áº¿n Ä‘á»™c quyá»n lÃ  Ä‘áº·c Ä‘iá»ƒm kinh táº¿ cÆ¡ báº£n cá»§a chá»§ nghÄ©a tÆ° báº£n Ä‘á»™c quyá»n. Trong giai Ä‘oáº¡n nÃ y, tÃ­ch tá»¥ vÃ  táº­p trung tÆ° báº£n diá»…n ra máº¡nh máº½, hÃ¬nh thÃ nh cÃ¡c tá»• chá»©c Ä‘á»™c quyá»n chi phá»‘i thá»‹ trÆ°á»ng. ÄÃ¢y lÃ  giai Ä‘oáº¡n phÃ¡t triá»ƒn cao cá»§a chá»§ nghÄ©a tÆ° báº£n, chuáº©n bá»‹ tiá»n Ä‘á» váº­t cháº¥t cho chá»§ nghÄ©a xÃ£ há»™i.",
+    "cloReferences": [
+      "CLO3"
+    ],
+    "conceptTags": [
+      "doc-quyen",
+      "tap-trung-tu-ban",
+      "lenin"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch Ä‘áº·c Ä‘iá»ƒm kinh táº¿ cá»§a chá»§ nghÄ©a tÆ° báº£n Ä‘á»™c quyá»n"
+    ]
+  },
+  {
+    "id": "ex_quiz_12",
+    "content": "Cartel lÃ  hÃ¬nh thá»©c tá»• chá»©c Ä‘á»™c quyá»n liÃªn káº¿t cÃ¡c doanh nghiá»‡p trong cÃ¹ng ngÃ nh thÃ´ng qua thá»a thuáº­n vá» giÃ¡ cáº£, sáº£n lÆ°á»£ng vÃ  thá»‹ trÆ°á»ng, nhÆ°ng cÃ¡c thÃ nh viÃªn váº«n giá»¯ Ä‘á»™c láº­p vá» sáº£n xuáº¥t vÃ  thÆ°Æ¡ng máº¡i. ÄÃ¢y lÃ  hÃ¬nh thá»©c Ä‘á»™c quyá»n tháº¥p nháº¥t, xuáº¥t hiá»‡n phá»• biáº¿n vÃ o cuá»‘i tháº¿ ká»· XIX á»Ÿ Äá»©c vÃ  chÃ¢u Ã‚u.",
+    "cloReferences": [
+      "CLO3"
+    ],
+    "conceptTags": [
+      "cartel",
+      "doc-quyen",
+      "to-chuc-doc-quyen"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch cÃ¡c hÃ¬nh thá»©c tá»• chá»©c Ä‘á»™c quyá»n trong chá»§ nghÄ©a tÆ° báº£n"
+    ]
+  },
+  {
+    "id": "ex_quiz_13",
+    "content": "Theo LÃªnin, xuáº¥t kháº©u tÆ° báº£n lÃ  Ä‘áº·c Ä‘iá»ƒm ná»•i báº­t cá»§a chá»§ nghÄ©a Ä‘áº¿ quá»‘c: tÆ° báº£n Ä‘Æ°á»£c xuáº¥t kháº©u ra nÆ°á»›c ngoÃ i Ä‘á»ƒ chiáº¿m Ä‘oáº¡t giÃ¡ trá»‹ tháº·ng dÆ°, khÃ¡c vá»›i xuáº¥t kháº©u hÃ ng hÃ³a chá»‰ trao Ä‘á»•i giÃ¡ trá»‹ thÃ´ng qua thÆ°Æ¡ng máº¡i. Xuáº¥t kháº©u tÆ° báº£n giÃºp cÃ¡c nÆ°á»›c tÆ° báº£n tÃ¬m kiáº¿m tá»· suáº¥t lá»£i nhuáº­n cao hÆ¡n á»Ÿ cÃ¡c nÆ°á»›c kÃ©m phÃ¡t triá»ƒn, Ä‘á»“ng thá»i má»Ÿ rá»™ng pháº¡m vi thá»‘ng trá»‹ kinh táº¿.",
+    "cloReferences": [
+      "CLO3"
+    ],
+    "conceptTags": [
+      "xuat-khau-tu-ban",
+      "de-quoc",
+      "gia-tri-thang-du"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch báº£n cháº¥t cá»§a xuáº¥t kháº©u tÆ° báº£n trong chá»§ nghÄ©a Ä‘áº¿ quá»‘c"
+    ]
+  },
+  {
+    "id": "ex_quiz_14",
+    "content": "Quan há»‡ lá»£i Ã­ch kinh táº¿ lÃ  quan há»‡ giá»¯a ngÆ°á»i vá»›i ngÆ°á»i trong quÃ¡ trÃ¬nh sáº£n xuáº¥t, phÃ¢n phá»‘i, trao Ä‘á»•i vÃ  tiÃªu dÃ¹ng. CÃ¡c chá»§ thá»ƒ tham gia ná»n kinh táº¿ cÃ³ lá»£i Ã­ch khÃ¡c nhau, tháº­m chÃ­ Ä‘á»‘i láº­p. NhÃ  nÆ°á»›c Ä‘Ã³ng vai trÃ² Ä‘iá»u hÃ²a cÃ¡c quan há»‡ lá»£i Ã­ch Ä‘á»ƒ báº£o Ä‘áº£m sá»± á»•n Ä‘á»‹nh vÃ  phÃ¡t triá»ƒn, Ä‘áº·c biá»‡t trong ná»n kinh táº¿ thá»‹ trÆ°á»ng Ä‘á»‹nh hÆ°á»›ng XHCN.",
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "quan-he-loi-ich",
+      "kinh-te-thi-truong",
+      "phan-phoi"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch báº£n cháº¥t cá»§a quan há»‡ lá»£i Ã­ch kinh táº¿"
+    ]
+  },
+  {
+    "id": "ex_quiz_15",
+    "content": "PhÃ¢n phá»‘i theo lao Ä‘á»™ng lÃ  nguyÃªn táº¯c phÃ¢n phá»‘i chá»§ yáº¿u trong thá»i ká»³ quÃ¡ Ä‘á»™ lÃªn chá»§ nghÄ©a xÃ£ há»™i á»Ÿ Viá»‡t Nam. Theo Ä‘Ã³, má»—i ngÆ°á»i nháº­n Ä‘Æ°á»£c thu nháº­p tÆ°Æ¡ng á»©ng vá»›i sá»‘ lÆ°á»£ng vÃ  cháº¥t lÆ°á»£ng lao Ä‘á»™ng Ä‘Ã³ng gÃ³p. ÄÃ¢y lÃ  nguyÃªn táº¯c cÃ´ng báº±ng xÃ£ há»™i, khuyáº¿n khÃ­ch ngÆ°á»i lao Ä‘á»™ng nÃ¢ng cao nÄƒng suáº¥t, Ä‘á»“ng thá»i trÃ¡nh báº¥t bÃ¬nh Ä‘áº³ng quÃ¡ má»©c.",
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "phan-phoi-theo-lao-dong",
+      "cong-bang",
+      "thoi-ky-qua-do"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch nguyÃªn táº¯c phÃ¢n phá»‘i theo lao Ä‘á»™ng"
+    ]
+  },
+  {
+    "id": "ex_quiz_16",
+    "content": "Theo MÃ¡c, nguá»“n gá»‘c sÃ¢u xa cá»§a khá»§ng hoáº£ng kinh táº¿ trong chá»§ nghÄ©a tÆ° báº£n lÃ  mÃ¢u thuáº«n giá»¯a tÃ­nh cháº¥t xÃ£ há»™i hÃ³a ngÃ y cÃ ng cao cá»§a sáº£n xuáº¥t vÃ  hÃ¬nh thá»©c chiáº¿m há»¯u tÆ° nhÃ¢n tÆ° báº£n chá»§ nghÄ©a vá» tÆ° liá»‡u sáº£n xuáº¥t. MÃ¢u thuáº«n nÃ y biá»ƒu hiá»‡n thÃ nh khá»§ng hoáº£ng sáº£n xuáº¥t thá»«a, lÃ  hiá»‡n tÆ°á»£ng Ä‘á»‹nh ká»³ trong lá»‹ch sá»­ chá»§ nghÄ©a tÆ° báº£n.",
+    "cloReferences": [
+      "CLO3",
+      "CLO4"
+    ],
+    "conceptTags": [
+      "khung-hoang-kinh-te",
+      "mau-thuan",
+      "san-xuat-thua"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch nguyÃªn nhÃ¢n sÃ¢u xa cá»§a khá»§ng hoáº£ng kinh táº¿"
+    ]
+  },
+  {
+    "id": "ex_quiz_17",
+    "content": "An sinh xÃ£ há»™i giÃºp báº£o Ä‘áº£m tÃ¡i sáº£n xuáº¥t sá»©c lao Ä‘á»™ng vÃ  á»•n Ä‘á»‹nh xÃ£ há»™i báº±ng cÃ¡ch há»— trá»£ ngÆ°á»i lao Ä‘á»™ng khi gáº·p rá»§i ro nhÆ° á»‘m Ä‘au, tháº¥t nghiá»‡p, tuá»•i giÃ . Trong ná»n kinh táº¿ thá»‹ trÆ°á»ng Ä‘á»‹nh hÆ°á»›ng XHCN, an sinh xÃ£ há»™i lÃ  cÃ´ng cá»¥ Ä‘á»ƒ NhÃ  nÆ°á»›c thá»±c hiá»‡n cÃ´ng báº±ng phÃ¢n phá»‘i vÃ  duy trÃ¬ á»•n Ä‘á»‹nh chÃ­nh trá»‹ - xÃ£ há»™i.",
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "an-sinh-xa-hoi",
+      "tai-san-xuat",
+      "on-dinh"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a an sinh xÃ£ há»™i trong ná»n kinh táº¿ thá»‹ trÆ°á»ng"
+    ]
+  },
+  {
+    "id": "ex_quiz_18",
+    "content": "CÃ´ng nghiá»‡p hÃ³a lÃ  quÃ¡ trÃ¬nh chuyá»ƒn ná»n sáº£n xuáº¥t xÃ£ há»™i tá»« lao Ä‘á»™ng thá»§ cÃ´ng lÃ  chÃ­nh lÃªn lao Ä‘á»™ng cÆ¡ khÃ­ lÃ  chÃ­nh, xÃ¢y dá»±ng ná»n táº£ng váº­t cháº¥t - ká»¹ thuáº­t hiá»‡n Ä‘áº¡i. Theo MÃ¡c-LÃªnin, cÃ´ng nghiá»‡p hÃ³a lÃ  nhiá»‡m vá»¥ trung tÃ¢m cá»§a thá»i ká»³ quÃ¡ Ä‘á»™ lÃªn chá»§ nghÄ©a xÃ£ há»™i, táº¡o cÆ¡ sá»Ÿ Ä‘á»ƒ nÃ¢ng cao nÄƒng suáº¥t vÃ  cáº£i thiá»‡n Ä‘á»i sá»‘ng nhÃ¢n dÃ¢n.",
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "cong-nghiep-hoa",
+      "co-khi-hoa",
+      "nang-suat"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch khÃ¡i niá»‡m cÃ´ng nghiá»‡p hÃ³a theo quan Ä‘iá»ƒm MÃ¡c-LÃªnin"
+    ]
+  },
+  {
+    "id": "ex_quiz_19",
+    "content": "Hiá»‡n Ä‘áº¡i hÃ³a lÃ  bÆ°á»›c phÃ¡t triá»ƒn táº¥t yáº¿u cá»§a cÃ´ng nghiá»‡p hÃ³a, gáº¯n liá»n vá»›i á»©ng dá»¥ng thÃ nh tá»±u khoa há»c - cÃ´ng nghá»‡ má»›i vÃ o sáº£n xuáº¥t. NgÃ y nay, hai quÃ¡ trÃ¬nh nÃ y tiáº¿n hÃ nh Ä‘á»“ng thá»i vÃ  há»— trá»£ láº«n nhau: cÃ´ng nghiá»‡p hÃ³a Ä‘áº·t ná»n táº£ng, hiá»‡n Ä‘áº¡i hÃ³a nÃ¢ng cao cháº¥t lÆ°á»£ng vÃ  hiá»‡u quáº£. ÄÃ¢y lÃ  Ä‘áº·c Ä‘iá»ƒm cá»§a quÃ¡ trÃ¬nh phÃ¡t triá»ƒn rÃºt ngáº¯n á»Ÿ cÃ¡c nÆ°á»›c Ä‘i sau.",
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "cong-nghiep-hoa",
+      "hien-dai-hoa",
+      "phat-trien-rut-ngan"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch má»‘i quan há»‡ giá»¯a cÃ´ng nghiá»‡p hÃ³a vÃ  hiá»‡n Ä‘áº¡i hÃ³a"
+    ]
+  },
+  {
+    "id": "ex_quiz_20",
+    "content": "Chuyá»ƒn dá»‹ch cÆ¡ cáº¥u kinh táº¿ trong cÃ´ng nghiá»‡p hÃ³a theo hÆ°á»›ng tÄƒng tá»· trá»ng cÃ´ng nghiá»‡p cháº¿ biáº¿n vÃ  dá»‹ch vá»¥, giáº£m tá»· trá»ng nÃ´ng nghiá»‡p lÃ  quy luáº­t phá»• biáº¿n. Xu hÆ°á»›ng nÃ y pháº£n Ã¡nh sá»± phÃ¡t triá»ƒn cá»§a phÃ¢n cÃ´ng lao Ä‘á»™ng xÃ£ há»™i vÃ  nÃ¢ng cao giÃ¡ trá»‹ gia tÄƒng. Theo MÃ¡c, lao Ä‘á»™ng trong cÃ´ng nghiá»‡p vÃ  dá»‹ch vá»¥ táº¡o ra nhiá»u giÃ¡ trá»‹ hÆ¡n lao Ä‘á»™ng nÃ´ng nghiá»‡p truyá»n thá»‘ng.",
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "co-cau-kinh-te",
+      "chuyen-dich",
+      "cong-nghiep-che-bien"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch xu hÆ°á»›ng chuyá»ƒn dá»‹ch cÆ¡ cáº¥u kinh táº¿ trong cÃ´ng nghiá»‡p hÃ³a"
+    ]
+  },
+  {
+    "id": "ex_quiz_21",
+    "content": "Theo MÃ¡c, khoa há»c - cÃ´ng nghá»‡ trá»Ÿ thÃ nh lá»±c lÆ°á»£ng sáº£n xuáº¥t trá»±c tiáº¿p khi Ä‘Æ°á»£c á»©ng dá»¥ng vÃ o quÃ¡ trÃ¬nh sáº£n xuáº¥t. NÃ³ gÃ³p pháº§n nÃ¢ng cao nÄƒng suáº¥t lao Ä‘á»™ng, cáº£i tiáº¿n quy trÃ¬nh vÃ  táº¡o ra sáº£n pháº©m má»›i. Trong cÃ´ng nghiá»‡p hÃ³a, hiá»‡n Ä‘áº¡i hÃ³a, khoa há»c - cÃ´ng nghá»‡ lÃ  then chá»‘t Ä‘á»ƒ rÃºt ngáº¯n khoáº£ng cÃ¡ch phÃ¡t triá»ƒn vÃ  nÃ¢ng cao sá»©c cáº¡nh tranh quá»‘c gia.",
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "khoa-hoc-cong-nghe",
+      "luc-luong-san-xuat",
+      "nang-suat"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch vai trÃ² cá»§a khoa há»c - cÃ´ng nghá»‡ trong phÃ¡t triá»ƒn lá»±c lÆ°á»£ng sáº£n xuáº¥t"
+    ]
+  },
+  {
+    "id": "ex_quiz_22",
+    "content": "DÆ°á»›i gÃ³c nhÃ¬n kinh táº¿ chÃ­nh trá»‹ MÃ¡c-LÃªnin, toÃ n cáº§u hÃ³a kinh táº¿ lÃ  quÃ¡ trÃ¬nh quá»‘c táº¿ hÃ³a lá»±c lÆ°á»£ng sáº£n xuáº¥t vÃ  phÃ¢n cÃ´ng lao Ä‘á»™ng quá»‘c táº¿ trÃªn quy mÃ´ toÃ n cáº§u. ÄÃ¢y lÃ  xu tháº¿ khÃ¡ch quan do sá»± phÃ¡t triá»ƒn cá»§a lá»±c lÆ°á»£ng sáº£n xuáº¥t vÃ  sá»± má»Ÿ rá»™ng cá»§a thá»‹ trÆ°á»ng tÆ° báº£n. ToÃ n cáº§u hÃ³a vá»«a táº¡o cÆ¡ há»™i vá»«a Ä‘áº·t ra thÃ¡ch thá»©c cho cÃ¡c nÆ°á»›c Ä‘ang phÃ¡t triá»ƒn.",
+    "cloReferences": [
+      "CLO8"
+    ],
+    "conceptTags": [
+      "toan-cau-hoa",
+      "phan-cong-lao-dong-quoc-te",
+      "hoi-nhap"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch báº£n cháº¥t cá»§a toÃ n cáº§u hÃ³a kinh táº¿ dÆ°á»›i gÃ³c nhÃ¬n MÃ¡c-LÃªnin"
+    ]
+  },
+  {
+    "id": "ex_quiz_23",
+    "content": "FDI bá»• sung vá»‘n, chuyá»ƒn giao cÃ´ng nghá»‡ vÃ  má»Ÿ ra thá»‹ trÆ°á»ng quá»‘c táº¿ cho nÆ°á»›c chá»§ nhÃ . Theo MÃ¡c, xuáº¥t kháº©u tÆ° báº£n lÃ  hÃ¬nh thá»©c váº­n Ä‘á»™ng cá»§a tÆ° báº£n nháº±m tÃ¬m kiáº¿m lá»£i nhuáº­n cao hÆ¡n á»Ÿ nÆ°á»›c ngoÃ i. FDI cÃ³ thá»ƒ thÃºc Ä‘áº©y cÃ´ng nghiá»‡p hÃ³a náº¿u nÆ°á»›c chá»§ nhÃ  biáº¿t táº­n dá»¥ng Ä‘á»ƒ xÃ¢y dá»±ng nÄƒng lá»±c tá»± chá»§, nhÆ°ng cÅ©ng cÃ³ thá»ƒ gÃ¢y phá»¥ thuá»™c náº¿u khÃ´ng cÃ³ chiáº¿n lÆ°á»£c phÃ¹ há»£p.",
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "fdi",
+      "chuyen-giao-cong-nghe",
+      "dau-tu-nuoc-ngoai"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch tÃ¡c Ä‘á»™ng tÃ­ch cá»±c cá»§a FDI Ä‘á»‘i vá»›i nÆ°á»›c Ä‘ang phÃ¡t triá»ƒn"
+    ]
+  },
+  {
+    "id": "ex_quiz_24",
+    "content": "Theo V.I. LÃªnin, chá»§ nghÄ©a Ä‘áº¿ quá»‘c vá» máº·t kinh táº¿ lÃ  chá»§ nghÄ©a tÆ° báº£n Ä‘á»™c quyá»n. ÄÃ¢y lÃ  giai Ä‘oáº¡n phÃ¡t triá»ƒn cao nháº¥t cá»§a chá»§ nghÄ©a tÆ° báº£n, khi tÃ­ch tá»¥ vÃ  táº­p trung tÆ° báº£n Ä‘áº¡t Ä‘áº¿n má»©c hÃ¬nh thÃ nh cÃ¡c tá»• chá»©c Ä‘á»™c quyá»n chi phá»‘i ná»n kinh táº¿. Äá»™c quyá»n trong chá»§ nghÄ©a Ä‘áº¿ quá»‘c khÃ´ng xÃ³a bá» cáº¡nh tranh mÃ  lÃ m cho cáº¡nh tranh trá»Ÿ nÃªn gay gáº¯t hÆ¡n.",
+    "cloReferences": [
+      "CLO3",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "chu-nghia-de-quoc",
+      "doc-quyen",
+      "lenin"
+    ],
+    "learningObjectives": [
+      "PhÃ¢n tÃ­ch báº£n cháº¥t kinh táº¿ cá»§a chá»§ nghÄ©a Ä‘áº¿ quá»‘c theo V.I. LÃªnin"
+    ]
   }
 ]

@@ -1,5 +1,5 @@
 import mongoose, { Schema, Document } from 'mongoose';
-import { GameStats, Policies, StakeholderBalance } from '@/types/game';
+import { GameStats, Policies, StakeholderBalance, Difficulty } from '@/types/game';
 
 export interface IGameSave extends Document {
   userId?: mongoose.Types.ObjectId;
@@ -7,6 +7,7 @@ export interface IGameSave extends Document {
   name: string;
   currentTurn: number;
   maxTurns: number;
+  difficulty: string;
   stats: GameStats;
   policies: Policies;
   stakeholderBalance: StakeholderBalance;
@@ -14,16 +15,22 @@ export interface IGameSave extends Document {
   title: string;
   status: 'playing' | 'completed';
   seed: number;
+  minYears: number;
+  maxYears: number;
+  unlockedEvents: string[];
+  completedEvents: string[];
+  statsHistory: GameStats[];
   createdAt: Date;
   updatedAt: Date;
 }
 
 const GameSaveSchema = new Schema<IGameSave>({
-  userId: { type: Schema.Types.ObjectId, ref: 'User', required: false },
+  userId: { type: Schema.Types.ObjectId, ref: 'User' },
   sessionId: { type: String, required: true, index: true },
   name: { type: String, default: 'Game mới' },
-  currentTurn: { type: Number, default: 1, min: 1 },
-  maxTurns: { type: Number, default: 10 },
+  currentTurn: { type: Number, default: 1 },
+  maxTurns: { type: Number, default: 12 },
+  difficulty: { type: String, default: 'normal' },
   stats: {
     production: { type: Number, default: 50 },
     employment: { type: Number, default: 50 },
@@ -50,6 +57,11 @@ const GameSaveSchema = new Schema<IGameSave>({
   title: { type: String, default: '' },
   status: { type: String, enum: ['playing', 'completed'], default: 'playing' },
   seed: { type: Number, required: true },
+  minYears: { type: Number, default: 6 },
+  maxYears: { type: Number, default: 10 },
+  unlockedEvents: [{ type: String }],
+  completedEvents: [{ type: String }],
+  statsHistory: [{ type: Schema.Types.Mixed }],
   createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now },
 });

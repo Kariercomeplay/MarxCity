@@ -1,32 +1,17 @@
-import { Policies, GameStats, StakeholderBalance } from '@/types/game';
-import { MIN_STAT, MAX_STAT } from './constants';
+import { Policies, GameStats, StakeholderBalance, Difficulty } from '@/types/game';
+import { MIN_STAT, MAX_STAT, DIFFICULTY_CONFIG } from './constants';
 
 export function clampStat(value: number): number {
   return Math.max(MIN_STAT, Math.min(MAX_STAT, Math.round(value)));
 }
 
-export function clampStats(stats: Partial<GameStats>): GameStats {
-  const result: any = {};
-  for (const [key, value] of Object.entries(stats)) {
-    result[key] = clampStat(value as number);
-  }
-  return result as GameStats;
-}
-
-export type PolicyEffect = {
-  production: number;
-  employment: number;
-  socialWelfare: number;
-  marketStability: number;
-  nationalCapacity: number;
-  environment: number;
-  budget: number;
-  stakeholderWorkers: number;
-  stakeholderBusinesses: number;
-  stakeholderState: number;
-};
-
-export function applyPolicyEffects(policies: Policies, prevPolicies: Policies): Partial<Record<string, number>> {
+export function applyPolicyEffects(
+  policies: Policies,
+  prevPolicies: Policies,
+  difficulty: Difficulty = 'normal'
+): Record<string, number> {
+  const config = DIFFICULTY_CONFIG[difficulty];
+  const m = config.effectMultiplier;
   const delta: Record<string, number> = {};
   const taxDiff = policies.taxRate - prevPolicies.taxRate;
   const wageDiff = policies.minWage - prevPolicies.minWage;
@@ -35,12 +20,12 @@ export function applyPolicyEffects(policies: Policies, prevPolicies: Policies): 
   const fdiDiff = policies.fdiPolicy - prevPolicies.fdiPolicy;
   const envDiff = policies.envProtection - prevPolicies.envProtection;
 
-  const TAX_FACTOR = 0.1;
-  const WAGE_FACTOR = 0.08;
-  const EDU_FACTOR = 0.12;
-  const INFRA_FACTOR = 0.1;
-  const FDI_FACTOR = 0.08;
-  const ENV_FACTOR = 0.1;
+  const TAX_FACTOR = 0.1 * m;
+  const WAGE_FACTOR = 0.08 * m;
+  const EDU_FACTOR = 0.12 * m;
+  const INFRA_FACTOR = 0.1 * m;
+  const FDI_FACTOR = 0.08 * m;
+  const ENV_FACTOR = 0.1 * m;
 
   delta.production = (taxDiff * TAX_FACTOR * -0.3)
     + (wageDiff * WAGE_FACTOR * -0.2)
@@ -84,7 +69,13 @@ export function applyPolicyEffects(policies: Policies, prevPolicies: Policies): 
   return delta;
 }
 
-export function applyStakeholderEffects(policies: Policies, prevPolicies: Policies): Partial<Record<string, number>> {
+export function applyStakeholderEffects(
+  policies: Policies,
+  prevPolicies: Policies,
+  difficulty: Difficulty = 'normal'
+): Record<string, number> {
+  const config = DIFFICULTY_CONFIG[difficulty];
+  const m = config.effectMultiplier;
   const taxDiff = policies.taxRate - prevPolicies.taxRate;
   const wageDiff = policies.minWage - prevPolicies.minWage;
   const eduDiff = policies.eduInvestment - prevPolicies.eduInvestment;
@@ -92,7 +83,7 @@ export function applyStakeholderEffects(policies: Policies, prevPolicies: Polici
   const fdiDiff = policies.fdiPolicy - prevPolicies.fdiPolicy;
   const envDiff = policies.envProtection - prevPolicies.envProtection;
 
-  const FACTOR = 0.1;
+  const FACTOR = 0.1 * m;
 
   return {
     workers: (wageDiff * FACTOR * 0.5) + (eduDiff * FACTOR * 0.3) + (fdiDiff * FACTOR * -0.1) + (envDiff * FACTOR * 0.2),
@@ -101,12 +92,23 @@ export function applyStakeholderEffects(policies: Policies, prevPolicies: Polici
   };
 }
 
-export function calcBaseTurnEffects(budget: number): Partial<Record<string, number>> {
-  const effects: Record<string, number> = {};
-  effects.production = 0.5;
-  effects.employment = -0.3;
-  effects.marketStability = -0.2;
-  effects.environment = -0.3;
-  if (budget < 10) effects.budget = -2;
+export function calcBaseYearEffects(stats: GameStats, difficulty: Difficulty = 'normal'): Record<string, number> {
+  const m = DIFFICULTY_CONFIG[difficulty].effectMultiplier;
+  const effects: Record<string, number> = {
+    production: 0.3 * m,
+    employment: -0.2 * m,
+    marketStability: -0.2 * m,
+    environment: -0.3 * m,
+  };
+  if (stats.budget < 20) effects.budget = -2 * m;
+  if (stats.environment < 15) effects.production = (effects.production || 0) - 1 * m;
+  if (stats.marketStability < 15) effects.employment = (effects.employment || 0) - 1 * m;
   return effects;
+}
+
+export function checkCrisisTrigger(stats: GameStats): string | null {
+  if (stats.budget <= 5) return 'debt_trap';
+  if (stats.environment <= 5) return 'environmental_collapse';
+  if (stats.employment <= 5 && stats.socialWelfare <= 10) return 'social_unrest';
+  return null;
 }

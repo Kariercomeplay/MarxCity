@@ -4,659 +4,3723 @@
     "title": "Giá hàng hóa thiết yếu tăng",
     "scenario": "Giá xăng dầu và lương thực thế giới tăng mạnh kéo theo chi phí sản xuất trong nước tăng cao. Các doanh nghiệp đề xuất tăng giá bán sản phẩm. Người tiêu dùng phản đối. Bạn sẽ xử lý thế nào?",
     "chapter": 1,
-    "turn": 1,
+    "yearMin": 1,
+    "yearMax": 2,
+    "type": "story",
     "choices": [
       {
         "id": "a",
         "label": "Cho phép doanh nghiệp điều chỉnh giá theo thị trường",
-        "effects": { "marketStability": -8, "production": 3, "budget": 5 },
-        "stakeholderImpact": { "businesses": 5, "workers": -3, "state": 2 },
+        "effects": {
+          "marketStability": -8,
+          "production": 3,
+          "budget": 5
+        },
+        "stakeholderImpact": {
+          "businesses": 5,
+          "workers": -3,
+          "state": 2
+        },
         "explanationId": "ex_gia_tt"
       },
       {
         "id": "b",
         "label": "Trợ giá để giữ giá ổn định",
-        "effects": { "marketStability": 3, "budget": -10, "socialWelfare": 5 },
-        "stakeholderImpact": { "workers": 4, "state": -4, "businesses": 1 },
+        "effects": {
+          "marketStability": 3,
+          "budget": -10,
+          "socialWelfare": 5
+        },
+        "stakeholderImpact": {
+          "workers": 4,
+          "state": -4,
+          "businesses": 1
+        },
         "explanationId": "ex_gia_tro_gia"
       },
       {
         "id": "c",
         "label": "Kiểm soát giá và tăng cường dự trữ quốc gia",
-        "effects": { "marketStability": 5, "production": -3, "budget": -5, "nationalCapacity": 3 },
-        "stakeholderImpact": { "state": 3, "workers": 2, "businesses": -3 },
+        "effects": {
+          "marketStability": 5,
+          "production": -3,
+          "budget": -5,
+          "nationalCapacity": 3
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "workers": 2,
+          "businesses": -3
+        },
         "explanationId": "ex_gia_kiem_soat"
       }
     ],
-    "cloReferences": ["CLO2"],
-    "conceptTags": ["hang-hoa", "gia-ca", "quy-luat-gia-tri"],
-    "learningObjectives": ["Phân tích mối quan hệ giữa giá trị và giá cả hàng hóa", "Giải thích tác động của quy luật giá trị trong nền kinh tế thị trường"]
+    "cloReferences": [
+      "CLO2"
+    ],
+    "conceptTags": [
+      "hang-hoa",
+      "gia-ca",
+      "quy-luat-gia-tri"
+    ],
+    "learningObjectives": [
+      "Phân tích mối quan hệ giữa giá trị và giá cả hàng hóa",
+      "Giải thích tác động của quy luật giá trị trong nền kinh tế thị trường"
+    ]
   },
   {
     "id": "ch1_tang_gio_lam",
     "title": "Doanh nghiệp đề xuất tăng giờ làm thêm",
     "scenario": "Các doanh nghiệp trong khu công nghiệp đề xuất kéo dài thời gian làm thêm để đáp ứng đơn hàng xuất khẩu. Công đoàn lo ngại sức khỏe người lao động. Bạn quyết định thế nào?",
     "chapter": 1,
-    "turn": 2,
+    "yearMin": 1,
+    "yearMax": 2,
+    "type": "story",
     "choices": [
       {
         "id": "a",
         "label": "Chấp thuận tăng giờ làm, có phụ cấp",
-        "effects": { "production": 7, "employment": 3, "socialWelfare": -5 },
-        "stakeholderImpact": { "businesses": 5, "workers": 1, "state": 1 },
-        "explanationId": "ex_gio_lam_chap_thuan"
+        "effects": {
+          "production": 7,
+          "employment": 3,
+          "socialWelfare": -5
+        },
+        "stakeholderImpact": {
+          "businesses": 5,
+          "workers": 1,
+          "state": 1
+        },
+        "explanationId": "ex_gio_lam_chap_thuan",
+        "unlocks": [
+          "chain_tranh_chap_lao_dong"
+        ]
       },
       {
         "id": "b",
         "label": "Giữ nguyên giờ làm theo quy định",
-        "effects": { "socialWelfare": 3, "employment": -2, "production": -3 },
-        "stakeholderImpact": { "workers": 3, "businesses": -3, "state": 0 },
+        "effects": {
+          "socialWelfare": 3,
+          "employment": -2,
+          "production": -3
+        },
+        "stakeholderImpact": {
+          "workers": 3,
+          "businesses": -3,
+          "state": 0
+        },
         "explanationId": "ex_gio_lam_giu_nguyen"
       },
       {
         "id": "c",
         "label": "Cho phép nhưng yêu cầu đầu tư cải thiện điều kiện lao động",
-        "effects": { "production": 4, "socialWelfare": 2, "budget": -3, "employment": 2 },
-        "stakeholderImpact": { "workers": 3, "businesses": 2, "state": 1 },
+        "effects": {
+          "production": 4,
+          "socialWelfare": 2,
+          "budget": -3,
+          "employment": 2
+        },
+        "stakeholderImpact": {
+          "workers": 3,
+          "businesses": 2,
+          "state": 1
+        },
         "explanationId": "ex_gio_lam_du_dieu_kien"
       }
     ],
-    "cloReferences": ["CLO2"],
-    "conceptTags": ["lao-dong", "gia-tri-thang-du", "thoi-gian-lao-dong"],
-    "learningObjectives": ["Phân tích mối quan hệ giữa thời gian lao động và giá trị thặng dư", "Đánh giá tác động của việc kéo dài thời gian lao động đến người lao động"]
+    "cloReferences": [
+      "CLO2"
+    ],
+    "conceptTags": [
+      "lao-dong",
+      "gia-tri-thang-du",
+      "thoi-gian-lao-dong"
+    ],
+    "learningObjectives": [
+      "Phân tích mối quan hệ giữa thời gian lao động và giá trị thặng dư",
+      "Đánh giá tác động của việc kéo dài thời gian lao động đến người lao động"
+    ]
   },
   {
     "id": "ch1_nang_suat",
     "title": "Năng suất lao động thấp hơn so với khu vực",
     "scenario": "Báo cáo cho thấy năng suất lao động của các doanh nghiệp trong nước thấp hơn 30% so với trung bình khu vực. Nguyên nhân chính là công nghệ lạc hậu và tay nghề lao động hạn chế. Bạn sẽ ưu tiên giải pháp nào?",
     "chapter": 1,
-    "turn": 2,
+    "yearMin": 1,
+    "yearMax": 2,
+    "type": "story",
     "choices": [
       {
         "id": "a",
         "label": "Đầu tư vào đào tạo nghề và nâng cao tay nghề",
-        "effects": { "production": 5, "employment": 2, "socialWelfare": 4, "budget": -6 },
-        "stakeholderImpact": { "workers": 4, "state": -2, "businesses": 2 },
+        "effects": {
+          "production": 5,
+          "employment": 2,
+          "socialWelfare": 4,
+          "budget": -6
+        },
+        "stakeholderImpact": {
+          "workers": 4,
+          "state": -2,
+          "businesses": 2
+        },
         "explanationId": "ex_nang_suat_dao_tao"
       },
       {
         "id": "b",
         "label": "Nhập khẩu công nghệ và tự động hóa sản xuất",
-        "effects": { "production": 8, "employment": -5, "nationalCapacity": 3, "budget": -8 },
-        "stakeholderImpact": { "businesses": 5, "workers": -4, "state": -1 },
+        "effects": {
+          "production": 8,
+          "employment": -5,
+          "nationalCapacity": 3,
+          "budget": -8
+        },
+        "stakeholderImpact": {
+          "businesses": 5,
+          "workers": -4,
+          "state": -1
+        },
         "explanationId": "ex_nang_suat_cong_nghe"
       },
       {
         "id": "c",
         "label": "Cải cách môi trường đầu tư để thu hút doanh nghiệp nước ngoài",
-        "effects": { "production": 4, "nationalCapacity": -2, "employment": 3, "budget": 2 },
-        "stakeholderImpact": { "businesses": 3, "state": 2, "workers": 1 },
+        "effects": {
+          "production": 4,
+          "nationalCapacity": -2,
+          "employment": 3,
+          "budget": 2
+        },
+        "stakeholderImpact": {
+          "businesses": 3,
+          "state": 2,
+          "workers": 1
+        },
         "explanationId": "ex_nang_suat_moi_truong"
       }
     ],
-    "cloReferences": ["CLO2"],
-    "conceptTags": ["nang-suat-lao-dong", "gia-tri-thang-du", "tich-luy-tu-ban"],
-    "learningObjectives": ["Phân tích các nhân tố ảnh hưởng đến năng suất lao động", "Giải thích mối quan hệ giữa năng suất lao động và giá trị thặng dư"]
+    "cloReferences": [
+      "CLO2"
+    ],
+    "conceptTags": [
+      "nang-suat-lao-dong",
+      "gia-tri-thang-du",
+      "tich-luy-tu-ban"
+    ],
+    "learningObjectives": [
+      "Phân tích các nhân tố ảnh hưởng đến năng suất lao động",
+      "Giải thích mối quan hệ giữa năng suất lao động và giá trị thặng dư"
+    ]
   },
   {
     "id": "ch1_chi_phi_nguyen_lieu",
     "title": "Chi phí nguyên liệu đầu vào tăng đột biến",
     "scenario": "Giá nguyên liệu nhập khẩu tăng 20% do gián đoạn chuỗi cung ứng toàn cầu. Các doanh nghiệp sản xuất gặp khó khăn, có nguy cơ phải thu hẹp sản xuất. Bạn sẽ làm gì?",
     "chapter": 1,
-    "turn": 1,
+    "yearMin": 1,
+    "yearMax": 2,
+    "type": "story",
     "choices": [
       {
         "id": "a",
         "label": "Hỗ trợ thuế và tín dụng cho doanh nghiệp",
-        "effects": { "production": 4, "budget": -8, "employment": 3 },
-        "stakeholderImpact": { "businesses": 5, "state": -3, "workers": 2 },
+        "effects": {
+          "production": 4,
+          "budget": -8,
+          "employment": 3
+        },
+        "stakeholderImpact": {
+          "businesses": 5,
+          "state": -3,
+          "workers": 2
+        },
         "explanationId": "ex_nguyen_lieu_ho_tro"
       },
       {
         "id": "b",
         "label": "Cho phép tăng giá thành phẩm",
-        "effects": { "marketStability": -7, "production": 2, "budget": 2 },
-        "stakeholderImpact": { "businesses": 4, "workers": -3, "state": 0 },
+        "effects": {
+          "marketStability": -7,
+          "production": 2,
+          "budget": 2
+        },
+        "stakeholderImpact": {
+          "businesses": 4,
+          "workers": -3,
+          "state": 0
+        },
         "explanationId": "ex_nguyen_lieu_tang_gia"
       },
       {
         "id": "c",
         "label": "Tìm kiếm nguồn cung nội địa thay thế",
-        "effects": { "production": -2, "nationalCapacity": 6, "environment": 2, "budget": -3 },
-        "stakeholderImpact": { "state": 3, "businesses": 1, "workers": 1 },
+        "effects": {
+          "production": -2,
+          "nationalCapacity": 6,
+          "environment": 2,
+          "budget": -3
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "businesses": 1,
+          "workers": 1
+        },
         "explanationId": "ex_nguyen_lieu_noi_dia"
       }
     ],
-    "cloReferences": ["CLO2"],
-    "conceptTags": ["gia-tri", "chi-phi-san-xuat", "luu-thong-hang-hoa"],
-    "learningObjectives": ["Phân tích cấu thành giá trị hàng hóa", "Giải thích tác động của chi phí sản xuất đến giá cả hàng hóa"]
+    "cloReferences": [
+      "CLO2"
+    ],
+    "conceptTags": [
+      "gia-tri",
+      "chi-phi-san-xuat",
+      "luu-thong-hang-hoa"
+    ],
+    "learningObjectives": [
+      "Phân tích cấu thành giá trị hàng hóa",
+      "Giải thích tác động của chi phí sản xuất đến giá cả hàng hóa"
+    ]
+  },
+  {
+    "id": "ch1_dau_co_tich_tru",
+    "title": "Đầu cơ tích trữ hàng hóa",
+    "scenario": "Trước tin đồn khan hiếm lương thực, nhiều thương lái và doanh nghiệp đã mua gom lúa gạo, xăng dầu và vật liệu xây dựng để tích trữ chờ tăng giá. Giá cả thị trường biến động bất thường, người dân bức xúc. Bạn sẽ xử lý ra sao?",
+    "chapter": 1,
+    "yearMin": 1,
+    "yearMax": 2,
+    "type": "story",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Tăng cường thanh tra, xử phạt đầu cơ và giải tỏa hàng tồn trữ",
+        "effects": {
+          "marketStability": 6,
+          "budget": 3,
+          "production": -1,
+          "socialWelfare": 3
+        },
+        "stakeholderImpact": {
+          "state": 4,
+          "workers": 3,
+          "businesses": -3
+        },
+        "explanationId": "ex_dau_co_xu_phat"
+      },
+      {
+        "id": "b",
+        "label": "Không can thiệp, để giá tăng tự nhiên kích thích sản xuất",
+        "effects": {
+          "production": 3,
+          "marketStability": -6,
+          "socialWelfare": -4,
+          "budget": 2
+        },
+        "stakeholderImpact": {
+          "businesses": 4,
+          "state": 1,
+          "workers": -4
+        },
+        "explanationId": "ex_dau_co_de_tu_nhien"
+      },
+      {
+        "id": "c",
+        "label": "Xả hàng dự trữ quốc gia để bình ổn giá",
+        "effects": {
+          "marketStability": 5,
+          "budget": -5,
+          "socialWelfare": 3,
+          "nationalCapacity": -2
+        },
+        "stakeholderImpact": {
+          "workers": 3,
+          "state": 1,
+          "businesses": -2
+        },
+        "explanationId": "ex_dau_co_xa_hang"
+      }
+    ],
+    "cloReferences": [
+      "CLO2",
+      "CLO3"
+    ],
+    "conceptTags": [
+      "dau-co",
+      "tich-tru",
+      "gia-ca",
+      "thi-truong",
+      "quy-luat-gia-tri"
+    ],
+    "learningObjectives": [
+      "Phân tích hiện tượng đầu cơ trong nền kinh tế thị trường",
+      "Đánh giá tác động của đầu cơ đến giá cả và ổn định thị trường"
+    ]
   },
   {
     "id": "ch2_mua_lai",
     "title": "Tập đoàn lớn mua lại doanh nghiệp nhỏ",
-    "scenario": "Một tập đoàn đa quốc gia đề xuất mua lại chuỗi doanh nghiệp nội địa trong ngành hàng tiêu dùng. Các doanh nghiệp nhỏ lo ngại bị thâu tóm. Bạn sẽ?",
+    "scenario": "Một tập đoàn đa quốc gia đề xuất mua lại chuỗi doanh nghiệp nội địa trong ngành hàng tiêu dùng. Các doanh nghiệp nhỏ lo ngại bị thâu tóm và mất thương hiệu Việt. Bạn sẽ xử lý thế nào?",
     "chapter": 2,
-    "turn": 3,
+    "yearMin": 3,
+    "yearMax": 4,
+    "type": "story",
     "choices": [
       {
         "id": "a",
         "label": "Cho phép tự do mua bán, sáp nhập",
-        "effects": { "production": 5, "nationalCapacity": -5, "employment": 2, "budget": 3 },
-        "stakeholderImpact": { "businesses": 5, "workers": 0, "state": 2 },
+        "effects": {
+          "production": 5,
+          "nationalCapacity": -5,
+          "employment": 2,
+          "budget": 3
+        },
+        "stakeholderImpact": {
+          "businesses": 5,
+          "workers": 0,
+          "state": 2
+        },
         "explanationId": "ex_mua_lai_tu_do"
       },
       {
         "id": "b",
         "label": "Hạn chế sáp nhập, bảo vệ doanh nghiệp nhỏ",
-        "effects": { "production": -3, "nationalCapacity": 5, "employment": 2, "marketStability": 3 },
-        "stakeholderImpact": { "businesses": -2, "workers": 2, "state": 3 },
+        "effects": {
+          "production": -3,
+          "nationalCapacity": 5,
+          "employment": 2,
+          "marketStability": 3
+        },
+        "stakeholderImpact": {
+          "businesses": -2,
+          "workers": 2,
+          "state": 3
+        },
         "explanationId": "ex_mua_lai_han_che"
       },
       {
         "id": "c",
         "label": "Cho phép nhưng yêu cầu chuyển giao công nghệ và giữ việc làm",
-        "effects": { "production": 3, "nationalCapacity": 4, "employment": 1, "marketStability": 2 },
-        "stakeholderImpact": { "businesses": 2, "workers": 2, "state": 3 },
+        "effects": {
+          "production": 3,
+          "nationalCapacity": 4,
+          "employment": 1,
+          "marketStability": 2
+        },
+        "stakeholderImpact": {
+          "businesses": 2,
+          "workers": 2,
+          "state": 3
+        },
         "explanationId": "ex_mua_lai_co_dieu_kien"
       }
     ],
-    "cloReferences": ["CLO3"],
-    "conceptTags": ["canh-tranh", "doc-quyen", "tap-trung-tu-ban"],
-    "learningObjectives": ["Phân tích xu hướng tích tụ và tập trung tư bản trong nền kinh tế thị trường", "Đánh giá tác động của độc quyền đến cạnh tranh"]
+    "cloReferences": [
+      "CLO3"
+    ],
+    "conceptTags": [
+      "canh-tranh",
+      "doc-quyen",
+      "tap-trung-tu-ban"
+    ],
+    "learningObjectives": [
+      "Phân tích xu hướng tích tụ và tập trung tư bản trong nền kinh tế thị trường",
+      "Đánh giá tác động của độc quyền đến cạnh tranh"
+    ]
   },
   {
     "id": "ch2_ep_gia",
     "title": "Doanh nghiệp nhỏ bị ép giá từ đối tác lớn",
     "scenario": "Các doanh nghiệp chế biến thực phẩm nhỏ phản ánh bị các siêu thị lớn ép giá mua thấp hơn chi phí sản xuất. Nhiều doanh nghiệp đứng trước nguy cơ phá sản. Bạn sẽ can thiệp?",
     "chapter": 2,
-    "turn": 3,
+    "yearMin": 3,
+    "yearMax": 4,
+    "type": "story",
     "choices": [
       {
         "id": "a",
         "label": "Ban hành quy định về cạnh tranh lành mạnh",
-        "effects": { "marketStability": 5, "production": -2, "nationalCapacity": 3, "budget": -2 },
-        "stakeholderImpact": { "businesses": 2, "workers": 2, "state": 3 },
+        "effects": {
+          "marketStability": 5,
+          "production": -2,
+          "nationalCapacity": 3,
+          "budget": -2
+        },
+        "stakeholderImpact": {
+          "businesses": 2,
+          "workers": 2,
+          "state": 3
+        },
         "explanationId": "ex_ep_gia_quy_dinh"
       },
       {
         "id": "b",
         "label": "Không can thiệp, để thị trường tự điều tiết",
-        "effects": { "production": 3, "nationalCapacity": -4, "employment": -3, "marketStability": -3 },
-        "stakeholderImpact": { "businesses": 3, "workers": -4, "state": -1 },
+        "effects": {
+          "production": 3,
+          "nationalCapacity": -4,
+          "employment": -3,
+          "marketStability": -3
+        },
+        "stakeholderImpact": {
+          "businesses": 3,
+          "workers": -4,
+          "state": -1
+        },
         "explanationId": "ex_ep_gia_tu_do"
       },
       {
         "id": "c",
         "label": "Hỗ trợ doanh nghiệp nhỏ thành lập hợp tác xã để tăng sức mặc cả",
-        "effects": { "production": 2, "nationalCapacity": 5, "socialWelfare": 3, "budget": -4 },
-        "stakeholderImpact": { "workers": 3, "businesses": 3, "state": 2 },
+        "effects": {
+          "production": 2,
+          "nationalCapacity": 5,
+          "socialWelfare": 3,
+          "budget": -4
+        },
+        "stakeholderImpact": {
+          "workers": 3,
+          "businesses": 3,
+          "state": 2
+        },
         "explanationId": "ex_ep_gia_hop_tac"
       }
     ],
-    "cloReferences": ["CLO3"],
-    "conceptTags": ["canh-tranh", "gia-tri-thang-du", "quan-he-loi-ich"],
-    "learningObjectives": ["Phân tích bản chất của cạnh tranh trong nền kinh tế thị trường", "Giải thích sự cần thiết của vai trò Nhà nước trong điều tiết cạnh tranh"]
+    "cloReferences": [
+      "CLO3"
+    ],
+    "conceptTags": [
+      "canh-tranh",
+      "gia-tri-thang-du",
+      "quan-he-loi-ich"
+    ],
+    "learningObjectives": [
+      "Phân tích bản chất của cạnh tranh trong nền kinh tế thị trường",
+      "Giải thích sự cần thiết của vai trò Nhà nước trong điều tiết cạnh tranh"
+    ]
   },
   {
     "id": "ch2_nen_tang_so",
     "title": "Nền tảng số chiếm thị phần lớn",
     "scenario": "Một nền tảng thương mại điện tử nước ngoài chiếm hơn 60% thị phần, gây áp lực lên doanh nghiệp bán lẻ trong nước. Có ý kiến đề nghị đánh thuế và hạn chế hoạt động. Bạn sẽ?",
     "chapter": 2,
-    "turn": 4,
+    "yearMin": 3,
+    "yearMax": 4,
+    "type": "story",
     "choices": [
       {
         "id": "a",
         "label": "Đánh thuế và áp dụng các rào cản kỹ thuật",
-        "effects": { "nationalCapacity": 5, "marketStability": 2, "budget": 5, "production": -3 },
-        "stakeholderImpact": { "state": 4, "businesses": -1, "workers": 1 },
+        "effects": {
+          "nationalCapacity": 5,
+          "marketStability": 2,
+          "budget": 5,
+          "production": -3
+        },
+        "stakeholderImpact": {
+          "state": 4,
+          "businesses": -1,
+          "workers": 1
+        },
         "explanationId": "ex_nen_tang_so_thue"
       },
       {
         "id": "b",
         "label": "Để thị trường tự do cạnh tranh",
-        "effects": { "production": 4, "nationalCapacity": -5, "employment": -2, "budget": 2 },
-        "stakeholderImpact": { "businesses": 4, "workers": -3, "state": 0 },
-        "explanationId": "ex_nen_tang_so_tu_do"
+        "effects": {
+          "production": 4,
+          "nationalCapacity": -5,
+          "employment": -2,
+          "budget": 2
+        },
+        "stakeholderImpact": {
+          "businesses": 4,
+          "workers": -3,
+          "state": 0
+        },
+        "explanationId": "ex_nen_tang_so_tu_do",
+        "unlocks": [
+          "chain_thau_tom_thi_truong"
+        ]
       },
       {
         "id": "c",
         "label": "Hỗ trợ doanh nghiệp nội địa chuyển đổi số và nâng cao năng lực cạnh tranh",
-        "effects": { "production": 3, "nationalCapacity": 6, "employment": 3, "budget": -6 },
-        "stakeholderImpact": { "businesses": 3, "workers": 3, "state": -1 },
+        "effects": {
+          "production": 3,
+          "nationalCapacity": 6,
+          "employment": 3,
+          "budget": -6
+        },
+        "stakeholderImpact": {
+          "businesses": 3,
+          "workers": 3,
+          "state": -1
+        },
         "explanationId": "ex_nen_tang_so_ho_tro"
       }
     ],
-    "cloReferences": ["CLO3"],
-    "conceptTags": ["doc-quyen", "canh-tranh", "kinh-te-so"],
-    "learningObjectives": ["Phân tích xu hướng độc quyền trong nền kinh tế số", "Đánh giá vai trò của Nhà nước trong điều tiết cạnh tranh trên không gian số"]
+    "cloReferences": [
+      "CLO3"
+    ],
+    "conceptTags": [
+      "doc-quyen",
+      "canh-tranh",
+      "kinh-te-so"
+    ],
+    "learningObjectives": [
+      "Phân tích xu hướng độc quyền trong nền kinh tế số",
+      "Đánh giá vai trò của Nhà nước trong điều tiết cạnh tranh trên không gian số"
+    ]
   },
   {
     "id": "ch2_nha_nuoc_dieu_tiet",
     "title": "Nhà nước xem xét điều tiết thị trường",
-    "scenario": "Sau một thời gian dài thị trường tự do, xuất hiện nhiều bất ổn: giá cả biến động mạnh, doanh nghiệp nhỏ phá sản hàng loạt. Các chuyên gia khuyến nghị Nhà nước tăng cường điều tiết. Bạn sẽ?",
+    "scenario": "Sau một thời gian thị trường tự do, xuất hiện nhiều bất ổn: giá cả biến động mạnh, doanh nghiệp nhỏ phá sản hàng loạt. Các chuyên gia khuyến nghị Nhà nước tăng cường điều tiết. Bạn sẽ?",
     "chapter": 2,
-    "turn": 4,
+    "yearMin": 3,
+    "yearMax": 4,
+    "type": "story",
     "choices": [
       {
         "id": "a",
         "label": "Tăng cường vai trò điều tiết của Nhà nước",
-        "effects": { "marketStability": 6, "nationalCapacity": 3, "production": -3, "budget": -4 },
-        "stakeholderImpact": { "state": 4, "workers": 3, "businesses": -2 },
+        "effects": {
+          "marketStability": 6,
+          "nationalCapacity": 3,
+          "production": -3,
+          "budget": -4
+        },
+        "stakeholderImpact": {
+          "state": 4,
+          "workers": 3,
+          "businesses": -2
+        },
         "explanationId": "ex_dieu_tiet_tang"
       },
       {
         "id": "b",
         "label": "Duy trì chính sách thị trường tự do hiện tại",
-        "effects": { "production": 4, "marketStability": -5, "nationalCapacity": -3, "budget": 2 },
-        "stakeholderImpact": { "businesses": 4, "workers": -3, "state": -1 },
+        "effects": {
+          "production": 4,
+          "marketStability": -5,
+          "nationalCapacity": -3,
+          "budget": 2
+        },
+        "stakeholderImpact": {
+          "businesses": 4,
+          "workers": -3,
+          "state": -1
+        },
         "explanationId": "ex_dieu_tiet_duy_tri"
       },
       {
         "id": "c",
         "label": "Điều tiết có chọn lọc ở những ngành trọng yếu",
-        "effects": { "marketStability": 4, "nationalCapacity": 4, "production": 2, "budget": -2 },
-        "stakeholderImpact": { "state": 3, "workers": 2, "businesses": 2 },
+        "effects": {
+          "marketStability": 4,
+          "nationalCapacity": 4,
+          "production": 2,
+          "budget": -2
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "workers": 2,
+          "businesses": 2
+        },
         "explanationId": "ex_dieu_tiet_chon_loc"
       }
     ],
-    "cloReferences": ["CLO3"],
-    "conceptTags": ["vai-tro-nha-nuoc", "doc-quyen-nha-nuoc", "dieu-tiet"],
-    "learningObjectives": ["Phân tích vai trò của Nhà nước trong nền kinh tế thị trường", "Đánh giá sự cần thiết của độc quyền nhà nước ở một số ngành trọng yếu"]
+    "cloReferences": [
+      "CLO3"
+    ],
+    "conceptTags": [
+      "vai-tro-nha-nuoc",
+      "doc-quyen-nha-nuoc",
+      "dieu-tiet"
+    ],
+    "learningObjectives": [
+      "Phân tích vai trò của Nhà nước trong nền kinh tế thị trường",
+      "Đánh giá sự cần thiết của độc quyền nhà nước ở một số ngành trọng yếu"
+    ]
+  },
+  {
+    "id": "ch2_ban_pha_gia",
+    "title": "Bán phá giá hàng hóa nước ngoài",
+    "scenario": "Hàng hóa từ một nước láng giềng được bán tại thị trường Việt Nam với giá thấp hơn giá thành sản xuất trong nước, khiến nhiều doanh nghiệp nội địa mất thị phần và buộc phải đóng cửa. Hiệp hội ngành hàng đề nghị áp thuế chống bán phá giá. Bạn sẽ?",
+    "chapter": 2,
+    "yearMin": 3,
+    "yearMax": 4,
+    "type": "story",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Áp thuế chống bán phá giá theo quy định WTO",
+        "effects": {
+          "nationalCapacity": 4,
+          "production": 3,
+          "marketStability": 2,
+          "budget": 5
+        },
+        "stakeholderImpact": {
+          "businesses": 4,
+          "state": 3,
+          "workers": 2
+        },
+        "explanationId": "ex_ban_pha_gia_thue"
+      },
+      {
+        "id": "b",
+        "label": "Không áp thuế, để người tiêu dùng hưởng giá rẻ",
+        "effects": {
+          "socialWelfare": 3,
+          "production": -5,
+          "nationalCapacity": -4,
+          "employment": -4
+        },
+        "stakeholderImpact": {
+          "workers": 2,
+          "businesses": -4,
+          "state": -2
+        },
+        "explanationId": "ex_ban_pha_gia_tu_do"
+      },
+      {
+        "id": "c",
+        "label": "Đàm phán song phương để hạn chế xuất khẩu tự nguyện",
+        "effects": {
+          "production": 2,
+          "nationalCapacity": 3,
+          "marketStability": 3,
+          "budget": 1
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "businesses": 2,
+          "workers": 1
+        },
+        "explanationId": "ex_ban_pha_gia_dam_phan"
+      }
+    ],
+    "cloReferences": [
+      "CLO3",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "ban-pha-gia",
+      "canh-tranh-quoc-te",
+      "bao-ho-mau-dich",
+      "thuong-mai"
+    ],
+    "learningObjectives": [
+      "Phân tích hiện tượng bán phá giá trong thương mại quốc tế",
+      "Đánh giá các biện pháp phòng vệ thương mại theo quy định của WTO"
+    ]
   },
   {
     "id": "ch3_giam_luong",
     "title": "Doanh nghiệp muốn giảm lương để cắt giảm chi phí",
-    "scenario": "Trong bối cảnh suy thoái kinh tế, các doanh nghiệp kiến nghị giảm 10% lương cơ bản để duy trì sản xuất, tránh sa thải hàng loạt. Công đoàn phản đối. Bạn sẽ?",
+    "scenario": "Trong bối cảnh suy thoái kinh tế, các doanh nghiệp kiến nghị giảm 10% lương cơ bản để duy trì sản xuất, tránh sa thải hàng loạt. Công đoàn phản đối quyết liệt. Bạn sẽ?",
     "chapter": 3,
-    "turn": 5,
+    "yearMin": 5,
+    "yearMax": 6,
+    "type": "story",
     "choices": [
       {
         "id": "a",
         "label": "Chấp thuận giảm lương có thời hạn",
-        "effects": { "production": 4, "socialWelfare": -6, "employment": 3, "budget": 2 },
-        "stakeholderImpact": { "businesses": 5, "workers": -5, "state": 1 },
-        "explanationId": "ex_giam_luong"
+        "effects": {
+          "production": 4,
+          "socialWelfare": -6,
+          "employment": 3,
+          "budget": 2
+        },
+        "stakeholderImpact": {
+          "businesses": 5,
+          "workers": -5,
+          "state": 1
+        },
+        "explanationId": "ex_giam_luong",
+        "unlocks": [
+          "chain_phong_trao_cong_nhan"
+        ]
       },
       {
         "id": "b",
         "label": "Bác bỏ, giữ nguyên lương",
-        "effects": { "socialWelfare": 3, "employment": -5, "production": -4 },
-        "stakeholderImpact": { "workers": 4, "businesses": -4, "state": -1 },
+        "effects": {
+          "socialWelfare": 3,
+          "employment": -5,
+          "production": -4
+        },
+        "stakeholderImpact": {
+          "workers": 4,
+          "businesses": -4,
+          "state": -1
+        },
         "explanationId": "ex_giam_luong_bac"
       },
       {
         "id": "c",
         "label": "Hỗ trợ doanh nghiệp bằng giảm thuế, yêu cầu giữ lương",
-        "effects": { "employment": 2, "socialWelfare": 2, "budget": -8, "production": 1 },
-        "stakeholderImpact": { "workers": 3, "businesses": 3, "state": -3 },
+        "effects": {
+          "employment": 2,
+          "socialWelfare": 2,
+          "budget": -8,
+          "production": 1
+        },
+        "stakeholderImpact": {
+          "workers": 3,
+          "businesses": 3,
+          "state": -3
+        },
         "explanationId": "ex_giam_luong_ho_tro"
       }
     ],
-    "cloReferences": ["CLO4", "CLO7"],
-    "conceptTags": ["quan-he-loi-ich", "tien-luong", "gia-tri-thang-du"],
-    "learningObjectives": ["Phân tích quan hệ lợi ích giữa người lao động và doanh nghiệp", "Giải thích vai trò của Nhà nước trong điều hòa lợi ích"]
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "quan-he-loi-ich",
+      "tien-luong",
+      "gia-tri-thang-du"
+    ],
+    "learningObjectives": [
+      "Phân tích quan hệ lợi ích giữa người lao động và doanh nghiệp",
+      "Giải thích vai trò của Nhà nước trong điều hòa lợi ích"
+    ]
   },
   {
     "id": "ch3_tang_phuc_loi",
     "title": "Người lao động yêu cầu tăng phúc lợi",
     "scenario": "Công đoàn yêu cầu tăng các khoản phúc lợi xã hội như bảo hiểm, hỗ trợ nhà ở và giữ trẻ. Doanh nghiệp cho rằng chi phí đã quá cao. Bạn sẽ cân đối thế nào?",
     "chapter": 3,
-    "turn": 5,
+    "yearMin": 5,
+    "yearMax": 6,
+    "type": "story",
     "choices": [
       {
         "id": "a",
         "label": "Yêu cầu doanh nghiệp tăng phúc lợi",
-        "effects": { "socialWelfare": 6, "production": -4, "employment": -2, "budget": -2 },
-        "stakeholderImpact": { "workers": 5, "businesses": -4, "state": -1 },
+        "effects": {
+          "socialWelfare": 6,
+          "production": -4,
+          "employment": -2,
+          "budget": -2
+        },
+        "stakeholderImpact": {
+          "workers": 5,
+          "businesses": -4,
+          "state": -1
+        },
         "explanationId": "ex_phuc_loi_yeu_cau"
       },
       {
         "id": "b",
         "label": "Nhà nước và doanh nghiệp cùng chia sẻ chi phí phúc lợi",
-        "effects": { "socialWelfare": 5, "production": 1, "employment": 2, "budget": -5 },
-        "stakeholderImpact": { "workers": 4, "businesses": 2, "state": -2 },
+        "effects": {
+          "socialWelfare": 5,
+          "production": 1,
+          "employment": 2,
+          "budget": -5
+        },
+        "stakeholderImpact": {
+          "workers": 4,
+          "businesses": 2,
+          "state": -2
+        },
         "explanationId": "ex_phuc_loi_chia_se"
       },
       {
         "id": "c",
         "label": "Chưa thực hiện ngay, chờ tăng trưởng kinh tế",
-        "effects": { "socialWelfare": -4, "production": 2, "budget": 3, "marketStability": 2 },
-        "stakeholderImpact": { "workers": -4, "businesses": 3, "state": 2 },
+        "effects": {
+          "socialWelfare": -4,
+          "production": 2,
+          "budget": 3,
+          "marketStability": 2
+        },
+        "stakeholderImpact": {
+          "workers": -4,
+          "businesses": 3,
+          "state": 2
+        },
         "explanationId": "ex_phuc_loi_cho"
       }
     ],
-    "cloReferences": ["CLO4", "CLO7"],
-    "conceptTags": ["phuc-loi-xa-hoi", "quan-he-loi-ich", "tai-phan-phoi"],
-    "learningObjectives": ["Phân tích các quan hệ lợi ích trong phân phối thu nhập", "Đánh giá vai trò của Nhà nước trong bảo đảm an sinh xã hội"]
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "phuc-loi-xa-hoi",
+      "quan-he-loi-ich",
+      "tai-phan-phoi"
+    ],
+    "learningObjectives": [
+      "Phân tích các quan hệ lợi ích trong phân phối thu nhập",
+      "Đánh giá vai trò của Nhà nước trong bảo đảm an sinh xã hội"
+    ]
   },
   {
     "id": "ch3_thue_ngan_sach",
     "title": "Nhà nước cần tăng thu ngân sách",
     "scenario": "Ngân sách nhà nước đang thâm hụt do chi tiêu công tăng và thu từ thuế giảm. Bộ Tài chính đề xuất tăng thuế thu nhập doanh nghiệp. Bạn sẽ?",
     "chapter": 3,
-    "turn": 6,
+    "yearMin": 5,
+    "yearMax": 6,
+    "type": "story",
     "choices": [
       {
         "id": "a",
         "label": "Tăng thuế thu nhập doanh nghiệp",
-        "effects": { "budget": 8, "production": -5, "employment": -2, "socialWelfare": -2 },
-        "stakeholderImpact": { "state": 5, "businesses": -5, "workers": -1 },
+        "effects": {
+          "budget": 8,
+          "production": -5,
+          "employment": -2,
+          "socialWelfare": -2
+        },
+        "stakeholderImpact": {
+          "state": 5,
+          "businesses": -5,
+          "workers": -1
+        },
         "explanationId": "ex_thue_tang"
       },
       {
         "id": "b",
         "label": "Cắt giảm chi tiêu công",
-        "effects": { "budget": 5, "socialWelfare": -5, "production": -2, "employment": -2 },
-        "stakeholderImpact": { "state": 3, "workers": -4, "businesses": 1 },
+        "effects": {
+          "budget": 5,
+          "socialWelfare": -5,
+          "production": -2,
+          "employment": -2
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "workers": -4,
+          "businesses": 1
+        },
         "explanationId": "ex_thue_cat_giam"
       },
       {
         "id": "c",
         "label": "Vay nợ và tái cơ cấu thuế",
-        "effects": { "budget": 2, "production": 2, "marketStability": -3, "nationalCapacity": 2 },
-        "stakeholderImpact": { "state": 1, "businesses": 2, "workers": 1 },
+        "effects": {
+          "budget": 2,
+          "production": 2,
+          "marketStability": -3,
+          "nationalCapacity": 2
+        },
+        "stakeholderImpact": {
+          "state": 1,
+          "businesses": 2,
+          "workers": 1
+        },
         "explanationId": "ex_thue_vay_no"
       }
     ],
-    "cloReferences": ["CLO4"],
-    "conceptTags": ["ngan-sach", "thue", "quan-he-loi-ich"],
-    "learningObjectives": ["Phân tích vai trò của ngân sách nhà nước trong điều tiết kinh tế", "Giải thích mối quan hệ giữa thuế, đầu tư và phát triển"]
+    "cloReferences": [
+      "CLO4"
+    ],
+    "conceptTags": [
+      "ngan-sach",
+      "thue",
+      "quan-he-loi-ich"
+    ],
+    "learningObjectives": [
+      "Phân tích vai trò của ngân sách nhà nước trong điều tiết kinh tế",
+      "Giải thích mối quan hệ giữa thuế, đầu tư và phát triển"
+    ]
   },
   {
     "id": "ch3_gia_dien",
     "title": "Giá điện tăng để đầu tư hạ tầng năng lượng",
     "scenario": "Tập đoàn Điện lực đề xuất tăng giá điện 15% để có nguồn vốn đầu tư nâng cấp lưới điện và phát triển năng lượng tái tạo. Doanh nghiệp và người dân phản đối. Bạn sẽ?",
     "chapter": 3,
-    "turn": 6,
+    "yearMin": 5,
+    "yearMax": 6,
+    "type": "story",
     "choices": [
       {
         "id": "a",
         "label": "Phê duyệt tăng giá điện",
-        "effects": { "production": -4, "marketStability": -4, "budget": 5, "environment": 3 },
-        "stakeholderImpact": { "state": 3, "businesses": -3, "workers": -3 },
+        "effects": {
+          "production": -4,
+          "marketStability": -4,
+          "budget": 5,
+          "environment": 3
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "businesses": -3,
+          "workers": -3
+        },
         "explanationId": "ex_gia_dien_tang"
       },
       {
         "id": "b",
         "label": "Giữ giá điện, dùng ngân sách đầu tư hạ tầng",
-        "effects": { "production": 1, "marketStability": 3, "budget": -8, "environment": 2 },
-        "stakeholderImpact": { "workers": 2, "businesses": 2, "state": -3 },
+        "effects": {
+          "production": 1,
+          "marketStability": 3,
+          "budget": -8,
+          "environment": 2
+        },
+        "stakeholderImpact": {
+          "workers": 2,
+          "businesses": 2,
+          "state": -3
+        },
         "explanationId": "ex_gia_dien_giu"
       },
       {
         "id": "c",
         "label": "Tăng giá có lộ trình, hỗ trợ doanh nghiệp và hộ nghèo",
-        "effects": { "production": -1, "marketStability": 2, "budget": 3, "environment": 3, "socialWelfare": 2 },
-        "stakeholderImpact": { "state": 2, "workers": 2, "businesses": 1 },
+        "effects": {
+          "production": -1,
+          "marketStability": 2,
+          "budget": 3,
+          "environment": 3,
+          "socialWelfare": 2
+        },
+        "stakeholderImpact": {
+          "state": 2,
+          "workers": 2,
+          "businesses": 1
+        },
         "explanationId": "ex_gia_dien_lo_trinh"
       }
     ],
-    "cloReferences": ["CLO4", "CLO7"],
-    "conceptTags": ["quan-he-loi-ich", "hang-hoa-cong", "phat-trien-ben-vung"],
-    "learningObjectives": ["Phân tích sự đánh đổi giữa phát triển hạ tầng và chi phí sinh hoạt", "Giải thích nguyên tắc công bằng trong điều tiết giá hàng hóa công"]
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "quan-he-loi-ich",
+      "hang-hoa-cong",
+      "phat-trien-ben-vung"
+    ],
+    "learningObjectives": [
+      "Phân tích sự đánh đổi giữa phát triển hạ tầng và chi phí sinh hoạt",
+      "Giải thích nguyên tắc công bằng trong điều tiết giá hàng hóa công"
+    ]
+  },
+  {
+    "id": "ch3_phan_phoi_thu_nhap",
+    "title": "Chính sách phân phối thu nhập quốc gia",
+    "scenario": "Báo cáo của Tổng cục Thống kê cho thấy khoảng cách giàu nghèo đang gia tăng nhanh. Nhóm giàu nhất chiếm gần 50% thu nhập quốc dân trong khi nhóm nghèo nhất chỉ chiếm 5%. Các tổ chức xã hội đề nghị cải cách chính sách phân phối thu nhập. Bạn sẽ?",
+    "chapter": 3,
+    "yearMin": 5,
+    "yearMax": 6,
+    "type": "story",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Tăng thuế lũy tiến với thu nhập cao, mở rộng phúc lợi",
+        "effects": {
+          "socialWelfare": 6,
+          "budget": 5,
+          "production": -4,
+          "employment": -1,
+          "marketStability": 2
+        },
+        "stakeholderImpact": {
+          "workers": 4,
+          "state": 3,
+          "businesses": -4
+        },
+        "explanationId": "ex_phan_phoi_luy_tien"
+      },
+      {
+        "id": "b",
+        "label": "Duy trì chính sách hiện tại, khuyến khích tăng trưởng trước",
+        "effects": {
+          "production": 4,
+          "employment": 2,
+          "socialWelfare": -4,
+          "marketStability": -2
+        },
+        "stakeholderImpact": {
+          "businesses": 4,
+          "state": 1,
+          "workers": -3
+        },
+        "explanationId": "ex_phan_phoi_duy_tri"
+      },
+      {
+        "id": "c",
+        "label": "Cải cách tiền lương tối thiểu và tăng đầu tư giáo dục vùng nghèo",
+        "effects": {
+          "socialWelfare": 4,
+          "employment": 3,
+          "production": 2,
+          "budget": -6,
+          "nationalCapacity": 4
+        },
+        "stakeholderImpact": {
+          "workers": 4,
+          "state": 1,
+          "businesses": 1
+        },
+        "explanationId": "ex_phan_phoi_cai_cach"
+      }
+    ],
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "phan-phoi-thu-nhap",
+      "bat-binh-dang",
+      "phuc-loi-xa-hoi",
+      "cong-bang-xa-hoi"
+    ],
+    "learningObjectives": [
+      "Phân tích nguyên nhân bất bình đẳng thu nhập trong nền kinh tế thị trường",
+      "Đánh giá vai trò của Nhà nước trong phân phối lại thu nhập"
+    ]
   },
   {
     "id": "ch4_dau_tu_robot",
     "title": "Đầu tư robot vào dây chuyền sản xuất",
     "scenario": "Một hiệp hội doanh nghiệp đề xuất chương trình tự động hóa sản xuất quy mô lớn bằng robot và AI. Dự kiến năng suất tăng 40% nhưng 15.000 lao động phổ thông có thể mất việc. Bạn sẽ?",
     "chapter": 4,
-    "turn": 7,
+    "yearMin": 7,
+    "yearMax": 8,
+    "type": "story",
     "choices": [
       {
         "id": "a",
         "label": "Phê duyệt, hỗ trợ đào tạo lại cho người lao động",
-        "effects": { "production": 7, "employment": -2, "socialWelfare": 3, "nationalCapacity": 5, "budget": -6 },
-        "stakeholderImpact": { "businesses": 4, "workers": 1, "state": 1 },
+        "effects": {
+          "production": 7,
+          "employment": -2,
+          "socialWelfare": 3,
+          "nationalCapacity": 5,
+          "budget": -6
+        },
+        "stakeholderImpact": {
+          "businesses": 4,
+          "workers": 1,
+          "state": 1
+        },
         "explanationId": "ex_robot_phe_duyet"
       },
       {
         "id": "b",
         "label": "Hạn chế tự động hóa để bảo vệ việc làm",
-        "effects": { "production": -5, "employment": 4, "nationalCapacity": -4 },
-        "stakeholderImpact": { "workers": 4, "businesses": -4, "state": 0 },
+        "effects": {
+          "production": -5,
+          "employment": 4,
+          "nationalCapacity": -4
+        },
+        "stakeholderImpact": {
+          "workers": 4,
+          "businesses": -4,
+          "state": 0
+        },
         "explanationId": "ex_robot_han_che"
       },
       {
         "id": "c",
         "label": "Khuyến khích tự động hóa từng bước, kết hợp đào tạo",
-        "effects": { "production": 4, "employment": 1, "socialWelfare": 2, "nationalCapacity": 4, "budget": -3 },
-        "stakeholderImpact": { "businesses": 3, "workers": 2, "state": 2 },
-        "explanationId": "ex_robot_tung_buoc"
+        "effects": {
+          "production": 4,
+          "employment": 1,
+          "socialWelfare": 2,
+          "nationalCapacity": 4,
+          "budget": -3
+        },
+        "stakeholderImpact": {
+          "businesses": 3,
+          "workers": 2,
+          "state": 2
+        },
+        "explanationId": "ex_robot_tung_buoc",
+        "unlocks": [
+          "chain_dau_tu_cong_nghe_cao"
+        ]
       }
     ],
-    "cloReferences": ["CLO5"],
-    "conceptTags": ["cong-nghiep-hoa", "hien-dai-hoa", "nang-suat", "lao-dong"],
-    "learningObjectives": ["Phân tích mối quan hệ giữa công nghiệp hóa, hiện đại hóa và lao động", "Giải thích tác động của tự động hóa đến thị trường lao động"]
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "cong-nghiep-hoa",
+      "hien-dai-hoa",
+      "nang-suat",
+      "lao-dong"
+    ],
+    "learningObjectives": [
+      "Phân tích mối quan hệ giữa công nghiệp hóa, hiện đại hóa và lao động",
+      "Giải thích tác động của tự động hóa đến thị trường lao động"
+    ]
   },
   {
     "id": "ch4_dao_tao_nghe",
     "title": "Đào tạo nghề cho lao động trẻ",
-    "scenario": "Tỷ lệ thanh niên thiếu kỹ năng nghề nghiệp đang cao. Các doanh nghiệp khó tuyển lao động có tay nghề. Đề xuất cải cách hệ thống dạy nghề quốc gia được đưa ra. Bạn sẽ?",
+    "scenario": "Tỷ lệ thanh niên thiếu kỹ năng nghề nghiệp đang cao, các doanh nghiệp khó tuyển lao động có tay nghề. Đề xuất cải cách hệ thống dạy nghề quốc gia được đưa ra với nhiều phương án khác nhau. Bạn sẽ?",
     "chapter": 4,
-    "turn": 7,
+    "yearMin": 7,
+    "yearMax": 8,
+    "type": "story",
     "choices": [
       {
         "id": "a",
         "label": "Đầu tư lớn vào hệ thống trường dạy nghề",
-        "effects": { "production": 3, "employment": 4, "socialWelfare": 5, "budget": -9 },
-        "stakeholderImpact": { "workers": 5, "state": -4, "businesses": 3 },
+        "effects": {
+          "production": 3,
+          "employment": 4,
+          "socialWelfare": 5,
+          "budget": -9
+        },
+        "stakeholderImpact": {
+          "workers": 5,
+          "state": -4,
+          "businesses": 3
+        },
         "explanationId": "ex_dao_tao_dau_tu"
       },
       {
         "id": "b",
         "label": "Khuyến khích doanh nghiệp tự đào tạo",
-        "effects": { "production": 4, "employment": 2, "budget": 2, "socialWelfare": -2 },
-        "stakeholderImpact": { "businesses": 4, "state": 2, "workers": -1 },
+        "effects": {
+          "production": 4,
+          "employment": 2,
+          "budget": 2,
+          "socialWelfare": -2
+        },
+        "stakeholderImpact": {
+          "businesses": 4,
+          "state": 2,
+          "workers": -1
+        },
         "explanationId": "ex_dao_tao_khuyen_khich"
       },
       {
         "id": "c",
         "label": "Kết hợp nhà nước - doanh nghiệp trong đào tạo",
-        "effects": { "production": 4, "employment": 4, "socialWelfare": 4, "budget": -5 },
-        "stakeholderImpact": { "workers": 4, "businesses": 3, "state": -1 },
+        "effects": {
+          "production": 4,
+          "employment": 4,
+          "socialWelfare": 4,
+          "budget": -5
+        },
+        "stakeholderImpact": {
+          "workers": 4,
+          "businesses": 3,
+          "state": -1
+        },
         "explanationId": "ex_dao_tao_ket_hop"
       }
     ],
-    "cloReferences": ["CLO5"],
-    "conceptTags": ["cong-nghiep-hoa", "nguon-nhan-luc", "chat-luong-lao-dong"],
-    "learningObjectives": ["Phân tích vai trò của chất lượng nguồn nhân lực trong công nghiệp hóa", "Đánh giá các mô hình đào tạo nghề trong nền kinh tế hiện đại"]
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "cong-nghiep-hoa",
+      "nguon-nhan-luc",
+      "chat-luong-lao-dong"
+    ],
+    "learningObjectives": [
+      "Phân tích vai trò của chất lượng nguồn nhân lực trong công nghiệp hóa",
+      "Đánh giá các mô hình đào tạo nghề trong nền kinh tế hiện đại"
+    ]
   },
   {
     "id": "ch4_chuyen_doi_so",
     "title": "Chương trình chuyển đổi số quốc gia",
-    "scenario": "Chính phủ đề xuất chương trình chuyển đổi số quốc gia với mục tiêu đưa 80% doanh nghiệp lên nền tảng số trong 5 năm. Kinh phí dự kiến rất lớn. Bạn sẽ?",
+    "scenario": "Chính phủ đề xuất chương trình chuyển đổi số quốc gia với mục tiêu đưa 80% doanh nghiệp lên nền tảng số trong 5 năm. Kinh phí dự kiến rất lớn và cần cải cách hành chính sâu rộng. Bạn sẽ?",
     "chapter": 4,
-    "turn": 8,
+    "yearMin": 7,
+    "yearMax": 8,
+    "type": "story",
     "choices": [
       {
         "id": "a",
         "label": "Phê duyệt toàn bộ chương trình",
-        "effects": { "production": 6, "nationalCapacity": 7, "budget": -10, "employment": -1 },
-        "stakeholderImpact": { "businesses": 4, "state": 1, "workers": -1 },
+        "effects": {
+          "production": 6,
+          "nationalCapacity": 7,
+          "budget": -10,
+          "employment": -1
+        },
+        "stakeholderImpact": {
+          "businesses": 4,
+          "state": 1,
+          "workers": -1
+        },
         "explanationId": "ex_chuyen_doi_so_phe_duyet"
       },
       {
         "id": "b",
         "label": "Triển khai thí điểm ở một số ngành",
-        "effects": { "production": 3, "nationalCapacity": 4, "budget": -4, "employment": 1 },
-        "stakeholderImpact": { "state": 2, "businesses": 2, "workers": 1 },
+        "effects": {
+          "production": 3,
+          "nationalCapacity": 4,
+          "budget": -4,
+          "employment": 1
+        },
+        "stakeholderImpact": {
+          "state": 2,
+          "businesses": 2,
+          "workers": 1
+        },
         "explanationId": "ex_chuyen_doi_so_thi_diem"
       },
       {
         "id": "c",
         "label": "Hoãn lại, tập trung vào hạ tầng truyền thống",
-        "effects": { "production": 1, "nationalCapacity": -4, "budget": 4, "employment": 2 },
-        "stakeholderImpact": { "workers": 2, "state": 2, "businesses": -2 },
+        "effects": {
+          "production": 1,
+          "nationalCapacity": -4,
+          "budget": 4,
+          "employment": 2
+        },
+        "stakeholderImpact": {
+          "workers": 2,
+          "state": 2,
+          "businesses": -2
+        },
         "explanationId": "ex_chuyen_doi_so_hoan"
       }
     ],
-    "cloReferences": ["CLO5"],
-    "conceptTags": ["hien-dai-hoa", "chuyen-doi-so", "nang-suat"],
-    "learningObjectives": ["Phân tích vai trò của chuyển đổi số trong hiện đại hóa nền kinh tế", "Đánh giá các rủi ro và cơ hội của chuyển đổi số"]
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "hien-dai-hoa",
+      "chuyen-doi-so",
+      "nang-suat"
+    ],
+    "learningObjectives": [
+      "Phân tích vai trò của chuyển đổi số trong hiện đại hóa nền kinh tế",
+      "Đánh giá các rủi ro và cơ hội của chuyển đổi số"
+    ]
   },
   {
     "id": "ch4_cong_nghiep_ho_tro",
     "title": "Phát triển công nghiệp hỗ trợ",
-    "scenario": "Ngành công nghiệp hỗ trợ trong nước còn yếu, phụ thuộc nhiều vào linh kiện nhập khẩu. Đề xuất chiến lược phát triển công nghiệp hỗ trợ được đưa ra. Bạn sẽ?",
+    "scenario": "Ngành công nghiệp hỗ trợ trong nước còn yếu, phụ thuộc nhiều vào linh kiện nhập khẩu. Đề xuất chiến lược phát triển công nghiệp hỗ trợ nhằm nâng cao tỷ lệ nội địa hóa được đưa ra. Bạn sẽ?",
     "chapter": 4,
-    "turn": 8,
+    "yearMin": 7,
+    "yearMax": 8,
+    "type": "story",
     "choices": [
       {
         "id": "a",
         "label": "Ưu đãi thuế và tín dụng cho doanh nghiệp công nghiệp hỗ trợ",
-        "effects": { "production": 4, "nationalCapacity": 6, "employment": 3, "budget": -6 },
-        "stakeholderImpact": { "businesses": 4, "workers": 3, "state": -2 },
+        "effects": {
+          "production": 4,
+          "nationalCapacity": 6,
+          "employment": 3,
+          "budget": -6
+        },
+        "stakeholderImpact": {
+          "businesses": 4,
+          "workers": 3,
+          "state": -2
+        },
         "explanationId": "ex_cong_nghiep_ho_tro_uu_dai"
       },
       {
         "id": "b",
         "label": "Yêu cầu doanh nghiệp FDI cam kết tỷ lệ nội địa hóa",
-        "effects": { "production": 1, "nationalCapacity": 4, "budget": 1, "employment": 2 },
-        "stakeholderImpact": { "state": 3, "workers": 2, "businesses": 0 },
+        "effects": {
+          "production": 1,
+          "nationalCapacity": 4,
+          "budget": 1,
+          "employment": 2
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "workers": 2,
+          "businesses": 0
+        },
         "explanationId": "ex_cong_nghiep_ho_tro_yeu_cau"
       },
       {
         "id": "c",
         "label": "Tiếp tục nhập khẩu, tập trung vào lắp ráp",
-        "effects": { "production": 3, "nationalCapacity": -4, "employment": 1, "budget": 2 },
-        "stakeholderImpact": { "businesses": 3, "state": 1, "workers": 1 },
+        "effects": {
+          "production": 3,
+          "nationalCapacity": -4,
+          "employment": 1,
+          "budget": 2
+        },
+        "stakeholderImpact": {
+          "businesses": 3,
+          "state": 1,
+          "workers": 1
+        },
         "explanationId": "ex_cong_nghiep_ho_tro_nhap_khau"
       }
     ],
-    "cloReferences": ["CLO5"],
-    "conceptTags": ["cong-nghiep-hoa", "noi-dia-hoa", "chuoi-cung-ung"],
-    "learningObjectives": ["Phân tích vai trò của công nghiệp hỗ trợ trong công nghiệp hóa", "Đánh giá chiến lược nâng cao giá trị gia tăng trong nước"]
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "cong-nghiep-hoa",
+      "noi-dia-hoa",
+      "chuoi-cung-ung"
+    ],
+    "learningObjectives": [
+      "Phân tích vai trò của công nghiệp hỗ trợ trong công nghiệp hóa",
+      "Đánh giá chiến lược nâng cao giá trị gia tăng trong nước"
+    ]
+  },
+  {
+    "id": "ch4_lien_ket_vung",
+    "title": "Liên kết vùng kinh tế trọng điểm",
+    "scenario": "Các tỉnh trong vùng kinh tế trọng điểm phía Nam đang cạnh tranh thu hút đầu tư gay gắt, dẫn đến trùng lặp quy hoạch và lãng phí nguồn lực. Chính phủ đề xuất cơ chế liên kết vùng với sự điều phối tập trung. Bạn sẽ?",
+    "chapter": 4,
+    "yearMin": 7,
+    "yearMax": 8,
+    "type": "story",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Thành lập ban điều phối vùng có thẩm quyền phân bổ nguồn lực",
+        "effects": {
+          "production": 3,
+          "nationalCapacity": 6,
+          "budget": -3,
+          "employment": 2
+        },
+        "stakeholderImpact": {
+          "state": 4,
+          "businesses": 2,
+          "workers": 2
+        },
+        "explanationId": "ex_lien_ket_vung_thanh_lap"
+      },
+      {
+        "id": "b",
+        "label": "Để các địa phương tự do cạnh tranh",
+        "effects": {
+          "production": 5,
+          "nationalCapacity": -4,
+          "employment": 2,
+          "budget": 2
+        },
+        "stakeholderImpact": {
+          "businesses": 4,
+          "state": -1,
+          "workers": 1
+        },
+        "explanationId": "ex_lien_ket_vung_tu_do"
+      },
+      {
+        "id": "c",
+        "label": "Xây dựng quy hoạch vùng thống nhất, có chế tài xử lý vi phạm",
+        "effects": {
+          "production": 2,
+          "nationalCapacity": 5,
+          "environment": 1,
+          "budget": -5,
+          "marketStability": 3
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "businesses": 1,
+          "workers": 1
+        },
+        "explanationId": "ex_lien_ket_vung_quy_hoach"
+      }
+    ],
+    "cloReferences": [
+      "CLO5",
+      "CLO4"
+    ],
+    "conceptTags": [
+      "lien-ket-vung",
+      "quy-hoach",
+      "phat-trien-vung",
+      "phan-bo-nguon-luc"
+    ],
+    "learningObjectives": [
+      "Phân tích các thách thức trong liên kết vùng kinh tế",
+      "Đánh giá vai trò điều phối của Nhà nước trong phát triển vùng"
+    ]
   },
   {
     "id": "ch5_fdi_lon",
     "title": "Dự án FDI lớn từ tập đoàn công nghệ",
     "scenario": "Một tập đoàn công nghệ hàng đầu thế giới đề xuất xây dựng nhà máy sản xuất chip trị giá 5 tỷ USD, tạo 30.000 việc làm. Tuy nhiên, họ yêu cầu ưu đãi thuế đặc biệt và không cam kết chuyển giao công nghệ. Bạn sẽ?",
     "chapter": 5,
-    "turn": 9,
+    "yearMin": 9,
+    "yearMax": 10,
+    "type": "story",
     "choices": [
       {
         "id": "a",
         "label": "Chấp thuận để thu hút FDI",
-        "effects": { "production": 6, "employment": 5, "nationalCapacity": 1, "budget": -4, "environment": -2 },
-        "stakeholderImpact": { "businesses": 5, "workers": 4, "state": 1 },
+        "effects": {
+          "production": 6,
+          "employment": 5,
+          "nationalCapacity": 1,
+          "budget": -4,
+          "environment": -2
+        },
+        "stakeholderImpact": {
+          "businesses": 5,
+          "workers": 4,
+          "state": 1
+        },
         "explanationId": "ex_fdi_chap_thuan"
       },
       {
         "id": "b",
         "label": "Yêu cầu cam kết chuyển giao công nghệ và nội địa hóa",
-        "effects": { "production": 3, "employment": 3, "nationalCapacity": 5, "budget": -1, "environment": -1 },
-        "stakeholderImpact": { "state": 3, "workers": 2, "businesses": 2 },
-        "explanationId": "ex_fdi_chuyen_giao"
+        "effects": {
+          "production": 3,
+          "employment": 3,
+          "nationalCapacity": 5,
+          "budget": -1,
+          "environment": -1
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "workers": 2,
+          "businesses": 2
+        },
+        "explanationId": "ex_fdi_chuyen_giao",
+        "unlocks": [
+          "chain_hoi_nhap_toan_dien"
+        ]
       },
       {
         "id": "c",
         "label": "Từ chối, tập trung phát triển doanh nghiệp nội địa",
-        "effects": { "production": -2, "employment": -1, "nationalCapacity": 4, "budget": 3, "environment": 1 },
-        "stakeholderImpact": { "state": 2, "workers": -2, "businesses": 3 },
+        "effects": {
+          "production": -2,
+          "employment": -1,
+          "nationalCapacity": 4,
+          "budget": 3,
+          "environment": 1
+        },
+        "stakeholderImpact": {
+          "state": 2,
+          "workers": -2,
+          "businesses": 3
+        },
         "explanationId": "ex_fdi_tu_choi"
       }
     ],
-    "cloReferences": ["CLO5", "CLO8"],
-    "conceptTags": ["fdi", "hoi-nhap-quoc-te", "chuyen-giao-cong-nghe", "nang-luc-tu-chu"],
-    "learningObjectives": ["Phân tích tác động của FDI đối với nước chủ nhà", "Đánh giá sự đánh đổi giữa thu hút vốn nước ngoài và năng lực tự chủ"]
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "fdi",
+      "hoi-nhap-quoc-te",
+      "chuyen-giao-cong-nghe",
+      "nang-luc-tu-chu"
+    ],
+    "learningObjectives": [
+      "Phân tích tác động của FDI đối với nước chủ nhà",
+      "Đánh giá sự đánh đổi giữa thu hút vốn nước ngoài và năng lực tự chủ"
+    ]
   },
   {
     "id": "ch5_cam_ket_moi_truong",
     "title": "Cam kết môi trường từ đối tác quốc tế",
     "scenario": "Đối tác thương mại yêu cầu Việt Nam cam kết lộ trình Net Zero vào 2050, kéo theo chi phí sản xuất tăng và nhiều ngành phải tái cấu trúc. Nhưng mở ra cơ hội xuất khẩu xanh. Bạn sẽ?",
     "chapter": 5,
-    "turn": 9,
+    "yearMin": 9,
+    "yearMax": 10,
+    "type": "story",
     "choices": [
       {
         "id": "a",
         "label": "Cam kết đầy đủ, chấp nhận chi phí",
-        "effects": { "environment": 8, "production": -4, "employment": -2, "nationalCapacity": 3, "budget": -6 },
-        "stakeholderImpact": { "state": 2, "workers": -2, "businesses": -3 },
+        "effects": {
+          "environment": 8,
+          "production": -4,
+          "employment": -2,
+          "nationalCapacity": 3,
+          "budget": -6
+        },
+        "stakeholderImpact": {
+          "state": 2,
+          "workers": -2,
+          "businesses": -3
+        },
         "explanationId": "ex_moi_truong_cam_ket"
       },
       {
         "id": "b",
         "label": "Cam kết có lộ trình dài hơn",
-        "effects": { "environment": 4, "production": 1, "employment": 1, "nationalCapacity": 2, "budget": -3 },
-        "stakeholderImpact": { "state": 3, "businesses": 1, "workers": 1 },
+        "effects": {
+          "environment": 4,
+          "production": 1,
+          "employment": 1,
+          "nationalCapacity": 2,
+          "budget": -3
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "businesses": 1,
+          "workers": 1
+        },
         "explanationId": "ex_moi_truong_lo_trinh"
       },
       {
         "id": "c",
         "label": "Từ chối cam kết, bảo vệ sản xuất hiện tại",
-        "effects": { "environment": -5, "production": 4, "employment": 2, "budget": 2, "nationalCapacity": -2 },
-        "stakeholderImpact": { "businesses": 4, "workers": 2, "state": -2 },
+        "effects": {
+          "environment": -5,
+          "production": 4,
+          "employment": 2,
+          "budget": 2,
+          "nationalCapacity": -2
+        },
+        "stakeholderImpact": {
+          "businesses": 4,
+          "workers": 2,
+          "state": -2
+        },
         "explanationId": "ex_moi_truong_tu_choi"
       }
     ],
-    "cloReferences": ["CLO5", "CLO7", "CLO8"],
-    "conceptTags": ["phat-trien-ben-vung", "moi-truong", "hoi-nhap-quoc-te"],
-    "learningObjectives": ["Phân tích mối quan hệ giữa tăng trưởng kinh tế và bảo vệ môi trường", "Đánh giá cơ hội và thách thức của kinh tế xanh trong hội nhập"]
+    "cloReferences": [
+      "CLO5",
+      "CLO7",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "phat-trien-ben-vung",
+      "moi-truong",
+      "hoi-nhap-quoc-te"
+    ],
+    "learningObjectives": [
+      "Phân tích mối quan hệ giữa tăng trưởng kinh tế và bảo vệ môi trường",
+      "Đánh giá cơ hội và thách thức của kinh tế xanh trong hội nhập"
+    ]
   },
   {
     "id": "ch5_chuoi_cung_ung",
     "title": "Doanh nghiệp nội địa tham gia chuỗi cung ứng toàn cầu",
-    "scenario": "Các doanh nghiệp nội địa có cơ hội tham gia chuỗi cung ứng của các tập đoàn đa quốc gia nhưng cần đáp ứng tiêu chuẩn chất lượng cao. Nhiều doanh nghiệp cần hỗ trợ để nâng cấp. Bạn sẽ?",
+    "scenario": "Các doanh nghiệp nội địa có cơ hội tham gia chuỗi cung ứng của các tập đoàn đa quốc gia nhưng cần đáp ứng tiêu chuẩn chất lượng cao. Nhiều doanh nghiệp cần hỗ trợ để nâng cấp công nghệ và quy trình. Bạn sẽ?",
     "chapter": 5,
-    "turn": 10,
+    "yearMin": 9,
+    "yearMax": 10,
+    "type": "story",
     "choices": [
       {
         "id": "a",
         "label": "Hỗ trợ doanh nghiệp nâng cấp tiêu chuẩn và chứng nhận",
-        "effects": { "production": 4, "nationalCapacity": 6, "employment": 3, "budget": -5, "environment": 1 },
-        "stakeholderImpact": { "businesses": 4, "workers": 3, "state": -1 },
+        "effects": {
+          "production": 4,
+          "nationalCapacity": 6,
+          "employment": 3,
+          "budget": -5,
+          "environment": 1
+        },
+        "stakeholderImpact": {
+          "businesses": 4,
+          "workers": 3,
+          "state": -1
+        },
         "explanationId": "ex_chuoi_cung_ung_ho_tro"
       },
       {
         "id": "b",
-        "label": "Tạo khu công nghiệp chuyên sâu thu hút FDI, doanh nghiệp nội địa làm vệ tinh",
-        "effects": { "production": 5, "employment": 4, "nationalCapacity": 3, "environment": -3, "budget": -4 },
-        "stakeholderImpact": { "businesses": 3, "workers": 3, "state": 1 },
+        "label": "Tạo khu công nghiệp chuyên sâu, doanh nghiệp nội địa làm vệ tinh",
+        "effects": {
+          "production": 5,
+          "employment": 4,
+          "nationalCapacity": 3,
+          "environment": -3,
+          "budget": -4
+        },
+        "stakeholderImpact": {
+          "businesses": 3,
+          "workers": 3,
+          "state": 1
+        },
         "explanationId": "ex_chuoi_cung_ung_kcn"
       },
       {
         "id": "c",
         "label": "Tập trung vào thị trường nội địa, không phụ thuộc chuỗi toàn cầu",
-        "effects": { "production": -1, "nationalCapacity": 3, "employment": 1, "budget": 2, "environment": 2 },
-        "stakeholderImpact": { "state": 3, "businesses": 1, "workers": 1 },
+        "effects": {
+          "production": -1,
+          "nationalCapacity": 3,
+          "employment": 1,
+          "budget": 2,
+          "environment": 2
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "businesses": 1,
+          "workers": 1
+        },
         "explanationId": "ex_chuoi_cung_ung_noi_dia"
       }
     ],
-    "cloReferences": ["CLO5", "CLO8"],
-    "conceptTags": ["hoi-nhap-quoc-te", "chuoi-cung-ung", "cong-nghiep-hoa"],
-    "learningObjectives": ["Phân tích chiến lược tham gia chuỗi giá trị toàn cầu", "Đánh giá sự đánh đổi giữa hội nhập sâu và bảo vệ thị trường nội địa"]
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "hoi-nhap-quoc-te",
+      "chuoi-cung-ung",
+      "cong-nghiep-hoa"
+    ],
+    "learningObjectives": [
+      "Phân tích chiến lược tham gia chuỗi giá trị toàn cầu",
+      "Đánh giá sự đánh đổi giữa hội nhập sâu và bảo vệ thị trường nội địa"
+    ]
   },
   {
     "id": "ch5_tu_dong_hoa_ai",
     "title": "Làn sóng AI và tự động hóa đe dọa việc làm",
     "scenario": "AI và robot đang thay thế nhiều công việc văn phòng và sản xuất. Lao động trẻ khó tìm việc, trong khi doanh nghiệp cần lao động kỹ thuật cao. Bạn sẽ định hướng thế nào?",
     "chapter": 5,
-    "turn": 10,
+    "yearMin": 9,
+    "yearMax": 10,
+    "type": "story",
     "choices": [
       {
         "id": "a",
         "label": "Đầu tư mạnh vào giáo dục STEM và đào tạo lại",
-        "effects": { "production": 5, "employment": 2, "socialWelfare": 4, "nationalCapacity": 6, "budget": -8 },
-        "stakeholderImpact": { "workers": 3, "businesses": 3, "state": -2 },
+        "effects": {
+          "production": 5,
+          "employment": 2,
+          "socialWelfare": 4,
+          "nationalCapacity": 6,
+          "budget": -8
+        },
+        "stakeholderImpact": {
+          "workers": 3,
+          "businesses": 3,
+          "state": -2
+        },
         "explanationId": "ex_ai_stem"
       },
       {
         "id": "b",
         "label": "Điều tiết ứng dụng AI để bảo vệ việc làm",
-        "effects": { "production": -3, "employment": 4, "nationalCapacity": -3, "budget": 1 },
-        "stakeholderImpact": { "workers": 4, "businesses": -3, "state": 1 },
+        "effects": {
+          "production": -3,
+          "employment": 4,
+          "nationalCapacity": -3,
+          "budget": 1
+        },
+        "stakeholderImpact": {
+          "workers": 4,
+          "businesses": -3,
+          "state": 1
+        },
         "explanationId": "ex_ai_dieu_tiet"
       },
       {
         "id": "c",
-        "label": "Kết hợp phát triển AI với mạng lưới an sinh xã hội cho người mất việc",
-        "effects": { "production": 4, "employment": 0, "socialWelfare": 3, "nationalCapacity": 4, "budget": -6 },
-        "stakeholderImpact": { "workers": 2, "businesses": 3, "state": 0 },
+        "label": "Kết hợp phát triển AI với mạng lưới an sinh xã hội",
+        "effects": {
+          "production": 4,
+          "employment": 0,
+          "socialWelfare": 3,
+          "nationalCapacity": 4,
+          "budget": -6
+        },
+        "stakeholderImpact": {
+          "workers": 2,
+          "businesses": 3,
+          "state": 0
+        },
         "explanationId": "ex_ai_ket_hop"
       }
     ],
-    "cloReferences": ["CLO5", "CLO7", "CLO8"],
-    "conceptTags": ["ai", "tu-dong-hoa", "thi-truong-lao-dong", "an-sinh-xa-hoi"],
-    "learningObjectives": ["Phân tích tác động của AI và tự động hóa đến thị trường lao động", "Đánh giá vai trò của Nhà nước trong việc thích ứng với thay đổi công nghệ"]
+    "cloReferences": [
+      "CLO5",
+      "CLO7",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "ai",
+      "tu-dong-hoa",
+      "thi-truong-lao-dong",
+      "an-sinh-xa-hoi"
+    ],
+    "learningObjectives": [
+      "Phân tích tác động của AI và tự động hóa đến thị trường lao động",
+      "Đánh giá vai trò của Nhà nước trong việc thích ứng với thay đổi công nghệ"
+    ]
+  },
+  {
+    "id": "ch5_so_huu_tri_tue",
+    "title": "Bảo hộ sở hữu trí tuệ trong hội nhập",
+    "scenario": "Các đối tác thương mại yêu cầu Việt Nam tăng cường bảo hộ sở hữu trí tuệ, đặc biệt là dược phẩm và phần mềm. Điều này có thể làm tăng giá thuốc và chi phí công nghệ, nhưng thu hút đầu tư R&D nước ngoài. Bạn sẽ?",
+    "chapter": 5,
+    "yearMin": 9,
+    "yearMax": 10,
+    "type": "story",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Thực thi mạnh bảo hộ sở hữu trí tuệ theo yêu cầu",
+        "effects": {
+          "nationalCapacity": 4,
+          "production": 2,
+          "budget": 3,
+          "socialWelfare": -4
+        },
+        "stakeholderImpact": {
+          "businesses": 3,
+          "state": 3,
+          "workers": -2
+        },
+        "explanationId": "ex_so_huu_tri_tue_manh"
+      },
+      {
+        "id": "b",
+        "label": "Duy trì luật hiện hành, đàm phán lộ trình chuyển đổi",
+        "effects": {
+          "marketStability": 3,
+          "production": 1,
+          "nationalCapacity": 1,
+          "budget": 1
+        },
+        "stakeholderImpact": {
+          "state": 2,
+          "businesses": 1,
+          "workers": 0
+        },
+        "explanationId": "ex_so_huu_tri_tue_duy_tri"
+      },
+      {
+        "id": "c",
+        "label": "Ưu tiên tiếp cận thuốc và công nghệ, nới lỏng bảo hộ",
+        "effects": {
+          "socialWelfare": 5,
+          "production": -2,
+          "nationalCapacity": -3,
+          "budget": -2
+        },
+        "stakeholderImpact": {
+          "workers": 4,
+          "state": -2,
+          "businesses": -3
+        },
+        "explanationId": "ex_so_huu_tri_tue_noi_long"
+      }
+    ],
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "so-huu-tri-tue",
+      "hoi-nhap-quoc-te",
+      "chuyen-giao-cong-nghe",
+      "duoc-pham"
+    ],
+    "learningObjectives": [
+      "Phân tích tác động của bảo hộ sở hữu trí tuệ đến phát triển công nghệ trong nước",
+      "Đánh giá sự đánh đổi giữa bảo hộ sáng chế và tiếp cận tri thức"
+    ]
+  },
+  {
+    "id": "random_thien_tai",
+    "title": "Thiên tai lũ lụt và hạn hán",
+    "scenario": "Biến đổi khí hậu gây ra thiên tai nghiêm trọng: lũ lụt tại Đồng bằng sông Cửu Long và hạn hán kéo dài ở Tây Nguyên. Sản xuất nông nghiệp bị ảnh hưởng nặng nề, hàng triệu hộ nông dân gặp khó khăn. Bạn sẽ ứng phó ra sao?",
+    "chapter": 0,
+    "yearMin": 1,
+    "yearMax": 12,
+    "type": "random",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Chi ngân sách hỗ trợ khắc phục hậu quả và cứu trợ",
+        "effects": {
+          "socialWelfare": 5,
+          "production": -3,
+          "budget": -8,
+          "environment": -2
+        },
+        "stakeholderImpact": {
+          "workers": 4,
+          "state": -3,
+          "businesses": 1
+        },
+        "explanationId": "ex_thien_tai_cuu_tro"
+      },
+      {
+        "id": "b",
+        "label": "Đầu tư hệ thống thủy lợi và đê điều dài hạn",
+        "effects": {
+          "production": 2,
+          "environment": 5,
+          "budget": -10,
+          "employment": 3
+        },
+        "stakeholderImpact": {
+          "state": 1,
+          "workers": 3,
+          "businesses": 2
+        },
+        "explanationId": "ex_thien_tai_dau_tu"
+      },
+      {
+        "id": "c",
+        "label": "Kêu gọi cộng đồng quốc tế hỗ trợ",
+        "effects": {
+          "budget": 3,
+          "socialWelfare": 3,
+          "nationalCapacity": -1,
+          "production": -2
+        },
+        "stakeholderImpact": {
+          "workers": 2,
+          "state": 2,
+          "businesses": 0
+        },
+        "explanationId": "ex_thien_tai_quoc_te"
+      }
+    ],
+    "cloReferences": [
+      "CLO7"
+    ],
+    "conceptTags": [
+      "thien-tai",
+      "nong-nghiep",
+      "an-sinh-xa-hoi",
+      "bien-doi-khi-hau"
+    ],
+    "learningObjectives": [
+      "Phân tích tác động của thiên tai đến sản xuất nông nghiệp và đời sống",
+      "Đánh giá các giải pháp ứng phó với biến đổi khí hậu trong nền kinh tế"
+    ]
+  },
+  {
+    "id": "random_khung_hoang_tai_chinh",
+    "title": "Khủng hoảng tài chính khu vực",
+    "scenario": "Khủng hoảng tài chính bùng phát từ một nền kinh tế lớn trong khu vực, lan sang các thị trường mới nổi. Đồng nội tệ mất giá, dòng vốn nước ngoài rút ra ồ ạt, thị trường chứng khoán lao dốc. Bạn sẽ làm gì để ổn định?",
+    "chapter": 0,
+    "yearMin": 1,
+    "yearMax": 12,
+    "type": "random",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Tăng lãi suất và thắt chặt tiền tệ để ổn định tỷ giá",
+        "effects": {
+          "marketStability": 4,
+          "production": -5,
+          "employment": -3,
+          "budget": 2
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "businesses": -4,
+          "workers": -2
+        },
+        "explanationId": "ex_khung_hoang_tc_that_chat"
+      },
+      {
+        "id": "b",
+        "label": "Bơm thanh khoản và can thiệp tỷ giá có mục tiêu",
+        "effects": {
+          "marketStability": 2,
+          "production": -2,
+          "budget": -6,
+          "nationalCapacity": -2
+        },
+        "stakeholderImpact": {
+          "businesses": 2,
+          "state": 1,
+          "workers": -1
+        },
+        "explanationId": "ex_khung_hoang_tc_bom_tien"
+      },
+      {
+        "id": "c",
+        "label": "Kiểm soát vốn và tăng dự trữ ngoại hối",
+        "effects": {
+          "marketStability": 5,
+          "nationalCapacity": 3,
+          "production": -3,
+          "budget": -3
+        },
+        "stakeholderImpact": {
+          "state": 4,
+          "businesses": -2,
+          "workers": 0
+        },
+        "explanationId": "ex_khung_hoang_tc_kiem_soat"
+      }
+    ],
+    "cloReferences": [
+      "CLO3",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "khung-hoang-tai-chinh",
+      "tien-te",
+      "ty-gia",
+      "hoi-nhap-tai-chinh"
+    ],
+    "learningObjectives": [
+      "Phân tích cơ chế lây lan của khủng hoảng tài chính khu vực",
+      "Đánh giá các công cụ chính sách tiền tệ trong ứng phó khủng hoảng"
+    ]
+  },
+  {
+    "id": "random_gia_dau",
+    "title": "Giá dầu thế giới biến động mạnh",
+    "scenario": "Giá dầu thế giới tăng đột biến 40% do căng thẳng địa chính trị ở Trung Đông. Chi phí vận tải và sản xuất trong nước tăng cao, gây áp lực lên lạm phát. Bạn sẽ xử lý thế nào?",
+    "chapter": 0,
+    "yearMin": 1,
+    "yearMax": 12,
+    "type": "random",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Giảm thuế nhập khẩu xăng dầu để bình ổn giá",
+        "effects": {
+          "marketStability": 4,
+          "production": 1,
+          "budget": -6,
+          "socialWelfare": 3
+        },
+        "stakeholderImpact": {
+          "workers": 3,
+          "businesses": 2,
+          "state": -3
+        },
+        "explanationId": "ex_gia_dau_giam_thue"
+      },
+      {
+        "id": "b",
+        "label": "Để giá xăng dầu trong nước tăng theo thế giới",
+        "effects": {
+          "marketStability": -5,
+          "budget": 4,
+          "production": -3,
+          "environment": 1
+        },
+        "stakeholderImpact": {
+          "businesses": -2,
+          "workers": -4,
+          "state": 3
+        },
+        "explanationId": "ex_gia_dau_de_tang"
+      },
+      {
+        "id": "c",
+        "label": "Tăng cường dự trữ quốc gia và đẩy mạnh năng lượng tái tạo",
+        "effects": {
+          "marketStability": 3,
+          "nationalCapacity": 5,
+          "environment": 4,
+          "budget": -7
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "workers": 1,
+          "businesses": 1
+        },
+        "explanationId": "ex_gia_dau_du_tru"
+      }
+    ],
+    "cloReferences": [
+      "CLO2",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "gia-dau",
+      "nang-luong",
+      "lam-phat",
+      "dia-chinh-tri"
+    ],
+    "learningObjectives": [
+      "Phân tích tác động của giá dầu thế giới đến nền kinh tế trong nước",
+      "Đánh giá các biện pháp bình ổn giá năng lượng"
+    ]
+  },
+  {
+    "id": "random_dich_benh",
+    "title": "Dịch bệnh bùng phát",
+    "scenario": "Một dịch bệnh đường hô hấp mới bùng phát, lây lan nhanh trong cộng đồng. Chính phủ phải cân nhắc giữa phong tỏa kiểm soát dịch và duy trì hoạt động kinh tế. Bạn sẽ quyết định thế nào?",
+    "chapter": 0,
+    "yearMin": 1,
+    "yearMax": 12,
+    "type": "random",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Phong tỏa nghiêm ngặt, ưu tiên sức khỏe cộng đồng",
+        "effects": {
+          "socialWelfare": 4,
+          "production": -8,
+          "employment": -5,
+          "budget": -6
+        },
+        "stakeholderImpact": {
+          "workers": 2,
+          "state": 2,
+          "businesses": -5
+        },
+        "explanationId": "ex_dich_benh_phong_toa"
+      },
+      {
+        "id": "b",
+        "label": "Duy trì hoạt động kinh tế, chỉ áp dụng biện pháp nhẹ",
+        "effects": {
+          "production": -2,
+          "socialWelfare": -6,
+          "marketStability": -3,
+          "budget": 2
+        },
+        "stakeholderImpact": {
+          "businesses": 3,
+          "state": -2,
+          "workers": -4
+        },
+        "explanationId": "ex_dich_benh_noi_long"
+      },
+      {
+        "id": "c",
+        "label": "Phong tỏa có mục tiêu kết hợp hỗ trợ kinh tế",
+        "effects": {
+          "production": -4,
+          "socialWelfare": 3,
+          "budget": -7,
+          "employment": -2
+        },
+        "stakeholderImpact": {
+          "workers": 3,
+          "state": 1,
+          "businesses": -2
+        },
+        "explanationId": "ex_dich_benh_linh_hoat"
+      }
+    ],
+    "cloReferences": [
+      "CLO7"
+    ],
+    "conceptTags": [
+      "dich-benh",
+      "y-te-cong-cong",
+      "an-sinh-xa-hoi",
+      "khung-hoang"
+    ],
+    "learningObjectives": [
+      "Phân tích sự đánh đổi giữa kiểm soát dịch bệnh và tăng trưởng kinh tế",
+      "Đánh giá vai trò của Nhà nước trong quản lý khủng hoảng y tế"
+    ]
+  },
+  {
+    "id": "random_cup_dien",
+    "title": "Cúp điện diện rộng",
+    "scenario": "Hệ thống điện quốc gia bị quá tải do nhu cầu tiêu thụ tăng đột biến trong đợt nắng nóng kỷ lục. Nhiều khu công nghiệp bị cắt điện luân phiên, sản xuất đình trệ. Bạn sẽ giải quyết thế nào?",
+    "chapter": 0,
+    "yearMin": 1,
+    "yearMax": 12,
+    "type": "random",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Ưu tiên cấp điện cho khu công nghiệp, cắt điện dân sinh",
+        "effects": {
+          "production": 2,
+          "socialWelfare": -6,
+          "marketStability": -3,
+          "employment": 1
+        },
+        "stakeholderImpact": {
+          "businesses": 4,
+          "workers": -4,
+          "state": -1
+        },
+        "explanationId": "ex_cup_dien_uu_tien_cn"
+      },
+      {
+        "id": "b",
+        "label": "Cắt điện luân phiên công bằng giữa sản xuất và dân sinh",
+        "effects": {
+          "socialWelfare": 0,
+          "production": -4,
+          "marketStability": 1,
+          "employment": -2
+        },
+        "stakeholderImpact": {
+          "workers": 1,
+          "businesses": -2,
+          "state": 1
+        },
+        "explanationId": "ex_cup_dien_luan_phien"
+      },
+      {
+        "id": "c",
+        "label": "Đầu tư khẩn cấp nguồn điện mới và tiết kiệm năng lượng",
+        "effects": {
+          "production": -2,
+          "nationalCapacity": 5,
+          "environment": 2,
+          "budget": -9
+        },
+        "stakeholderImpact": {
+          "state": 2,
+          "businesses": 1,
+          "workers": 1
+        },
+        "explanationId": "ex_cup_dien_dau_tu"
+      }
+    ],
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "nang-luong",
+      "ha-tang",
+      "san-xuat",
+      "hang-hoa-cong"
+    ],
+    "learningObjectives": [
+      "Phân tích vai trò của năng lượng trong sản xuất công nghiệp",
+      "Đánh giá chính sách phân bổ nguồn lực khan hiếm trong nền kinh tế"
+    ]
+  },
+  {
+    "id": "random_dut_gay_chuoi_cung_ung",
+    "title": "Đứt gãy chuỗi cung ứng toàn cầu",
+    "scenario": "Xung đột thương mại giữa các cường quốc và tắc nghẽn tại các cảng biển quốc tế khiến nguồn cung linh kiện, nguyên liệu nhập khẩu bị gián đoạn nghiêm trọng. Nhiều nhà máy trong nước phải tạm ngừng sản xuất. Bạn sẽ làm gì?",
+    "chapter": 0,
+    "yearMin": 1,
+    "yearMax": 12,
+    "type": "random",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Đẩy mạnh tìm kiếm nguồn cung thay thế từ các thị trường khác",
+        "effects": {
+          "production": 2,
+          "nationalCapacity": 3,
+          "marketStability": 1,
+          "budget": -5
+        },
+        "stakeholderImpact": {
+          "businesses": 3,
+          "state": 1,
+          "workers": 1
+        },
+        "explanationId": "ex_chuoi_cung_ung_thay_the"
+      },
+      {
+        "id": "b",
+        "label": "Hỗ trợ doanh nghiệp chuyển sang sản xuất nội địa hóa",
+        "effects": {
+          "production": -1,
+          "nationalCapacity": 6,
+          "employment": 3,
+          "budget": -7
+        },
+        "stakeholderImpact": {
+          "state": 2,
+          "workers": 3,
+          "businesses": 2
+        },
+        "explanationId": "ex_chuoi_cung_ung_noi_dia_hoa"
+      },
+      {
+        "id": "c",
+        "label": "Chờ chuỗi cung ứng toàn cầu phục hồi tự nhiên",
+        "effects": {
+          "production": -6,
+          "employment": -4,
+          "marketStability": -3,
+          "budget": -2
+        },
+        "stakeholderImpact": {
+          "businesses": -3,
+          "workers": -4,
+          "state": -1
+        },
+        "explanationId": "ex_chuoi_cung_ung_cho"
+      }
+    ],
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "chuoi-cung-ung",
+      "toan-cau-hoa",
+      "noi-dia-hoa",
+      "san-xuat"
+    ],
+    "learningObjectives": [
+      "Phân tích rủi ro từ sự phụ thuộc vào chuỗi cung ứng toàn cầu",
+      "Đánh giá chiến lược nội địa hóa trong bối cảnh bất ổn thương mại quốc tế"
+    ]
+  },
+  {
+    "id": "random_su_co_ngan_hang",
+    "title": "Sự cố ngân hàng thương mại",
+    "scenario": "Một ngân hàng thương mại cỡ trung gặp khó khăn thanh khoản nghiêm trọng do các khoản vay bất động sản mất khả năng thu hồi. Người gửi tiền hoảng loạn rút tiền hàng loạt, có nguy cơ lan sang các ngân hàng khác. Bạn sẽ?",
+    "chapter": 0,
+    "yearMin": 1,
+    "yearMax": 12,
+    "type": "random",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Bơm thanh khoản khẩn cấp qua Ngân hàng Nhà nước",
+        "effects": {
+          "marketStability": 5,
+          "budget": -6,
+          "production": -1,
+          "employment": -1
+        },
+        "stakeholderImpact": {
+          "state": 2,
+          "businesses": 3,
+          "workers": -1
+        },
+        "explanationId": "ex_ngan_hang_bom_thanh_khoan"
+      },
+      {
+        "id": "b",
+        "label": "Cho phép ngân hàng phá sản theo quy luật thị trường",
+        "effects": {
+          "marketStability": -6,
+          "budget": 2,
+          "production": -4,
+          "employment": -3
+        },
+        "stakeholderImpact": {
+          "businesses": -4,
+          "workers": -4,
+          "state": 1
+        },
+        "explanationId": "ex_ngan_hang_pha_san"
+      },
+      {
+        "id": "c",
+        "label": "Buộc sáp nhập với ngân hàng lớn hơn, Nhà nước bảo lãnh một phần",
+        "effects": {
+          "marketStability": 4,
+          "budget": -4,
+          "production": -1,
+          "nationalCapacity": 2
+        },
+        "stakeholderImpact": {
+          "state": 2,
+          "businesses": 1,
+          "workers": 0
+        },
+        "explanationId": "ex_ngan_hang_sap_nhap"
+      }
+    ],
+    "cloReferences": [
+      "CLO3",
+      "CLO4"
+    ],
+    "conceptTags": [
+      "ngan-hang",
+      "tai-chinh",
+      "thanh-khoan",
+      "khung-hoang-tin-dung"
+    ],
+    "learningObjectives": [
+      "Phân tích nguyên nhân và cơ chế lây lan của khủng hoảng ngân hàng",
+      "Đánh giá vai trò của ngân hàng trung ương trong ổn định hệ thống tài chính"
+    ]
+  },
+  {
+    "id": "random_lam_phat_nhap_khau",
+    "title": "Lạm phát nhập khẩu",
+    "scenario": "Các nền kinh tế lớn trên thế giới đồng loạt tăng lãi suất và in tiền kích thích, đẩy giá hàng hóa nhập khẩu vào Việt Nam tăng mạnh. Chỉ số giá tiêu dùng tăng nhanh, ảnh hưởng đến đời sống người dân. Bạn sẽ?",
+    "chapter": 0,
+    "yearMin": 1,
+    "yearMax": 12,
+    "type": "random",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Thắt chặt chính sách tiền tệ, tăng lãi suất",
+        "effects": {
+          "marketStability": 3,
+          "production": -5,
+          "employment": -3,
+          "budget": 1
+        },
+        "stakeholderImpact": {
+          "state": 2,
+          "businesses": -4,
+          "workers": -2
+        },
+        "explanationId": "ex_lam_phat_that_chat"
+      },
+      {
+        "id": "b",
+        "label": "Trợ giá hàng hóa thiết yếu cho người nghèo",
+        "effects": {
+          "socialWelfare": 5,
+          "marketStability": 2,
+          "budget": -7,
+          "production": -1
+        },
+        "stakeholderImpact": {
+          "workers": 5,
+          "state": -3,
+          "businesses": 0
+        },
+        "explanationId": "ex_lam_phat_tro_gia"
+      },
+      {
+        "id": "c",
+        "label": "Kết hợp điều tiết giá và kiểm soát lạm phát kỳ vọng",
+        "effects": {
+          "marketStability": 4,
+          "production": -2,
+          "socialWelfare": 2,
+          "budget": -4
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "workers": 2,
+          "businesses": -2
+        },
+        "explanationId": "ex_lam_phat_ket_hop"
+      }
+    ],
+    "cloReferences": [
+      "CLO2",
+      "CLO4"
+    ],
+    "conceptTags": [
+      "lam-phat",
+      "nhap-khau",
+      "tien-te",
+      "gia-ca"
+    ],
+    "learningObjectives": [
+      "Phân tích cơ chế lạm phát nhập khẩu trong nền kinh tế mở",
+      "Đánh giá các chính sách kiểm soát lạm phát trong hội nhập kinh tế"
+    ]
+  },
+  {
+    "id": "random_cong_nghe_dot_pha",
+    "title": "Công nghệ đột phá từ nước ngoài",
+    "scenario": "Một phát minh công nghệ đột phá từ nước ngoài - pin thể rắn năng lượng cao - có khả năng thay đổi toàn bộ ngành năng lượng và xe điện. Doanh nghiệp trong nước lo ngại bị tụt hậu, nhưng có cơ hội tiếp cận công nghệ mới. Bạn sẽ?",
+    "chapter": 0,
+    "yearMin": 1,
+    "yearMax": 12,
+    "type": "random",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Mua bản quyền công nghệ và đầu tư R&D trong nước",
+        "effects": {
+          "nationalCapacity": 6,
+          "production": 3,
+          "environment": 3,
+          "budget": -9,
+          "employment": 2
+        },
+        "stakeholderImpact": {
+          "businesses": 3,
+          "state": 1,
+          "workers": 2
+        },
+        "explanationId": "ex_cong_nghe_dot_pha_mua"
+      },
+      {
+        "id": "b",
+        "label": "Chờ công nghệ trở nên phổ biến và rẻ hơn",
+        "effects": {
+          "production": -3,
+          "nationalCapacity": -4,
+          "budget": 3,
+          "environment": -1
+        },
+        "stakeholderImpact": {
+          "businesses": -1,
+          "state": 2,
+          "workers": -2
+        },
+        "explanationId": "ex_cong_nghe_dot_pha_cho"
+      },
+      {
+        "id": "c",
+        "label": "Hợp tác nghiên cứu với đối tác nước ngoài để cùng phát triển",
+        "effects": {
+          "nationalCapacity": 5,
+          "production": 4,
+          "environment": 2,
+          "budget": -6,
+          "employment": 3
+        },
+        "stakeholderImpact": {
+          "businesses": 3,
+          "workers": 2,
+          "state": 1
+        },
+        "explanationId": "ex_cong_nghe_dot_pha_hop_tac"
+      }
+    ],
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "cong-nghe",
+      "dot-pha",
+      "rd",
+      "chuyen-giao-cong-nghe"
+    ],
+    "learningObjectives": [
+      "Phân tích tác động của công nghệ đột phá đến lợi thế cạnh tranh quốc gia",
+      "Đánh giá chiến lược tiếp thu công nghệ nước ngoài trong công nghiệp hóa"
+    ]
+  },
+  {
+    "id": "random_lang_song_dau_tu",
+    "title": "Làn sóng đầu tư từ Nhật Bản và Hàn Quốc",
+    "scenario": "Các tập đoàn Nhật Bản và Hàn Quốc đang tìm cách đa dạng hóa chuỗi cung ứng khỏi Trung Quốc, và xem Việt Nam là điểm đến chiến lược. Hàng loạt dự án đầu tư quy mô lớn đang được đề xuất. Bạn sẽ tận dụng cơ hội này thế nào?",
+    "chapter": 0,
+    "yearMin": 1,
+    "yearMax": 12,
+    "type": "random",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Chào đón tất cả dự án, tạo điều kiện tối đa",
+        "effects": {
+          "production": 6,
+          "employment": 5,
+          "nationalCapacity": 2,
+          "budget": -3,
+          "environment": -2
+        },
+        "stakeholderImpact": {
+          "businesses": 5,
+          "workers": 4,
+          "state": 1
+        },
+        "explanationId": "ex_lang_song_dau_tu_chao_don"
+      },
+      {
+        "id": "b",
+        "label": "Chọn lọc dự án theo tiêu chí công nghệ và môi trường",
+        "effects": {
+          "production": 3,
+          "employment": 3,
+          "nationalCapacity": 5,
+          "environment": 3,
+          "budget": -1
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "businesses": 2,
+          "workers": 2
+        },
+        "explanationId": "ex_lang_song_dau_tu_chon_loc"
+      },
+      {
+        "id": "c",
+        "label": "Yêu cầu liên doanh với doanh nghiệp nội địa để hưởng lợi lâu dài",
+        "effects": {
+          "production": 2,
+          "nationalCapacity": 6,
+          "employment": 2,
+          "budget": 1,
+          "environment": -1
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "businesses": 3,
+          "workers": 1
+        },
+        "explanationId": "ex_lang_song_dau_tu_lien_doanh"
+      }
+    ],
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "dau-tu-nuoc-ngoai",
+      "fdi",
+      "nhat-ban",
+      "han-quoc",
+      "chuoi-cung-ung"
+    ],
+    "learningObjectives": [
+      "Phân tích làn sóng dịch chuyển đầu tư quốc tế và cơ hội cho Việt Nam",
+      "Đánh giá chiến lược thu hút FDI có chọn lọc trong bối cảnh cạnh tranh toàn cầu"
+    ]
+  },
+  {
+    "id": "random_xuat_khau_nong_san",
+    "title": "Xuất khẩu nông sản bị từ chối",
+    "scenario": "Một lô hàng nông sản xuất khẩu lớn bị thị trường nhập khẩu từ chối do dư lượng thuốc bảo vệ thực vật vượt ngưỡng cho phép. Thiệt hại ước tính hàng triệu USD, uy tín nông sản Việt bị ảnh hưởng. Bạn sẽ?",
+    "chapter": 0,
+    "yearMin": 1,
+    "yearMax": 12,
+    "type": "random",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Truy xuất nguồn gốc, xử phạt nghiêm và hỗ trợ nông dân chuyển đổi",
+        "effects": {
+          "production": -2,
+          "nationalCapacity": 4,
+          "environment": 4,
+          "budget": -5,
+          "marketStability": 2
+        },
+        "stakeholderImpact": {
+          "workers": 2,
+          "state": 3,
+          "businesses": -2
+        },
+        "explanationId": "ex_xuat_khau_nong_san_truy_xuat"
+      },
+      {
+        "id": "b",
+        "label": "Đàm phán với nước nhập khẩu để giảm tiêu chuẩn",
+        "effects": {
+          "production": 2,
+          "nationalCapacity": -3,
+          "environment": -4,
+          "budget": 1,
+          "marketStability": -2
+        },
+        "stakeholderImpact": {
+          "businesses": 3,
+          "state": -1,
+          "workers": 1
+        },
+        "explanationId": "ex_xuat_khau_nong_san_dam_phan"
+      },
+      {
+        "id": "c",
+        "label": "Xây dựng vùng nguyên liệu đạt chuẩn quốc tế và hệ thống kiểm định",
+        "effects": {
+          "production": 3,
+          "nationalCapacity": 6,
+          "environment": 4,
+          "budget": -7,
+          "employment": 3
+        },
+        "stakeholderImpact": {
+          "workers": 3,
+          "state": 2,
+          "businesses": 2
+        },
+        "explanationId": "ex_xuat_khau_nong_san_xay_dung"
+      }
+    ],
+    "cloReferences": [
+      "CLO5",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "nong-san",
+      "xuat-khau",
+      "tieu-chuan",
+      "chat-luong",
+      "thuong-mai-quoc-te"
+    ],
+    "learningObjectives": [
+      "Phân tích thách thức của xuất khẩu nông sản trong hội nhập quốc tế",
+      "Đánh giá giải pháp nâng cao chất lượng và tiêu chuẩn nông sản"
+    ]
+  },
+  {
+    "id": "random_khcn_dat_giai",
+    "title": "Khoa học công nghệ trong nước đạt giải quốc tế",
+    "scenario": "Một nhóm nhà khoa học Việt Nam đã giành giải thưởng quốc tế về nghiên cứu vật liệu mới có ứng dụng cao trong sản xuất pin và năng lượng sạch. Các doanh nghiệp mong muốn thương mại hóa nhưng cần vốn và hỗ trợ. Bạn sẽ?",
+    "chapter": 0,
+    "yearMin": 1,
+    "yearMax": 12,
+    "type": "random",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Đầu tư lớn cho thương mại hóa công nghệ này",
+        "effects": {
+          "production": 5,
+          "nationalCapacity": 7,
+          "budget": -9,
+          "employment": 4,
+          "environment": 3
+        },
+        "stakeholderImpact": {
+          "businesses": 3,
+          "workers": 3,
+          "state": 2
+        },
+        "explanationId": "ex_khcn_dat_giai_dau_tu"
+      },
+      {
+        "id": "b",
+        "label": "Chờ đánh giá thêm trước khi đầu tư",
+        "effects": {
+          "production": -1,
+          "nationalCapacity": -2,
+          "budget": 2,
+          "employment": -1
+        },
+        "stakeholderImpact": {
+          "businesses": 0,
+          "state": 2,
+          "workers": -1
+        },
+        "explanationId": "ex_khcn_dat_giai_cho"
+      },
+      {
+        "id": "c",
+        "label": "Xây dựng quỹ đầu tư mạo hiểm quốc gia cho R&D",
+        "effects": {
+          "production": 3,
+          "nationalCapacity": 6,
+          "budget": -6,
+          "employment": 3,
+          "environment": 1
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "businesses": 3,
+          "workers": 2
+        },
+        "explanationId": "ex_khcn_dat_giai_quy_dau_tu"
+      }
+    ],
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "khcn",
+      "rd",
+      "doi-moi-sang-tao",
+      "nang-luc-cong-nghe",
+      "thuong-mai-hoa"
+    ],
+    "learningObjectives": [
+      "Phân tích vai trò của nghiên cứu khoa học trong phát triển kinh tế",
+      "Đánh giá cơ chế thúc đẩy thương mại hóa kết quả nghiên cứu"
+    ]
+  },
+  {
+    "id": "chain_tranh_chap_lao_dong",
+    "title": "Tranh chấp lao động kéo dài",
+    "scenario": "Sau quyết định cho phép tăng giờ làm, mâu thuẫn giữa công nhân và ban quản lý ngày càng gay gắt. Một nhóm công nhân đã tổ chức đình công ngắn ngày, yêu cầu giảm giờ làm và tăng phụ cấp độc hại. Doanh nghiệp đề nghị Nhà nước hòa giải. Bạn sẽ?",
+    "chapter": 0,
+    "yearMin": 2,
+    "yearMax": 8,
+    "type": "chain",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Hòa giải theo hướng giảm giờ làm, tăng phụ cấp",
+        "effects": {
+          "socialWelfare": 4,
+          "production": -3,
+          "employment": 2,
+          "budget": -2
+        },
+        "stakeholderImpact": {
+          "workers": 4,
+          "businesses": -2,
+          "state": 2
+        },
+        "explanationId": "ex_chain_tranh_chap_hoa_giai"
+      },
+      {
+        "id": "b",
+        "label": "Ủng hộ doanh nghiệp giữ nguyên thỏa thuận cũ",
+        "effects": {
+          "production": 2,
+          "socialWelfare": -4,
+          "employment": -1,
+          "budget": 1
+        },
+        "stakeholderImpact": {
+          "businesses": 4,
+          "workers": -4,
+          "state": 0
+        },
+        "explanationId": "ex_chain_tranh_chap_ung_ho_dn"
+      },
+      {
+        "id": "c",
+        "label": "Can thiệp mạnh: xử phạt đình công trái phép và yêu cầu thương lượng mới",
+        "effects": {
+          "socialWelfare": -2,
+          "production": 1,
+          "marketStability": 4,
+          "budget": -1
+        },
+        "stakeholderImpact": {
+          "state": 4,
+          "businesses": 2,
+          "workers": -4
+        },
+        "explanationId": "ex_chain_tranh_chap_can_thiep"
+      }
+    ],
+    "requires": [
+      "chain_tranh_chap_lao_dong"
+    ],
+    "requiresChoice": "ch1_tang_gio_lam.a",
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "dinh-cong",
+      "quan-he-lao-dong",
+      "dong-phien",
+      "thuong-luong-tap-the"
+    ],
+    "learningObjectives": [
+      "Phân tích nguyên nhân và hậu quả của tranh chấp lao động",
+      "Đánh giá vai trò của Nhà nước trong việc hòa giải tranh chấp lao động"
+    ]
+  },
+  {
+    "id": "chain_thau_tom_thi_truong",
+    "title": "Doanh nghiệp nước ngoài thâu tóm thị trường",
+    "scenario": "Với chính sách tự do cạnh tranh, các tập đoàn thương mại điện tử nước ngoài đã mở rộng thị phần một cách nhanh chóng. Nhiều doanh nghiệp bán lẻ nội địa phá sản hoặc bị mua lại với giá rẻ. Các hiệp hội ngành hàng yêu cầu can thiệp. Bạn sẽ?",
+    "chapter": 0,
+    "yearMin": 4,
+    "yearMax": 10,
+    "type": "chain",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Áp đặt hạn ngạch thị phần cho nền tảng nước ngoài",
+        "effects": {
+          "nationalCapacity": 5,
+          "production": -2,
+          "marketStability": 4,
+          "budget": 2
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "businesses": 2,
+          "workers": 1
+        },
+        "explanationId": "ex_chain_thau_tom_han_ngach"
+      },
+      {
+        "id": "b",
+        "label": "Giữ nguyên chính sách tự do, để thị trường đào thải tự nhiên",
+        "effects": {
+          "production": 3,
+          "nationalCapacity": -6,
+          "employment": -4,
+          "budget": 1
+        },
+        "stakeholderImpact": {
+          "businesses": 3,
+          "workers": -5,
+          "state": -1
+        },
+        "explanationId": "ex_chain_thau_tom_tu_do"
+      },
+      {
+        "id": "c",
+        "label": "Hỗ trợ doanh nghiệp nội địa hình thành liên minh sức mua",
+        "effects": {
+          "production": 2,
+          "nationalCapacity": 5,
+          "employment": 3,
+          "budget": -4
+        },
+        "stakeholderImpact": {
+          "businesses": 3,
+          "workers": 2,
+          "state": 2
+        },
+        "explanationId": "ex_chain_thau_tom_lien_minh"
+      }
+    ],
+    "requires": [
+      "chain_thau_tom_thi_truong"
+    ],
+    "requiresChoice": "ch2_nen_tang_so.b",
+    "cloReferences": [
+      "CLO3",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "thau-tom",
+      "thi-truong",
+      "canh-tranh",
+      "bao-ho",
+      "toan-cau-hoa"
+    ],
+    "learningObjectives": [
+      "Phân tích hiện tượng thâu tóm thị trường bởi tư bản nước ngoài",
+      "Đánh giá các biện pháp bảo vệ doanh nghiệp nội địa trong hội nhập"
+    ]
+  },
+  {
+    "id": "chain_phong_trao_cong_nhan",
+    "title": "Phong trào công nhân lan rộng",
+    "scenario": "Sau quyết định giảm lương, làn sóng phản đối từ công nhân lan rộng ra nhiều khu công nghiệp. Các cuộc biểu tình lớn đang được tổ chức, gây áp lực lên chính quyền và doanh nghiệp. Có nguy cơ mất ổn định xã hội. Bạn sẽ?",
+    "chapter": 0,
+    "yearMin": 5,
+    "yearMax": 10,
+    "type": "chain",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Đáp ứng yêu cầu của công nhân, khôi phục mức lương cũ",
+        "effects": {
+          "socialWelfare": 6,
+          "marketStability": 4,
+          "production": -4,
+          "budget": -4
+        },
+        "stakeholderImpact": {
+          "workers": 5,
+          "businesses": -4,
+          "state": -1
+        },
+        "explanationId": "ex_chain_phong_trao_dap_ung"
+      },
+      {
+        "id": "b",
+        "label": "Trấn áp biểu tình, duy trì giảm lương để ổn định sản xuất",
+        "effects": {
+          "marketStability": -4,
+          "production": 1,
+          "socialWelfare": -6,
+          "employment": -3
+        },
+        "stakeholderImpact": {
+          "state": 1,
+          "businesses": 3,
+          "workers": -6
+        },
+        "explanationId": "ex_chain_phong_trao_tran_ap"
+      },
+      {
+        "id": "c",
+        "label": "Thương lượng với đại diện công nhân, tìm giải pháp dung hòa",
+        "effects": {
+          "socialWelfare": 3,
+          "production": -1,
+          "marketStability": 3,
+          "budget": -2,
+          "employment": 1
+        },
+        "stakeholderImpact": {
+          "workers": 3,
+          "businesses": 1,
+          "state": 3
+        },
+        "explanationId": "ex_chain_phong_trao_thuong_luong"
+      }
+    ],
+    "requires": [
+      "chain_phong_trao_cong_nhan"
+    ],
+    "requiresChoice": "ch3_giam_luong.a",
+    "cloReferences": [
+      "CLO4",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "phong-trao-cong-nhan",
+      "dinh-cong",
+      "quan-he-loi-ich",
+      "on-dinh-xa-hoi"
+    ],
+    "learningObjectives": [
+      "Phân tích nguyên nhân của phong trào công nhân trong nền kinh tế thị trường",
+      "Đánh giá các giải pháp hòa giải mâu thuẫn lợi ích lao động"
+    ]
+  },
+  {
+    "id": "chain_dau_tu_cong_nghe_cao",
+    "title": "Làn sóng đầu tư công nghệ cao",
+    "scenario": "Chính sách tự động hóa từng bước và đào tạo lao động đã tạo ra một thế hệ lao động kỹ thuật cao. Các tập đoàn công nghệ từ Hoa Kỳ, Nhật Bản và châu Âu đang quan tâm đầu tư các trung tâm R&D tại Việt Nam với quy mô lớn. Bạn sẽ?",
+    "chapter": 0,
+    "yearMin": 7,
+    "yearMax": 12,
+    "type": "chain",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Thành lập khu công nghệ cao với ưu đãi đặc biệt",
+        "effects": {
+          "production": 6,
+          "nationalCapacity": 7,
+          "budget": -7,
+          "employment": 4,
+          "environment": 1
+        },
+        "stakeholderImpact": {
+          "businesses": 4,
+          "workers": 3,
+          "state": 2
+        },
+        "explanationId": "ex_chain_dau_tu_cong_nghe_khu_cnc"
+      },
+      {
+        "id": "b",
+        "label": "Để thị trường tự quyết định, không can thiệp",
+        "effects": {
+          "production": 3,
+          "nationalCapacity": -2,
+          "budget": 2,
+          "employment": 1
+        },
+        "stakeholderImpact": {
+          "businesses": 3,
+          "state": 0,
+          "workers": 0
+        },
+        "explanationId": "ex_chain_dau_tu_cong_nghe_tu_do"
+      },
+      {
+        "id": "c",
+        "label": "Yêu cầu chuyển giao công nghệ và đào tạo lao động địa phương",
+        "effects": {
+          "production": 4,
+          "nationalCapacity": 6,
+          "employment": 5,
+          "budget": -3,
+          "environment": 1
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "workers": 4,
+          "businesses": 2
+        },
+        "explanationId": "ex_chain_dau_tu_cong_nghe_chuyen_giao"
+      }
+    ],
+    "requires": [
+      "chain_dau_tu_cong_nghe_cao"
+    ],
+    "requiresChoice": "ch4_dau_tu_robot.c",
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "dau-tu-cong-nghe-cao",
+      "rd",
+      "chuyen-giao-cong-nghe",
+      "hien-dai-hoa"
+    ],
+    "learningObjectives": [
+      "Phân tích cơ hội thu hút đầu tư công nghệ cao sau tự động hóa",
+      "Đánh giá chiến lược phát triển khu công nghệ cao trong công nghiệp hóa"
+    ]
+  },
+  {
+    "id": "chain_hoi_nhap_toan_dien",
+    "title": "Hội nhập toàn diện vào chuỗi giá trị toàn cầu",
+    "scenario": "Nhờ yêu cầu chuyển giao công nghệ từ các dự án FDI lớn, Việt Nam đã xây dựng được năng lực sản xuất chip và linh kiện điện tử. Các tập đoàn đa quốc gia đề xuất đưa Việt Nam thành trung tâm sản xuất chiến lược trong mạng lưới toàn cầu. Bạn sẽ?",
+    "chapter": 0,
+    "yearMin": 9,
+    "yearMax": 12,
+    "type": "chain",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Đẩy mạnh hội nhập, cam kết các tiêu chuẩn cao nhất",
+        "effects": {
+          "production": 7,
+          "nationalCapacity": 5,
+          "employment": 4,
+          "budget": -4,
+          "environment": 1
+        },
+        "stakeholderImpact": {
+          "businesses": 4,
+          "workers": 3,
+          "state": 2
+        },
+        "explanationId": "ex_chain_hoi_nhap_day_manh"
+      },
+      {
+        "id": "b",
+        "label": "Duy trì vị thế hiện tại, tham gia có chọn lọc",
+        "effects": {
+          "production": 3,
+          "nationalCapacity": 4,
+          "employment": 2,
+          "budget": 1,
+          "environment": 1
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "businesses": 2,
+          "workers": 2
+        },
+        "explanationId": "ex_chain_hoi_nhap_duy_tri"
+      },
+      {
+        "id": "c",
+        "label": "Rút lui khỏi các cam kết quốc tế sâu rộng, tập trung nội địa",
+        "effects": {
+          "production": -3,
+          "nationalCapacity": -4,
+          "employment": -2,
+          "budget": 4,
+          "environment": 2
+        },
+        "stakeholderImpact": {
+          "state": 2,
+          "businesses": -3,
+          "workers": -2
+        },
+        "explanationId": "ex_chain_hoi_nhap_rut_lui"
+      }
+    ],
+    "requires": [
+      "chain_hoi_nhap_toan_dien"
+    ],
+    "requiresChoice": "ch5_fdi_lon.b",
+    "cloReferences": [
+      "CLO5",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "hoi-nhap-toan-dien",
+      "toan-cau-hoa",
+      "chuoi-gia-tri",
+      "nang-luc-canh-tranh"
+    ],
+    "learningObjectives": [
+      "Phân tích chiến lược hội nhập toàn diện vào chuỗi giá trị toàn cầu",
+      "Đánh giá tác động của hội nhập sâu đến nền kinh tế và an ninh quốc gia"
+    ]
+  },
+  {
+    "id": "surprise_mo_dau",
+    "title": "Phát hiện mỏ dầu mới!",
+    "scenario": "Trong quá trình khảo sát địa chất tại thềm lục địa phía Nam, các nhà khoa học vừa phát hiện một mỏ dầu khí mới với trữ lượng ước tính 500 triệu thùng. Các tập đoàn năng lượng quốc tế đã gửi đề nghị hợp tác khai thác ngay lập tức. Đây là một cơ hội nhưng cũng là thách thức về môi trường.",
+    "chapter": 0,
+    "yearMin": 1,
+    "yearMax": 12,
+    "type": "surprise",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Tự khai thác bằng Tập đoàn Dầu khí Quốc gia, giữ toàn bộ lợi nhuận",
+        "effects": {
+          "budget": 12,
+          "nationalCapacity": 8,
+          "production": 4,
+          "environment": -4,
+          "employment": 3
+        },
+        "stakeholderImpact": {
+          "state": 5,
+          "workers": 2,
+          "businesses": 1
+        },
+        "explanationId": "ex_surprise_mo_dau_tu_khai_thac"
+      },
+      {
+        "id": "b",
+        "label": "Hợp tác với đối tác nước ngoài để khai thác nhanh",
+        "effects": {
+          "budget": 8,
+          "production": 6,
+          "nationalCapacity": 2,
+          "environment": -3,
+          "employment": 3
+        },
+        "stakeholderImpact": {
+          "businesses": 4,
+          "state": 3,
+          "workers": 2
+        },
+        "explanationId": "ex_surprise_mo_dau_hop_tac"
+      },
+      {
+        "id": "c",
+        "label": "Bảo tồn mỏ dầu cho tương lai, tập trung vào năng lượng tái tạo",
+        "effects": {
+          "environment": 6,
+          "nationalCapacity": 3,
+          "budget": 2,
+          "employment": 1
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "workers": 1,
+          "businesses": -1
+        },
+        "explanationId": "ex_surprise_mo_dau_bao_ton"
+      }
+    ],
+    "flavor": "Tin tức về phát hiện mỏ dầu khiến toàn bộ thị trường chứng khoán bùng nổ! Giá cổ phiếu năng lượng tăng kịch trần trong phiên giao dịch đầu tiên. Các chuyên gia gọi đây là bước ngoặt lịch sử cho ngành năng lượng Việt Nam.",
+    "cloReferences": [
+      "CLO2",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "mo-dau",
+      "nang-luong",
+      "tai-nguyen",
+      "phat-trien-ben-vung"
+    ],
+    "learningObjectives": [
+      "Phân tích tác động của phát hiện tài nguyên thiên nhiên đến nền kinh tế",
+      "Đánh giá sự đánh đổi giữa khai thác tài nguyên và bảo vệ môi trường"
+    ]
+  },
+  {
+    "id": "surprise_sot_dat",
+    "title": "Sốt đất trên diện rộng",
+    "scenario": "Thông tin quy hoạch thành phố thông minh và cao tốc Bắc Nam đã đẩy giá đất tại nhiều tỉnh thành tăng 200-300% chỉ trong 3 tháng. Giới đầu cơ đổ xô đi mua đất, trong khi người dân lo lắng vì giá nhà tăng vọt.",
+    "chapter": 0,
+    "yearMin": 1,
+    "yearMax": 12,
+    "type": "surprise",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Tăng thuế đất nền và thuế chuyển nhượng bất động sản",
+        "effects": {
+          "budget": 7,
+          "marketStability": 4,
+          "socialWelfare": -3,
+          "production": -2
+        },
+        "stakeholderImpact": {
+          "state": 4,
+          "workers": -2,
+          "businesses": -2
+        },
+        "explanationId": "ex_surprise_sot_dat_thue"
+      },
+      {
+        "id": "b",
+        "label": "Xử lý các dự án ma và siết chặt tín dụng bất động sản",
+        "effects": {
+          "marketStability": 5,
+          "budget": 3,
+          "production": -4,
+          "employment": -2
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "businesses": -3,
+          "workers": -1
+        },
+        "explanationId": "ex_surprise_sot_dat_xiet_chat"
+      },
+      {
+        "id": "c",
+        "label": "Tận dụng cơ hội, đấu giá đất và thu lợi từ sốt đất",
+        "effects": {
+          "budget": 9,
+          "production": 1,
+          "socialWelfare": -5,
+          "marketStability": -4
+        },
+        "stakeholderImpact": {
+          "state": 5,
+          "businesses": 3,
+          "workers": -5
+        },
+        "explanationId": "ex_surprise_sot_dat_tan_dung"
+      }
+    ],
+    "flavor": "Cả nước điên cuồng vì đất! Từ thành phố đến nông thôn, đâu đâu cũng bàn chuyện mua bán đất. Thậm chí có người còn bán cả ô tô, vàng để lấy tiền đầu tư đất nền. Thị trường lúc này thực sự là một bữa tiệc đầy rủi ro.",
+    "cloReferences": [
+      "CLO3",
+      "CLO4"
+    ],
+    "conceptTags": [
+      "sot-dat",
+      "bat-dong-san",
+      "dau-co",
+      "thi-truong",
+      "rui-ro"
+    ],
+    "learningObjectives": [
+      "Phân tích hiện tượng đầu cơ bất động sản trong nền kinh tế thị trường",
+      "Đánh giá chính sách điều tiết thị trường bất động sản"
+    ]
+  },
+  {
+    "id": "surprise_bong_da",
+    "title": "Việt Nam vô địch bóng đá Châu Á!",
+    "scenario": "Trận chung kết lịch sử, đội tuyển bóng đá quốc gia Việt Nam đã đánh bại đối thủ mạnh để giành chức vô địch Châu Á. Hàng triệu người dân xuống đường ăn mừng. Không khí phấn khởi bao trùm cả nước, tinh thần tiêu dùng tăng cao.",
+    "chapter": 0,
+    "yearMin": 1,
+    "yearMax": 12,
+    "type": "surprise",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Tận dụng tinh thần dân tộc, phát động chiến dịch mua hàng Việt",
+        "effects": {
+          "production": 5,
+          "nationalCapacity": 4,
+          "employment": 3,
+          "marketStability": 2,
+          "budget": -2
+        },
+        "stakeholderImpact": {
+          "businesses": 4,
+          "workers": 3,
+          "state": 2
+        },
+        "explanationId": "ex_surprise_bong_da_hang_viet"
+      },
+      {
+        "id": "b",
+        "label": "Giảm thuế tiêu dùng một tháng để kích cầu",
+        "effects": {
+          "production": 3,
+          "budget": -4,
+          "socialWelfare": 4,
+          "marketStability": 2
+        },
+        "stakeholderImpact": {
+          "workers": 4,
+          "businesses": 2,
+          "state": -2
+        },
+        "explanationId": "ex_surprise_bong_da_giam_thue"
+      },
+      {
+        "id": "c",
+        "label": "Tổ chức sự kiện quốc tế để quảng bá du lịch và văn hóa",
+        "effects": {
+          "production": 2,
+          "nationalCapacity": 3,
+          "budget": -5,
+          "employment": 3,
+          "environment": 1
+        },
+        "stakeholderImpact": {
+          "businesses": 3,
+          "workers": 3,
+          "state": 1
+        },
+        "explanationId": "ex_surprise_bong_da_du_lich"
+      }
+    ],
+    "flavor": "Đường phố ngập trong màu cờ đỏ sao vàng! Cả dân tộc cùng hòa chung niềm vui chiến thắng. Các quán nhậu chật kín khách, hàng bia và đồ ăn nhanh bán hết veo chỉ trong vài giờ đồng hồ.",
+    "cloReferences": [
+      "CLO7"
+    ],
+    "conceptTags": [
+      "bong-da",
+      "tinh-than-dan-toc",
+      "tieu-dung",
+      "van-hoa",
+      "du-lich"
+    ],
+    "learningObjectives": [
+      "Phân tích tác động của sự kiện thể thao đến tâm lý và tiêu dùng xã hội",
+      "Đánh giá cơ hội quảng bá thương hiệu quốc gia qua sự kiện thể thao"
+    ]
+  },
+  {
+    "id": "surprise_meme",
+    "title": "Meme Bộ trưởng gây sốt mạng xã hội",
+    "scenario": "Trong một buổi họp báo kinh tế, một phát biểu của Bộ trưởng Bộ Kế hoạch và Đầu tư bị cắt ghép thành meme lan truyền với tốc độ chóng mặt. Dân mạng chia làm hai phe: một bên cho rằng làm mất uy tín chính phủ, một bên khen là gần dân.",
+    "chapter": 0,
+    "yearMin": 1,
+    "yearMax": 12,
+    "type": "surprise",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Lên án mạnh mẽ, yêu cầu gỡ bỏ meme, khởi tố người lan truyền",
+        "effects": {
+          "marketStability": 3,
+          "nationalCapacity": -3,
+          "budget": 2,
+          "socialWelfare": -2
+        },
+        "stakeholderImpact": {
+          "state": 2,
+          "workers": -3,
+          "businesses": 1
+        },
+        "explanationId": "ex_surprise_meme_len_an"
+      },
+      {
+        "id": "b",
+        "label": "Hưởng ứng meme, dùng nó để truyền thông chính sách kinh tế",
+        "effects": {
+          "production": 2,
+          "socialWelfare": 3,
+          "nationalCapacity": 2,
+          "budget": 1
+        },
+        "stakeholderImpact": {
+          "workers": 3,
+          "state": 1,
+          "businesses": 2
+        },
+        "explanationId": "ex_surprise_meme_huong_ung"
+      },
+      {
+        "id": "c",
+        "label": "Phớt lờ, không có phản ứng chính thức",
+        "effects": {
+          "production": 0,
+          "marketStability": 1,
+          "socialWelfare": -1,
+          "nationalCapacity": -2
+        },
+        "stakeholderImpact": {
+          "state": -1,
+          "workers": 0,
+          "businesses": 1
+        },
+        "explanationId": "ex_surprise_meme_phot_lo"
+      }
+    ],
+    "flavor": "Chỉ trong 2 giờ đồng hồ, meme Bộ trưởng đã có hơn 5 triệu lượt xem và 500 nghìn chia sẻ. Hàng trăm phiên bản chế - từ Bộ trưởng chill đến Bộ trưởng thất tình - xuất hiện như nấm sau mưa. Ai cũng có trận cười no bụng!",
+    "cloReferences": [
+      "CLO7"
+    ],
+    "conceptTags": [
+      "meme",
+      "truyen-thong",
+      "mang-xa-hoi",
+      "van-hoa-mang",
+      "chinh-phu"
+    ],
+    "learningObjectives": [
+      "Phân tích tác động của mạng xã hội đến hình ảnh chính phủ và chính sách kinh tế",
+      "Đánh giá vai trò của truyền thông trong quản lý nhà nước về kinh tế"
+    ]
+  },
+  {
+    "id": "surprise_ca_cap",
+    "title": "Cá cắn cáp quang biển",
+    "scenario": "Một con cá mập (hoặc không, tùy câu chuyện) đã cắn đứt tuyến cáp quang biển quan trọng kết nối Việt Nam với thế giới. Toàn bộ kết nối internet quốc tế bị chậm nghiêm trọng, ảnh hưởng đến giao dịch tài chính và xuất nhập khẩu.",
+    "chapter": 0,
+    "yearMin": 1,
+    "yearMax": 12,
+    "type": "surprise",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Huy động lực lượng sửa chữa khẩn cấp, thuê vệ tinh dự phòng",
+        "effects": {
+          "production": -2,
+          "budget": -6,
+          "marketStability": 3,
+          "nationalCapacity": 2
+        },
+        "stakeholderImpact": {
+          "businesses": 1,
+          "state": -1,
+          "workers": 0
+        },
+        "explanationId": "ex_surprise_ca_cap_sua_chua"
+      },
+      {
+        "id": "b",
+        "label": "Chờ sửa chữa tự nhiên, khuyến khích doanh nghiệp dùng giải pháp offline",
+        "effects": {
+          "production": -5,
+          "employment": -2,
+          "budget": 2,
+          "nationalCapacity": -2
+        },
+        "stakeholderImpact": {
+          "businesses": -3,
+          "workers": -2,
+          "state": 1
+        },
+        "explanationId": "ex_surprise_ca_cap_cho"
+      },
+      {
+        "id": "c",
+        "label": "Đầu tư xây dựng tuyến cáp quang dự phòng trong nước",
+        "effects": {
+          "production": 1,
+          "nationalCapacity": 5,
+          "budget": -8,
+          "employment": 2,
+          "marketStability": 4
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "workers": 2,
+          "businesses": 1
+        },
+        "explanationId": "ex_surprise_ca_cap_dau_tu"
+      }
+    ],
+    "flavor": "Nguyên nhân thực sự vẫn còn gây tranh cãi: một số nói cá mập, số khác bảo tàu đánh cá kéo lưới làm đứt cáp. Dù sao đi nữa, cả nước ù ù cạc cạc vì mạng chậm. Dân công sở than thở, game thủ khóc ròng, còn các sàn thương mại điện tử thì điêu đứng.",
+    "cloReferences": [
+      "CLO5"
+    ],
+    "conceptTags": [
+      "ca-cap-quang",
+      "ha-tang-vien-thong",
+      "internet",
+      "kinh-te-so",
+      "rui-ro-ha-tang"
+    ],
+    "learningObjectives": [
+      "Phân tích tác động của sự cố hạ tầng viễn thông đến nền kinh tế số",
+      "Đánh giá chiến lược đảm bảo an toàn hạ tầng thông tin quốc gia"
+    ]
+  },
+  {
+    "id": "surprise_ai",
+    "title": "AI viết báo cáo kinh tế!",
+    "scenario": "Một startup AI trong nước vừa công bố mô hình trí tuệ nhân tạo có khả năng viết báo cáo phân tích kinh tế vĩ mô chất lượng cao trong vòng 30 giây. Các nhà kinh tế học truyền thống phản đối dữ dội, cho rằng AI không thể hiểu được bản chất quan hệ sản xuất. Trong khi đó, các bộ ngành đang tính đến việc sử dụng AI để soạn thảo văn bản.",
+    "chapter": 0,
+    "yearMin": 1,
+    "yearMax": 12,
+    "type": "surprise",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Ứng dụng AI vào các công việc hành chính, cắt giảm biên chế",
+        "effects": {
+          "production": 6,
+          "budget": 5,
+          "employment": -6,
+          "nationalCapacity": 4,
+          "socialWelfare": -3
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "businesses": 3,
+          "workers": -4
+        },
+        "explanationId": "ex_surprise_ai_ung_dung"
+      },
+      {
+        "id": "b",
+        "label": "Cấm AI trong lĩnh vực công, bảo vệ việc làm của chuyên gia",
+        "effects": {
+          "production": -3,
+          "employment": 2,
+          "nationalCapacity": -3,
+          "budget": -2
+        },
+        "stakeholderImpact": {
+          "workers": 3,
+          "state": 1,
+          "businesses": -2
+        },
+        "explanationId": "ex_surprise_ai_cam"
+      },
+      {
+        "id": "c",
+        "label": "Kết hợp AI hỗ trợ phân tích, con người giữ quyền quyết định cuối cùng",
+        "effects": {
+          "production": 4,
+          "employment": 1,
+          "nationalCapacity": 5,
+          "budget": -3,
+          "socialWelfare": 2
+        },
+        "stakeholderImpact": {
+          "workers": 2,
+          "businesses": 3,
+          "state": 3
+        },
+        "explanationId": "ex_surprise_ai_ket_hop"
+      }
+    ],
+    "flavor": "Báo cáo do AI viết dài 50 trang với đầy đủ biểu đồ và phân tích, chỉ trong 30 giây! Ủy ban Kinh tế của Quốc hội đã tổ chức một buổi họp khẩn để thảo luận về tính xác thực của các báo cáo này. Có đại biểu còn đùa: Liệu có ngày AI trả lời chất vấn thay bộ trưởng không?",
+    "cloReferences": [
+      "CLO5",
+      "CLO7"
+    ],
+    "conceptTags": [
+      "ai",
+      "tri-tue-nhan-tao",
+      "kinh-te-so",
+      "tu-dong-hoa",
+      "viec-lam"
+    ],
+    "learningObjectives": [
+      "Phân tích tác động của AI đến thị trường lao động tri thức",
+      "Đánh giá cơ hội và thách thức của AI trong quản lý nhà nước về kinh tế"
+    ]
+  },
+  {
+    "id": "ending_tong_ket",
+    "title": "Hội nghị tổng kết nhiệm kỳ",
+    "scenario": "Nhiệm kỳ của bạn sắp kết thúc. Hội nghị tổng kết đánh giá toàn bộ thành tựu kinh tế - xã hội đã đạt được trong suốt thời gian qua. Các đại biểu quốc hội, chuyên gia và doanh nghiệp cùng tham gia đóng góp ý kiến. Đây là thời điểm để bạn nhìn lại chặng đường đã qua và khẳng định dấu ấn của mình.",
+    "chapter": 5,
+    "yearMin": 8,
+    "yearMax": 12,
+    "type": "ending",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Tự hào về thành tựu, tập trung vào tăng trưởng và hội nhập",
+        "effects": {
+          "production": 4,
+          "nationalCapacity": 4,
+          "employment": 2,
+          "socialWelfare": 2,
+          "environment": -1
+        },
+        "stakeholderImpact": {
+          "state": 3,
+          "businesses": 4,
+          "workers": 2
+        },
+        "explanationId": "ex_ending_tong_ket_tu_hao"
+      },
+      {
+        "id": "b",
+        "label": "Nhấn mạnh sự công bằng và an sinh xã hội là thành tựu chính",
+        "effects": {
+          "socialWelfare": 5,
+          "employment": 3,
+          "environment": 2,
+          "production": 1,
+          "marketStability": 2
+        },
+        "stakeholderImpact": {
+          "workers": 4,
+          "state": 3,
+          "businesses": 1
+        },
+        "explanationId": "ex_ending_tong_ket_cong_bang"
+      },
+      {
+        "id": "c",
+        "label": "Đánh giá khiêm tốn, chỉ ra những tồn tại cần khắc phục",
+        "effects": {
+          "production": 1,
+          "nationalCapacity": 2,
+          "socialWelfare": 2,
+          "marketStability": 1,
+          "environment": 2
+        },
+        "stakeholderImpact": {
+          "state": 2,
+          "workers": 2,
+          "businesses": 2
+        },
+        "explanationId": "ex_ending_tong_ket_khiem_ton"
+      }
+    ],
+    "cloReferences": [
+      "CLO1",
+      "CLO2",
+      "CLO3",
+      "CLO4",
+      "CLO5",
+      "CLO7",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "tong-ket",
+      "danh-gia",
+      "nhiem-ky",
+      "phat-trien-kinh-te",
+      "quan-ly-nha-nuoc"
+    ],
+    "learningObjectives": [
+      "Tổng kết và đánh giá toàn diện các chính sách kinh tế trong nhiệm kỳ",
+      "Phân tích mối liên hệ giữa các quyết định kinh tế và kết quả phát triển"
+    ],
+    "isEnding": true,
+    "endingId": "ending_normal"
+  },
+  {
+    "id": "ending_giai_cuu",
+    "title": "Giải cứu nền kinh tế khủng hoảng",
+    "scenario": "Nền kinh tế đang đứng trước bờ vực sụp đổ: sản xuất đình trệ, thất nghiệp lan rộng, ngân sách cạn kiệt và bất ổn xã hội gia tăng. Một phiên họp khẩn cấp của Quốc hội được triệu tập để thông qua gói giải cứu lịch sử. Vận mệnh đất nước nằm trong tay bạn.",
+    "chapter": 5,
+    "yearMin": 8,
+    "yearMax": 12,
+    "type": "ending",
+    "choices": [
+      {
+        "id": "a",
+        "label": "Gói kích cầu lớn với tiêu chuẩn môi trường nghiêm ngặt",
+        "effects": {
+          "production": 4,
+          "employment": 3,
+          "socialWelfare": 3,
+          "budget": -10,
+          "environment": 4,
+          "marketStability": 2
+        },
+        "stakeholderImpact": {
+          "state": 1,
+          "workers": 3,
+          "businesses": 2
+        },
+        "explanationId": "ex_ending_giai_cuu_kich_cau"
+      },
+      {
+        "id": "b",
+        "label": "Quốc hữu hóa các ngành then chốt và tái cơ cấu triệt để",
+        "effects": {
+          "production": -2,
+          "employment": 1,
+          "socialWelfare": 2,
+          "budget": -6,
+          "nationalCapacity": 6,
+          "marketStability": 3
+        },
+        "stakeholderImpact": {
+          "state": 5,
+          "workers": 2,
+          "businesses": -3
+        },
+        "explanationId": "ex_ending_giai_cuu_quoc_huu"
+      },
+      {
+        "id": "c",
+        "label": "Kêu gọi cứu trợ quốc tế và mở cửa hoàn toàn nền kinh tế",
+        "effects": {
+          "production": 2,
+          "employment": -1,
+          "budget": 4,
+          "nationalCapacity": -3,
+          "marketStability": -2,
+          "environment": -2
+        },
+        "stakeholderImpact": {
+          "businesses": 3,
+          "state": -2,
+          "workers": -2
+        },
+        "explanationId": "ex_ending_giai_cuu_quoc_te"
+      }
+    ],
+    "cloReferences": [
+      "CLO1",
+      "CLO2",
+      "CLO3",
+      "CLO4",
+      "CLO5",
+      "CLO7",
+      "CLO8"
+    ],
+    "conceptTags": [
+      "giai-cuu",
+      "khung-hoang",
+      "khan-cap",
+      "tai-co-cau",
+      "phuc-hoi-kinh-te"
+    ],
+    "learningObjectives": [
+      "Phân tích nguyên nhân khủng hoảng và các giải pháp cấp bách",
+      "Đánh giá hiệu quả của các gói cứu trợ trong tình trạng khẩn cấp"
+    ],
+    "isEnding": true,
+    "endingId": "ending_crisis"
   }
 ]

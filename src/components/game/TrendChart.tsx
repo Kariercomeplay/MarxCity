@@ -24,7 +24,7 @@ export default function TrendChart({ history, currentStats }: TrendChartProps) {
     );
   }
 
-  const labels = history.map(h => `Lượt ${h.turnNumber}`);
+  const labels = history.map(h => `Năm ${h.year}`);
   const allStats = Object.keys(currentStats) as (keyof GameStats)[];
 
   const datasets = selectedStats.map(key => ({
