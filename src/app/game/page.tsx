@@ -29,24 +29,41 @@ export default function GamePage() {
   const [quizTotal, setQuizTotal] = useState(0);
   const [showExplanation, setShowExplanation] = useState(false);
   const [showEventModal, setShowEventModal] = useState(false);
-  const [selectedChoice, setSelectedChoice] = useState<string | null>(null);
   const [pendingPolicies, setPendingPolicies] = useState(store.policies);
   const [previousStats, setPreviousStats] = useState(store.stats);
   const [showChapterTransition, setShowChapterTransition] = useState(false);
   const [nextChapter, setNextChapter] = useState<{ id: number; name: string; cloTags: string[] } | null>(null);
-  const [statFlash, setStatFlash] = useState<Record<string, 'up' | 'down' | null>>({});
   const [notification, setNotification] = useState<string | null>(null);
-  const previousTurnRef = useRef(0);
-  const isInitializedRef = useRef(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [gameSeed, setGameSeed] = useState<number>(0);
+  const isInitialized = useRef(false);
+  const noEventThisTurn = useRef(false);
 
   const showNotif = useCallback((msg: string) => {
     setNotification(msg);
     setTimeout(() => setNotification(null), 2500);
   }, []);
 
+  const getGameSeed = useCallback((): number => {
+    let seed = parseInt(localStorage.getItem('marxcity_seed') || '0', 10);
+    if (!seed) {
+      seed = Math.floor(Math.random() * 2147483647);
+      localStorage.setItem('marxcity_seed', String(seed));
+    }
+    return seed;
+  }, []);
+
+  const pickEventForTurn = useCallback((turn: number, seed: number): GameEvent | null => {
+    const events = eventsData as GameEvent[];
+    const available = events.filter(e => e.turn === turn);
+    if (available.length === 0) return null;
+    const idx = (seed + turn * 13 + turn * turn * 7) % available.length;
+    return available[idx];
+  }, []);
+
   const initGame = useCallback(async () => {
-    if (isInitializedRef.current) return;
-    isInitializedRef.current = true;
+    if (isInitialized.current) return;
+    isInitialized.current = true;
 
     const gameId = localStorage.getItem('marxcity_gameId');
     if (!gameId) {
@@ -63,6 +80,10 @@ export default function GamePage() {
           router.push(`/report/${gameId}`);
           return;
         }
+        const seed = data.seed || getGameSeed();
+        setGameSeed(seed);
+        localStorage.setItem('marxcity_seed', String(seed));
+
         store.initGame({
           gameId: data.gameId,
           currentTurn: data.currentTurn,
@@ -74,18 +95,17 @@ export default function GamePage() {
         store.setPolicies(data.policies);
         setPendingPolicies(data.policies);
         setPreviousStats(data.stats);
-        previousTurnRef.current = data.currentTurn;
 
-        const events = eventsData as GameEvent[];
         const turn = data.currentTurn;
-        const available = events.filter(e => e.turn === turn);
-        if (available.length > 0) {
-          const idx = (data.seed + turn * 7) % available.length;
-          setEvent(available[idx]);
+        const ev = pickEventForTurn(turn, seed);
+        if (ev) {
+          setEvent(ev);
           setTurnPhase('event');
-          setShowEventModal(true);
+          setTimeout(() => setShowEventModal(true), 300);
         } else {
+          noEventThisTurn.current = true;
           setTurnPhase('policy');
+          showNotif('Không có tình huống đặc biệt cho lượt này. Hãy điều chỉnh chính sách và tiếp tục.');
         }
       } else {
         router.push('/');
@@ -93,28 +113,15 @@ export default function GamePage() {
     } catch {
       router.push('/');
     }
-  }, [router]);
+  }, [router, store, pickEventForTurn, getGameSeed, showNotif]);
 
   useEffect(() => { initGame(); }, [initGame]);
 
-  const getRandomEvent = useCallback((seed: number, turn: number): GameEvent | null => {
-    const events = eventsData as GameEvent[];
-    const available = events.filter(e => e.turn === turn);
-    if (available.length === 0) return null;
-    const idx = (seed + turn * 7) % available.length;
-    return available[idx];
-  }, []);
-
-  const checkChapterTransition = useCallback((turn: number) => {
-    const completedChapter = CHAPTERS.find(c => c.turns.includes(turn));
-    const nextCh = CHAPTERS.find(c => c.turns.includes(turn + 1));
-    if (completedChapter && nextCh && completedChapter.id !== nextCh.id) {
-      setNextChapter(nextCh);
-      setShowChapterTransition(true);
-      return true;
-    }
-    if (turn === 0 && CHAPTERS.length > 0) {
-      setNextChapter(CHAPTERS[0]);
+  const checkChapterBoundary = useCallback((completedTurn: number): boolean => {
+    const cur = CHAPTERS.find(c => c.turns.includes(completedTurn));
+    const next = CHAPTERS.find(c => c.turns.includes(completedTurn + 1));
+    if (cur && next && cur.id !== next.id) {
+      setNextChapter(next);
       setShowChapterTransition(true);
       return true;
     }
@@ -122,18 +129,17 @@ export default function GamePage() {
   }, []);
 
   const handleChoice = async (choiceId: string) => {
-    if (!event) return;
-    setSelectedChoice(choiceId);
+    if (!event || isSubmitting) return;
+    setIsSubmitting(true);
     setShowEventModal(false);
     setTurnPhase('loading');
 
     const gameEvent = (eventsData as GameEvent[]).find(e => e.id === event.id);
-    if (!gameEvent) return;
-    const choice = gameEvent.choices.find(c => c.id === choiceId);
-    if (!choice) return;
+    const choice = gameEvent?.choices.find(c => c.id === choiceId);
+    if (!choice) { setIsSubmitting(false); return; }
 
     const gameId = localStorage.getItem('marxcity_gameId');
-    if (!gameId) return;
+    if (!gameId) { setIsSubmitting(false); return; }
 
     try {
       const res = await fetch('/api/game/turn', {
@@ -153,27 +159,15 @@ export default function GamePage() {
         setPreviousStats(store.stats);
         store.setPolicies(pendingPolicies);
         store.setTurnResult(result);
-
-        // Flash stats
-        const flash: Record<string, 'up' | 'down' | null> = {};
-        Object.entries(result.effectsApplied).forEach(([k, v]) => {
-          if (v && v !== 0) flash[k] = (v as number) > 0 ? 'up' : 'down';
-        });
-        setStatFlash(flash);
-        setTimeout(() => setStatFlash({}), 1500);
-
-        // Show explanation
         setShowExplanation(true);
 
-        // Quiz
         if (result.quiz) {
           setTimeout(() => {
             setCurrentQuiz(result.quiz);
             setShowQuiz(true);
-          }, 2000);
+          }, 1500);
         }
 
-        // Result phase
         setTimeout(() => {
           setTurnPhase('result');
           if (result.gameOver) {
@@ -185,19 +179,22 @@ export default function GamePage() {
         }, 800);
 
         showNotif('Đã áp dụng quyết định!');
+      } else {
+        showNotif(json.error || 'Lỗi xử lý');
       }
-    } catch (e) {
-      console.error('Turn error:', e);
-      showNotif('Lỗi xử lý lượt chơi');
+    } catch {
+      showNotif('Lỗi kết nối');
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
   const handleNextTurn = () => {
-    setSelectedChoice(null);
     setShowExplanation(false);
     setCurrentQuiz(null);
     setShowQuiz(false);
     setShowEventModal(false);
+    noEventThisTurn.current = false;
 
     const gameId = localStorage.getItem('marxcity_gameId');
     if (!gameId) return;
@@ -205,8 +202,7 @@ export default function GamePage() {
     const nextTurn = store.currentTurn;
     if (nextTurn > store.maxTurns) return;
 
-    // Check chapter transition
-    if (checkChapterTransition(nextTurn - 1)) return;
+    if (checkChapterBoundary(nextTurn - 1)) return;
 
     loadTurn(nextTurn);
   };
@@ -214,35 +210,34 @@ export default function GamePage() {
   const handleChapterContinue = () => {
     setShowChapterTransition(false);
     setNextChapter(null);
-    const gameId = localStorage.getItem('marxcity_gameId');
-    if (!gameId) return;
     loadTurn(store.currentTurn);
   };
 
   const loadTurn = (turn: number) => {
-    const gameId = localStorage.getItem('marxcity_gameId');
-    if (!gameId) return;
-
-    const ev = getRandomEvent(Date.now(), turn);
+    if (!gameSeed) return;
+    const ev = pickEventForTurn(turn, gameSeed);
     if (ev) {
       setEvent(ev);
       setTurnPhase('event');
-      setShowEventModal(true);
+      setTimeout(() => setShowEventModal(true), 300);
     } else {
+      noEventThisTurn.current = true;
       setTurnPhase('policy');
+      showNotif('Không có tình huống đặc biệt cho lượt này.');
+    }
+  };
+
+  const handleAdvanceNoEvent = () => {
+    if (noEventThisTurn.current) {
+      handleNextTurn();
     }
   };
 
   const handleQuizAnswer = async (correct: boolean, selectedIndex: number) => {
-    if (correct) {
-      setQuizCorrect(p => p + 1);
-      showNotif('✅ Chính xác! +10 điểm');
-    } else {
-      showNotif('❌ Chưa chính xác. Xem giải thích để hiểu thêm.');
-    }
+    if (correct) { setQuizCorrect(p => p + 1); showNotif('✅ Chính xác!'); }
+    else { showNotif('❌ Chưa chính xác.'); }
     setQuizTotal(p => p + 1);
 
-    // Persist quiz result
     const gameId = localStorage.getItem('marxcity_gameId');
     if (!gameId || !store.lastTurnResult) return;
     try {
@@ -259,16 +254,16 @@ export default function GamePage() {
     } catch {}
   };
 
-  const currentChapter = CHAPTERS.find(c => c.turns.includes(store.currentTurn)) ||
-    CHAPTERS.find(c => c.turns.includes(store.currentTurn - 1));
+  const currentChapter = CHAPTERS.find(c => c.turns.includes(store.currentTurn))
+    || CHAPTERS.find(c => c.turns.includes(store.currentTurn - 1));
 
-  const chapterProgress = CHAPTERS.findIndex(c => c.id === currentChapter?.id) + 1;
+  const chapterProgress = currentChapter ? currentChapter.id : 0;
 
   if (turnPhase === 'loading' && !store.stats) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-zinc-50 dark:bg-zinc-900">
         <div className="text-center space-y-3">
-          <div className="w-10 h-10 border-3 border-red-600 border-t-transparent rounded-full animate-spin mx-auto" />
+          <div className="w-10 h-10 border-[3px] border-red-600 border-t-transparent rounded-full animate-spin mx-auto" />
           <p className="text-sm text-zinc-500">Đang tải...</p>
         </div>
       </div>
@@ -283,7 +278,7 @@ export default function GamePage() {
           <div className="flex items-center gap-3 min-w-0">
             <span className="text-base font-black text-red-600 flex-shrink-0">MARXCITY</span>
             {currentChapter && (
-              <span className="text-xs text-zinc-400 truncate hidden xs:inline">
+              <span className="text-xs text-zinc-400 truncate hidden sm:inline">
                 C{currentChapter.id}: {currentChapter.name}
               </span>
             )}
@@ -291,8 +286,7 @@ export default function GamePage() {
           <div className="flex items-center gap-3">
             <div className="hidden sm:flex items-center gap-1">
               {[1, 2, 3, 4, 5].map(i => (
-                <div
-                  key={i}
+                <div key={i}
                   className={`w-2 h-2 rounded-full transition-all duration-300 ${
                     i <= chapterProgress ? 'bg-red-500' : 'bg-zinc-200 dark:bg-zinc-700'
                   }`}
@@ -306,28 +300,28 @@ export default function GamePage() {
             <div className="h-2 w-20 sm:w-24 bg-zinc-200 dark:bg-zinc-700 rounded-full overflow-hidden hidden sm:block">
               <div
                 className="h-full bg-red-600 rounded-full transition-all duration-700 ease-out"
-                style={{ width: `${((store.currentTurn - 1) / store.maxTurns) * 100}%` }}
+                style={{ width: `${Math.min(100, ((store.currentTurn - 1) / store.maxTurns) * 100)}%` }}
               />
             </div>
           </div>
         </div>
       </header>
 
-      {/* Notification Toast */}
+      {/* Overlays */}
       <AnimatePresence>
         {notification && (
           <motion.div
+            key="notif"
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -30 }}
-            className="fixed top-16 left-1/2 -translate-x-1/2 z-50 bg-zinc-900 dark:bg-zinc-700 text-white px-5 py-2.5 rounded-full shadow-lg text-sm font-medium"
+            className="fixed top-16 left-1/2 -translate-x-1/2 z-50 bg-zinc-900 dark:bg-zinc-700 text-white px-5 py-2.5 rounded-full shadow-lg text-sm font-medium whitespace-nowrap"
           >
             {notification}
           </motion.div>
         )}
       </AnimatePresence>
 
-      {/* Chapter Transition Overlay */}
       <AnimatePresence>
         {showChapterTransition && nextChapter && (
           <ChapterTransition
@@ -339,19 +333,16 @@ export default function GamePage() {
         )}
       </AnimatePresence>
 
-      {/* Main Content */}
+      {/* Main */}
       <main className="max-w-7xl mx-auto px-4 py-4 sm:py-6 space-y-4 sm:space-y-6">
-        {/* Stats Grid */}
         <motion.div key={store.currentTurn} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           <StatsGrid stats={store.stats!} previousStats={previousStats || undefined} />
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
-          {/* Left Column */}
           <div className="lg:col-span-2 space-y-4 sm:space-y-6">
             <TrendChart history={store.history} currentStats={store.stats!} />
 
-            {/* Result card */}
             <AnimatePresence mode="wait">
               {turnPhase === 'result' && store.lastTurnResult && (
                 <motion.div
@@ -366,7 +357,7 @@ export default function GamePage() {
                       Kết quả lượt {store.lastTurnResult.turnNumber}
                     </span>
                     {store.lastTurnResult.event && (
-                      <span className="text-xs text-zinc-400 truncate">
+                      <span className="text-xs text-zinc-400 truncate max-w-[200px]">
                         — {store.lastTurnResult.event.selectedChoice.label}
                       </span>
                     )}
@@ -394,19 +385,26 @@ export default function GamePage() {
               )}
             </AnimatePresence>
 
-            {/* Open event button */}
             {store.currentTurn <= store.maxTurns && turnPhase === 'event' && !showEventModal && (
               <Button onClick={() => setShowEventModal(true)} className="w-full">
                 Xem tình huống kinh tế
               </Button>
             )}
+
+            {/* No-event state: allow advancing */}
+            {noEventThisTurn.current && turnPhase === 'policy' && (
+              <div className="bg-white dark:bg-zinc-800 rounded-xl p-5 shadow-sm border border-zinc-100 dark:border-zinc-800 text-center space-y-3">
+                <p className="text-sm text-zinc-500">Không có tình huống đặc biệt cho lượt này.</p>
+                <Button onClick={handleAdvanceNoEvent} className="w-full">
+                  Tiếp tục sang lượt {store.currentTurn}
+                </Button>
+              </div>
+            )}
           </div>
 
-          {/* Right Column */}
           <div className="space-y-4 sm:space-y-6">
             <StakeholderMeter balance={store.stakeholderBalance} />
 
-            {/* Chapter info */}
             {currentChapter && (
               <motion.div
                 initial={{ opacity: 0 }}
@@ -423,7 +421,6 @@ export default function GamePage() {
                     </span>
                   ))}
                 </div>
-                {/* Quiz score mini */}
                 {quizTotal > 0 && (
                   <div className="text-xs text-zinc-400">
                     Quiz: {quizCorrect}/{quizTotal} đúng
@@ -432,13 +429,12 @@ export default function GamePage() {
               </motion.div>
             )}
 
-            {/* Policy Panel - desktop */}
             <div className="hidden lg:block">
               <PolicyPanel
                 policies={pendingPolicies}
                 onChange={(p) => { setPendingPolicies(p); store.setPolicies(p); }}
                 onConfirm={() => {}}
-                disabled={turnPhase === 'loading'}
+                disabled={isSubmitting}
               />
             </div>
           </div>
@@ -451,7 +447,7 @@ export default function GamePage() {
           <EventPanel
             event={event}
             onChoice={handleChoice}
-            disabled={turnPhase === 'loading'}
+            disabled={isSubmitting}
           />
         )}
       </Modal>
@@ -479,7 +475,6 @@ export default function GamePage() {
         />
       )}
 
-      {/* Disclaimer */}
       <div className="text-center py-3 px-4">
         <p className="text-xs text-zinc-400 dark:text-zinc-600">
           MarxCity là công cụ giáo dục — kết quả không phải dự báo kinh tế thực tế.
@@ -488,3 +483,4 @@ export default function GamePage() {
     </div>
   );
 }
+

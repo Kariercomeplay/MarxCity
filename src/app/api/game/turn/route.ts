@@ -8,6 +8,7 @@ import eventsData from '@/data/events.json';
 import explanationsData from '@/data/explanations.json';
 import quizData from '@/data/quiz.json';
 import { CHAPTERS } from '@/lib/engine/constants';
+import { calcScore, getTitle } from '@/lib/engine/calculator';
 import { GameEvent, Explanation } from '@/types/game';
 
 export async function POST(req: NextRequest) {
@@ -93,11 +94,17 @@ export async function POST(req: NextRequest) {
     game.policies = policies;
     game.stakeholderBalance = newBalance;
     game.currentTurn += 1;
-    game.score = game.currentTurn;
 
     const isLastTurn = game.currentTurn > game.maxTurns;
     if (isLastTurn) {
       game.status = 'completed';
+      const quizTurns = await GameTurn.find({ gameSaveId: game._id, quizCorrect: { $ne: null } });
+      const qCorrect = quizTurns.filter(t => t.quizCorrect === true).length;
+      const qTotal = quizTurns.length;
+      game.score = calcScore(game.stats, game.stakeholderBalance, qCorrect, qTotal);
+      game.title = getTitle(game.stats);
+    } else {
+      game.score = game.currentTurn;
     }
     await game.save();
 

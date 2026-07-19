@@ -78,6 +78,21 @@ export default function HeroSection({ onStart, hasSession, onContinue }: HeroSec
             </div>
           ))}
         </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.5, duration: 0.5 }}
+          className="mt-6 flex justify-center gap-4 text-xs"
+        >
+          <a href="/leaderboard" className="text-zinc-400 hover:text-white transition-colors">
+            Bảng xếp hạng
+          </a>
+          <span className="text-zinc-600">·</span>
+          <a href="/admin" className="text-zinc-400 hover:text-white transition-colors">
+            Admin
+          </a>
+        </motion.div>
       </motion.div>
     </div>
   );
