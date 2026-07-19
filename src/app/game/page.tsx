@@ -12,6 +12,7 @@ import ExplanationBox from '@/components/game/ExplanationBox';
 import QuizPopup from '@/components/game/QuizPopup';
 import StakeholderMeter from '@/components/game/StakeholderMeter';
 import ChapterTransition from '@/components/game/ChapterTransition';
+import ConsequenceScreen from '@/components/game/ConsequenceScreen';
 import SurpriseBadge from '@/components/game/SurpriseBadge';
 import Button from '@/components/ui/Button';
 import Modal from '@/components/ui/Modal';
@@ -38,6 +39,8 @@ export default function GamePage() {
   const [notification, setNotification] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showEnding, setShowEnding] = useState(false);
+  const [showConsequence, setShowConsequence] = useState(false);
+  const [consequenceData, setConsequenceData] = useState<any>(null);
   const initRef = useRef(false);
 
   const showNotif = useCallback((msg: string) => {
@@ -154,24 +157,30 @@ export default function GamePage() {
         store.addCompletedEvent(currentEvent.id);
         if (choice.unlocks) choice.unlocks.forEach(u => store.addUnlockedChoice(u));
 
-        setShowExplanation(true);
-        if (r.quiz) { setTimeout(() => { setCurrentQuiz(r.quiz); setShowQuiz(true); }, 1200); }
+        setConsequenceData({
+          eventTitle: currentEvent.title,
+          eventScenario: currentEvent.scenario,
+          choiceLabel: choice.label,
+          statsBefore: store.stats,
+          statsAfter: r.statsAfter,
+          effectsApplied: r.effectsApplied,
+          stakeholderImpact: r.stakeholderImpact,
+          explanation: r.explanation,
+        });
+        setShowConsequence(true);
 
-        if (r.gameOver) {
-          setTimeout(() => {
-            setShowEnding(true);
-          }, 1000);
+        if (r.quiz) {
+          setTimeout(() => { setCurrentQuiz(r.quiz); setShowQuiz(true); }, 3000);
         }
-
-        setTimeout(() => {
-          setTurnPhase('result');
-        }, 600);
-        showNotif('Đã áp dụng quyết định!');
+        if (r.gameOver) {
+          setTimeout(() => { setShowEnding(true); }, 2000);
+        }
       }
     } catch { showNotif('Lỗi kết nối'); } finally { setIsSubmitting(false); }
   };
 
   const handleNextYear = () => {
+    setShowConsequence(false); setConsequenceData(null);
     setShowExplanation(false); setCurrentQuiz(null); setShowQuiz(false);
     setShowEventModal(false); setShowSurpriseModal(false);
     setCurrentEvent(null); setRandomEvent(null); setSurpriseEvent(null);
@@ -497,15 +506,26 @@ export default function GamePage() {
       {/* Event Modal */}
       <Modal isOpen={showEventModal && !!currentEvent} onClose={() => setShowEventModal(false)} title="" size="lg">
         {currentEvent && (
-          <div>
-            <div className="flex items-center gap-2 mb-3">
-              {currentEvent.type === 'chain' && <span className="px-2 py-0.5 text-xs rounded-full bg-orange-100 text-orange-700 font-semibold">🔗 Mở khóa</span>}
-              {currentEvent.type === 'story' && <span className="px-2 py-0.5 text-xs rounded-full bg-blue-100 text-blue-700 font-semibold">📖 Cốt truyện</span>}
-            </div>
-            <EventPanel event={currentEvent} onChoice={handleChoice} disabled={isSubmitting} />
-          </div>
+          <EventPanel event={currentEvent} onChoice={handleChoice} disabled={isSubmitting} />
         )}
       </Modal>
+
+      {/* Consequence Screen */}
+      <AnimatePresence>
+        {showConsequence && consequenceData && (
+          <ConsequenceScreen
+            eventTitle={consequenceData.eventTitle}
+            eventScenario={consequenceData.eventScenario}
+            choiceLabel={consequenceData.choiceLabel}
+            statsBefore={consequenceData.statsBefore || store.stats!}
+            statsAfter={consequenceData.statsAfter || store.stats!}
+            effectsApplied={consequenceData.effectsApplied || {}}
+            stakeholderImpact={consequenceData.stakeholderImpact || {}}
+            explanation={consequenceData.explanation || { content: '', cloReferences: [], conceptTags: [], learningObjectives: [] }}
+            onContinue={handleNextYear}
+          />
+        )}
+      </AnimatePresence>
 
       {/* Quiz */}
       {currentQuiz && (
