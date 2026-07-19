@@ -385,32 +385,6 @@ marxcity/
 /admin                  Admin (xem events + quiz)
 ```
 
----
-
-## 🚀 Bắt đầu
-
-```bash
-# Clone repository (thay URL bằng repo của bạn)
-git clone <repository-url>
-cd MarxCity
-npm install
-```
-
-Tạo `.env.local`:
-
-```env
-MONGODB_URI=mongodb+srv://<user>:<pass>@cluster0.xxxxx.mongodb.net/marxcity?retryWrites=true&w=majority
-NEXTAUTH_SECRET=<your-secret>
-NEXTAUTH_URL=http://localhost:3000
-```
-
-```bash
-npm run dev      # Development
-npm run build    # Production build
-npm start        # Production server
-```
-
----
 
 ## 📊 Thống kê
 
