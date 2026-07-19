@@ -16,6 +16,10 @@ export interface IGameTurn extends Document {
   statsAfter: GameStats;
   stakeholderImpact: Record<string, number>;
   explanationIds: string[];
+  quizQuestion?: string;
+  quizSelectedIndex?: number;
+  quizCorrectIndex?: number;
+  quizCorrect?: boolean;
   createdAt: Date;
 }
 
@@ -34,6 +38,10 @@ const GameTurnSchema = new Schema<IGameTurn>({
   statsAfter: { type: Schema.Types.Mixed, required: true },
   stakeholderImpact: { type: Schema.Types.Mixed, default: {} },
   explanationIds: [{ type: String }],
+  quizQuestion: { type: String },
+  quizSelectedIndex: { type: Number },
+  quizCorrectIndex: { type: Number },
+  quizCorrect: { type: Boolean },
   createdAt: { type: Date, default: Date.now },
 });
 

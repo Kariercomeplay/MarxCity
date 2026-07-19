@@ -12,6 +12,8 @@ export default function ReportPage() {
     stats: GameStats;
     history: TurnResult[];
     stakeholderBalance: { workers: number; businesses: number; state: number };
+    quizCorrect: number;
+    quizTotal: number;
   } | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -29,6 +31,8 @@ export default function ReportPage() {
             stats: json.data.stats,
             history: json.data.history,
             stakeholderBalance: json.data.stakeholderBalance,
+            quizCorrect: json.data.quizCorrect || 0,
+            quizTotal: json.data.quizTotal || 0,
           });
         } else {
           router.push('/');
@@ -62,8 +66,8 @@ export default function ReportPage() {
       stats={data.stats}
       history={data.history}
       stakeholderBalance={data.stakeholderBalance}
-      quizCorrect={0}
-      quizTotal={0}
+      quizCorrect={data.quizCorrect}
+      quizTotal={data.quizTotal}
       onPlayAgain={handlePlayAgain}
     />
   );

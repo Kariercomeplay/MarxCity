@@ -30,6 +30,8 @@ export async function GET(req: NextRequest) {
       );
     }
     const turns = await GameTurn.find({ gameSaveId: game._id }).sort({ turnNumber: 1 });
+    const quizCorrect = turns.filter(t => t.quizCorrect === true).length;
+    const quizTotal = turns.filter(t => t.quizQuestion).length;
     return NextResponse.json<ApiResponse<LoadGameResponse>>({
       success: true,
       data: {
@@ -42,6 +44,8 @@ export async function GET(req: NextRequest) {
         stakeholderBalance: game.stakeholderBalance,
         score: game.score,
         status: game.status,
+        quizCorrect,
+        quizTotal,
         history: turns.map(t => ({
           turnNumber: t.turnNumber,
           eventId: t.eventId,

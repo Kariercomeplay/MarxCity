@@ -89,4 +89,6 @@ export type LoadGameResponse = {
   score: number;
   status: string;
   history: TurnResult[];
+  quizCorrect: number;
+  quizTotal: number;
 };

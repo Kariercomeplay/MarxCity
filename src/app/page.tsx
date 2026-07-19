@@ -35,7 +35,7 @@ export default function Home() {
       const json = await res.json();
       if (json.success && json.data) {
         localStorage.setItem('marxcity_gameId', json.data.gameId);
-        router.push('/game');
+        router.push('/game/intro');
       } else {
         console.error('Failed to init game:', json.error);
       }

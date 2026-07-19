@@ -10,7 +10,7 @@ interface QuizPopupProps {
   options: string[];
   correctIndex: number;
   explanation: string;
-  onAnswer: (correct: boolean) => void;
+  onAnswer: (correct: boolean, selectedIndex: number) => void;
   onClose: () => void;
 }
 
@@ -31,7 +31,7 @@ export default function QuizPopup({
     setSelected(idx);
     setAnswered(true);
     const correct = idx === correctIndex;
-    onAnswer(correct);
+    onAnswer(correct, idx);
   };
 
   const handleClose = () => {
