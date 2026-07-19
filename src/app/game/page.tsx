@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGameStore } from '@/store/gameStore';
 import StatsGrid from '@/components/game/StatsGrid';
+import { getOverallState } from '@/components/game/StatBar';
 import TrendChart from '@/components/game/TrendChart';
 import EventPanel from '@/components/game/EventPanel';
 import PolicyPanel from '@/components/game/PolicyPanel';
@@ -179,6 +180,7 @@ export default function GamePage() {
 
   const handleNextYear = () => {
     setShowConsequence(false); setConsequenceData(null);
+    setCurrentEvent(null);
     setShowExplanation(false);
 
     // Show result card with updated stats
@@ -264,6 +266,10 @@ export default function GamePage() {
           <div className="flex items-center gap-3 min-w-0">
             <span className="text-base font-black text-red-600 flex-shrink-0">MARXCITY</span>
             <span className="text-sm text-zinc-500">Năm thứ {store.currentYear}</span>
+            {store.stats && (() => {
+              const state = getOverallState(store.stats);
+              return <span className={`px-1.5 py-0.5 text-xs rounded-full font-semibold hidden sm:inline ${state.class}`}>{state.icon} {state.label}</span>;
+            })()}
             <span className={`px-1.5 py-0.5 text-xs rounded-full font-medium hidden sm:inline
               ${store.difficulty === 'easy' ? 'bg-green-100 text-green-700' :
                 store.difficulty === 'hard' ? 'bg-red-100 text-red-700' :

@@ -1,6 +1,5 @@
 'use client';
 
-import { useRef, useEffect, useState } from 'react';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 import { TurnResult, GameStats } from '@/types/game';
@@ -13,9 +12,69 @@ interface TrendChartProps {
   currentStats: GameStats;
 }
 
-export default function TrendChart({ history, currentStats }: TrendChartProps) {
-  const [selectedStats, setSelectedStats] = useState<(keyof GameStats)[]>(['production', 'employment', 'socialWelfare']);
+const ECONOMIC_STATS: (keyof GameStats)[] = ['production', 'employment', 'marketStability', 'nationalCapacity'];
+const SOCIAL_STATS: (keyof GameStats)[] = ['socialWelfare', 'environment', 'budget'];
 
+function makeChartData(stats: (keyof GameStats)[], history: TurnResult[], currentStats: GameStats) {
+  const labels = history.map(h => `Năm ${h.year}`);
+  const values = stats.flatMap(key => [...history.map(h => h.statsAfter[key]), currentStats[key]]);
+  const dataMin = Math.min(...values);
+  const dataMax = Math.max(...values);
+  const yMin = Math.max(0, Math.floor(dataMin / 5) * 5);
+  const yMax = Math.min(100, Math.ceil(dataMax / 5) * 5);
+
+  const datasets = stats.map(key => ({
+    label: STAT_LABELS[key],
+    data: [...history.map(h => h.statsAfter[key]), currentStats[key]],
+    borderColor: STAT_COLORS[key],
+    backgroundColor: STAT_COLORS[key] + '20',
+    borderWidth: 2,
+    tension: 0.3,
+    fill: false,
+    pointRadius: 3,
+    pointHoverRadius: 5,
+    pointBackgroundColor: '#fff',
+    pointBorderColor: STAT_COLORS[key],
+    pointBorderWidth: 2,
+  }));
+
+  return { labels: labels, datasets, yMin, yMax };
+}
+
+function MiniChart({ title, stats, history, currentStats }: { title: string; stats: (keyof GameStats)[]; history: TurnResult[]; currentStats: GameStats }) {
+  const { labels, datasets, yMin, yMax } = makeChartData(stats, history, currentStats);
+
+  return (
+    <div className="flex-1 min-w-0">
+      <h4 className="text-[11px] font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-2">{title}</h4>
+      <div className="h-36">
+        <Line
+          data={{ labels, datasets }}
+          options={{
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { position: 'bottom', labels: { font: { size: 9 }, boxWidth: 10, padding: 4, usePointStyle: true } },
+              tooltip: {
+                backgroundColor: '#18181b',
+                titleColor: '#fff',
+                bodyColor: '#a1a1aa',
+                padding: 8,
+                cornerRadius: 6,
+              },
+            },
+            scales: {
+              y: { min: yMin, max: yMax, grid: { color: 'rgba(0,0,0,0.04)' }, ticks: { font: { size: 9 } } },
+              x: { grid: { display: false }, ticks: { font: { size: 8 } } },
+            },
+          }}
+        />
+      </div>
+    </div>
+  );
+}
+
+export default function TrendChart({ history, currentStats }: TrendChartProps) {
   if (history.length === 0) {
     return (
       <div className="bg-white dark:bg-zinc-800/50 rounded-xl p-6 shadow-sm border border-zinc-100 dark:border-zinc-800">
@@ -24,86 +83,13 @@ export default function TrendChart({ history, currentStats }: TrendChartProps) {
     );
   }
 
-  const labels = history.map(h => `Năm ${h.year}`);
-  const allStats = Object.keys(currentStats) as (keyof GameStats)[];
-
-  const datasets = selectedStats.map(key => ({
-    label: STAT_LABELS[key],
-    data: [...history.map(h => h.statsAfter[key]), currentStats[key]],
-    borderColor: STAT_COLORS[key],
-    backgroundColor: STAT_COLORS[key] + '25',
-    borderWidth: 2,
-    tension: 0.35,
-    fill: true,
-    pointRadius: 3,
-    pointHoverRadius: 6,
-    pointBackgroundColor: '#fff',
-    pointBorderColor: STAT_COLORS[key],
-    pointBorderWidth: 2,
-  }));
-
-  const allValues = datasets.flatMap(d => d.data);
-  const dataMin = allValues.length > 0 ? Math.min(...allValues) : 40;
-  const dataMax = allValues.length > 0 ? Math.max(...allValues) : 60;
-  const yMin = Math.max(0, Math.floor(dataMin / 5) * 5 - 5);
-  const yMax = Math.min(100, Math.ceil(dataMax / 5) * 5 + 5);
-
-  const toggleStat = (key: keyof GameStats) => {
-    setSelectedStats(prev =>
-      prev.includes(key) ? prev.filter(k => k !== key) : [...prev, key]
-    );
-  };
-
   return (
     <div className="bg-white dark:bg-zinc-800/50 rounded-xl p-4 shadow-sm border border-zinc-100 dark:border-zinc-800">
-      <div className="flex flex-wrap gap-1.5 mb-3">
-        {allStats.map(key => (
-              <button
-                  key={key}
-                  onClick={() => toggleStat(key as keyof GameStats)}
-            className={`px-2 py-0.5 text-xs rounded-full border transition-colors
-              ${selectedStats.includes(key)
-                ? 'border-zinc-800 dark:border-zinc-200 bg-zinc-800 dark:bg-zinc-200 text-white dark:text-zinc-800'
-                : 'border-zinc-200 dark:border-zinc-700 text-zinc-500 dark:text-zinc-400 hover:border-zinc-400'
-              }`}
-          >
-            {STAT_LABELS[key]}
-          </button>
-        ))}
-      </div>
-      <div className="h-48">
-        <Line
-          data={{
-            labels: [...labels, `Lượt ${history.length + 1}`],
-            datasets,
-          }}
-          options={{
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-              legend: { display: false },
-              tooltip: {
-                backgroundColor: '#18181b',
-                titleColor: '#fff',
-                bodyColor: '#a1a1aa',
-                padding: 10,
-                cornerRadius: 8,
-              },
-            },
-            scales: {
-              y: {
-                min: yMin,
-                max: yMax,
-                grid: { color: 'rgba(0,0,0,0.05)' },
-                ticks: { font: { size: 10 } },
-              },
-              x: {
-                grid: { display: false },
-                ticks: { font: { size: 9 } },
-              },
-            },
-          }}
-        />
+      <h3 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-3">Xu hướng phát triển</h3>
+      <div className="flex flex-col sm:flex-row gap-6">
+        <MiniChart title="Kinh tế" stats={ECONOMIC_STATS} history={history} currentStats={currentStats} />
+        <div className="hidden sm:block w-px bg-zinc-200 dark:bg-zinc-700" />
+        <MiniChart title="Xã hội & Ngân sách" stats={SOCIAL_STATS} history={history} currentStats={currentStats} />
       </div>
     </div>
   );
