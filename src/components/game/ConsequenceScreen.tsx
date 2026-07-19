@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { GameStats } from '@/types/game';
 import { getReactions, getEventReactionHeadline, getEventIcon } from '@/lib/engine/stakeholderReactions';
 import { STAT_LABELS, STAT_COLORS, CLO_LABELS } from '@/lib/engine/constants';
-import Badge from '@/components/ui/Badge';
 import Button from '@/components/ui/Button';
 
 interface ConsequenceScreenProps {
@@ -262,17 +261,20 @@ export default function ConsequenceScreen({
                 </div>
 
                 {explanation.cloReferences.length > 0 && (
-                  <div className="flex flex-wrap gap-1.5">
-                    {explanation.cloReferences.map(clo => (
-                      <div key={clo} className="group relative">
-                        <Badge variant="purple" size="sm">{clo}</Badge>
-                        <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 hidden group-hover:block z-10">
-                          <div className="bg-zinc-900 text-white text-xs rounded-lg px-3 py-1.5 whitespace-nowrap shadow-lg max-w-xs">
-                            {CLO_LABELS[clo] || ''}
+                  <div className="group relative inline-block">
+                    <span className="text-xs text-zinc-400 cursor-help border-b border-dotted border-zinc-300 dark:border-zinc-600">
+                      📖 Cơ sở lý luận
+                    </span>
+                    <div className="absolute bottom-full left-0 mb-1 hidden group-hover:block z-10 w-64">
+                      <div className="bg-zinc-900 dark:bg-zinc-700 text-white text-xs rounded-lg p-3 shadow-lg space-y-1.5">
+                        {explanation.cloReferences.map(clo => (
+                          <div key={clo}>
+                            <span className="font-bold text-purple-300">{clo}:</span>{' '}
+                            <span>{CLO_LABELS[clo] || ''}</span>
                           </div>
-                        </div>
+                        ))}
                       </div>
-                    ))}
+                    </div>
                   </div>
                 )}
 

@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { GameEvent } from '@/types/game';
-import Badge from '@/components/ui/Badge';
 
 interface EventPanelProps {
   event: GameEvent;
@@ -19,12 +18,6 @@ export default function EventPanel({ event, onChoice, disabled }: EventPanelProp
     >
       {/* Scenario — like a story or news report */}
       <div className="space-y-3">
-        <div className="flex items-center gap-2 flex-wrap">
-          <Badge variant="red">Chương {event.chapter}</Badge>
-          {event.cloReferences.slice(0, 1).map(clo => (
-            <Badge key={clo} variant="purple" size="sm">{clo}</Badge>
-          ))}
-        </div>
         <h3 className="text-xl font-bold text-zinc-900 dark:text-white leading-tight">{event.title}</h3>
         <div className="p-4 rounded-2xl bg-zinc-50 dark:bg-zinc-800/60 border border-zinc-200/80 dark:border-zinc-700/60">
           <p className="text-zinc-700 dark:text-zinc-200 leading-relaxed text-sm sm:text-base">{event.scenario}</p>

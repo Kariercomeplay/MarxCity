@@ -12,13 +12,13 @@ import PolicyPanel from '@/components/game/PolicyPanel';
 import ExplanationBox from '@/components/game/ExplanationBox';
 import QuizPopup from '@/components/game/QuizPopup';
 import StakeholderMeter from '@/components/game/StakeholderMeter';
-import ChapterTransition from '@/components/game/ChapterTransition';
+import PeriodTransition from '@/components/game/PeriodTransition';
 import ConsequenceScreen from '@/components/game/ConsequenceScreen';
 import SurpriseBadge from '@/components/game/SurpriseBadge';
 import ActionLoadingOverlay from '@/components/game/ActionLoadingOverlay';
 import Button from '@/components/ui/Button';
 import Modal from '@/components/ui/Modal';
-import { CHAPTERS, STAT_LABELS } from '@/lib/engine/constants';
+import { STAT_LABELS } from '@/lib/engine/constants';
 import eventsData from '@/data/events.json';
 import { GameEvent } from '@/types/game';
 
@@ -36,8 +36,8 @@ export default function GamePage() {
   const [showSurpriseModal, setShowSurpriseModal] = useState(false);
   const [pendingPolicies, setPendingPolicies] = useState(store.policies);
   const [previousStats, setPreviousStats] = useState(store.stats);
-  const [showChapterTransition, setShowChapterTransition] = useState(false);
-  const [nextChapter, setNextChapter] = useState<{ id: number; name: string; cloTags: string[] } | null>(null);
+  const [showPeriodTransition, setShowPeriodTransition] = useState(false);
+  const [transitionYear, setTransitionYear] = useState(0);
   const [notification, setNotification] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showEnding, setShowEnding] = useState(false);
@@ -204,22 +204,21 @@ export default function GamePage() {
     const gameId = localStorage.getItem('marxcity_gameId');
     if (!gameId) return;
 
-    const curChapter = CHAPTERS.find(c => c.years.includes(nextYear - 1));
-    const nextChapter = CHAPTERS.find(c => c.years.includes(nextYear));
-    if (curChapter && nextChapter && curChapter.id !== nextChapter.id) {
-      setNextChapter(nextChapter);
-      setShowChapterTransition(true);
+    // Show period transition at key milestones (years 1, 3, 5, 7, 9)
+    const MILESTONES = [1, 3, 5, 7, 9];
+    if (MILESTONES.includes(nextYear)) {
+      setTransitionYear(nextYear);
+      setShowPeriodTransition(true);
       return;
     }
     fetchEventsForYear(nextYear);
   };
 
-  const handleChapterContinue = () => {
-    setShowChapterTransition(false); setNextChapter(null);
-    const nextYear = store.currentYear;
+  const handlePeriodContinue = () => {
+    setShowPeriodTransition(false); setTransitionYear(0);
     const gameId = localStorage.getItem('marxcity_gameId');
     if (!gameId) return;
-    fetchEventsForYear(nextYear);
+    fetchEventsForYear(store.currentYear);
   };
 
   const handleQuizAnswer = async (correct: boolean, idx: number) => {
@@ -244,9 +243,7 @@ export default function GamePage() {
     }
   };
 
-  const currentChapter = CHAPTERS.find(c => c.years.includes(store.currentYear))
-    || CHAPTERS.find(c => c.years.includes(store.currentYear - 1));
-  const chapterProgress = currentChapter?.id || 0;
+  // No chapter tracking — game flows naturally
 
   if (turnPhase === 'loading' && !store.stats) {
     return (
@@ -278,17 +275,7 @@ export default function GamePage() {
               {store.difficulty === 'easy' ? 'Dễ' : store.difficulty === 'hard' ? 'Khó' : 'Thường'}
             </span>
           </div>
-          <div className="flex items-center gap-3">
-            <div className="hidden sm:flex items-center gap-1">
-              {[1, 2, 3, 4, 5].map(i => (
-                <div key={i} className={`w-2 h-2 rounded-full transition-all duration-300 ${i <= chapterProgress ? 'bg-red-500' : 'bg-zinc-200 dark:bg-zinc-700'}`} />
-              ))}
-            </div>
-            <div className="h-2 w-20 sm:w-24 bg-zinc-200 dark:bg-zinc-700 rounded-full overflow-hidden hidden sm:block">
-              <div className="h-full bg-red-600 rounded-full transition-all duration-700 ease-out"
-                style={{ width: `${Math.min(100, ((store.currentYear - 1) / 10) * 100)}%` }} />
-            </div>
-          </div>
+          <div className="flex items-center gap-3" />
         </div>
       </header>
 
@@ -304,8 +291,8 @@ export default function GamePage() {
 
       {/* Chapter Transition */}
       <AnimatePresence>
-        {showChapterTransition && nextChapter && (
-          <ChapterTransition chapterId={nextChapter.id} chapterName={nextChapter.name} cloTags={nextChapter.cloTags} onContinue={handleChapterContinue} />
+        {showPeriodTransition && transitionYear > 0 && (
+          <PeriodTransition year={transitionYear} onContinue={handlePeriodContinue} />
         )}
       </AnimatePresence>
 
@@ -375,24 +362,7 @@ export default function GamePage() {
               />
             </motion.div>
 
-            {currentChapter && (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="bg-white dark:bg-zinc-800/80 rounded-2xl p-3.5 shadow-xs border border-zinc-200/80 dark:border-zinc-700/60 mt-3"
-              >
-                <h3 className="text-xs font-bold text-zinc-800 dark:text-zinc-200 mb-1">
-                  Chương {currentChapter.id}: {currentChapter.name}
-                </h3>
-                <div className="flex flex-wrap gap-1.5">
-                  {currentChapter.cloTags.map(clo => (
-                    <span key={clo} className="px-2 py-0.5 text-[11px] rounded-full bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300 font-semibold">
-                      {clo}
-                    </span>
-                  ))}
-                </div>
-              </motion.div>
-            )}
+            {/* No chapter labels — the world doesn't announce its chapters */}
           </div>
 
           {/* CENTER COLUMN: Trend Chart & Story Choice Actions (6 cols) */}
@@ -474,7 +444,7 @@ export default function GamePage() {
                     </div>
                   )}
 
-                  {!showQuiz && !showChapterTransition && !showEnding && !showConsequence && (
+                  {!showQuiz && !showPeriodTransition && !showEnding && !showConsequence && (
                     <Button onClick={handleProceedToNextYear} className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 rounded-xl shadow-md shadow-red-600/20">
                       {store.status === 'completed' ? 'Xem kết quả chung cuộc' : `Sang năm ${store.currentYear} →`}
                     </Button>

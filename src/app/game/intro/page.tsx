@@ -27,7 +27,7 @@ export default function IntroPage() {
         <div className="space-y-5">
           <p className="text-slate-200 leading-relaxed text-sm sm:text-base">
             Bạn vừa được bổ nhiệm vào vị trí <strong className="text-white font-bold underline decoration-red-500 decoration-2 underline-offset-4">Người điều hành nền kinh tế</strong>.
-            Trong 10 lượt chơi (tương ứng 5 chương phát triển chiến lược), mọi quyết định của bạn sẽ tạo nên diện mạo tương lai cho thành phố.
+            Mỗi quyết định kinh tế bạn đưa ra sẽ định hình tương lai của đất nước qua nhiều giai đoạn phát triển khác nhau.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5">
@@ -152,14 +152,14 @@ export default function IntroPage() {
     },
     {
       id: 'chapters',
-      stepLabel: '5 Chương',
+      stepLabel: '5 Giai đoạn',
       icon: '🧭',
       badge: 'HÀNH TRÌNH 10 LƯỢT CHƠI',
       title: '5 Chặng Đường Phát Triển Chiến Lược',
       content: (
         <div className="space-y-4">
           <p className="text-sm text-slate-200">
-            Kiến thức Kinh tế chính trị được trải nghiệm trực quan qua 5 chương thử thách:
+            Kiến thức Kinh tế chính trị được trải nghiệm qua 5 giai đoạn phát triển:
           </p>
 
           <div className="space-y-3 relative">
@@ -182,7 +182,7 @@ export default function IntroPage() {
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-0.5">
                     <span className="px-2 py-0.5 text-[11px] font-bold rounded-md bg-red-600 text-white shadow-xs">
-                      Chương {ch.id}
+                      {['Khởi đầu','Phát triển','Bản lề','Bứt phá','Vươn xa'][ch.id - 1] || `Giai đoạn ${ch.id}`}
                     </span>
                     <span className="text-xs font-semibold text-slate-300">{ch.turns}</span>
                   </div>
