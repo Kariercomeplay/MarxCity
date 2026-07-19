@@ -15,12 +15,17 @@ export type StakeholderGroup = 'workers' | 'businesses' | 'state';
 
 export type StakeholderBalance = Record<StakeholderGroup, number>;
 
+export type Difficulty = 'easy' | 'normal' | 'hard';
+
+export type EventType = 'story' | 'random' | 'chain' | 'surprise' | 'ending';
+
 export type Choice = {
   id: string;
   label: string;
   effects: Partial<Record<StatName, number>>;
   stakeholderImpact: Partial<Record<StakeholderGroup, number>>;
   explanationId: string;
+  unlocks?: string[];
 };
 
 export type GameEvent = {
@@ -28,16 +33,31 @@ export type GameEvent = {
   title: string;
   scenario: string;
   chapter: number;
-  turn: number;
+  yearMin: number;
+  yearMax: number;
+  type: EventType;
   choices: Choice[];
   cloReferences: string[];
   conceptTags: string[];
   learningObjectives: string[];
+  requires?: string[];
+  requiresChoice?: string;
+  isEnding?: boolean;
+  endingId?: string;
   sourceReferences?: string[];
+  flavor?: string;
+};
+
+export type Ending = {
+  id: string;
+  title: string;
+  description: string;
+  type: 'success' | 'neutral' | 'failure';
+  narrative: string;
 };
 
 export type TurnResult = {
-  turnNumber: number;
+  year: number;
   eventId: string;
   selectedChoiceId: string;
   policiesBefore: Policies;
@@ -47,6 +67,7 @@ export type TurnResult = {
   statsAfter: GameStats;
   stakeholderImpact: Partial<Record<StakeholderGroup, number>>;
   explanationIds: string[];
+  eventTitle?: string;
 };
 
 export type GameState = {
@@ -54,8 +75,8 @@ export type GameState = {
   userId?: string;
   sessionId: string;
   name: string;
-  currentTurn: number;
-  maxTurns: number;
+  currentYear: number;
+  difficulty: Difficulty;
   stats: GameStats;
   policies: Policies;
   stakeholderBalance: StakeholderBalance;
@@ -63,6 +84,11 @@ export type GameState = {
   status: 'playing' | 'completed';
   history: TurnResult[];
   seed: number;
+  unlockedEvents: string[];
+  completedEvents: string[];
+  quizCorrect: number;
+  quizTotal: number;
+  ending?: Ending;
 };
 
 export type Explanation = {

@@ -14,7 +14,7 @@ import StakeholderMeter from '@/components/game/StakeholderMeter';
 import ChapterTransition from '@/components/game/ChapterTransition';
 import Button from '@/components/ui/Button';
 import Modal from '@/components/ui/Modal';
-import { CHAPTERS } from '@/lib/engine/constants';
+import { CHAPTERS, STAT_LABELS } from '@/lib/engine/constants';
 import eventsData from '@/data/events.json';
 import { GameEvent } from '@/types/game';
 
@@ -333,90 +333,106 @@ export default function GamePage() {
         )}
       </AnimatePresence>
 
-      {/* Main */}
-      <main className="max-w-7xl mx-auto px-4 py-4 sm:py-6 space-y-4 sm:space-y-6">
-        <motion.div key={store.currentTurn} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-          <StatsGrid stats={store.stats!} previousStats={previousStats || undefined} />
-        </motion.div>
+      {/* Main Dashboard Layout */}
+      <main className="max-w-[1536px] mx-auto px-3 py-3 space-y-4">
+        {/* 3-Column Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-3.5 items-start">
+          {/* Left Column: 7 Stats Indicators (3 cols) */}
+          <div className="lg:col-span-3 space-y-2">
+            <div className="flex items-center justify-between px-1">
+              <h3 className="text-xs font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
+                7 Chỉ số sinh tồn
+              </h3>
+            </div>
+            <motion.div key={store.currentTurn} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+              <StatsGrid stats={store.stats!} previousStats={previousStats || undefined} />
+            </motion.div>
+          </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
-          <div className="lg:col-span-2 space-y-4 sm:space-y-6">
+          {/* Center Column: Trend Chart & Turn Results (6 cols) */}
+          <div className="lg:col-span-6 space-y-3.5">
             <TrendChart history={store.history} currentStats={store.stats!} />
 
+            {/* Turn Result Card */}
             <AnimatePresence mode="wait">
               {turnPhase === 'result' && store.lastTurnResult && (
                 <motion.div
                   key="result"
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 15 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0 }}
-                  className="bg-white dark:bg-zinc-800 rounded-xl p-4 sm:p-5 shadow-sm border border-zinc-100 dark:border-zinc-800 space-y-4"
+                  className="bg-white dark:bg-zinc-800/90 rounded-2xl p-4 shadow-sm border border-zinc-200/80 dark:border-zinc-700/60 space-y-3 backdrop-blur-sm"
                 >
-                  <div className="flex items-center gap-2">
-                    <span className="text-sm font-bold text-zinc-700 dark:text-zinc-300">
+                  <div className="flex items-center justify-between border-b border-zinc-100 dark:border-zinc-700/60 pb-2">
+                    <span className="text-sm font-bold text-zinc-900 dark:text-white">
                       Kết quả lượt {store.lastTurnResult.turnNumber}
                     </span>
                     {store.lastTurnResult.event && (
-                      <span className="text-xs text-zinc-400 truncate max-w-[200px]">
+                      <span className="text-xs text-zinc-500 dark:text-zinc-400 truncate max-w-[240px]">
                         — {store.lastTurnResult.event.selectedChoice.label}
                       </span>
                     )}
                   </div>
 
+                  {/* Stat Effects with Vietnamese Labels */}
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                     {Object.entries(store.lastTurnResult.effectsApplied)
                       .filter(([, v]) => v !== undefined && v !== 0)
                       .map(([key, val]) => (
-                        <div key={key} className="bg-zinc-50 dark:bg-zinc-800/80 rounded-lg p-2 text-center">
-                          <div className={`text-sm font-bold ${(val as number) > 0 ? 'text-green-600' : 'text-red-500'}`}>
+                        <div key={key} className="bg-zinc-50 dark:bg-zinc-800/80 rounded-xl p-2.5 text-center border border-zinc-100 dark:border-zinc-700/50">
+                          <div className={`text-sm font-extrabold ${(val as number) > 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-500'}`}>
                             {(val as number) > 0 ? '+' : ''}{String(val)}
                           </div>
-                          <div className="text-xs text-zinc-400 capitalize">{key.replace(/([A-Z])/g, ' $1').trim()}</div>
+                          <div className="text-xs text-zinc-600 dark:text-zinc-300 font-medium truncate">
+                            {STAT_LABELS[key as keyof typeof STAT_LABELS] || key}
+                          </div>
                         </div>
                       ))}
                   </div>
 
                   {store.currentTurn <= store.maxTurns && !showQuiz && !showChapterTransition && (
-                    <Button onClick={handleNextTurn} className="w-full">
-                      Sang lượt {store.currentTurn}
+                    <Button onClick={handleNextTurn} className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 rounded-xl shadow-md shadow-red-600/20">
+                      Sang lượt {store.currentTurn} →
                     </Button>
                   )}
                 </motion.div>
               )}
             </AnimatePresence>
 
+            {/* Event trigger button */}
             {store.currentTurn <= store.maxTurns && turnPhase === 'event' && !showEventModal && (
-              <Button onClick={() => setShowEventModal(true)} className="w-full">
+              <Button onClick={() => setShowEventModal(true)} className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-xl shadow-md shadow-red-600/20">
                 Xem tình huống kinh tế
               </Button>
             )}
 
-            {/* No-event state: allow advancing */}
+            {/* No-event advance button */}
             {noEventThisTurn.current && turnPhase === 'policy' && (
-              <div className="bg-white dark:bg-zinc-800 rounded-xl p-5 shadow-sm border border-zinc-100 dark:border-zinc-800 text-center space-y-3">
-                <p className="text-sm text-zinc-500">Không có tình huống đặc biệt cho lượt này.</p>
-                <Button onClick={handleAdvanceNoEvent} className="w-full">
-                  Tiếp tục sang lượt {store.currentTurn}
+              <div className="bg-white dark:bg-zinc-800/80 rounded-2xl p-4 shadow-sm border border-zinc-200/80 dark:border-zinc-700/60 text-center space-y-3">
+                <p className="text-sm text-zinc-500 dark:text-zinc-400">Không có tình huống đặc biệt cho lượt này.</p>
+                <Button onClick={handleAdvanceNoEvent} className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 rounded-xl">
+                  Tiếp tục sang lượt {store.currentTurn} →
                 </Button>
               </div>
             )}
           </div>
 
-          <div className="space-y-4 sm:space-y-6">
+          {/* Right Column: Stakeholders & Policy Panel (3 cols) */}
+          <div className="lg:col-span-3 space-y-3.5">
             <StakeholderMeter balance={store.stakeholderBalance} />
 
             {currentChapter && (
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                className="bg-white dark:bg-zinc-800/50 rounded-xl p-4 shadow-sm border border-zinc-100 dark:border-zinc-800"
+                className="bg-white dark:bg-zinc-800/80 rounded-2xl p-3.5 shadow-sm border border-zinc-200/80 dark:border-zinc-700/60"
               >
-                <h3 className="text-sm font-bold text-zinc-700 dark:text-zinc-300 mb-1">
+                <h3 className="text-xs font-bold text-zinc-800 dark:text-zinc-200 mb-1">
                   Chương {currentChapter.id}: {currentChapter.name}
                 </h3>
-                <div className="flex flex-wrap gap-1.5 mb-2">
+                <div className="flex flex-wrap gap-1.5 mb-1.5">
                   {currentChapter.cloTags.map(clo => (
-                    <span key={clo} className="px-2 py-0.5 text-xs rounded-full bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400">
+                    <span key={clo} className="px-2 py-0.5 text-[11px] rounded-full bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300 font-semibold">
                       {clo}
                     </span>
                   ))}
@@ -429,15 +445,25 @@ export default function GamePage() {
               </motion.div>
             )}
 
-            <div className="hidden lg:block">
-              <PolicyPanel
-                policies={pendingPolicies}
-                onChange={(p) => { setPendingPolicies(p); store.setPolicies(p); }}
-                onConfirm={() => {}}
-                disabled={isSubmitting}
-              />
-            </div>
+            <PolicyPanel
+              policies={pendingPolicies}
+              onChange={(p) => { setPendingPolicies(p); store.setPolicies(p); }}
+              onConfirm={() => {}}
+              disabled={isSubmitting}
+            />
           </div>
+        </div>
+
+        {/* Bottom Section: Explanation Box (Cố vấn lý luận) */}
+        <div className="pt-2">
+          <ExplanationBox
+            isOpen={showExplanation}
+            content={store.lastTurnResult?.explanation.content || ''}
+            cloReferences={store.lastTurnResult?.explanation.cloReferences || []}
+            conceptTags={store.lastTurnResult?.explanation.conceptTags || []}
+            learningObjectives={store.lastTurnResult?.explanation.learningObjectives || []}
+            onClose={() => setShowExplanation(false)}
+          />
         </div>
       </main>
 
@@ -451,16 +477,6 @@ export default function GamePage() {
           />
         )}
       </Modal>
-
-      {/* Explanation */}
-      <ExplanationBox
-        isOpen={showExplanation}
-        content={store.lastTurnResult?.explanation.content || ''}
-        cloReferences={store.lastTurnResult?.explanation.cloReferences || []}
-        conceptTags={store.lastTurnResult?.explanation.conceptTags || []}
-        learningObjectives={store.lastTurnResult?.explanation.learningObjectives || []}
-        onClose={() => setShowExplanation(false)}
-      />
 
       {/* Quiz */}
       {currentQuiz && (
