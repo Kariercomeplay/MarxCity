@@ -132,7 +132,89 @@ Sau MVP, người dùng yêu cầu mở rộng để tăng **tính bất ngờ**
 
 ---
 
-## 🎮 Gameplay
+## ❓ Giải trình học thuật (dành cho giảng viên)
+
+### Vì sao nhóm chọn hình thức game?
+
+Kinh tế chính trị Mác-Lênin là môn học có tính **trừu tượng cao**: giá trị thặng dư, tích lũy tư bản, quan hệ lợi ích... là những khái niệm khó hình dung nếu chỉ học lý thuyết.
+
+Game mô phỏng giải quyết 3 vấn đề:
+
+1. **Trực quan hóa**: Các khái niệm trừu tượng được thể hiện qua chỉ số cụ thể. Ví dụ: "giá trị thặng dư" được phản ánh qua hiệu ứng khi thay đổi thời gian lao động hoặc tiền lương → người chơi thấy ngay sự thay đổi trong chỉ số "Năng lực sản xuất" và "Việc làm".
+
+2. **Học qua trải nghiệm (learning by doing)**: Thay vì đọc định nghĩa, người chơi đưa ra quyết định, thấy kết quả, đọc giải thích lý luận. Đây là **vòng lặp học tập**: Quyết định → Hệ quả → Giải thích MLN → Ghi nhớ.
+
+3. **An toàn để thử sai**: Trong game, người chơi có thể đưa ra chính sách "sai" mà không gây hậu quả thực tế. Điều này khuyến khích tư duy phản biện và khám phá.
+
+> *"Cho tôi biết và tôi sẽ quên. Hãy dạy tôi và tôi sẽ nhớ. Hãy để tôi tham gia và tôi sẽ học."* — Benjamin Franklin
+
+### Người học học được gì?
+
+Sau một phiên chơi (15-25 phút), người học có thể:
+
+| Kỹ năng / Kiến thức | Cách đạt được |
+|---|---|
+| **Hiểu quy luật giá trị** | Chứng kiến giá hàng hóa thay đổi khi chi phí sản xuất biến động |
+| **Phân biệt giá trị thặng dư** | So sánh kết quả giữa tăng giờ làm (tuyệt đối) và tăng năng suất (tương đối) |
+| **Nhận diện độc quyền** | Quan sát hậu quả của sáp nhập, thâu tóm thị trường |
+| **Cân bằng quan hệ lợi ích** | Điều chỉnh chính sách dung hòa 👷 🏢 🏛️ |
+| **Đánh giá FDI** | Thấy cả mặt lợi (việc làm, công nghệ) và mặt hại (phụ thuộc, môi trường) |
+| **Hiểu CNH-HĐH** | Đối mặt với trade-off giữa tự động hóa và việc làm |
+| **Phân tích chính sách** | Mỗi quyết định đều có giải thích MLN kèm CLO references |
+| **Tư duy phản biện** | Không có lựa chọn nào hoàn toàn đúng — phải đánh đổi |
+
+### Nội dung có đúng với môn học không?
+
+**Có.** Toàn bộ nội dung được xây dựng dựa trên:
+
+1. **Giáo trình MLN122** — Kinh tế chính trị Mác-Lênin (chương trình đại học không chuyên)
+2. **9 CLO** (Chuẩn đầu ra) — mỗi event, mỗi quiz, mỗi giải thích đều được gắn CLO cụ thể
+3. **Nguồn tham khảo** — các sự kiện dựa trên tình huống thực tế của Việt Nam (EVFTA, Samsung, Net Zero, chuyển đổi số...)
+4. **Phản biện chuyên môn** — trước khi implement, mapping CLO đã được sửa theo đúng chuẩn của môn học (xem Giai đoạn 3 — 14 điểm phản biện)
+
+**Cụ thể:**
+- Mỗi event có trường `cloReferences` (vd: `["CLO4", "CLO5"]`), `conceptTags` (vd: `["quan-he-loi-ich", "cong-nghiep-hoa"]`), `learningObjectives` (vd: `"Phân tích lợi ích giữa Nhà nước, doanh nghiệp và người lao động"`)
+- Mỗi giải thích trong game đều được trích xuất hoặc biên soạn từ nội dung giáo trình
+- Quiz kiểm tra kiến thức sau mỗi giai đoạn, bám sát nội dung đã học
+
+### Tính sáng tạo ở đâu?
+
+| Sáng tạo | Mô tả |
+|---|---|
+| **Cơ chế học qua game** | Lần đầu tiên môn Kinh tế chính trị Mác-Lênin được chuyển thể thành game mô phỏng tương tác, thay vì giáo trình thuần túy |
+| **7 chỉ số thiết kế riêng** | Không copy từ game khác — được thiết kế từ 0 để phản ánh các mục tiêu của KTTT định hướng XHCN (không chỉ GDP) |
+| **Position-based policy** | Hệ thống chính sách có diminishing returns, không thể max all, buộc người chơi phải ưu tiên — phản ánh đúng bản chất nguồn lực khan hiếm |
+| **Branching events** | Lựa chọn ở năm 1 mở ra hoặc khóa event ở năm 3 — tạo cảm giác hậu quả dài hạn, không chỉ "ăn liền" |
+| **Surprise events** | 6 sự kiện bất ngờ (phát hiện mỏ dầu, meme, cá cắn cáp...) tạo yếu tố vui nhộn và không thể dự đoán — giống thực tế |
+| **Ẩn số - game length** | Người chơi không biết game dài bao nhiêu năm, không biết còn bao nhiêu "lượt" — giống điều hành kinh tế thực tế |
+| **Không chỉ số preview** | Không hiển thị "+5 production, -3 environment" khi chọn — giữ yếu tố bất ngờ, người chơi chọn theo lập trường chứ không tối ưu số |
+| **Stakeholder reactions** | Hệ thống narrative engine tự sinh phản ứng của 👷 🏢 🏛️ dựa trên impact — tạo chiều sâu kể chuyện |
+| **Consequence Screen** | 4 phase animation thay vì bảng số khô khan: Headline → Stats → Reactions → MLN |
+| **13 endings** | Không chỉ "thắng/thua" — có 5 kết thúc thành công + 3 trung bình + 5 thất bại, mỗi cái có narrative riêng |
+
+### Câu hỏi dự phòng khác
+
+#### Game có khuyến khích chạy theo chủ nghĩa tư bản không?
+
+**Không.** Cơ chế trade-off trong game được thiết kế để buộc người chơi đối mặt với mâu thuẫn giữa tăng trưởng và công bằng, giữa hội nhập và tự chủ — chính là các mâu thuẫn mà Kinh tế chính trị Mác-Lênin phân tích. Không thể tối ưu hóa một chỉ số mà không hy sinh chỉ số khác. Stakeholder balance là một cơ chế nhắc nhở rằng **phát triển phải đi đôi với tiến bộ xã hội**.
+
+#### Các con số trong game có ý nghĩa gì?
+
+**Không phải dự báo.** Đây là chỉ số **tương đối** (thang 0-100) phục vụ mục tiêu giáo dục. Chúng thể hiện **xu hướng** và **quan hệ** chứ không phải số liệu kinh tế thực tế. Disclaimer hiển thị xuyên suốt game: *"Các chỉ số trong MarxCity được đơn giản hóa nhằm phục vụ mục tiêu học tập. Kết quả không đại diện cho dự báo kinh tế thực tế."*
+
+#### Làm sao đảm bảo tính chính xác của nội dung MLN?
+
+Mỗi giải thích trong game đều:
+1. Dựa trên **giáo trình MLN122** chính thức
+2. Được gắn **CLO reference** cụ thể
+3. Được kiểm tra qua mapping CLO (đã sửa theo phản biện ở Giai đoạn 3)
+4. Không sử dụng AI để sinh nội dung lý luận — tất cả đều là template được biên soạn thủ công
+
+#### Game có thể thay thế giáo trình không?
+
+**Không.** MarxCity là **công cụ hỗ trợ học tập**, không phải giáo trình. Mục tiêu là tạo hứng thú, minh họa lý thuyết và khuyến khích tư duy phản biện. Người học vẫn cần đọc giáo trình để nắm vững lý luận.
+
+---
 
 ### Luồng cơ bản
 
