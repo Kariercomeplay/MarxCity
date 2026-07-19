@@ -15,6 +15,7 @@ import StakeholderMeter from '@/components/game/StakeholderMeter';
 import ChapterTransition from '@/components/game/ChapterTransition';
 import ConsequenceScreen from '@/components/game/ConsequenceScreen';
 import SurpriseBadge from '@/components/game/SurpriseBadge';
+import ActionLoadingOverlay from '@/components/game/ActionLoadingOverlay';
 import Button from '@/components/ui/Button';
 import Modal from '@/components/ui/Modal';
 import { CHAPTERS, STAT_LABELS } from '@/lib/engine/constants';
@@ -549,6 +550,8 @@ export default function GamePage() {
           onClose={() => setShowQuiz(false)}
         />
       )}
+
+      <ActionLoadingOverlay isLoading={isSubmitting || (turnPhase === 'loading' && !!store.stats)} />
 
       <div className="text-center py-3 px-4">
         <p className="text-xs text-zinc-400 dark:text-zinc-600">MarxCity — công cụ giáo dục, không phải dự báo kinh tế thực tế.</p>

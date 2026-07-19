@@ -11,12 +11,48 @@ interface HeroSectionProps {
 
 export default function HeroSection({ onStart, hasSession, onContinue }: HeroSectionProps) {
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-zinc-900 via-zinc-800 to-zinc-900">
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-10 left-10 w-32 h-32 border-2 border-red-500/30 rounded-full" />
-        <div className="absolute bottom-20 right-20 w-48 h-48 border-2 border-yellow-500/20 rounded-full" />
-        <div className="absolute top-1/3 right-1/4 w-4 h-4 bg-red-500/40 rounded-full" />
-        <div className="absolute bottom-1/3 left-1/4 w-6 h-6 bg-blue-500/30 rounded-full" />
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-950 via-zinc-900 to-slate-900 text-white">
+      {/* Background Animated Lights */}
+      <div className="absolute top-1/4 left-1/3 w-[500px] h-[500px] bg-red-600/20 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute bottom-1/4 right-1/3 w-[450px] h-[450px] bg-amber-500/15 rounded-full blur-[120px] pointer-events-none" />
+
+      {/* Floating Animated Icons Scene */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* Animated Hammer */}
+        <motion.div
+          animate={{ rotate: [0, -35, 10, 0], y: [0, -5, 2, 0] }}
+          transition={{ repeat: Infinity, duration: 2.2, ease: 'easeInOut' }}
+          className="absolute top-16 left-12 text-4xl opacity-40 hidden sm:block"
+        >
+          🔨
+        </motion.div>
+
+        {/* Animated Spinning Gear */}
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{ repeat: Infinity, duration: 10, ease: 'linear' }}
+          className="absolute bottom-24 left-20 text-5xl opacity-30 hidden sm:block text-amber-500"
+        >
+          ⚙️
+        </motion.div>
+
+        {/* Animated Driving Truck */}
+        <motion.div
+          animate={{ x: [-100, 1200] }}
+          transition={{ repeat: Infinity, duration: 12, ease: 'linear' }}
+          className="absolute bottom-10 left-0 text-3xl opacity-35 hidden md:block"
+        >
+          🚛
+        </motion.div>
+
+        {/* Floating Money Chart */}
+        <motion.div
+          animate={{ y: [0, -10, 0] }}
+          transition={{ repeat: Infinity, duration: 3, ease: 'easeInOut' }}
+          className="absolute top-24 right-16 text-4xl opacity-40 hidden sm:block"
+        >
+          📈
+        </motion.div>
       </div>
 
       <motion.div
@@ -29,9 +65,14 @@ export default function HeroSection({ onStart, hasSession, onContinue }: HeroSec
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="mb-6"
+          className="mb-4"
         >
-          <h1 className="text-6xl sm:text-7xl font-black tracking-tight text-white">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-500/20 border border-red-500/40 text-red-300 text-xs font-bold tracking-widest uppercase mb-4 shadow-lg">
+            <span className="w-2 h-2 rounded-full bg-red-500 animate-ping" />
+            GAME MÔ PHỎNG KINH TẾ CHÍNH TRỊ
+          </div>
+
+          <h1 className="text-6xl sm:text-7xl font-black tracking-tight text-white drop-shadow-lg">
             MARX<span className="text-red-500">CITY</span>
           </h1>
         </motion.div>
@@ -40,9 +81,9 @@ export default function HeroSection({ onStart, hasSession, onContinue }: HeroSec
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.6 }}
-          className="text-xl text-zinc-300 mb-8 font-light"
+          className="text-lg sm:text-xl text-slate-300 mb-8 font-medium leading-relaxed"
         >
-          Xây dựng nền kinh tế định hướng xã hội chủ nghĩa
+          Xây dựng & Điều hành nền kinh tế thị trường định hướng xã hội chủ nghĩa
         </motion.p>
 
         <motion.div
@@ -51,12 +92,21 @@ export default function HeroSection({ onStart, hasSession, onContinue }: HeroSec
           transition={{ delay: 0.8, duration: 0.5 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <Button size="lg" onClick={onStart} className="text-lg px-10">
-            BẮT ĐẦU
+          <Button
+            size="lg"
+            onClick={onStart}
+            className="text-lg px-10 py-3.5 bg-red-600 hover:bg-red-700 text-white font-bold rounded-2xl shadow-xl shadow-red-600/30 transform hover:scale-[1.03] transition-all"
+          >
+            🚀 BẮT ĐẦU CHƠI
           </Button>
           {hasSession && onContinue && (
-            <Button variant="secondary" size="lg" onClick={onContinue} className="text-lg">
-              Tiếp tục
+            <Button
+              variant="secondary"
+              size="lg"
+              onClick={onContinue}
+              className="text-lg px-8 py-3.5 bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-2xl border border-slate-700 shadow-lg"
+            >
+              ⏩ Tiếp tục
             </Button>
           )}
         </motion.div>
@@ -72,9 +122,9 @@ export default function HeroSection({ onStart, hasSession, onContinue }: HeroSec
             { label: 'Tình huống', value: '50' },
             { label: 'CLO', value: '9' },
           ].map((item) => (
-            <div key={item.label} className="text-center">
-              <div className="text-2xl font-bold text-white">{item.value}</div>
-              <div className="text-xs text-zinc-500 mt-1">{item.label}</div>
+            <div key={item.label} className="text-center bg-slate-800/60 p-3 rounded-2xl border border-slate-700/60 shadow-md">
+              <div className="text-2xl font-black text-white">{item.value}</div>
+              <div className="text-xs text-slate-400 font-semibold mt-0.5">{item.label}</div>
             </div>
           ))}
         </motion.div>
@@ -83,14 +133,14 @@ export default function HeroSection({ onStart, hasSession, onContinue }: HeroSec
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 0.5 }}
-          className="mt-6 flex justify-center gap-4 text-xs"
+          className="mt-6 flex justify-center gap-4 text-xs font-semibold"
         >
-          <a href="/leaderboard" className="text-zinc-400 hover:text-white transition-colors">
-            Bảng xếp hạng
+          <a href="/leaderboard" className="text-slate-400 hover:text-white transition-colors">
+            🏆 Bảng xếp hạng
           </a>
-          <span className="text-zinc-600">·</span>
-          <a href="/admin" className="text-zinc-400 hover:text-white transition-colors">
-            Admin
+          <span className="text-slate-600">·</span>
+          <a href="/admin" className="text-slate-400 hover:text-white transition-colors">
+            ⚙️ Quản trị Admin
           </a>
         </motion.div>
       </motion.div>
