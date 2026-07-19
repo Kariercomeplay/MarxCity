@@ -41,6 +41,7 @@ export default function GamePage() {
   const [showEnding, setShowEnding] = useState(false);
   const [showConsequence, setShowConsequence] = useState(false);
   const [consequenceData, setConsequenceData] = useState<any>(null);
+  const [pendingQuiz, setPendingQuiz] = useState<any>(null);
   const initRef = useRef(false);
 
   const showNotif = useCallback((msg: string) => {
@@ -168,10 +169,7 @@ export default function GamePage() {
           explanation: r.explanation,
         });
         setShowConsequence(true);
-
-        if (r.quiz) {
-          setTimeout(() => { setCurrentQuiz(r.quiz); setShowQuiz(true); }, 3000);
-        }
+        if (r.quiz) setPendingQuiz(r.quiz);
         if (r.gameOver) {
           setTimeout(() => { setShowEnding(true); }, 2000);
         }
@@ -181,7 +179,21 @@ export default function GamePage() {
 
   const handleNextYear = () => {
     setShowConsequence(false); setConsequenceData(null);
-    setShowExplanation(false); setCurrentQuiz(null); setShowQuiz(false);
+    setShowExplanation(false);
+
+    // Show result card with updated stats
+    setTurnPhase('result');
+
+    // Show pending quiz after consequence
+    if (pendingQuiz && !showEnding) {
+      setCurrentQuiz(pendingQuiz);
+      setShowQuiz(true);
+      setPendingQuiz(null);
+    }
+  };
+
+  const handleProceedToNextYear = () => {
+    setCurrentQuiz(null); setShowQuiz(false);
     setShowEventModal(false); setShowSurpriseModal(false);
     setCurrentEvent(null); setRandomEvent(null); setSurpriseEvent(null);
 
@@ -201,7 +213,10 @@ export default function GamePage() {
 
   const handleChapterContinue = () => {
     setShowChapterTransition(false); setNextChapter(null);
-    fetchEventsForYear(store.currentYear);
+    const nextYear = store.currentYear;
+    const gameId = localStorage.getItem('marxcity_gameId');
+    if (!gameId) return;
+    fetchEventsForYear(nextYear);
   };
 
   const handleQuizAnswer = async (correct: boolean, idx: number) => {
@@ -452,8 +467,8 @@ export default function GamePage() {
                     </div>
                   )}
 
-                  {!showQuiz && !showChapterTransition && !showEnding && (
-                    <Button onClick={handleNextYear} className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 rounded-xl shadow-md shadow-red-600/20">
+                  {!showQuiz && !showChapterTransition && !showEnding && !showConsequence && (
+                    <Button onClick={handleProceedToNextYear} className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 rounded-xl shadow-md shadow-red-600/20">
                       {store.status === 'completed' ? 'Xem kết quả chung cuộc' : `Sang năm ${store.currentYear} →`}
                     </Button>
                   )}
@@ -490,17 +505,7 @@ export default function GamePage() {
           </div>
         </div>
 
-        {/* FOOTER SECTION: Cố Vấn Lý Luận KTCT */}
-        <div className="pt-4 border-t border-zinc-200/80 dark:border-zinc-800">
-          <ExplanationBox
-            isOpen={showExplanation}
-            content={store.lastResult?.explanation.content || ''}
-            cloReferences={store.lastResult?.explanation.cloReferences || []}
-            conceptTags={store.lastResult?.explanation.conceptTags || []}
-            learningObjectives={store.lastResult?.explanation.learningObjectives || []}
-            onClose={() => setShowExplanation(false)}
-          />
-        </div>
+        {/* Game state is shown through ConsequenceScreen (Phase 4 has full explanation) */}
       </main>
 
       {/* Event Modal */}
