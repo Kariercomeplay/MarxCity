@@ -1,0 +1,662 @@
+[
+  {
+    "id": "ch1_gia_hang_hoa",
+    "title": "Giá hàng hóa thiết yếu tăng",
+    "scenario": "Giá xăng dầu và lương thực thế giới tăng mạnh kéo theo chi phí sản xuất trong nước tăng cao. Các doanh nghiệp đề xuất tăng giá bán sản phẩm. Người tiêu dùng phản đối. Bạn sẽ xử lý thế nào?",
+    "chapter": 1,
+    "turn": 1,
+    "choices": [
+      {
+        "id": "a",
+        "label": "Cho phép doanh nghiệp điều chỉnh giá theo thị trường",
+        "effects": { "marketStability": -8, "production": 3, "budget": 5 },
+        "stakeholderImpact": { "businesses": 5, "workers": -3, "state": 2 },
+        "explanationId": "ex_gia_tt"
+      },
+      {
+        "id": "b",
+        "label": "Trợ giá để giữ giá ổn định",
+        "effects": { "marketStability": 3, "budget": -10, "socialWelfare": 5 },
+        "stakeholderImpact": { "workers": 4, "state": -4, "businesses": 1 },
+        "explanationId": "ex_gia_tro_gia"
+      },
+      {
+        "id": "c",
+        "label": "Kiểm soát giá và tăng cường dự trữ quốc gia",
+        "effects": { "marketStability": 5, "production": -3, "budget": -5, "nationalCapacity": 3 },
+        "stakeholderImpact": { "state": 3, "workers": 2, "businesses": -3 },
+        "explanationId": "ex_gia_kiem_soat"
+      }
+    ],
+    "cloReferences": ["CLO2"],
+    "conceptTags": ["hang-hoa", "gia-ca", "quy-luat-gia-tri"],
+    "learningObjectives": ["Phân tích mối quan hệ giữa giá trị và giá cả hàng hóa", "Giải thích tác động của quy luật giá trị trong nền kinh tế thị trường"]
+  },
+  {
+    "id": "ch1_tang_gio_lam",
+    "title": "Doanh nghiệp đề xuất tăng giờ làm thêm",
+    "scenario": "Các doanh nghiệp trong khu công nghiệp đề xuất kéo dài thời gian làm thêm để đáp ứng đơn hàng xuất khẩu. Công đoàn lo ngại sức khỏe người lao động. Bạn quyết định thế nào?",
+    "chapter": 1,
+    "turn": 2,
+    "choices": [
+      {
+        "id": "a",
+        "label": "Chấp thuận tăng giờ làm, có phụ cấp",
+        "effects": { "production": 7, "employment": 3, "socialWelfare": -5 },
+        "stakeholderImpact": { "businesses": 5, "workers": 1, "state": 1 },
+        "explanationId": "ex_gio_lam_chap_thuan"
+      },
+      {
+        "id": "b",
+        "label": "Giữ nguyên giờ làm theo quy định",
+        "effects": { "socialWelfare": 3, "employment": -2, "production": -3 },
+        "stakeholderImpact": { "workers": 3, "businesses": -3, "state": 0 },
+        "explanationId": "ex_gio_lam_giu_nguyen"
+      },
+      {
+        "id": "c",
+        "label": "Cho phép nhưng yêu cầu đầu tư cải thiện điều kiện lao động",
+        "effects": { "production": 4, "socialWelfare": 2, "budget": -3, "employment": 2 },
+        "stakeholderImpact": { "workers": 3, "businesses": 2, "state": 1 },
+        "explanationId": "ex_gio_lam_du_dieu_kien"
+      }
+    ],
+    "cloReferences": ["CLO2"],
+    "conceptTags": ["lao-dong", "gia-tri-thang-du", "thoi-gian-lao-dong"],
+    "learningObjectives": ["Phân tích mối quan hệ giữa thời gian lao động và giá trị thặng dư", "Đánh giá tác động của việc kéo dài thời gian lao động đến người lao động"]
+  },
+  {
+    "id": "ch1_nang_suat",
+    "title": "Năng suất lao động thấp hơn so với khu vực",
+    "scenario": "Báo cáo cho thấy năng suất lao động của các doanh nghiệp trong nước thấp hơn 30% so với trung bình khu vực. Nguyên nhân chính là công nghệ lạc hậu và tay nghề lao động hạn chế. Bạn sẽ ưu tiên giải pháp nào?",
+    "chapter": 1,
+    "turn": 2,
+    "choices": [
+      {
+        "id": "a",
+        "label": "Đầu tư vào đào tạo nghề và nâng cao tay nghề",
+        "effects": { "production": 5, "employment": 2, "socialWelfare": 4, "budget": -6 },
+        "stakeholderImpact": { "workers": 4, "state": -2, "businesses": 2 },
+        "explanationId": "ex_nang_suat_dao_tao"
+      },
+      {
+        "id": "b",
+        "label": "Nhập khẩu công nghệ và tự động hóa sản xuất",
+        "effects": { "production": 8, "employment": -5, "nationalCapacity": 3, "budget": -8 },
+        "stakeholderImpact": { "businesses": 5, "workers": -4, "state": -1 },
+        "explanationId": "ex_nang_suat_cong_nghe"
+      },
+      {
+        "id": "c",
+        "label": "Cải cách môi trường đầu tư để thu hút doanh nghiệp nước ngoài",
+        "effects": { "production": 4, "nationalCapacity": -2, "employment": 3, "budget": 2 },
+        "stakeholderImpact": { "businesses": 3, "state": 2, "workers": 1 },
+        "explanationId": "ex_nang_suat_moi_truong"
+      }
+    ],
+    "cloReferences": ["CLO2"],
+    "conceptTags": ["nang-suat-lao-dong", "gia-tri-thang-du", "tich-luy-tu-ban"],
+    "learningObjectives": ["Phân tích các nhân tố ảnh hưởng đến năng suất lao động", "Giải thích mối quan hệ giữa năng suất lao động và giá trị thặng dư"]
+  },
+  {
+    "id": "ch1_chi_phi_nguyen_lieu",
+    "title": "Chi phí nguyên liệu đầu vào tăng đột biến",
+    "scenario": "Giá nguyên liệu nhập khẩu tăng 20% do gián đoạn chuỗi cung ứng toàn cầu. Các doanh nghiệp sản xuất gặp khó khăn, có nguy cơ phải thu hẹp sản xuất. Bạn sẽ làm gì?",
+    "chapter": 1,
+    "turn": 1,
+    "choices": [
+      {
+        "id": "a",
+        "label": "Hỗ trợ thuế và tín dụng cho doanh nghiệp",
+        "effects": { "production": 4, "budget": -8, "employment": 3 },
+        "stakeholderImpact": { "businesses": 5, "state": -3, "workers": 2 },
+        "explanationId": "ex_nguyen_lieu_ho_tro"
+      },
+      {
+        "id": "b",
+        "label": "Cho phép tăng giá thành phẩm",
+        "effects": { "marketStability": -7, "production": 2, "budget": 2 },
+        "stakeholderImpact": { "businesses": 4, "workers": -3, "state": 0 },
+        "explanationId": "ex_nguyen_lieu_tang_gia"
+      },
+      {
+        "id": "c",
+        "label": "Tìm kiếm nguồn cung nội địa thay thế",
+        "effects": { "production": -2, "nationalCapacity": 6, "environment": 2, "budget": -3 },
+        "stakeholderImpact": { "state": 3, "businesses": 1, "workers": 1 },
+        "explanationId": "ex_nguyen_lieu_noi_dia"
+      }
+    ],
+    "cloReferences": ["CLO2"],
+    "conceptTags": ["gia-tri", "chi-phi-san-xuat", "luu-thong-hang-hoa"],
+    "learningObjectives": ["Phân tích cấu thành giá trị hàng hóa", "Giải thích tác động của chi phí sản xuất đến giá cả hàng hóa"]
+  },
+  {
+    "id": "ch2_mua_lai",
+    "title": "Tập đoàn lớn mua lại doanh nghiệp nhỏ",
+    "scenario": "Một tập đoàn đa quốc gia đề xuất mua lại chuỗi doanh nghiệp nội địa trong ngành hàng tiêu dùng. Các doanh nghiệp nhỏ lo ngại bị thâu tóm. Bạn sẽ?",
+    "chapter": 2,
+    "turn": 3,
+    "choices": [
+      {
+        "id": "a",
+        "label": "Cho phép tự do mua bán, sáp nhập",
+        "effects": { "production": 5, "nationalCapacity": -5, "employment": 2, "budget": 3 },
+        "stakeholderImpact": { "businesses": 5, "workers": 0, "state": 2 },
+        "explanationId": "ex_mua_lai_tu_do"
+      },
+      {
+        "id": "b",
+        "label": "Hạn chế sáp nhập, bảo vệ doanh nghiệp nhỏ",
+        "effects": { "production": -3, "nationalCapacity": 5, "employment": 2, "marketStability": 3 },
+        "stakeholderImpact": { "businesses": -2, "workers": 2, "state": 3 },
+        "explanationId": "ex_mua_lai_han_che"
+      },
+      {
+        "id": "c",
+        "label": "Cho phép nhưng yêu cầu chuyển giao công nghệ và giữ việc làm",
+        "effects": { "production": 3, "nationalCapacity": 4, "employment": 1, "marketStability": 2 },
+        "stakeholderImpact": { "businesses": 2, "workers": 2, "state": 3 },
+        "explanationId": "ex_mua_lai_co_dieu_kien"
+      }
+    ],
+    "cloReferences": ["CLO3"],
+    "conceptTags": ["canh-tranh", "doc-quyen", "tap-trung-tu-ban"],
+    "learningObjectives": ["Phân tích xu hướng tích tụ và tập trung tư bản trong nền kinh tế thị trường", "Đánh giá tác động của độc quyền đến cạnh tranh"]
+  },
+  {
+    "id": "ch2_ep_gia",
+    "title": "Doanh nghiệp nhỏ bị ép giá từ đối tác lớn",
+    "scenario": "Các doanh nghiệp chế biến thực phẩm nhỏ phản ánh bị các siêu thị lớn ép giá mua thấp hơn chi phí sản xuất. Nhiều doanh nghiệp đứng trước nguy cơ phá sản. Bạn sẽ can thiệp?",
+    "chapter": 2,
+    "turn": 3,
+    "choices": [
+      {
+        "id": "a",
+        "label": "Ban hành quy định về cạnh tranh lành mạnh",
+        "effects": { "marketStability": 5, "production": -2, "nationalCapacity": 3, "budget": -2 },
+        "stakeholderImpact": { "businesses": 2, "workers": 2, "state": 3 },
+        "explanationId": "ex_ep_gia_quy_dinh"
+      },
+      {
+        "id": "b",
+        "label": "Không can thiệp, để thị trường tự điều tiết",
+        "effects": { "production": 3, "nationalCapacity": -4, "employment": -3, "marketStability": -3 },
+        "stakeholderImpact": { "businesses": 3, "workers": -4, "state": -1 },
+        "explanationId": "ex_ep_gia_tu_do"
+      },
+      {
+        "id": "c",
+        "label": "Hỗ trợ doanh nghiệp nhỏ thành lập hợp tác xã để tăng sức mặc cả",
+        "effects": { "production": 2, "nationalCapacity": 5, "socialWelfare": 3, "budget": -4 },
+        "stakeholderImpact": { "workers": 3, "businesses": 3, "state": 2 },
+        "explanationId": "ex_ep_gia_hop_tac"
+      }
+    ],
+    "cloReferences": ["CLO3"],
+    "conceptTags": ["canh-tranh", "gia-tri-thang-du", "quan-he-loi-ich"],
+    "learningObjectives": ["Phân tích bản chất của cạnh tranh trong nền kinh tế thị trường", "Giải thích sự cần thiết của vai trò Nhà nước trong điều tiết cạnh tranh"]
+  },
+  {
+    "id": "ch2_nen_tang_so",
+    "title": "Nền tảng số chiếm thị phần lớn",
+    "scenario": "Một nền tảng thương mại điện tử nước ngoài chiếm hơn 60% thị phần, gây áp lực lên doanh nghiệp bán lẻ trong nước. Có ý kiến đề nghị đánh thuế và hạn chế hoạt động. Bạn sẽ?",
+    "chapter": 2,
+    "turn": 4,
+    "choices": [
+      {
+        "id": "a",
+        "label": "Đánh thuế và áp dụng các rào cản kỹ thuật",
+        "effects": { "nationalCapacity": 5, "marketStability": 2, "budget": 5, "production": -3 },
+        "stakeholderImpact": { "state": 4, "businesses": -1, "workers": 1 },
+        "explanationId": "ex_nen_tang_so_thue"
+      },
+      {
+        "id": "b",
+        "label": "Để thị trường tự do cạnh tranh",
+        "effects": { "production": 4, "nationalCapacity": -5, "employment": -2, "budget": 2 },
+        "stakeholderImpact": { "businesses": 4, "workers": -3, "state": 0 },
+        "explanationId": "ex_nen_tang_so_tu_do"
+      },
+      {
+        "id": "c",
+        "label": "Hỗ trợ doanh nghiệp nội địa chuyển đổi số và nâng cao năng lực cạnh tranh",
+        "effects": { "production": 3, "nationalCapacity": 6, "employment": 3, "budget": -6 },
+        "stakeholderImpact": { "businesses": 3, "workers": 3, "state": -1 },
+        "explanationId": "ex_nen_tang_so_ho_tro"
+      }
+    ],
+    "cloReferences": ["CLO3"],
+    "conceptTags": ["doc-quyen", "canh-tranh", "kinh-te-so"],
+    "learningObjectives": ["Phân tích xu hướng độc quyền trong nền kinh tế số", "Đánh giá vai trò của Nhà nước trong điều tiết cạnh tranh trên không gian số"]
+  },
+  {
+    "id": "ch2_nha_nuoc_dieu_tiet",
+    "title": "Nhà nước xem xét điều tiết thị trường",
+    "scenario": "Sau một thời gian dài thị trường tự do, xuất hiện nhiều bất ổn: giá cả biến động mạnh, doanh nghiệp nhỏ phá sản hàng loạt. Các chuyên gia khuyến nghị Nhà nước tăng cường điều tiết. Bạn sẽ?",
+    "chapter": 2,
+    "turn": 4,
+    "choices": [
+      {
+        "id": "a",
+        "label": "Tăng cường vai trò điều tiết của Nhà nước",
+        "effects": { "marketStability": 6, "nationalCapacity": 3, "production": -3, "budget": -4 },
+        "stakeholderImpact": { "state": 4, "workers": 3, "businesses": -2 },
+        "explanationId": "ex_dieu_tiet_tang"
+      },
+      {
+        "id": "b",
+        "label": "Duy trì chính sách thị trường tự do hiện tại",
+        "effects": { "production": 4, "marketStability": -5, "nationalCapacity": -3, "budget": 2 },
+        "stakeholderImpact": { "businesses": 4, "workers": -3, "state": -1 },
+        "explanationId": "ex_dieu_tiet_duy_tri"
+      },
+      {
+        "id": "c",
+        "label": "Điều tiết có chọn lọc ở những ngành trọng yếu",
+        "effects": { "marketStability": 4, "nationalCapacity": 4, "production": 2, "budget": -2 },
+        "stakeholderImpact": { "state": 3, "workers": 2, "businesses": 2 },
+        "explanationId": "ex_dieu_tiet_chon_loc"
+      }
+    ],
+    "cloReferences": ["CLO3"],
+    "conceptTags": ["vai-tro-nha-nuoc", "doc-quyen-nha-nuoc", "dieu-tiet"],
+    "learningObjectives": ["Phân tích vai trò của Nhà nước trong nền kinh tế thị trường", "Đánh giá sự cần thiết của độc quyền nhà nước ở một số ngành trọng yếu"]
+  },
+  {
+    "id": "ch3_giam_luong",
+    "title": "Doanh nghiệp muốn giảm lương để cắt giảm chi phí",
+    "scenario": "Trong bối cảnh suy thoái kinh tế, các doanh nghiệp kiến nghị giảm 10% lương cơ bản để duy trì sản xuất, tránh sa thải hàng loạt. Công đoàn phản đối. Bạn sẽ?",
+    "chapter": 3,
+    "turn": 5,
+    "choices": [
+      {
+        "id": "a",
+        "label": "Chấp thuận giảm lương có thời hạn",
+        "effects": { "production": 4, "socialWelfare": -6, "employment": 3, "budget": 2 },
+        "stakeholderImpact": { "businesses": 5, "workers": -5, "state": 1 },
+        "explanationId": "ex_giam_luong"
+      },
+      {
+        "id": "b",
+        "label": "Bác bỏ, giữ nguyên lương",
+        "effects": { "socialWelfare": 3, "employment": -5, "production": -4 },
+        "stakeholderImpact": { "workers": 4, "businesses": -4, "state": -1 },
+        "explanationId": "ex_giam_luong_bac"
+      },
+      {
+        "id": "c",
+        "label": "Hỗ trợ doanh nghiệp bằng giảm thuế, yêu cầu giữ lương",
+        "effects": { "employment": 2, "socialWelfare": 2, "budget": -8, "production": 1 },
+        "stakeholderImpact": { "workers": 3, "businesses": 3, "state": -3 },
+        "explanationId": "ex_giam_luong_ho_tro"
+      }
+    ],
+    "cloReferences": ["CLO4", "CLO7"],
+    "conceptTags": ["quan-he-loi-ich", "tien-luong", "gia-tri-thang-du"],
+    "learningObjectives": ["Phân tích quan hệ lợi ích giữa người lao động và doanh nghiệp", "Giải thích vai trò của Nhà nước trong điều hòa lợi ích"]
+  },
+  {
+    "id": "ch3_tang_phuc_loi",
+    "title": "Người lao động yêu cầu tăng phúc lợi",
+    "scenario": "Công đoàn yêu cầu tăng các khoản phúc lợi xã hội như bảo hiểm, hỗ trợ nhà ở và giữ trẻ. Doanh nghiệp cho rằng chi phí đã quá cao. Bạn sẽ cân đối thế nào?",
+    "chapter": 3,
+    "turn": 5,
+    "choices": [
+      {
+        "id": "a",
+        "label": "Yêu cầu doanh nghiệp tăng phúc lợi",
+        "effects": { "socialWelfare": 6, "production": -4, "employment": -2, "budget": -2 },
+        "stakeholderImpact": { "workers": 5, "businesses": -4, "state": -1 },
+        "explanationId": "ex_phuc_loi_yeu_cau"
+      },
+      {
+        "id": "b",
+        "label": "Nhà nước và doanh nghiệp cùng chia sẻ chi phí phúc lợi",
+        "effects": { "socialWelfare": 5, "production": 1, "employment": 2, "budget": -5 },
+        "stakeholderImpact": { "workers": 4, "businesses": 2, "state": -2 },
+        "explanationId": "ex_phuc_loi_chia_se"
+      },
+      {
+        "id": "c",
+        "label": "Chưa thực hiện ngay, chờ tăng trưởng kinh tế",
+        "effects": { "socialWelfare": -4, "production": 2, "budget": 3, "marketStability": 2 },
+        "stakeholderImpact": { "workers": -4, "businesses": 3, "state": 2 },
+        "explanationId": "ex_phuc_loi_cho"
+      }
+    ],
+    "cloReferences": ["CLO4", "CLO7"],
+    "conceptTags": ["phuc-loi-xa-hoi", "quan-he-loi-ich", "tai-phan-phoi"],
+    "learningObjectives": ["Phân tích các quan hệ lợi ích trong phân phối thu nhập", "Đánh giá vai trò của Nhà nước trong bảo đảm an sinh xã hội"]
+  },
+  {
+    "id": "ch3_thue_ngan_sach",
+    "title": "Nhà nước cần tăng thu ngân sách",
+    "scenario": "Ngân sách nhà nước đang thâm hụt do chi tiêu công tăng và thu từ thuế giảm. Bộ Tài chính đề xuất tăng thuế thu nhập doanh nghiệp. Bạn sẽ?",
+    "chapter": 3,
+    "turn": 6,
+    "choices": [
+      {
+        "id": "a",
+        "label": "Tăng thuế thu nhập doanh nghiệp",
+        "effects": { "budget": 8, "production": -5, "employment": -2, "socialWelfare": -2 },
+        "stakeholderImpact": { "state": 5, "businesses": -5, "workers": -1 },
+        "explanationId": "ex_thue_tang"
+      },
+      {
+        "id": "b",
+        "label": "Cắt giảm chi tiêu công",
+        "effects": { "budget": 5, "socialWelfare": -5, "production": -2, "employment": -2 },
+        "stakeholderImpact": { "state": 3, "workers": -4, "businesses": 1 },
+        "explanationId": "ex_thue_cat_giam"
+      },
+      {
+        "id": "c",
+        "label": "Vay nợ và tái cơ cấu thuế",
+        "effects": { "budget": 2, "production": 2, "marketStability": -3, "nationalCapacity": 2 },
+        "stakeholderImpact": { "state": 1, "businesses": 2, "workers": 1 },
+        "explanationId": "ex_thue_vay_no"
+      }
+    ],
+    "cloReferences": ["CLO4"],
+    "conceptTags": ["ngan-sach", "thue", "quan-he-loi-ich"],
+    "learningObjectives": ["Phân tích vai trò của ngân sách nhà nước trong điều tiết kinh tế", "Giải thích mối quan hệ giữa thuế, đầu tư và phát triển"]
+  },
+  {
+    "id": "ch3_gia_dien",
+    "title": "Giá điện tăng để đầu tư hạ tầng năng lượng",
+    "scenario": "Tập đoàn Điện lực đề xuất tăng giá điện 15% để có nguồn vốn đầu tư nâng cấp lưới điện và phát triển năng lượng tái tạo. Doanh nghiệp và người dân phản đối. Bạn sẽ?",
+    "chapter": 3,
+    "turn": 6,
+    "choices": [
+      {
+        "id": "a",
+        "label": "Phê duyệt tăng giá điện",
+        "effects": { "production": -4, "marketStability": -4, "budget": 5, "environment": 3 },
+        "stakeholderImpact": { "state": 3, "businesses": -3, "workers": -3 },
+        "explanationId": "ex_gia_dien_tang"
+      },
+      {
+        "id": "b",
+        "label": "Giữ giá điện, dùng ngân sách đầu tư hạ tầng",
+        "effects": { "production": 1, "marketStability": 3, "budget": -8, "environment": 2 },
+        "stakeholderImpact": { "workers": 2, "businesses": 2, "state": -3 },
+        "explanationId": "ex_gia_dien_giu"
+      },
+      {
+        "id": "c",
+        "label": "Tăng giá có lộ trình, hỗ trợ doanh nghiệp và hộ nghèo",
+        "effects": { "production": -1, "marketStability": 2, "budget": 3, "environment": 3, "socialWelfare": 2 },
+        "stakeholderImpact": { "state": 2, "workers": 2, "businesses": 1 },
+        "explanationId": "ex_gia_dien_lo_trinh"
+      }
+    ],
+    "cloReferences": ["CLO4", "CLO7"],
+    "conceptTags": ["quan-he-loi-ich", "hang-hoa-cong", "phat-trien-ben-vung"],
+    "learningObjectives": ["Phân tích sự đánh đổi giữa phát triển hạ tầng và chi phí sinh hoạt", "Giải thích nguyên tắc công bằng trong điều tiết giá hàng hóa công"]
+  },
+  {
+    "id": "ch4_dau_tu_robot",
+    "title": "Đầu tư robot vào dây chuyền sản xuất",
+    "scenario": "Một hiệp hội doanh nghiệp đề xuất chương trình tự động hóa sản xuất quy mô lớn bằng robot và AI. Dự kiến năng suất tăng 40% nhưng 15.000 lao động phổ thông có thể mất việc. Bạn sẽ?",
+    "chapter": 4,
+    "turn": 7,
+    "choices": [
+      {
+        "id": "a",
+        "label": "Phê duyệt, hỗ trợ đào tạo lại cho người lao động",
+        "effects": { "production": 7, "employment": -2, "socialWelfare": 3, "nationalCapacity": 5, "budget": -6 },
+        "stakeholderImpact": { "businesses": 4, "workers": 1, "state": 1 },
+        "explanationId": "ex_robot_phe_duyet"
+      },
+      {
+        "id": "b",
+        "label": "Hạn chế tự động hóa để bảo vệ việc làm",
+        "effects": { "production": -5, "employment": 4, "nationalCapacity": -4 },
+        "stakeholderImpact": { "workers": 4, "businesses": -4, "state": 0 },
+        "explanationId": "ex_robot_han_che"
+      },
+      {
+        "id": "c",
+        "label": "Khuyến khích tự động hóa từng bước, kết hợp đào tạo",
+        "effects": { "production": 4, "employment": 1, "socialWelfare": 2, "nationalCapacity": 4, "budget": -3 },
+        "stakeholderImpact": { "businesses": 3, "workers": 2, "state": 2 },
+        "explanationId": "ex_robot_tung_buoc"
+      }
+    ],
+    "cloReferences": ["CLO5"],
+    "conceptTags": ["cong-nghiep-hoa", "hien-dai-hoa", "nang-suat", "lao-dong"],
+    "learningObjectives": ["Phân tích mối quan hệ giữa công nghiệp hóa, hiện đại hóa và lao động", "Giải thích tác động của tự động hóa đến thị trường lao động"]
+  },
+  {
+    "id": "ch4_dao_tao_nghe",
+    "title": "Đào tạo nghề cho lao động trẻ",
+    "scenario": "Tỷ lệ thanh niên thiếu kỹ năng nghề nghiệp đang cao. Các doanh nghiệp khó tuyển lao động có tay nghề. Đề xuất cải cách hệ thống dạy nghề quốc gia được đưa ra. Bạn sẽ?",
+    "chapter": 4,
+    "turn": 7,
+    "choices": [
+      {
+        "id": "a",
+        "label": "Đầu tư lớn vào hệ thống trường dạy nghề",
+        "effects": { "production": 3, "employment": 4, "socialWelfare": 5, "budget": -9 },
+        "stakeholderImpact": { "workers": 5, "state": -4, "businesses": 3 },
+        "explanationId": "ex_dao_tao_dau_tu"
+      },
+      {
+        "id": "b",
+        "label": "Khuyến khích doanh nghiệp tự đào tạo",
+        "effects": { "production": 4, "employment": 2, "budget": 2, "socialWelfare": -2 },
+        "stakeholderImpact": { "businesses": 4, "state": 2, "workers": -1 },
+        "explanationId": "ex_dao_tao_khuyen_khich"
+      },
+      {
+        "id": "c",
+        "label": "Kết hợp nhà nước - doanh nghiệp trong đào tạo",
+        "effects": { "production": 4, "employment": 4, "socialWelfare": 4, "budget": -5 },
+        "stakeholderImpact": { "workers": 4, "businesses": 3, "state": -1 },
+        "explanationId": "ex_dao_tao_ket_hop"
+      }
+    ],
+    "cloReferences": ["CLO5"],
+    "conceptTags": ["cong-nghiep-hoa", "nguon-nhan-luc", "chat-luong-lao-dong"],
+    "learningObjectives": ["Phân tích vai trò của chất lượng nguồn nhân lực trong công nghiệp hóa", "Đánh giá các mô hình đào tạo nghề trong nền kinh tế hiện đại"]
+  },
+  {
+    "id": "ch4_chuyen_doi_so",
+    "title": "Chương trình chuyển đổi số quốc gia",
+    "scenario": "Chính phủ đề xuất chương trình chuyển đổi số quốc gia với mục tiêu đưa 80% doanh nghiệp lên nền tảng số trong 5 năm. Kinh phí dự kiến rất lớn. Bạn sẽ?",
+    "chapter": 4,
+    "turn": 8,
+    "choices": [
+      {
+        "id": "a",
+        "label": "Phê duyệt toàn bộ chương trình",
+        "effects": { "production": 6, "nationalCapacity": 7, "budget": -10, "employment": -1 },
+        "stakeholderImpact": { "businesses": 4, "state": 1, "workers": -1 },
+        "explanationId": "ex_chuyen_doi_so_phe_duyet"
+      },
+      {
+        "id": "b",
+        "label": "Triển khai thí điểm ở một số ngành",
+        "effects": { "production": 3, "nationalCapacity": 4, "budget": -4, "employment": 1 },
+        "stakeholderImpact": { "state": 2, "businesses": 2, "workers": 1 },
+        "explanationId": "ex_chuyen_doi_so_thi_diem"
+      },
+      {
+        "id": "c",
+        "label": "Hoãn lại, tập trung vào hạ tầng truyền thống",
+        "effects": { "production": 1, "nationalCapacity": -4, "budget": 4, "employment": 2 },
+        "stakeholderImpact": { "workers": 2, "state": 2, "businesses": -2 },
+        "explanationId": "ex_chuyen_doi_so_hoan"
+      }
+    ],
+    "cloReferences": ["CLO5"],
+    "conceptTags": ["hien-dai-hoa", "chuyen-doi-so", "nang-suat"],
+    "learningObjectives": ["Phân tích vai trò của chuyển đổi số trong hiện đại hóa nền kinh tế", "Đánh giá các rủi ro và cơ hội của chuyển đổi số"]
+  },
+  {
+    "id": "ch4_cong_nghiep_ho_tro",
+    "title": "Phát triển công nghiệp hỗ trợ",
+    "scenario": "Ngành công nghiệp hỗ trợ trong nước còn yếu, phụ thuộc nhiều vào linh kiện nhập khẩu. Đề xuất chiến lược phát triển công nghiệp hỗ trợ được đưa ra. Bạn sẽ?",
+    "chapter": 4,
+    "turn": 8,
+    "choices": [
+      {
+        "id": "a",
+        "label": "Ưu đãi thuế và tín dụng cho doanh nghiệp công nghiệp hỗ trợ",
+        "effects": { "production": 4, "nationalCapacity": 6, "employment": 3, "budget": -6 },
+        "stakeholderImpact": { "businesses": 4, "workers": 3, "state": -2 },
+        "explanationId": "ex_cong_nghiep_ho_tro_uu_dai"
+      },
+      {
+        "id": "b",
+        "label": "Yêu cầu doanh nghiệp FDI cam kết tỷ lệ nội địa hóa",
+        "effects": { "production": 1, "nationalCapacity": 4, "budget": 1, "employment": 2 },
+        "stakeholderImpact": { "state": 3, "workers": 2, "businesses": 0 },
+        "explanationId": "ex_cong_nghiep_ho_tro_yeu_cau"
+      },
+      {
+        "id": "c",
+        "label": "Tiếp tục nhập khẩu, tập trung vào lắp ráp",
+        "effects": { "production": 3, "nationalCapacity": -4, "employment": 1, "budget": 2 },
+        "stakeholderImpact": { "businesses": 3, "state": 1, "workers": 1 },
+        "explanationId": "ex_cong_nghiep_ho_tro_nhap_khau"
+      }
+    ],
+    "cloReferences": ["CLO5"],
+    "conceptTags": ["cong-nghiep-hoa", "noi-dia-hoa", "chuoi-cung-ung"],
+    "learningObjectives": ["Phân tích vai trò của công nghiệp hỗ trợ trong công nghiệp hóa", "Đánh giá chiến lược nâng cao giá trị gia tăng trong nước"]
+  },
+  {
+    "id": "ch5_fdi_lon",
+    "title": "Dự án FDI lớn từ tập đoàn công nghệ",
+    "scenario": "Một tập đoàn công nghệ hàng đầu thế giới đề xuất xây dựng nhà máy sản xuất chip trị giá 5 tỷ USD, tạo 30.000 việc làm. Tuy nhiên, họ yêu cầu ưu đãi thuế đặc biệt và không cam kết chuyển giao công nghệ. Bạn sẽ?",
+    "chapter": 5,
+    "turn": 9,
+    "choices": [
+      {
+        "id": "a",
+        "label": "Chấp thuận để thu hút FDI",
+        "effects": { "production": 6, "employment": 5, "nationalCapacity": 1, "budget": -4, "environment": -2 },
+        "stakeholderImpact": { "businesses": 5, "workers": 4, "state": 1 },
+        "explanationId": "ex_fdi_chap_thuan"
+      },
+      {
+        "id": "b",
+        "label": "Yêu cầu cam kết chuyển giao công nghệ và nội địa hóa",
+        "effects": { "production": 3, "employment": 3, "nationalCapacity": 5, "budget": -1, "environment": -1 },
+        "stakeholderImpact": { "state": 3, "workers": 2, "businesses": 2 },
+        "explanationId": "ex_fdi_chuyen_giao"
+      },
+      {
+        "id": "c",
+        "label": "Từ chối, tập trung phát triển doanh nghiệp nội địa",
+        "effects": { "production": -2, "employment": -1, "nationalCapacity": 4, "budget": 3, "environment": 1 },
+        "stakeholderImpact": { "state": 2, "workers": -2, "businesses": 3 },
+        "explanationId": "ex_fdi_tu_choi"
+      }
+    ],
+    "cloReferences": ["CLO5", "CLO8"],
+    "conceptTags": ["fdi", "hoi-nhap-quoc-te", "chuyen-giao-cong-nghe", "nang-luc-tu-chu"],
+    "learningObjectives": ["Phân tích tác động của FDI đối với nước chủ nhà", "Đánh giá sự đánh đổi giữa thu hút vốn nước ngoài và năng lực tự chủ"]
+  },
+  {
+    "id": "ch5_cam_ket_moi_truong",
+    "title": "Cam kết môi trường từ đối tác quốc tế",
+    "scenario": "Đối tác thương mại yêu cầu Việt Nam cam kết lộ trình Net Zero vào 2050, kéo theo chi phí sản xuất tăng và nhiều ngành phải tái cấu trúc. Nhưng mở ra cơ hội xuất khẩu xanh. Bạn sẽ?",
+    "chapter": 5,
+    "turn": 9,
+    "choices": [
+      {
+        "id": "a",
+        "label": "Cam kết đầy đủ, chấp nhận chi phí",
+        "effects": { "environment": 8, "production": -4, "employment": -2, "nationalCapacity": 3, "budget": -6 },
+        "stakeholderImpact": { "state": 2, "workers": -2, "businesses": -3 },
+        "explanationId": "ex_moi_truong_cam_ket"
+      },
+      {
+        "id": "b",
+        "label": "Cam kết có lộ trình dài hơn",
+        "effects": { "environment": 4, "production": 1, "employment": 1, "nationalCapacity": 2, "budget": -3 },
+        "stakeholderImpact": { "state": 3, "businesses": 1, "workers": 1 },
+        "explanationId": "ex_moi_truong_lo_trinh"
+      },
+      {
+        "id": "c",
+        "label": "Từ chối cam kết, bảo vệ sản xuất hiện tại",
+        "effects": { "environment": -5, "production": 4, "employment": 2, "budget": 2, "nationalCapacity": -2 },
+        "stakeholderImpact": { "businesses": 4, "workers": 2, "state": -2 },
+        "explanationId": "ex_moi_truong_tu_choi"
+      }
+    ],
+    "cloReferences": ["CLO5", "CLO7", "CLO8"],
+    "conceptTags": ["phat-trien-ben-vung", "moi-truong", "hoi-nhap-quoc-te"],
+    "learningObjectives": ["Phân tích mối quan hệ giữa tăng trưởng kinh tế và bảo vệ môi trường", "Đánh giá cơ hội và thách thức của kinh tế xanh trong hội nhập"]
+  },
+  {
+    "id": "ch5_chuoi_cung_ung",
+    "title": "Doanh nghiệp nội địa tham gia chuỗi cung ứng toàn cầu",
+    "scenario": "Các doanh nghiệp nội địa có cơ hội tham gia chuỗi cung ứng của các tập đoàn đa quốc gia nhưng cần đáp ứng tiêu chuẩn chất lượng cao. Nhiều doanh nghiệp cần hỗ trợ để nâng cấp. Bạn sẽ?",
+    "chapter": 5,
+    "turn": 10,
+    "choices": [
+      {
+        "id": "a",
+        "label": "Hỗ trợ doanh nghiệp nâng cấp tiêu chuẩn và chứng nhận",
+        "effects": { "production": 4, "nationalCapacity": 6, "employment": 3, "budget": -5, "environment": 1 },
+        "stakeholderImpact": { "businesses": 4, "workers": 3, "state": -1 },
+        "explanationId": "ex_chuoi_cung_ung_ho_tro"
+      },
+      {
+        "id": "b",
+        "label": "Tạo khu công nghiệp chuyên sâu thu hút FDI, doanh nghiệp nội địa làm vệ tinh",
+        "effects": { "production": 5, "employment": 4, "nationalCapacity": 3, "environment": -3, "budget": -4 },
+        "stakeholderImpact": { "businesses": 3, "workers": 3, "state": 1 },
+        "explanationId": "ex_chuoi_cung_ung_kcn"
+      },
+      {
+        "id": "c",
+        "label": "Tập trung vào thị trường nội địa, không phụ thuộc chuỗi toàn cầu",
+        "effects": { "production": -1, "nationalCapacity": 3, "employment": 1, "budget": 2, "environment": 2 },
+        "stakeholderImpact": { "state": 3, "businesses": 1, "workers": 1 },
+        "explanationId": "ex_chuoi_cung_ung_noi_dia"
+      }
+    ],
+    "cloReferences": ["CLO5", "CLO8"],
+    "conceptTags": ["hoi-nhap-quoc-te", "chuoi-cung-ung", "cong-nghiep-hoa"],
+    "learningObjectives": ["Phân tích chiến lược tham gia chuỗi giá trị toàn cầu", "Đánh giá sự đánh đổi giữa hội nhập sâu và bảo vệ thị trường nội địa"]
+  },
+  {
+    "id": "ch5_tu_dong_hoa_ai",
+    "title": "Làn sóng AI và tự động hóa đe dọa việc làm",
+    "scenario": "AI và robot đang thay thế nhiều công việc văn phòng và sản xuất. Lao động trẻ khó tìm việc, trong khi doanh nghiệp cần lao động kỹ thuật cao. Bạn sẽ định hướng thế nào?",
+    "chapter": 5,
+    "turn": 10,
+    "choices": [
+      {
+        "id": "a",
+        "label": "Đầu tư mạnh vào giáo dục STEM và đào tạo lại",
+        "effects": { "production": 5, "employment": 2, "socialWelfare": 4, "nationalCapacity": 6, "budget": -8 },
+        "stakeholderImpact": { "workers": 3, "businesses": 3, "state": -2 },
+        "explanationId": "ex_ai_stem"
+      },
+      {
+        "id": "b",
+        "label": "Điều tiết ứng dụng AI để bảo vệ việc làm",
+        "effects": { "production": -3, "employment": 4, "nationalCapacity": -3, "budget": 1 },
+        "stakeholderImpact": { "workers": 4, "businesses": -3, "state": 1 },
+        "explanationId": "ex_ai_dieu_tiet"
+      },
+      {
+        "id": "c",
+        "label": "Kết hợp phát triển AI với mạng lưới an sinh xã hội cho người mất việc",
+        "effects": { "production": 4, "employment": 0, "socialWelfare": 3, "nationalCapacity": 4, "budget": -6 },
+        "stakeholderImpact": { "workers": 2, "businesses": 3, "state": 0 },
+        "explanationId": "ex_ai_ket_hop"
+      }
+    ],
+    "cloReferences": ["CLO5", "CLO7", "CLO8"],
+    "conceptTags": ["ai", "tu-dong-hoa", "thi-truong-lao-dong", "an-sinh-xa-hoi"],
+    "learningObjectives": ["Phân tích tác động của AI và tự động hóa đến thị trường lao động", "Đánh giá vai trò của Nhà nước trong việc thích ứng với thay đổi công nghệ"]
+  }
+]

@@ -1,0 +1,422 @@
+[
+  {
+    "id": "ex_gia_tt",
+    "content": "Theo quy luật giá trị của C. Mác, giá cả hàng hóa là biểu hiện bằng tiền của giá trị, chịu sự tác động của cung - cầu. Khi chi phí sản xuất tăng (giá xăng dầu, nguyên liệu), để bảo toàn lợi nhuận, doanh nghiệp buộc phải tăng giá bán. Trong ngắn hạn, thị trường tự điều chỉnh qua cơ chế giá, khuyến khích sản xuất và tiết kiệm chi phí. Tuy nhiên, người tiêu dùng – đặc biệt là người lao động có thu nhập thấp – phải gánh chịu chi phí cao hơn, làm giảm sức mua thực tế.",
+    "cloReferences": ["CLO2"],
+    "conceptTags": ["hang-hoa", "gia-ca", "quy-luat-gia-tri"],
+    "learningObjectives": ["Phân tích mối quan hệ giữa giá trị và giá cả hàng hóa dưới tác động của quy luật giá trị"]
+  },
+  {
+    "id": "ex_gia_tro_gia",
+    "content": "Theo quan điểm của kinh tế chính trị Mác-Lênin, Nhà nước có vai trò điều tiết thị trường để bảo vệ lợi ích của nhân dân, đặc biệt là trong việc bình ổn giá cả hàng hóa thiết yếu. Trợ giá là công cụ tài chính giúp giảm áp lực lên người tiêu dùng, duy trì ổn định thị trường và đảm bảo an sinh xã hội. Tuy nhiên, biện pháp này tạo áp lực lên ngân sách nhà nước và có thể làm méo mó tín hiệu thị trường nếu kéo dài.",
+    "cloReferences": ["CLO2", "CLO4"],
+    "conceptTags": ["gia-ca", "vai-tro-nha-nuoc", "an-sinh-xa-hoi"],
+    "learningObjectives": ["Phân tích vai trò của Nhà nước trong bình ổn giá cả thị trường"]
+  },
+  {
+    "id": "ex_gia_kiem_soat",
+    "content": "Kiểm soát giá và tăng cường dự trữ quốc gia là biện pháp can thiệp sâu của Nhà nước vào thị trường, phù hợp với quan điểm điều tiết nền kinh tế thị trường định hướng XHCN. Biện pháp này giúp ổn định thị trường, tăng năng lực tự chủ và bảo vệ người tiêu dùng. Tuy nhiên, nếu kiểm soát giá quá chặt có thể hạn chế động lực sản xuất của doanh nghiệp và làm chậm phản ứng cung - cầu.",
+    "cloReferences": ["CLO2", "CLO4"],
+    "conceptTags": ["gia-ca", "quy-luat-gia-tri", "vai-tro-nha-nuoc"],
+    "learningObjectives": ["Phân tích ưu và nhược điểm của kiểm soát giá trong nền kinh tế thị trường"]
+  },
+  {
+    "id": "ex_gio_lam_chap_thuan",
+    "content": "Theo học thuyết giá trị thặng dư, việc kéo dài thời gian lao động là một phương pháp sản xuất giá trị thặng dư tuyệt đối. Trong ngắn hạn, người lao động nhận thêm thu nhập, doanh nghiệp tăng sản lượng. Tuy nhiên, về dài hạn, sức khỏe người lao động suy giảm, năng suất có thể giảm, mâu thuẫn giữa tư bản và lao động gia tăng.",
+    "cloReferences": ["CLO2"],
+    "conceptTags": ["lao-dong", "gia-tri-thang-du", "thoi-gian-lao-dong"],
+    "learningObjectives": ["Phân tích phương pháp sản xuất giá trị thặng dư tuyệt đối"]
+  },
+  {
+    "id": "ex_gio_lam_giu_nguyen",
+    "content": "Giữ nguyên thời gian lao động theo quy định bảo vệ sức khỏe và quyền lợi của người lao động, phù hợp với các quy định của Bộ luật Lao động. Theo kinh tế chính trị Mác-Lênin, việc hạn chế thời gian lao động là thành quả của đấu tranh giai cấp và là cơ sở để phát triển toàn diện con người. Tuy nhiên, trong ngắn hạn, sản lượng và lợi nhuận doanh nghiệp có thể bị ảnh hưởng.",
+    "cloReferences": ["CLO2"],
+    "conceptTags": ["lao-dong", "gia-tri-thang-du"],
+    "learningObjectives": ["Phân tích ý nghĩa của việc rút ngắn thời gian lao động đối với sự phát triển của con người"]
+  },
+  {
+    "id": "ex_gio_lam_du_dieu_kien",
+    "content": "Cho phép tăng giờ làm kèm điều kiện cải thiện điều kiện lao động là giải pháp dung hòa giữa lợi ích của doanh nghiệp và người lao động. Nhà nước đóng vai trò điều tiết, vừa tạo điều kiện cho sản xuất phát triển, vừa bảo vệ quyền lợi chính đáng của người lao động. Đây là biểu hiện của kinh tế thị trường định hướng XHCN.",
+    "cloReferences": ["CLO2", "CLO4"],
+    "conceptTags": ["lao-dong", "gia-tri-thang-du", "vai-tro-nha-nuoc"],
+    "learningObjectives": ["Phân tích vai trò của Nhà nước trong dung hòa lợi ích giữa lao động và tư bản"]
+  },
+  {
+    "id": "ex_nang_suat_dao_tao",
+    "content": "Theo C. Mác, nâng cao năng suất lao động là yếu tố then chốt để tạo ra giá trị thặng dư tương đối. Đầu tư vào đào tạo nghề nâng cao tay nghề cho người lao động là biện pháp lâu dài để tăng năng suất. Người lao động có kỹ năng tốt hơn tạo ra nhiều giá trị hơn, cải thiện thu nhập và phúc lợi. Tuy nhiên, kết quả chỉ đạt được trong trung và dài hạn.",
+    "cloReferences": ["CLO2"],
+    "conceptTags": ["nang-suat-lao-dong", "gia-tri-thang-du", "lao-dong"],
+    "learningObjectives": ["Phân tích mối quan hệ giữa năng suất lao động và giá trị thặng dư tương đối"]
+  },
+  {
+    "id": "ex_nang_suat_cong_nghe",
+    "content": "Đầu tư công nghệ là con đường hiện đại hóa sản xuất, tăng năng suất lao động một cách nhanh chóng. Tuy nhiên, theo lý luận của Mác, việc thay thế lao động sống bằng lao động vật hóa (máy móc) làm tăng cấu tạo hữu cơ của tư bản, dẫn đến thất nghiệp công nghệ. Người lao động phổ thông bị đào thải nếu không được đào tạo lại.",
+    "cloReferences": ["CLO2", "CLO5"],
+    "conceptTags": ["hien-dai-hoa", "nang-suat-lao-dong", "tu-ban"],
+    "learningObjectives": ["Phân tích tác động của tiến bộ công nghệ đến cấu tạo hữu cơ của tư bản và việc làm"]
+  },
+  {
+    "id": "ex_nang_suat_moi_truong",
+    "content": "Cải thiện môi trường đầu tư thu hút doanh nghiệp nước ngoài có thể mang lại vốn, công nghệ và việc làm. Theo quan điểm của kinh tế chính trị, đây là con đường tận dụng ngoại lực để phát triển. Tuy nhiên, nếu chỉ dựa vào doanh nghiệp nước ngoài mà không xây dựng năng lực nội sinh, nền kinh tế dễ bị phụ thuộc và gặp rủi ro khi dòng vốn rút đi.",
+    "cloReferences": ["CLO2", "CLO5"],
+    "conceptTags": ["fdi", "nang-luc-tu-chu", "cong-nghiep-hoa"],
+    "learningObjectives": ["Phân tích mối quan hệ giữa thu hút đầu tư nước ngoài và xây dựng năng lực nội sinh"]
+  },
+  {
+    "id": "ex_nguyen_lieu_ho_tro",
+    "content": "Hỗ trợ thuế và tín dụng cho doanh nghiệp là biện pháp can thiệp của Nhà nước nhằm duy trì sản xuất trong điều kiện khó khăn. Theo Mác, khủng hoảng là hiện tượng tất yếu trong nền kinh tế thị trường do mâu thuẫn giữa sản xuất xã hội hóa và chiếm hữu tư nhân. Vai trò của Nhà nước trong điều tiết khủng hoảng là cần thiết để giảm thiểu tác động xã hội.",
+    "cloReferences": ["CLO2", "CLO3"],
+    "conceptTags": ["khung-hoang", "vai-tro-nha-nuoc", "san-xuat"],
+    "learningObjectives": ["Phân tích nguyên nhân của khủng hoảng trong nền kinh tế thị trường và vai trò điều tiết của Nhà nước"]
+  },
+  {
+    "id": "ex_nguyen_lieu_tang_gia",
+    "content": "Cho phép tăng giá thành phẩm là giải pháp thị trường, giúp doanh nghiệp bảo toàn lợi nhuận và duy trì sản xuất. Theo quy luật giá trị, khi chi phí sản xuất tăng, giá cả hàng hóa sẽ tăng tương ứng. Tuy nhiên, lạm phát chi phí đẩy xảy ra khi giá tăng lan tỏa ra toàn nền kinh tế, làm giảm sức mua của người lao động và ảnh hưởng đến ổn định thị trường.",
+    "cloReferences": ["CLO2"],
+    "conceptTags": ["gia-ca", "quy-luat-gia-tri", "lam-phat"],
+    "learningObjectives": ["Phân tích cơ chế lạm phát chi phí đẩy trong nền kinh tế thị trường"]
+  },
+  {
+    "id": "ex_nguyen_lieu_noi_dia",
+    "content": "Tìm kiếm nguồn cung nội địa thay thế là chiến lược xây dựng năng lực tự chủ của nền kinh tế. Theo quan điểm của kinh tế chính trị Mác-Lênin, phát triển công nghiệp quốc gia và giảm phụ thuộc vào bên ngoài là yếu tố quan trọng để bảo đảm độc lập, tự chủ. Chiến lược này phù hợp với định hướng công nghiệp hóa, hiện đại hóa nhưng cần thời gian và nguồn lực đầu tư ban đầu.",
+    "cloReferences": ["CLO2", "CLO5"],
+    "conceptTags": ["noi-dia-hoa", "nang-luc-tu-chu", "chuoi-cung-ung"],
+    "learningObjectives": ["Phân tích chiến lược phát triển nguồn cung nội địa trong bối cảnh hội nhập"]
+  },
+  {
+    "id": "ex_mua_lai_tu_do",
+    "content": "Tự do hóa mua bán, sáp nhập là biểu hiện của tích tụ và tập trung tư bản. Theo V.I. Lênin, tích tụ và tập trung tư bản dẫn đến độc quyền – một giai đoạn phát triển cao của chủ nghĩa tư bản. Trong ngắn hạn, hoạt động này tăng hiệu quả sản xuất và thu ngân sách. Tuy nhiên, về lâu dài, doanh nghiệp nhỏ bị thôn tính, thị trường bị chi phối bởi một số tập đoàn lớn.",
+    "cloReferences": ["CLO3"],
+    "conceptTags": ["canh-tranh", "doc-quyen", "tap-trung-tu-ban"],
+    "learningObjectives": ["Phân tích quá trình tích tụ và tập trung tư bản dẫn đến độc quyền"]
+  },
+  {
+    "id": "ex_mua_lai_han_che",
+    "content": "Hạn chế sáp nhập bảo vệ doanh nghiệp nhỏ và duy trì môi trường cạnh tranh lành mạnh. Theo Mác, cạnh tranh là động lực của nền kinh tế thị trường. Nhà nước có vai trò duy trì cạnh tranh để ngăn chặn độc quyền làm phương hại đến lợi ích người tiêu dùng và xã hội. Đây là một trong những chức năng quan trọng của độc quyền nhà nước trong chủ nghĩa tư bản hiện đại.",
+    "cloReferences": ["CLO3"],
+    "conceptTags": ["canh-tranh", "doc-quyen", "vai-tro-nha-nuoc"],
+    "learningObjectives": ["Phân tích vai trò của Nhà nước trong duy trì cạnh tranh và chống độc quyền"]
+  },
+  {
+    "id": "ex_mua_lai_co_dieu_kien",
+    "content": "Cho phép sáp nhập kèm điều kiện là giải pháp dung hòa giữa thu hút đầu tư và bảo vệ lợi ích quốc gia. Nhà nước đóng vai trò điều tiết, yêu cầu chuyển giao công nghệ và duy trì việc làm. Đây là biểu hiện của độc quyền nhà nước trong bối cảnh toàn cầu hóa, khi Nhà nước can thiệp để đảm bảo lợi ích quốc gia trong quá trình hội nhập.",
+    "cloReferences": ["CLO3", "CLO5"],
+    "conceptTags": ["doc-quyen-nha-nuoc", "chuyen-giao-cong-nghe", "fdi"],
+    "learningObjectives": ["Phân tích vai trò của Nhà nước trong quản lý hoạt động mua bán, sáp nhập doanh nghiệp"]
+  },
+  {
+    "id": "ex_ep_gia_quy_dinh",
+    "content": "Theo quan điểm kinh tế chính trị Mác-Lênin, Nhà nước có vai trò điều tiết thị trường và bảo vệ doanh nghiệp nhỏ trước sức ép của tư bản lớn. Ban hành quy định về cạnh tranh là công cụ pháp lý để bảo đảm cạnh tranh lành mạnh, duy trì trật tự thị trường và bảo vệ lợi ích của các chủ thể yếu thế.",
+    "cloReferences": ["CLO3"],
+    "conceptTags": ["canh-tranh", "vai-tro-nha-nuoc"],
+    "learningObjectives": ["Phân tích sự cần thiết của pháp luật cạnh tranh trong nền kinh tế thị trường"]
+  },
+  {
+    "id": "ex_ep_gia_tu_do",
+    "content": "Không can thiệp để thị trường tự điều tiết theo quan điểm tự do kinh tế. Theo Mác, trong điều kiện cạnh tranh tự do, tư bản lớn có ưu thế tuyệt đối và sẽ đào thải tư bản nhỏ, dẫn đến tập trung tư bản. Về lâu dài, thị trường sẽ bị chi phối bởi một số doanh nghiệp lớn, làm giảm tính cạnh tranh và ảnh hưởng đến lợi ích của người sản xuất nhỏ.",
+    "cloReferences": ["CLO3"],
+    "conceptTags": ["canh-tranh", "tap-trung-tu-ban", "tu-ban"],
+    "learningObjectives": ["Phân tích hệ quả của cạnh tranh tự do dưới góc độ kinh tế chính trị Mác-Lênin"]
+  },
+  {
+    "id": "ex_ep_gia_hop_tac",
+    "content": "Hỗ trợ doanh nghiệp nhỏ thành lập hợp tác xã là giải pháp nâng cao sức mặc cả của các chủ thể yếu thế trong quan hệ thị trường. Mô hình hợp tác xã phản ánh nguyên tắc tương trợ, đoàn kết của những người sản xuất nhỏ, phù hợp với định hướng XHCN. Nhà nước đóng vai trò kiến tạo, hỗ trợ thể chế để các chủ thể yếu thế có thể đứng vững trong cạnh tranh.",
+    "cloReferences": ["CLO3", "CLO4"],
+    "conceptTags": ["hop-tac", "quan-he-loi-ich", "kinh-te-thi-truong-dinh-huong-XHCN"],
+    "learningObjectives": ["Phân tích vai trò của kinh tế tập thể trong nền kinh tế thị trường định hướng XHCN"]
+  },
+  {
+    "id": "ex_nen_tang_so_thue",
+    "content": "Đánh thuế và áp dụng rào cản đối với nền tảng nước ngoài là biện pháp bảo hộ thị trường nội địa. Theo lý luận của Mác về cạnh tranh và độc quyền, việc các tập đoàn xuyên quốc gia chi phối thị trường là biểu hiện của độc quyền trong giai đoạn toàn cầu hóa. Nhà nước có thể sử dụng công cụ thuế và pháp lý để bảo vệ doanh nghiệp trong nước.",
+    "cloReferences": ["CLO3"],
+    "conceptTags": ["doc-quyen", "kinh-te-so", "bao-ho"],
+    "learningObjectives": ["Phân tích biểu hiện của độc quyền trong nền kinh tế số"]
+  },
+  {
+    "id": "ex_nen_tang_so_tu_do",
+    "content": "Để thị trường tự do cạnh tranh khuyến khích đổi mới và hiệu quả kinh tế. Người tiêu dùng được hưởng lợi từ giá thấp và nhiều lựa chọn. Nhưng theo Mác, cạnh tranh tự do cuối cùng dẫn đến tập trung tư bản – các nền tảng lớn chiếm lĩnh thị trường, loại bỏ đối thủ nhỏ và sau đó có thể tăng giá, giảm chất lượng. Đây là quy luật vận động tất yếu của chủ nghĩa tư bản.",
+    "cloReferences": ["CLO3"],
+    "conceptTags": ["canh-tranh", "doc-quyen", "tap-trung-tu-ban"],
+    "learningObjectives": ["Phân tích quy luật tập trung tư bản trong nền kinh tế số"]
+  },
+  {
+    "id": "ex_nen_tang_so_ho_tro",
+    "content": "Hỗ trợ doanh nghiệp nội địa chuyển đổi số là chiến lược nâng cao năng lực cạnh tranh quốc gia. Theo quan điểm kinh tế chính trị Mác-Lênin, xây dựng nền kinh tế độc lập tự chủ không có nghĩa là đóng cửa, mà là nâng cao nội lực để có thể chủ động hội nhập. Đầu tư vào năng lực số là con đường hiện đại hóa nền kinh tế.",
+    "cloReferences": ["CLO3", "CLO5"],
+    "conceptTags": ["hien-dai-hoa", "chuyen-doi-so", "nang-luc-canh-tranh"],
+    "learningObjectives": ["Phân tích chiến lược nâng cao năng lực cạnh tranh của doanh nghiệp trong nước trong bối cảnh cách mạng công nghiệp 4.0"]
+  },
+  {
+    "id": "ex_dieu_tiet_tang",
+    "content": "Tăng cường vai trò điều tiết của Nhà nước là quan điểm phù hợp với kinh tế thị trường định hướng XHCN. Theo Mác, Nhà nước có chức năng điều tiết nền kinh tế để khắc phục khuyết tật của thị trường, phân phối lại thu nhập và bảo đảm an sinh xã hội. Tuy nhiên, nếu Nhà nước can thiệp quá sâu có thể triệt tiêu động lực thị trường và sáng tạo của doanh nghiệp.",
+    "cloReferences": ["CLO3", "CLO4"],
+    "conceptTags": ["vai-tro-nha-nuoc", "dieu-tiet", "kinh-te-thi-truong-dinh-huong-XHCN"],
+    "learningObjectives": ["Phân tích vai trò của Nhà nước trong nền kinh tế thị trường định hướng XHCN"]
+  },
+  {
+    "id": "ex_dieu_tiet_duy_tri",
+    "content": "Duy trì thị trường tự do khuyến khích sự năng động và sáng tạo. Nhưng theo Mác, chủ nghĩa tư bản tự do cạnh tranh có những khuyết tật cố hữu như khủng hoảng thừa, phân hóa giàu nghèo và bóc lột lao động. Thiếu sự điều tiết của Nhà nước, nền kinh tế dễ rơi vào khủng hoảng chu kỳ, ảnh hưởng đến ổn định xã hội.",
+    "cloReferences": ["CLO3"],
+    "conceptTags": ["khung-hoang", "tu-ban", "canh-tranh"],
+    "learningObjectives": ["Phân tích những khuyết tật của nền kinh tế thị trường tự do"]
+  },
+  {
+    "id": "ex_dieu_tiet_chon_loc",
+    "content": "Điều tiết có chọn lọc ở những ngành trọng yếu là chiến lược phù hợp của Nhà nước trong nền kinh tế thị trường định hướng XHCN. Nhà nước chỉ can thiệp vào những lĩnh vực then chốt như năng lượng, viễn thông, ngân hàng, tài nguyên – nơi cần bảo đảm lợi ích quốc gia. Các ngành còn lại để thị trường tự điều tiết. Đây là tư duy quản lý hiện đại kết hợp giữa bàn tay hữu hình và vô hình.",
+    "cloReferences": ["CLO3", "CLO4"],
+    "conceptTags": ["vai-tro-nha-nuoc", "dieu-tiet", "nganh-trong-yeu"],
+    "learningObjectives": ["Phân tích nguyên tắc điều tiết có chọn lọc của Nhà nước trong nền kinh tế thị trường"]
+  },
+  {
+    "id": "ex_giam_luong",
+    "content": "Theo lý luận giá trị thặng dư, tiền lương là giá cả sức lao động – một bộ phận của giá trị do người lao động tạo ra. Giảm lương sẽ làm tăng tỷ suất giá trị thặng dư, cải thiện lợi nhuận doanh nghiệp nhưng làm giảm thu nhập và sức mua của người lao động. Điều này ảnh hưởng đến quan hệ lợi ích kinh tế, có thể dẫn đến mâu thuẫn lao động nếu không được giải quyết thỏa đáng.",
+    "cloReferences": ["CLO2", "CLO4", "CLO7"],
+    "conceptTags": ["quan-he-loi-ich", "gia-tri-thang-du", "tien-luong"],
+    "learningObjectives": ["Phân tích quan hệ lợi ích giữa người lao động và doanh nghiệp trong phân phối thu nhập"]
+  },
+  {
+    "id": "ex_giam_luong_bac",
+    "content": "Bác bỏ giảm lương bảo vệ thu nhập của người lao động, duy trì ổn định xã hội. Tuy nhiên, doanh nghiệp có thể gặp khó khăn tài chính, dẫn đến cắt giảm sản xuất và sa thải lao động – gây tác động ngược lại đến chính người lao động. Trong nền kinh tế thị trường định hướng XHCN, Nhà nước cần cân bằng lợi ích giữa các bên.",
+    "cloReferences": ["CLO4", "CLO7"],
+    "conceptTags": ["quan-he-loi-ich", "tien-luong"],
+    "learningObjectives": ["Phân tích sự đánh đổi giữa bảo vệ thu nhập người lao động và duy trì việc làm"]
+  },
+  {
+    "id": "ex_giam_luong_ho_tro",
+    "content": "Hỗ trợ doanh nghiệp bằng giảm thuế kèm điều kiện giữ lương là giải pháp dung hòa lợi ích giữa ba bên: doanh nghiệp được giảm chi phí, người lao động giữ được việc làm và thu nhập, Nhà nước đóng vai trò điều tiết. Theo Mác, Nhà nước là công cụ hài hòa các quan hệ lợi ích, đặc biệt trong nền kinh tế thị trường định hướng XHCN.",
+    "cloReferences": ["CLO4", "CLO7"],
+    "conceptTags": ["quan-he-loi-ich", "vai-tro-nha-nuoc"],
+    "learningObjectives": ["Phân tích vai trò của Nhà nước trong hài hòa các quan hệ lợi ích kinh tế"]
+  },
+  {
+    "id": "ex_phuc_loi_yeu_cau",
+    "content": "Yêu cầu doanh nghiệp tăng phúc lợi cải thiện trực tiếp đời sống người lao động, giảm bất bình đẳng. Theo Mác, chi phí tái sản xuất sức lao động bao gồm không chỉ nhu cầu vật chất mà còn nhu cầu văn hóa, xã hội. Tuy nhiên, nếu doanh nghiệp chịu toàn bộ chi phí, lợi nhuận giảm có thể dẫn đến thu hẹp đầu tư và việc làm.",
+    "cloReferences": ["CLO4", "CLO7"],
+    "conceptTags": ["phuc-loi-xa-hoi", "quan-he-loi-ich", "tai-phan-phoi"],
+    "learningObjectives": ["Phân tích nội dung của tái sản xuất sức lao động trong nền kinh tế hiện đại"]
+  },
+  {
+    "id": "ex_phuc_loi_chia_se",
+    "content": "Cơ chế chia sẻ chi phí phúc lợi giữa Nhà nước và doanh nghiệp là mô hình điển hình của nền kinh tế thị trường định hướng XHCN. Nhà nước đảm bảo an sinh xã hội qua ngân sách, doanh nghiệp đóng góp qua bảo hiểm xã hội và phúc lợi cho người lao động. Cơ chế này phân bổ trách nhiệm hợp lý, tạo nền tảng cho phát triển bền vững.",
+    "cloReferences": ["CLO4", "CLO7"],
+    "conceptTags": ["phuc-loi-xa-hoi", "quan-he-loi-ich", "an-sinh-xa-hoi"],
+    "learningObjectives": ["Phân tích cơ chế chia sẻ trách nhiệm an sinh xã hội giữa Nhà nước và doanh nghiệp"]
+  },
+  {
+    "id": "ex_phuc_loi_cho",
+    "content": "Trì hoãn tăng phúc lợi có thể giữ ổn định tài chính ngắn hạn cho doanh nghiệp và ngân sách. Nhưng theo quan điểm của Mác, sự bất bình đẳng kéo dài và sự bóc lột quá mức sẽ làm trầm trọng thêm mâu thuẫn xã hội, dẫn đến bất ổn. Phát triển phải đi đôi với tiến bộ xã hội.",
+    "cloReferences": ["CLO4", "CLO7"],
+    "conceptTags": ["phuc-loi-xa-hoi", "bat-binh-dang", "mau-thuan-xa-hoi"],
+    "learningObjectives": ["Phân tích hệ quả xã hội của sự trì hoãn đầu tư vào phúc lợi"]
+  },
+  {
+    "id": "ex_thue_tang",
+    "content": "Tăng thuế thu nhập doanh nghiệp là biện pháp tăng thu ngân sách, tạo nguồn lực cho đầu tư công và an sinh xã hội. Theo Mác, thuế là công cụ phân phối lại thu nhập quốc dân. Tuy nhiên, nếu thuế doanh nghiệp quá cao sẽ giảm động lực đầu tư, có thể dẫn đến chuyển giá hoặc chuyển dịch đầu tư ra nước ngoài.",
+    "cloReferences": ["CLO4"],
+    "conceptTags": ["ngan-sach", "thue", "tai-phan-phoi"],
+    "learningObjectives": ["Phân tích vai trò của thuế trong phân phối lại thu nhập và điều tiết kinh tế"]
+  },
+  {
+    "id": "ex_thue_cat_giam",
+    "content": "Cắt giảm chi tiêu công giúp cân bằng ngân sách nhưng có thể ảnh hưởng đến các dịch vụ công và phúc lợi xã hội. Theo Mác, Nhà nước có trách nhiệm đầu tư vào các lĩnh vực xã hội để bảo đảm tái sản xuất sức lao động xã hội. Cắt giảm chi tiêu xã hội quá mức có thể ảnh hưởng đến chất lượng nguồn nhân lực trong dài hạn.",
+    "cloReferences": ["CLO4"],
+    "conceptTags": ["ngan-sach", "chi-tieu-cong", "dich-vu-cong"],
+    "learningObjectives": ["Phân tích quan hệ giữa chi tiêu công và phát triển nguồn nhân lực"]
+  },
+  {
+    "id": "ex_thue_vay_no",
+    "content": "Vay nợ và tái cơ cấu thuế là giải pháp linh hoạt: tận dụng nguồn vốn vay để kích thích đầu tư, đồng thời cải cách thuế để mở rộng cơ sở thuế. Tuy nhiên, vay nợ phải đi kèm với kỷ luật tài chính để tránh tích lũy nợ công quá mức. Đây là chính sách vĩ mô phổ biến trong các nền kinh tế thị trường hiện đại.",
+    "cloReferences": ["CLO4"],
+    "conceptTags": ["ngan-sach", "no-cong", "tai-cau-truc"],
+    "learningObjectives": ["Phân tích tác động của vay nợ công đến nền kinh tế"]
+  },
+  {
+    "id": "ex_gia_dien_tang",
+    "content": "Tăng giá điện tạo nguồn vốn đầu tư hạ tầng năng lượng, phù hợp với mục tiêu hiện đại hóa và phát triển bền vững. Theo lý luận về hàng hóa công, giá điện là chi phí tái sản xuất của cả nền kinh tế. Tuy nhiên, tăng giá ảnh hưởng trực tiếp đến chi phí sản xuất của doanh nghiệp và sinh hoạt của người dân, gây áp lực lạm phát.",
+    "cloReferences": ["CLO4", "CLO7"],
+    "conceptTags": ["hang-hoa-cong", "dien-nang", "chi-phi-xa-hoi"],
+    "learningObjectives": ["Phân tích đặc điểm của hàng hóa công và cơ chế giá trong nền kinh tế thị trường"]
+  },
+  {
+    "id": "ex_gia_dien_giu",
+    "content": "Giữ giá điện và dùng ngân sách đầu tư hạ tầng là giải pháp ổn định thị trường và hỗ trợ sản xuất. Nhà nước dùng nguồn lực công để phát triển hạ tầng thiết yếu, phù hợp với định hướng XHCN về vai trò của Nhà nước trong cung cấp hàng hóa công. Tuy nhiên, gánh nặng ngân sách có thể ảnh hưởng đến các khoản chi khác.",
+    "cloReferences": ["CLO4"],
+    "conceptTags": ["hang-hoa-cong", "vai-tro-nha-nuoc", "dau-tu-cong"],
+    "learningObjectives": ["Phân tích vai trò của Nhà nước trong đầu tư hạ tầng thiết yếu"]
+  },
+  {
+    "id": "ex_gia_dien_lo_trinh",
+    "content": "Tăng giá có lộ trình kèm hỗ trợ là giải pháp cân bằng – vừa tạo nguồn lực đầu tư hạ tầng, vừa bảo vệ các đối tượng yếu thế. Theo nguyên tắc công bằng xã hội, Nhà nước cần bảo đảm rằng gánh nặng chi phí được phân bổ hợp lý, người nghèo và doanh nghiệp nhỏ được hỗ trợ. Đây là biểu hiện của Nhà nước phúc lợi trong nền kinh tế thị trường.",
+    "cloReferences": ["CLO4", "CLO7"],
+    "conceptTags": ["hang-hoa-cong", "quan-he-loi-ich", "cong-bang-xa-hoi"],
+    "learningObjectives": ["Phân tích nguyên tắc công bằng trong chính sách giá hàng hóa công"]
+  },
+  {
+    "id": "ex_robot_phe_duyet",
+    "content": "Tự động hóa sản xuất là biểu hiện của hiện đại hóa, nâng cao năng suất lao động. Theo Mác, máy móc là yếu tố quan trọng làm tăng năng suất lao động và tạo ra giá trị thặng dư tương đối. Tuy nhiên, Mác cũng chỉ ra rằng máy móc thải loại lao động, tạo ra tình trạng thất nghiệp công nghệ. Cần kết hợp với đào tạo lại để người lao động thích ứng.",
+    "cloReferences": ["CLO5"],
+    "conceptTags": ["cong-nghiep-hoa", "hien-dai-hoa", "may-moc", "lao-dong"],
+    "learningObjectives": ["Phân tích tác động của tự động hóa đối với việc làm dưới góc độ kinh tế chính trị"]
+  },
+  {
+    "id": "ex_robot_han_che",
+    "content": "Hạn chế tự động hóa bảo vệ việc làm trong ngắn hạn, nhưng có thể làm nền kinh tế tụt hậu về năng suất và khả năng cạnh tranh. Theo Mác, cạnh tranh buộc mỗi nhà tư bản phải cải tiến công nghệ để tồn tại. Nếu không hiện đại hóa, nền kinh tế sẽ mất dần lợi thế cạnh tranh, thậm chí còn gây mất việc làm nhiều hơn trong dài hạn.",
+    "cloReferences": ["CLO5"],
+    "conceptTags": ["cong-nghiep-hoa", "hien-dai-hoa", "canh-tranh"],
+    "learningObjectives": ["Phân tích quan hệ giữa hiện đại hóa sản xuất và năng lực cạnh tranh quốc gia"]
+  },
+  {
+    "id": "ex_robot_tung_buoc",
+    "content": "Chiến lược tự động hóa từng bước kết hợp đào tạo là hướng đi cân bằng của công nghiệp hóa, hiện đại hóa. Nhà nước vừa thúc đẩy tiến bộ công nghệ, vừa chủ động đào tạo nguồn nhân lực thích ứng. Đây là mô hình phát triển phù hợp với định hướng XHCN: tăng trưởng đi đôi với tiến bộ xã hội, không để ai bị bỏ lại phía sau.",
+    "cloReferences": ["CLO5", "CLO7"],
+    "conceptTags": ["cong-nghiep-hoa", "hien-dai-hoa", "nguon-nhan-luc"],
+    "learningObjectives": ["Phân tích chiến lược công nghiệp hóa, hiện đại hóa gắn với phát triển nguồn nhân lực"]
+  },
+  {
+    "id": "ex_dao_tao_dau_tu",
+    "content": "Đầu tư lớn vào giáo dục nghề nghiệp là chiến lược phát triển nguồn nhân lực chất lượng cao – yếu tố then chốt của công nghiệp hóa, hiện đại hóa. Theo Mác, lao động phức tạp tạo ra nhiều giá trị hơn lao động giản đơn. Đầu tư vào đào tạo nâng cao chất lượng sức lao động là đầu tư cho sự phát triển bền vững.",
+    "cloReferences": ["CLO5"],
+    "conceptTags": ["nguon-nhan-luc", "lao-dong", "cong-nghiep-hoa"],
+    "learningObjectives": ["Phân tích vai trò của lao động phức tạp trong tạo ra giá trị thặng dư"]
+  },
+  {
+    "id": "ex_dao_tao_khuyen_khich",
+    "content": "Khuyến khích doanh nghiệp tự đào tạo giảm gánh nặng ngân sách và bảo đảm đào tạo đúng nhu cầu thị trường. Tuy nhiên, theo Mác, doanh nghiệp thường chỉ đầu tư vào đào tạo những kỹ năng mang lại lợi nhuận trực tiếp, có thể bỏ qua các kỹ năng nền tảng và xã hội rộng hơn. Nhà nước cần đóng vai trò định hướng và hỗ trợ để đào tạo phát triển toàn diện.",
+    "cloReferences": ["CLO5"],
+    "conceptTags": ["dao-tao", "nguon-nhan-luc", "vai-tro-nha-nuoc"],
+    "learningObjectives": ["Phân tích giới hạn của thị trường trong đào tạo nguồn nhân lực"]
+  },
+  {
+    "id": "ex_dao_tao_ket_hop",
+    "content": "Mô hình hợp tác công - tư trong đào tạo nghề là giải pháp tối ưu: Nhà nước đặt khung chiến lược và hỗ trợ kinh phí, doanh nghiệp tham gia đào tạo thực hành, người lao động được học tập theo chuẩn đầu ra phù hợp thị trường. Đây là mô hình phổ biến ở các nước công nghiệp phát triển, phù hợp với định hướng XHCN.",
+    "cloReferences": ["CLO5"],
+    "conceptTags": ["dao-tao", "hop-tac-cong-tu", "nguon-nhan-luc"],
+    "learningObjectives": ["Phân tích mô hình hợp tác Nhà nước - doanh nghiệp trong phát triển nguồn nhân lực"]
+  },
+  {
+    "id": "ex_chuyen_doi_so_phe_duyet",
+    "content": "Chuyển đổi số toàn diện là bước đi táo bạo của hiện đại hóa. Theo Mác, sự phát triển của lực lượng sản xuất làm thay đổi quan hệ sản xuất. Công nghệ số là lực lượng sản xuất mới, thay đổi căn bản cách thức sản xuất và tổ chức kinh tế. Đầu tư mạnh vào số hóa tạo đột phá năng suất nhưng cũng đòi hỏi thích ứng về thể chế và lao động.",
+    "cloReferences": ["CLO5"],
+    "conceptTags": ["hien-dai-hoa", "chuyen-doi-so", "luc-luong-san-xuat"],
+    "learningObjectives": ["Phân tích tác động của chuyển đổi số đến lực lượng sản xuất và quan hệ sản xuất"]
+  },
+  {
+    "id": "ex_chuyen_doi_so_thi_diem",
+    "content": "Triển khai thí điểm là cách tiếp cận thận trọng, giảm thiểu rủi ro. Phù hợp với thực tiễn Việt Nam – một nước đang phát triển với nguồn lực có hạn. Theo Mác, chuyển hóa từ nền sản xuất nhỏ lên sản xuất lớn hiện đại là quá trình lâu dài, cần có bước đi phù hợp. Thí điểm rồi nhân rộng là phương pháp được kiểm nghiệm.",
+    "cloReferences": ["CLO5"],
+    "conceptTags": ["hien-dai-hoa", "chuyen-doi-so", "phuong-phap"],
+    "learningObjectives": ["Phân tích phương pháp chuyển đổi phù hợp từ sản xuất nhỏ lên sản xuất lớn hiện đại"]
+  },
+  {
+    "id": "ex_chuyen_doi_so_hoan",
+    "content": "Hoãn chuyển đổi số để tập trung vào hạ tầng truyền thống là lựa chọn ưu tiên những nhu cầu trước mắt, nhưng có nguy cơ bỏ lỡ cơ hội phát triển. Theo Mác, các nước đi sau có lợi thế của người đi sau – có thể tận dụng công nghệ tiên tiến để rút ngắn quá trình công nghiệp hóa. Trì hoãn chuyển đổi số có thể làm gia tăng khoảng cách phát triển.",
+    "cloReferences": ["CLO5"],
+    "conceptTags": ["cong-nghiep-hoa", "hien-dai-hoa", "loi-the-di-sau"],
+    "learningObjectives": ["Phân tích lợi thế của nước đi sau trong quá trình công nghiệp hóa, hiện đại hóa"]
+  },
+  {
+    "id": "ex_cong_nghiep_ho_tro_uu_dai",
+    "content": "Phát triển công nghiệp hỗ trợ là một trong những nội dung cốt lõi của công nghiệp hóa, hiện đại hóa. Theo Mác, phân công lao động xã hội càng sâu thì nền sản xuất càng phát triển. Công nghiệp hỗ trợ mạnh giúp nâng cao giá trị gia tăng trong nước, giảm phụ thuộc vào nhập khẩu và tạo nhiều việc làm chất lượng cao.",
+    "cloReferences": ["CLO5"],
+    "conceptTags": ["cong-nghiep-hoa", "phan-cong-lao-dong", "gia-tri-gia-tang"],
+    "learningObjectives": ["Phân tích vai trò của phân công lao động xã hội trong phát triển công nghiệp"]
+  },
+  {
+    "id": "ex_cong_nghiep_ho_tro_yeu_cau",
+    "content": "Yêu cầu doanh nghiệp FDI cam kết nội địa hóa là biện pháp chủ động của Nhà nước để tận dụng dòng vốn nước ngoài phục vụ mục tiêu công nghiệp hóa. Nhiều nước Đông Á thành công với chính sách này. Tuy nhiên, yêu cầu quá cao có thể làm nhà đầu tư nước ngoài chuyển hướng sang nước khác, cần có lộ trình thích hợp.",
+    "cloReferences": ["CLO5"],
+    "conceptTags": ["fdi", "noi-dia-hoa", "chuyen-giao-cong-nghe"],
+    "learningObjectives": ["Phân tích chính sách nội địa hóa gắn với thu hút FDI trong công nghiệp hóa"]
+  },
+  {
+    "id": "ex_cong_nghiep_ho_tro_nhap_khau",
+    "content": "Tiếp tục nhập khẩu linh kiện, tập trung vào lắp ráp là chiến lược dễ thực hiện trong ngắn hạn, giúp tham gia nhanh vào chuỗi giá trị toàn cầu. Tuy nhiên, đây là vị trí có giá trị gia tăng thấp nhất trong chuỗi. Theo Mác, nước đi sau nếu chỉ dừng ở gia công, lắp ráp sẽ rơi vào 'bẫy thu nhập trung bình', không thoát khỏi trình độ công nghệ thấp.",
+    "cloReferences": ["CLO5"],
+    "conceptTags": ["gia-tri-gia-tang", "chuoi-gia-tri", "cong-nghiep-hoa"],
+    "learningObjectives": ["Phân tích khái niệm 'bẫy thu nhập trung bình' dưới góc độ phân công lao động quốc tế"]
+  },
+  {
+    "id": "ex_fdi_chap_thuan",
+    "content": "Thu hút FDI là chủ trương quan trọng trong chiến lược hội nhập kinh tế quốc tế của Việt Nam. Theo Mác, tư bản có xu hướng vươn ra toàn cầu để tìm kiếm nơi đầu tư có tỷ suất lợi nhuận cao hơn. FDI mang lại việc làm, công nghệ và thị trường xuất khẩu. Tuy nhiên, nếu không có yêu cầu chuyển giao công nghệ, nền kinh tế dễ bị phụ thuộc vào công nghệ nước ngoài.",
+    "cloReferences": ["CLO5", "CLO8"],
+    "conceptTags": ["fdi", "hoi-nhap-quoc-te", "chuyen-giao-cong-nghe"],
+    "learningObjectives": ["Phân tích bản chất của xuất khẩu tư bản trong giai đoạn toàn cầu hóa"]
+  },
+  {
+    "id": "ex_fdi_chuyen_giao",
+    "content": "Yêu cầu chuyển giao công nghệ và nội địa hóa là chiến thuật 'thu hút FDI có chọn lọc' mà nhiều nước thành công áp dụng. Theo Mác, nước đi sau có thể rút ngắn quá trình phát triển bằng cách tiếp thu và làm chủ công nghệ tiên tiến. Chính sách này vừa thu hút vốn nước ngoài, vừa xây dựng năng lực tự chủ, phù hợp với mục tiêu công nghiệp hóa, hiện đại hóa.",
+    "cloReferences": ["CLO5", "CLO8"],
+    "conceptTags": ["fdi", "chuyen-giao-cong-nghe", "nang-luc-tu-chu"],
+    "learningObjectives": ["Đánh giá chiến lược thu hút FDI có chọn lọc gắn với chuyển giao công nghệ"]
+  },
+  {
+    "id": "ex_fdi_tu_choi",
+    "content": "Từ chối FDI lớn để tập trung phát triển doanh nghiệp nội địa là lựa chọn ưu tiên tự chủ kinh tế. Theo quan điểm của Mác, xây dựng nền kinh tế độc lập là yếu tố then chốt để bảo đảm độc lập chính trị. Tuy nhiên, trong bối cảnh toàn cầu hóa, từ chối hội nhập có thể làm mất cơ hội tiếp cận công nghệ và thị trường quốc tế, làm chậm quá trình phát triển.",
+    "cloReferences": ["CLO5", "CLO8"],
+    "conceptTags": ["nang-luc-tu-chu", "hoi-nhap-quoc-te", "bao-ho"],
+    "learningObjectives": ["Phân tích mối quan hệ giữa bảo đảm độc lập tự chủ và hội nhập kinh tế quốc tế"]
+  },
+  {
+    "id": "ex_moi_truong_cam_ket",
+    "content": "Cam kết mạnh về môi trường thể hiện trách nhiệm quốc tế và tận dụng cơ hội từ kinh tế xanh. Theo Mác, mâu thuẫn giữa tăng trưởng kinh tế và môi trường là biểu hiện của mâu thuẫn giữa lợi ích ngắn hạn và phát triển bền vững. Chi phí chuyển đổi xanh rất lớn nhưng mở ra thị trường mới, phù hợp với định hướng phát triển bền vững.",
+    "cloReferences": ["CLO5", "CLO7", "CLO8"],
+    "conceptTags": ["phat-trien-ben-vung", "moi-truong", "kinh-te-xanh"],
+    "learningObjectives": ["Phân tích mâu thuẫn giữa tăng trưởng kinh tế và bảo vệ môi trường trong chủ nghĩa tư bản"]
+  },
+  {
+    "id": "ex_moi_truong_lo_trinh",
+    "content": "Cam kết có lộ trình dài hơn là cách tiếp cận thực dụng, dung hòa giữa tăng trưởng và bảo vệ môi trường. Các nước đang phát triển cần thời gian chuyển đổi để không gây sốc cho nền kinh tế. Theo Mác, quá trình chuyển hóa phương thức sản xuất diễn ra từ từ, tích lũy dần về lượng rồi mới chuyển thành chất.",
+    "cloReferences": ["CLO5", "CLO7"],
+    "conceptTags": ["phat-trien-ben-vung", "chuyen-doi-xanh", "phuong-thuc-san-xuat"],
+    "learningObjectives": ["Phân tích quy luật chuyển hóa từ những thay đổi về lượng thành những thay đổi về chất trong phát triển kinh tế"]
+  },
+  {
+    "id": "ex_moi_truong_tu_choi",
+    "content": "Từ chối cam kết môi trường bảo vệ sản xuất hiện tại và việc làm trong ngắn hạn. Tuy nhiên, xu hướng toàn cầu đang chuyển dịch mạnh sang kinh tế xanh, và các rào cản thương mại liên quan đến carbon đang được thiết lập. Từ chối cam kết có thể dẫn đến mất thị trường xuất khẩu và tụt hậu công nghệ trong trung hạn.",
+    "cloReferences": ["CLO5", "CLO8"],
+    "conceptTags": ["phat-trien-ben-vung", "thuong-mai", "rao-can-xanh"],
+    "learningObjectives": ["Phân tích rủi ro của việc không thích ứng với xu hướng phát triển bền vững toàn cầu"]
+  },
+  {
+    "id": "ex_chuoi_cung_ung_ho_tro",
+    "content": "Hỗ trợ doanh nghiệp nội địa tham gia chuỗi cung ứng toàn cầu là chiến lược nâng cao năng lực cạnh tranh quốc gia. Theo Mác, phân công lao động quốc tế là một tất yếu khách quan. Việt Nam cần tham gia vào chuỗi giá trị toàn cầu không chỉ ở khâu lắp ráp giản đơn mà ở những khâu có giá trị gia tăng cao hơn.",
+    "cloReferences": ["CLO5", "CLO8"],
+    "conceptTags": ["hoi-nhap-quoc-te", "chuoi-cung-ung", "phan-cong-lao-dong"],
+    "learningObjectives": ["Phân tích lợi ích của việc tham gia chuỗi giá trị toàn cầu đối với nước đang phát triển"]
+  },
+  {
+    "id": "ex_chuoi_cung_ung_kcn",
+    "content": "Xây dựng khu công nghiệp chuyên sâu với doanh nghiệp nội địa làm vệ tinh là mô hình liên kết sản xuất hiệu quả. Đây là mô hình 'trung tâm - vệ tinh' phổ biến ở các nước công nghiệp mới. Về mặt lý luận, mô hình này tạo sự lan tỏa công nghệ từ doanh nghiệp đầu tàu sang doanh nghiệp vệ tinh, phù hợp chiến lược công nghiệp hóa thông qua liên kết sản xuất.",
+    "cloReferences": ["CLO5"],
+    "conceptTags": ["khu-cong-nghiep", "lien-ket-san-xuat", "cong-nghiep-hoa"],
+    "learningObjectives": ["Phân tích mô hình 'trung tâm - vệ tinh' trong chiến lược công nghiệp hóa"]
+  },
+  {
+    "id": "ex_chuoi_cung_ung_noi_dia",
+    "content": "Tập trung vào thị trường nội địa là chiến lược bảo vệ sản xuất trong nước. Theo Mác, thị trường nội địa là cơ sở của sự phát triển. Tuy nhiên, trong bối cảnh toàn cầu hóa, quy mô thị trường nội địa của Việt Nam còn nhỏ, và nhiều ngành cần thị trường toàn cầu để đạt quy mô tối ưu. Quá tập trung nội địa có thể hạn chế tăng trưởng dài hạn.",
+    "cloReferences": ["CLO5", "CLO8"],
+    "conceptTags": ["thi-truong-noi-dia", "hoi-nhap", "phat-trien"],
+    "learningObjectives": ["Phân tích vai trò của thị trường nội địa trong phát triển kinh tế"]
+  },
+  {
+    "id": "ex_ai_stem",
+    "content": "Đầu tư vào giáo dục STEM và đào tạo lại là chiến lược đón đầu làn sóng AI. Theo Mác, lao động phức tạp được đào tạo bài bản tạo ra nhiều giá trị hơn và có khả năng thích ứng với thay đổi công nghệ. Trong bối cảnh AI thay thế lao động giản đơn, đầu tư vào giáo dục và đào tạo lại là cách duy nhất để duy trì việc làm có chất lượng.",
+    "cloReferences": ["CLO5", "CLO7", "CLO8"],
+    "conceptTags": ["ai", "giao-duc", "nguon-nhan-luc", "thich-ung-cong-nghe"],
+    "learningObjectives": ["Phân tích chiến lược phát triển nguồn nhân lực trong bối cảnh cách mạng AI"]
+  },
+  {
+    "id": "ex_ai_dieu_tiet",
+    "content": "Điều tiết ứng dụng AI để bảo vệ việc làm là phản ứng thận trọng, ưu tiên an sinh xã hội. Mác từng phân tích nỗi lo của công nhân về máy móc thay thế lao động. Tuy nhiên, trong lịch sử, những nước điều tiết quá mức công nghệ mới thường tụt hậu so với nước tiên phong. Cần có chiến lược điều tiết thông minh, vừa bảo vệ vừa khuyến khích đổi mới.",
+    "cloReferences": ["CLO5", "CLO7"],
+    "conceptTags": ["ai", "dieu-tiet", "lao-dong"],
+    "learningObjectives": ["Phân tích mâu thuẫn giữa bảo vệ việc làm và thúc đẩy đổi mới công nghệ"]
+  },
+  {
+    "id": "ex_ai_ket_hop",
+    "content": "Kết hợp phát triển AI với an sinh xã hội là chiến lược cân bằng giữa tăng trưởng và phúc lợi. Theo Mác, Nhà nước có trách nhiệm bảo đảm tái sản xuất sức lao động xã hội. Trong thời đại AI, điều này có nghĩa là xây dựng hệ thống an sinh xã hội cho những người bị ảnh hưởng bởi chuyển đổi công nghệ, đồng thời đầu tư vào đào tạo kỹ năng mới.",
+    "cloReferences": ["CLO5", "CLO7", "CLO8"],
+    "conceptTags": ["ai", "an-sinh-xa-hoi", "phat-trien-ben-vung"],
+    "learningObjectives": ["Phân tích vai trò của Nhà nước trong bảo vệ người lao động trước thay đổi công nghệ"]
+  }
+]

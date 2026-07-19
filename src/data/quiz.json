@@ -1,0 +1,114 @@
+[
+  {
+    "id": "quiz_1",
+    "question": "Theo C. Mác, giá cả hàng hóa được quyết định bởi yếu tố nào?",
+    "options": [
+      "Giá trị hàng hóa và quan hệ cung - cầu",
+      "Chi phí sản xuất của doanh nghiệp",
+      "Sự khan hiếm của hàng hóa trên thị trường",
+      "Mức lương tối thiểu của người lao động"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_gia_tt",
+    "relatedChapter": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "quiz_2",
+    "question": "Khi doanh nghiệp kéo dài thời gian lao động để tăng sản lượng, Mác gọi đó là phương pháp sản xuất giá trị thặng dư gì?",
+    "options": [
+      "Giá trị thặng dư tuyệt đối",
+      "Giá trị thặng dư tương đối",
+      "Giá trị thặng dư siêu ngạch",
+      "Lợi nhuận bình quân"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_gio_lam_chap_thuan",
+    "relatedChapter": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "quiz_3",
+    "question": "Theo V.I. Lênin, quá trình tích tụ và tập trung tư bản dẫn đến hệ quả gì?",
+    "options": [
+      "Hình thành các tổ chức độc quyền",
+      "Tăng cường cạnh tranh lành mạnh",
+      "Phân phối thu nhập đồng đều hơn",
+      "Giảm khoảng cách giàu nghèo"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_mua_lai_tu_do",
+    "relatedChapter": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": "quiz_4",
+    "question": "Trong nền kinh tế thị trường định hướng XHCN, Nhà nước có vai trò gì trong điều tiết quan hệ lợi ích?",
+    "options": [
+      "Bảo đảm hài hòa lợi ích giữa các chủ thể kinh tế",
+      "Chỉ bảo vệ lợi ích của doanh nghiệp",
+      "Không can thiệp vào quan hệ thị trường",
+      "Tập trung mọi nguồn lực vào doanh nghiệp nhà nước"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_giam_luong_ho_tro",
+    "relatedChapter": 3,
+    "difficulty": "medium"
+  },
+  {
+    "id": "quiz_5",
+    "question": "Theo quan điểm của kinh tế chính trị Mác-Lênin, mục tiêu của công nghiệp hóa, hiện đại hóa là gì?",
+    "options": [
+      "Xây dựng nền tảng vật chất - kỹ thuật cho chủ nghĩa xã hội",
+      "Tăng tối đa lợi nhuận cho doanh nghiệp",
+      "Thu hút nhiều vốn đầu tư nước ngoài",
+      "Chuyển dịch lao động từ nông nghiệp sang dịch vụ"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_robot_phe_duyet",
+    "relatedChapter": 4,
+    "difficulty": "hard"
+  },
+  {
+    "id": "quiz_6",
+    "question": "Khi thu hút FDI, một nước đang phát triển cần lưu ý điều gì nhất theo quan điểm Mác-Lênin?",
+    "options": [
+      "Đảm bảo chuyển giao công nghệ và xây dựng năng lực tự chủ",
+      "Thu hút càng nhiều vốn càng tốt",
+      "Ưu đãi thuế tối đa cho nhà đầu tư",
+      "Tập trung vào các ngành thâm dụng lao động"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_fdi_chuyen_giao",
+    "relatedChapter": 5,
+    "difficulty": "hard"
+  },
+  {
+    "id": "quiz_7",
+    "question": "Theo Mác, nguồn gốc của lợi nhuận trong nền kinh tế thị trường là gì?",
+    "options": [
+      "Giá trị thặng dư do người lao động tạo ra",
+      "Chênh lệch giữa giá bán và giá mua",
+      "Lợi thế cạnh tranh của doanh nghiệp",
+      "Sự may mắn trong kinh doanh"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_gia_tt",
+    "relatedChapter": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "quiz_8",
+    "question": "Độc quyền nhà nước trong chủ nghĩa tư bản thể hiện điều gì?",
+    "options": [
+      "Nhà nước can thiệp vào kinh tế phục vụ lợi ích của tư bản độc quyền",
+      "Nhà nước xóa bỏ hoàn toàn sở hữu tư nhân",
+      "Nhà nước kiểm soát toàn bộ nền kinh tế",
+      "Nhà nước phân phối hàng hóa theo kế hoạch"
+    ],
+    "correctIndex": 0,
+    "explanationId": "ex_dieu_tiet_tang",
+    "relatedChapter": 2,
+    "difficulty": "hard"
+  }
+]
